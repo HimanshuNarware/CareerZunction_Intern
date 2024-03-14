@@ -1,0 +1,44 @@
+.ProjectD {
+    margin: 50px 100px;
+    padding: 8px 18px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px dashed rgba(128, 128, 128, 0.744);
+    border-left: none;
+    border-right: none;
+}
+
+.fimg {
+    width: 200px;
+    height: 195px;
+    border-radius: 110px;
+    opacity: 70%;
+
+}
+
+.section_founder,
+.section_maintainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 9px;
+    border: 2px solid rgb(40, 39, 41);
+    margin-block: 25px;
+
+    /* outline: double thin purple; */
+    p {
+        color: rgba(157, 0, 255, 0.694);
+        align-self: center;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+gap: 7%;
+    }
+}
+.line{
+    height: .1px;
+    width: 85vw;
+    margin-inline: auto;
+    background-color: rgba(128, 128, 128, 0.132);
+}

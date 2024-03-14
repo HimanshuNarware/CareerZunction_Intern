@@ -1,0 +1,126 @@
+/* // page 2 or foooter styling */
+.page_2{
+    /* // height: 100vh !important; */
+}
+.footer-wrapper{
+
+    /* margin: 20px 50px 0; */
+    padding:  20px 30px;
+    height: fit-content;
+}
+.footer{
+    background-color: black;
+    color: white;
+
+    .footer-title{
+        font-size: 1.6em;
+    text-align:start;
+    margin: 2px;
+    padding:  3px 30px;
+    color: blueviolet;
+    }
+    .footer-pera{
+       margin-inline:22px;
+       padding: 6px 10px;
+       font-size: 1.2em;
+       font-weight: 400;
+       color: rgba(128, 128, 128, 0.475);
+
+    }
+.doc{
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: .1px;
+    margin-top: 22px;
+    margin-left: 25%;
+}
+.doc-pera{
+    margin-block: 2px;
+    margin-left: 14%;
+    margin-top: 5px;
+    /* padding-top: 10px; */
+    /* // font-size: 1.2em; */
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.489);
+
+   
+}
+.doc-perag{
+    &:hover{
+        text-decoration: underline;
+      }
+}
+.button-star{
+    background: rgba(18, 128, 253, 0.966);
+  width: 150px;
+    color: aliceblue;
+ padding: 12px 10px; 
+ margin: 8px 25px;
+ line-height: 1;
+ border-radius: 12px;
+ border: none;
+ transition: .5s linear;
+cursor: pointer;
+/* transition: .5s; */
+ &:hover{
+    background-color: rgba(18, 128, 253, 0.797);
+    color: black;
+    transition: .5s;
+ }
+ &:hover .star{
+    color: black;
+    transition: .5s;
+ }
+}
+.footer-socail-icon{
+    display: flex;
+    font-size: 1.8em;
+    gap: 10px;
+    margin: 10px 27px;
+    padding: 5px 0px;
+}
+}
+.licenseGroup{
+    margin-top: 22px;
+    margin-left: 150px;
+    padding-top: 5px;
+}
+.docGroup{
+    margin-left: 150px;
+}
+.coc{
+    padding:  5px 1px;
+}
+.lice{
+    margin-bottom: 5px;
+}
+/* Hover States */
+.github:hover{
+    /* color: white; */
+    fill: rgb(0, 0, 0);
+    background-color: rgb(255, 251, 251);
+    border-radius: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.linkedin,.github,.twittor{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .6s;
+    cursor: pointer;
+    /* background-color: white; */
+}
+.linkedin:hover{
+    fill: rgb(3, 171, 238);
+    border-radius: 2px;
+    transform: scale(1.2);
+}
+.twittor:hover{
+    fill: rgb(3, 171, 238);
+    border-radius: 2px;
+    transform: scale(1.2) rotate(-8deg);
+    
+}
+.underline{
+&:hover{
+    text-decoration: underline;
+}
+}
