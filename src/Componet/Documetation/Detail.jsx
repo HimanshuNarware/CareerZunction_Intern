@@ -5,7 +5,6 @@ import './Detail.css'
 import {
     FaGithub,
     FaLinkedin,
-    FaTwitter,
   } from 'react-icons/fa6';
 
 function Detail() {
