@@ -1,3 +1,6 @@
+
+
+
 .Navbar {
     display: flex;
     background-color: black;
@@ -11,6 +14,21 @@
     padding: 32px 15px;
     z-index: 999;
 }
+ /* ::-moz-selection{
+    ::-webkit-user-select:none;
+   -ms-user-select: none;
+   user-select: none;
+   background:#ffd70a;
+   color:black;
+   
+ } */
+::selection{
+::-khtml-user-select:none;
+::-moz-user-select:none;
+::-ms-user-select:none;
+::-o-user-select:none;
+user-select:none;
+ }
 
 .nav-icons {
     line-height: 1.6;
@@ -130,7 +148,9 @@ color: rgb(148, 22, 233) ;
     outline: thick double blueviolet;
 }
 
-
+.link{
+    text-decoration: none;
+}
 /* @mediaQwery */
 @media screen and (max-width:682px) {
     .cart-item {

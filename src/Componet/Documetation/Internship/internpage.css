@@ -179,3 +179,28 @@ font-weight:500;
         top: -10em;
     }
 }
+
+
+
+@media screen and (max-width:683px){
+    .internBox{
+        margin-top: -120px;
+        padding-top: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+}
+@media screen and (min-width:684px){
+    .internBox{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:1225px){
+    .internBox{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
