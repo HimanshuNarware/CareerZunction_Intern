@@ -31,7 +31,9 @@ function Navbar() {
           onClick={toggleDarkMode}>
           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
         </div>
-        <div className="left-sight" style={{textAlign:'center',fontSize:'2em'}}>CareerZuntion</div>
+        <div className="left-sight" style={{textAlign:'center',fontSize:'2em',cursor:'pointer'}} 
+        >
+          CareerZuntion</div>
         <div className="right-sight">
           <div className="cart-item">
             <Link to="/" className='link'>Home</Link>
@@ -43,7 +45,7 @@ function Navbar() {
             <Link to="/docs" className='link'>Documentation</Link>
           </div>
           <div className="cart-item">
-            <Link to="https://github.com" className='link'>GitHub</Link>
+            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'>GitHub</Link>
           </div>
         </div>
       </nav>
@@ -72,7 +74,7 @@ function Navbar() {
           </div>
           <div className="sidebar-options">
             {
-              <Link to="https://github.com/HimanshuNarware" target="_blank">
+              <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" target="_blank">
                 <FaGithub />
               </Link>
             }

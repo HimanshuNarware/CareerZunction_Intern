@@ -155,4 +155,9 @@
   .wrapper-subbx {
     height: 100px;
   }
+}
+@media screen and (min-width: 1740px) {
+  .page_1 {
+    margin-inline: 25vw;
+  }
 }/*# sourceMappingURL=Home.css.map */

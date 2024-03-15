@@ -73,7 +73,7 @@ function Home() {
       {/* </div> */}
             <div className="wrapper-bx-2-0 wrapper-bx-2-2 outline">
               <i className='icon'  style={{color:'purple'}}>
-                <FcGlobe />
+                <GiWorld  />
               </i>
               <div className="wrapper-subbx">
                 <h3>Around the Globle</h3>
@@ -118,7 +118,7 @@ function Home() {
 <img className='img img6' src={img5} alt="is" />
 <img className='img img7' src={img9} alt="is" />
 <img className='img img8' src={img4} alt="is" />
-<img className='img img9' src={img3} alt="is" />
+{/* <img className='img img9' src={img3} alt="is" /> */}
           </div>
 
 
