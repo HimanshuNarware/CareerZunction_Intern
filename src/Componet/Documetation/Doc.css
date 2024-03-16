@@ -63,4 +63,9 @@ border-radius: 0;
    }
 
    /* mediaQwery */
-   
+   @media screen and (max-width:683px) {
+    .document{
+margin-top: -120px;
+    }
+    
+   }

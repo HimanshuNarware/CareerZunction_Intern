@@ -26,17 +26,17 @@ function Footer() {
           <div className="flex docGroup">
             <h4 className="doc">Documentation</h4>
             <div className="doc-pera">
-              <p className="doc-pera doc-perag">What is Open-Source.</p>
-              <p className="doc-pera doc-perag">What is Git and GitHub.</p>
-              <p className="doc-pera doc-perag">
+              <p className="doc-pera doc-perag" onClick={()=>{window.open('https://opensource.com/resources/what-open-source')}}>What is Open-Source.</p>
+              <p className="doc-pera doc-perag" onClick={()=>{window.open('https://opensource.guide/how-to-contribute/')}}>What is Git and GitHub.</p>
+              <p className="doc-pera doc-perag" onClick={()=>{window.open('https://docs.github.com/en/get-started/using-git/about-git')}}>
                 How to start contributing to Open-Source.
               </p>
             </div>
           </div>
           <div className="flex licenseGroup">
             <h3 className="lice ">License </h3>
-            <h5 className="license underline">MIT License</h5>
-            <h5 className="coc underline">Code of Conduct</h5>
+            <h5 className="license underline"  style={{cursor:'pointer'}}>MIT License</h5>
+            <h5 className="coc underline" style={{cursor:'pointer'}}>Code of Conduct</h5>
           </div>
 
           <button size="size" type="defautl" className="button-star">

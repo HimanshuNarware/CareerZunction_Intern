@@ -128,6 +128,9 @@ color: rgb(148, 22, 233) ;
     font-weight: 500;
     justify-content: space-between;
     padding: 32px 15px;
+    &:hover{
+        color:rgb(67, 3, 110) ;
+    }
     /* position:sticky;
     font-size: 2em;
     justify-content: space-between;
@@ -146,12 +149,40 @@ color: rgb(148, 22, 233) ;
     border-radius: 12px;
     padding: 5px 10px;
     outline: thick double blueviolet;
-}
+    &:hover{
+        outline-color: rgb(68, 0, 132);
+    }
+}`
 
 .link{
     text-decoration: none;
 }
 /* @mediaQwery */
+@media screen and (max-width:230px) {
+    .left-sight{
+font-size:1.4em !important ;
+margin-left: 1%;
+/* text-align: start; */
+    }     
+    .nav-icons{
+        display: none;
+    } 
+    
+}
+@media screen and (max-width:320px) {
+    .left-sight{
+font-size:80% ;
+margin-left: 1% !important;
+/* text-align: start; */
+    }     
+    .nav-icons{
+        display: none;
+    } 
+    .sidebar{
+        gap: 0%;
+    font-size: 1em;
+    } 
+}
 @media screen and (max-width:682px) {
     .cart-item {
         display: none;

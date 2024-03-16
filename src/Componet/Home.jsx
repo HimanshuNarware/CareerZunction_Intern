@@ -27,6 +27,7 @@ import {
   FaIndianRupeeSign,
   FaPeopleGroup,
 } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 
 
@@ -41,7 +42,12 @@ function Home() {
            <br/>
             Future.</h2>
           <h4>Let’s help you land your dream career</h4>
-          <Button className='check-now'>Check Now</Button>
+          <Button className='check-now'>
+            <Link to="/intern" className='link1'>
+
+            Check Now
+            </Link>
+            </Button>
         </div>
         <div className="bx-2">
           <img className="home-img img-1" src={code} alt="img" />
@@ -57,7 +63,7 @@ function Home() {
       <div className="page_1">
         <div className="wrapper_p1">
           <div className="wrapper-bx-1 ">
-            <div className="sub_title">Why choose us?</div>
+            <div className="sub_title">About us !</div>
             <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
           </div>
           <div className="wrapper-bx-2 ">

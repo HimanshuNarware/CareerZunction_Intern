@@ -21,6 +21,11 @@
     .pd{
         padding:  5px 8px;
     }
+    .link{
+        text-decoration: none;
+        
+    
+    }
     /* desktop image */
     .desktopImg {
         height: 85vh;
@@ -93,6 +98,8 @@
     
     
     /* mediaQwery */
+
+   
         
     @media screen and (min-width:560px)
     {
