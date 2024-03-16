@@ -13,7 +13,7 @@ import img8 from '../../image/Contribution/8.png';
 import Detail from './Detail';
 function Doc() {
   return (
-    <div style={{ backgroundColor: 'black', overflow: 'hidden' }}>
+    <div className='document' style={{ backgroundColor: 'black', overflow: 'hidden' }}>
       <div class="page_0">
         {/* <img src={background} alt="" className="docImg" /> */}
       </div>

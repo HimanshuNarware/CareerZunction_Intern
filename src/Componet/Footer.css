@@ -90,7 +90,9 @@
         padding: 5px 0px;
     }
 }
-
+.doc-perag{
+cursor: pointer;
+}
 .licenseGroup {
     margin-top: 22px;
     margin-left: 150px;
@@ -107,6 +109,9 @@
 
 .lice {
     margin-bottom: 5px;
+   .underline{
+    cursor:pointer;
+   }
 }
 
 /* Hover States */
