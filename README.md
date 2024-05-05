@@ -34,11 +34,23 @@ CareerZunction aims to bridge the gap between students and internship opportunit
 
 To run CareerZunction locally, follow these steps:
 
-1. Clone the repository: `git clone [repository URL]`
-2. Navigate to the project directory: `cd careerzunction`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm start`
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+1. Clone the repository:
+```bash
+ `git clone [repository URL]`
+```
+3. Navigate to the project directory:
+```bash
+  `cd careerzunction`
+```
+5. Install dependencies:
+```bash
+   `npm install`
+```
+7. Start the development server:
+```bash
+   `npm start`
+```
+9. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Usage
 
