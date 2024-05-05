@@ -73,7 +73,7 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>World Biggest</h3>
-                <p>you get World biggest collection on the internships</p>
+                <p>Get the World's biggest collection on internships</p>
               </div>
             </div>
       {/* </div> */}
@@ -82,10 +82,10 @@ function Home() {
                 <GiWorld  />
               </i>
               <div className="wrapper-subbx">
-                <h3>Around the Globle</h3>
+                <h3>Around the Globe</h3>
                 <p>
-                  Your can find more than 600+ internship, Open-source program
-                  and hackthones
+                  Your can find more than 600+ internships, Open-source programs,
+                  and hackathons
                 </p>
               </div>
             </div>
@@ -106,7 +106,7 @@ function Home() {
               <div className="wrapper-subbx">
                 <h3>Free to use</h3>
                 <p>
-                  This project is free to use and you don have to pay anything
+                  This project is free to use
                 </p>
               </div>
             </div>
