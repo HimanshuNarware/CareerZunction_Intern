@@ -41,7 +41,7 @@ function Home() {
           <h2>Elevate. Your.
            <br/>
             Future.</h2>
-          <h4>Let’s help you land your dream career</h4>
+          <h4>Land your dream career.</h4>
           <Button className='check-now'>
             <Link to="/intern" className='link1'>
 
@@ -63,7 +63,7 @@ function Home() {
       <div className="page_1">
         <div className="wrapper_p1">
           <div className="wrapper-bx-1 ">
-            <div className="sub_title">About us !</div>
+            <div className="sub_title">About us</div>
             <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
           </div>
           <div className="wrapper-bx-2 ">
@@ -72,8 +72,8 @@ function Home() {
                 <GiWorld  />
               </i>
               <div className="wrapper-subbx">
-                <h3>World Biggest</h3>
-                <p>Get the World's biggest collection on internships</p>
+                <h3>World's Biggest</h3>
+                <p>The World's biggest collection of internships</p>
               </div>
             </div>
       {/* </div> */}
@@ -84,7 +84,7 @@ function Home() {
               <div className="wrapper-subbx">
                 <h3>Around the Globe</h3>
                 <p>
-                  Your can find more than 600+ internships, Open-source programs,
+                  You can find more than 600+ internships, Open-source programs,
                   and hackathons
                 </p>
               </div>
@@ -106,7 +106,7 @@ function Home() {
               <div className="wrapper-subbx">
                 <h3>Free to use</h3>
                 <p>
-                  This project is free to use
+                  This project is free to use.
                 </p>
               </div>
             </div>
