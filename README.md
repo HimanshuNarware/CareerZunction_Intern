@@ -61,10 +61,19 @@ Visit the CareerZunction website to explore internship opportunities, create a p
 Contributions to CareerZunction are welcome! To contribute, follow these steps:
 
 1. Fork the repository
-2. Create a new branch: `git checkout -b feature-name`
-3. Make your changes and commit them: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin feature-name`
-5. Submit a pull request
+2. Create a new branch:
+```bash
+ `git checkout -b feature-name`
+```
+4. Make your changes and commit them:
+```bash
+`git commit -m 'Add some feature'`
+```
+6. Push to the branch:
+   ```bash
+   `git push origin feature-name`
+   ```
+8. Submit a pull request
 
 Please ensure your contributions align with the project's goals and adhere to coding conventions.
 
