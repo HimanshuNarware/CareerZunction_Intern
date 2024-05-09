@@ -33,7 +33,7 @@ function Navbar() {
         </div>
         <div className="left-sight" style={{textAlign:'center',fontSize:'2em',cursor:'pointer'}} 
         >
-          CareerZuntion</div>
+          CareerZunction</div>
         <div className="right-sight">
           <div className="cart-item">
             <Link to="/" className='link'>Home</Link>

@@ -12,7 +12,7 @@ function Footer() {
       <div className="page_2 footer">
         <div className="footer-wrapper">
           <div className="flex">
-            <h3 className="footer-title">CareerZuction</h3>
+            <h3 className="footer-title">CareerZunction</h3>
             <p className="footer-pera">
               CareerZunction is a dynamic platform connecting eager students
               with valuable internship opportunities.
