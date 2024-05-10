@@ -89,7 +89,7 @@
 .page_1 {
   display: flex;
   color: white;
-  margin-block: 70px;
+  margin: 70px;
 }
 .page_1 .wrapper_p1 {
   display: flex;
@@ -102,20 +102,26 @@
   align-items: center;
   padding: 8px 6px;
   justify-content: space-evenly;
+  width: 100%;
 }
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .wrapper-subbx {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1;
 }
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .icon {
-  font-size: 3em;
+  font-size: 4em;
   line-height: 1;
+  width: 100px;
+  text-align: center;
+  margin-right: 20px;
 }
+
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .wrapper-subbx p {
   color: rgba(133, 133, 137, 0.982);
   font-size: 1.1em;
-  margin: 2px 7px;
+  margin: 0;
   font-weight: 400;
 }
 
