@@ -11,6 +11,7 @@ import img6 from '../../image/Contribution/6.png';
 import img7 from '../../image/Contribution/7.png';
 import img8 from '../../image/Contribution/8.png';
 import Detail from './Detail';
+
 function Doc() {
   return (
     <div className='document' style={{ backgroundColor: 'black', overflow: 'hidden' }}>

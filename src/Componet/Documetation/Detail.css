@@ -1,12 +1,12 @@
 .ProjectD {
-    margin: 50px 100px;
-    padding: 8px 18px;
+  
     display: flex;
     justify-content: space-evenly;
-    border: 2px dashed rgba(128, 128, 128, 0.744);
+     border: 2px dashed rgba(128, 128, 128, 0.744);
     border-left: none;
-    border-right: none;
-}
+    border-right: none; 
+    margin: 10vh;
+  }
 
 .fimg {
     width: 200px;
@@ -19,7 +19,7 @@
 .section_founder,
 .section_maintainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 5px 9px;
     border: 2px solid rgb(40, 39, 41);
     margin-block: 25px;
@@ -42,3 +42,5 @@ gap: 7%;
     margin-inline: auto;
     background-color: rgba(128, 128, 128, 0.132);
 }
+
+
