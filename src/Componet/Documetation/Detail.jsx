@@ -10,7 +10,7 @@ import Slider from './Slider';
 
 function Detail() {
     const [width, setWidth] = useState(window.innerWidth);
-    const breakpoint = 700;
+    const breakpoint = 550;
 
     useEffect(() => {
         const handleResize = () => {
@@ -29,7 +29,7 @@ function Detail() {
           <div className='ProjectD'>
               
               {width >= breakpoint ?
-                  (<div className='' style={{width: "100%", display: "flex", justifyContent: "space-evenly", }}>
+                  (<div className='inner-container' style={{width: "100%", display: "flex", justifyContent: "space-evenly", padding:"6vh 0"}}>
                   
                       <div className="section_founder">
                           <img className="fimg" src={Founder_img} alt="img" />
