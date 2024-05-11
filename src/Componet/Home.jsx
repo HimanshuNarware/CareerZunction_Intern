@@ -33,7 +33,7 @@ import { Link } from 'react-router-dom';
 
 
 function Home() {
-  
+
   return (
     <div>
       <video className="bg-video" src={homeVideo} autoPlay muted loop></video>
