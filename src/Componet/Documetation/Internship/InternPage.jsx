@@ -20,7 +20,7 @@ let InternPage = () => {
 
 
   // }
-  // for(let btn in button){
+  // for(let btn in button){A
     // btn.parentElement.classList.toggle('MoreDetails');
   // }
   
@@ -61,7 +61,7 @@ let InternPage = () => {
               <button className='ApplyButton'>Apply Now ✅</button>
             </div> */}
 
-            <button className='viewMore' id='btn' style={{cursor:'pointer'}} ref={ref} onClick={()=>{window.open(item.link)}} >Apply Now</button>
+            <button className='applyNow' id='btn' style={{cursor:'pointer'}} ref={ref} onClick={()=>{window.open(item.link)}} >Apply Now</button>
 
             </div>
          
