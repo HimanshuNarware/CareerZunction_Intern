@@ -26,7 +26,7 @@
     padding: 5px 9px;
     border: 2px solid rgb(40, 39, 41);
     margin-block: 25px;
-    
+    gap: 2vh;
 
     /* outline: double thin purple; */
     p {
