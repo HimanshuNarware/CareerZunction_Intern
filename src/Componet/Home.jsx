@@ -20,6 +20,7 @@ import img2 from '../image/desktopImg/img 7.jpg'
 import img7 from '../image/desktopImg/img2.jpg'
 import img8 from '../image/desktopImg/img 9.jpg'
 import img9 from '../image/desktopImg/img 8.jpg'
+import homeVideo from '../image/background/home_video.mp4'; 
 import { Button } from 'antd';
 import { GiWorld } from 'react-icons/gi';
 import { FcGlobe } from 'react-icons/fc';
@@ -32,11 +33,11 @@ import { Link } from 'react-router-dom';
 
 
 function Home() {
-
-
+  
   return (
     <div>
-      <div className="page_0">
+      <video className="bg-video" src={homeVideo} autoPlay muted loop></video>
+      <div className="page_0"> 
         <div className="bx-1">
           <h2>Elevate. Your.
            <br/>
@@ -47,8 +48,9 @@ function Home() {
 
             Check Now
             </Link>
-            </Button>
+            </Button>     
         </div>
+        
         <div className="bx-2">
           <img className="home-img img-1" src={code} alt="img" />
           <img className="home-img img-2" src={code1} alt="img" />
