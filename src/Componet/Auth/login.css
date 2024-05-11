@@ -1,0 +1,95 @@
+/* login.css - Dark Theme */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; 
+
+}
+
+.login-form {
+    width: 360px;
+    padding: 40px;
+    background-color: #222; /* Dark grey background for the form */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    color: #ccc; /* Light grey for text */
+    margin-bottom: 10px;
+    display: block;
+    font-size: 16px;
+}
+
+.remember_me{
+    display: flex;
+}
+.remember_me label {
+    margin: 10px 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #333; /* Slightly lighter border for visibility */
+    background-color: #111; /* Slightly darker field backgrounds for contrast */
+    color: #fff; /* White text */
+    border-radius: 5px;
+}
+
+.password-input-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #ccc;
+}
+
+input[type="checkbox"] {
+    accent-color: #5c57a3; /* Custom purple color for the checkbox */
+}
+
+.login-button {
+    width: 100%;
+    background-color: #5c57a3; /* Purple theme button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Slightly larger font size for better readability */
+    transition: background-color 0.2s;
+}
+
+.login-button:hover,
+.login-button:focus {
+    background-color: #483d8b; /* Darker purple on hover/focus */
+}
+
+@media (max-width: 600px) {
+    .login-form {
+        width: 90%;
+        padding: 30px;
+    }
+}

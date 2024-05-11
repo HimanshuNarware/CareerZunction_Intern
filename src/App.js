@@ -5,6 +5,7 @@ import Doc from "./Componet/Documetation/Doc";
 import Error from "./Componet/Error";
 import InternPage from "./Componet/Documetation/Internship/InternPage";
 import Footer from "./Componet/Footer";
+import Login from "./Componet/Auth/Login";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
+        <Route path="/login" element={<Login />} />
         <Route path="/docs" element={<Doc/>}/>
         <Route path="/intern" element={<InternPage/>}/>
         <Route path="*" element={<Error/>}/>

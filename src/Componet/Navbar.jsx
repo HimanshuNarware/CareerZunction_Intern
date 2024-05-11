@@ -47,6 +47,9 @@ function Navbar() {
           <div className="cart-item">
             <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'>GitHub</Link>
           </div>
+          <div className="cart-item">
+            <Link to="/login" className='link'>Login</Link>
+          </div>
         </div>
       </nav>
   
