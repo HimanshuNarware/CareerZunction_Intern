@@ -41,7 +41,7 @@ function Home() {
           <h2>Elevate. Your.
            <br/>
             Future.</h2>
-          <h4>Land your dream career.</h4>
+          <h4 id="subheading">Land your dream career.</h4>
           <Button className='check-now'>
             <Link to="/intern" className='link1'>
 
