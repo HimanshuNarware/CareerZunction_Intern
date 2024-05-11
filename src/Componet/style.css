@@ -22,13 +22,36 @@
    color:black;
    
  } */
-::selection{
+/* ::selection{
 ::-khtml-user-select:none;
 ::-moz-user-select:none;
 ::-ms-user-select:none;
 ::-o-user-select:none;
 user-select:none;
- }
+ } */
+ ::selection {
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    -o-user-select: none; /* Opera */
+    user-select: none; /* Non-prefixed version */
+}
+.login-btn{
+    top: 30em;
+    left: 53%;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 16px 32px;
+    color:rgb(148, 22, 233);
+    border: 2px solid rgb(148, 22, 233);
+}
+.login-btn:hover{
+    color:white;
+    background-color: rgb(148, 22, 233) ;
+    cursor: pointer;
+}
 
 .nav-icons {
     line-height: 1.6;
@@ -85,6 +108,7 @@ user-select:none;
     padding: 5px 12px;
 
 }
+
 .cart-item{
     /* text-decoration:; */
     
@@ -152,7 +176,7 @@ color: rgb(148, 22, 233) ;
     &:hover{
         outline-color: rgb(68, 0, 132);
     }
-}`
+}
 
 .link{
     text-decoration: none;
