@@ -72,6 +72,12 @@ object-fit:contain;
     font-weight: bold;
     border-radius: 7px;
     background-color: transparent;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
+}
+.viewMore:hover{
+    color:white;
+    border: 2px solid white;
+    background-color: rgb(32, 225, 32);
 }
 .BoxContent{
     /* position: relative; */
