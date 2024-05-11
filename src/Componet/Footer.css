@@ -27,8 +27,7 @@
         padding: 6px 10px;
         font-size: 1.2em;
         font-weight: 400;
-        color: rgba(128, 128, 128, 0.475);
-
+        color: rgba(232, 232, 232, 0.75);
     }
 
     .doc {
@@ -46,9 +45,7 @@
         /* padding-top: 10px; */
         /* // font-size: 1.2em; */
         font-weight: 400;
-        color: rgba(128, 128, 128, 0.489);
-
-
+        color: rgba(232, 232, 232, 0.75);
     }
 
     .doc-perag {
@@ -90,9 +87,11 @@
         padding: 5px 0px;
     }
 }
-.doc-perag{
-cursor: pointer;
+
+.doc-perag {
+    cursor: pointer;
 }
+
 .licenseGroup {
     margin-top: 22px;
     margin-left: 150px;
@@ -109,9 +108,10 @@ cursor: pointer;
 
 .lice {
     margin-bottom: 5px;
-   .underline{
-    cursor:pointer;
-   }
+
+    .underline {
+        cursor: pointer;
+    }
 }
 
 /* Hover States */
