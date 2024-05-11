@@ -1,4 +1,3 @@
-/* login.css - Dark Theme */
 body, html {
     height: 100%;
     margin: 0;
@@ -18,8 +17,8 @@ body, html {
 .login-form {
     width: 360px;
     padding: 40px;
-    background-color: #222; /* Dark grey background for the form */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
+    background-color: #222; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
 }
 
@@ -28,7 +27,7 @@ body, html {
 }
 
 .form-group label {
-    color: #ccc; /* Light grey for text */
+    color: #ccc; 
     margin-bottom: 10px;
     display: block;
     font-size: 16px;
@@ -45,9 +44,9 @@ input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 12px 10px;
-    border: 1px solid #333; /* Slightly lighter border for visibility */
-    background-color: #111; /* Slightly darker field backgrounds for contrast */
-    color: #fff; /* White text */
+    border: 1px solid #333; 
+    background-color: #111; 
+    color: #fff; 
     border-radius: 5px;
 }
 
@@ -67,24 +66,24 @@ input[type="password"] {
 }
 
 input[type="checkbox"] {
-    accent-color: #5c57a3; /* Custom purple color for the checkbox */
+    accent-color: #5c57a3; 
 }
 
 .login-button {
     width: 100%;
-    background-color: #5c57a3; /* Purple theme button */
+    background-color: #5c57a3; 
     color: white;
     padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px; /* Slightly larger font size for better readability */
+    font-size: 18px; 
     transition: background-color 0.2s;
 }
 
 .login-button:hover,
 .login-button:focus {
-    background-color: #483d8b; /* Darker purple on hover/focus */
+    background-color: #483d8b;
 }
 
 @media (max-width: 600px) {
