@@ -11,17 +11,22 @@ body {
 
 .internBox{
     /* margin-top: 150px; */
-    display: grid;
+    /* display: grid;
       grid-template-columns: repeat(3,1fr);
     color: white;
     column-gap: 10%;
     row-gap: 20px;
     /* justify-content:space-around; */
-    margin-inline: 10%;
-    justify-content: space-evenly;
+    /* margin-inline: 10%;
+    justify-content: space-evenly; */ 
 
     /* background-color: black; */
-    
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+    padding-left: 37px;
+    margin: 0 auto; 
+    max-width: 1200px; 
 }
 .BoxContent{  
     
