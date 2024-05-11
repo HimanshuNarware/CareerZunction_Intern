@@ -152,7 +152,7 @@ color: rgb(148, 22, 233) ;
     &:hover{
         outline-color: rgb(68, 0, 132);
     }
-}`
+}
 
 .link{
     text-decoration: none;

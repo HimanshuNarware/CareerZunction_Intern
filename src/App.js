@@ -6,18 +6,17 @@ import Error from "./Componet/Error";
 import InternPage from "./Componet/Documetation/Internship/InternPage";
 import Footer from "./Componet/Footer";
 
-
 function App() {
-  return(
- <div>
-      <Navbar/>
+  return (
+    <div>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/docs" element={<Doc/>}/>
-        <Route path="/intern" element={<InternPage/>}/>
-        <Route path="*" element={<Error/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/docs" element={<Doc />} />
+        <Route path="/intern" element={<InternPage />} />
+        <Route path="*" element={<Error />} />
       </Routes>
-      <Footer/> 
+      <Footer />
     </div>
   );
 }

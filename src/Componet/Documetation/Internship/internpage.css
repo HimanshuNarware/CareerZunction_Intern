@@ -24,7 +24,7 @@ body {
     
 }
 .BoxContent{  
-    
+    transition: transform 0.3s ease;
     color: rgba(255, 255, 255, 0.795);
     text-align: center;
     width: 330px;
@@ -38,10 +38,17 @@ body {
     margin-block: 10px;
     background:linear-gradient(to bottom,black,rgba(153, 0, 255, 0.279));
     border-radius: 13px;
+    border: solid;
     /* border: 1px dotted gray; */
     /* box-shadow:  2px 2px 28px rgba(219, 205, 205, 0.196),-2px -2px 60px rgb(15, 15, 15); */
     box-shadow:  -1px 3px 8px rgba(216, 211, 211, 0.082);
 }
+.BoxContent:hover {
+    background-color: rgb(44, 140, 218); /* Change to any color you prefer */
+    transform: translateZ(10px);
+}
+
+
 
 .ApiImg{
     border-radius: 5px;
@@ -72,10 +79,9 @@ object-fit:contain;
     font-weight: bold;
     border-radius: 7px;
     background-color: transparent;
+    
 }
-.BoxContent{
-    /* position: relative; */
-}
+
 .MoreDetails{
  position: absolute;
     border: 1px solid white;
@@ -164,17 +170,24 @@ left: -34.7em;
 font-weight:500;
 
     }
-    .ApplyButton{
-        position: absolute;
-        top: 30em;
-        left: 53%;
-        font-weight: bold;
-        border-radius: 8px;
-        background-color: transparent;
-        padding: 16px 32px;
-        color: #18B715;
-        border: 2px solid #18B715;
-    }
+   #btn{
+    position: absolute;
+    top: 30em;
+    left: 53%;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 16px 32px;
+    /* color: #18B715; */
+    border: 2px solid #18B715;
+    transition: transform 0.3s ease; /* Ensures smooth transition */
+}
+
+#btn:hover {
+    transform: translateZ(10px);
+}
+
+
     .viewMore{
         position: relative;
         top: -10em;
