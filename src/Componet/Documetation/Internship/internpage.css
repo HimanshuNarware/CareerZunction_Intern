@@ -44,17 +44,12 @@ body {
 }
 
 
-
 .BoxContent:hover{
-    background:linear-gradient(to bottom,black,rgba(153, 0, 255, 0.279));
+
     box-shadow:  2px 2px 28px rgba(219, 205, 205, 0.196),-2px -2px 60px rgb(15, 15, 15);
     transition: 0.5s;
-    transform: scale(1.1);
-    transition: 0.5s;
-    border-radius: 13px;
-    border: 1px dotted gray;
-    box-shadow:  2px 2px 28px rgba(219, 205, 205, 0.196),-2px -2px 60px rgb(15, 15, 15);
-    box-shadow:  -1px 3px 8px rgba(216, 211, 211, 0.082);
+
+
 }
 
 
