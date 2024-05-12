@@ -2060,6 +2060,18 @@
     "description":" Develop for Good hopes to create a world where students, nonprofits, and corporations are dedicated to furthering technical education, advancing digital equity, and helping one another unlock their fullest potential.",
     "mode":"Online"
 
+  },
+  {
+    "internship_name":"C4GT ",
+    "company_name": "C4GT",
+    "internship_type":"Opensource ",
+    "duration":" April",
+    "link":"https://www.codeforgovtech.in/",
+    "image":"https://www.codeforgovtech.in/wp-content/uploads/2024/01/logo.webp",
+    "award":"Stipend",
+    "description":"C4GT is a one-of-its-kind initiative that aims to build a community of communities around Tech for Good products. Through various efforts, it aims to encourage ongoing contributions and strengthen collaboration contributors ",
+    "mode":"Online"
+
   }
 
   
