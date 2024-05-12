@@ -96,18 +96,21 @@ user-select:none;
 color:rgb(211, 211, 211);
 transition: 0.5s;
 text-shadow: 1px 0 0  white;
-}
 
+}
+span .link{
+    background: rgb(148, 22, 233);
+    padding: 6px 15px;
+    border-radius: 20px;
+}
 .link:hover{
     text-decoration: none;
-    color: rgb(148, 22, 233);  
+    color: white;
     width: 100vh;
     height: 100vh;
-    border-bottom: 2px solid  rgb(148, 22, 233);;  
-    border-radius: 15px;
-    top: 0;
-    left: 0;
-   padding: 10px;
+  background:   rgb(148, 22, 233);
+   padding: 6px 15px;
+   border-radius: 20px;
     text-shadow: 0 0 0 white;
 }
 
