@@ -1,6 +1,12 @@
 /** @format */
 
-import React, { useState } from 'react';
+import { Button } from 'antd';
+import {
+  FaIndianRupeeSign,
+  FaPeopleGroup,
+} from 'react-icons/fa6';
+import { GiWorld } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 import '../Style/Home.css';
 import '../Style/util.css';
 import code from '../image/code.jpg';
@@ -11,23 +17,14 @@ import code5 from '../image/code5.jpg';
 import code6 from '../image/code6.jpg';
 import code7 from '../image/code7.jpg';
 import code8 from '../image/code8.jpg';
-import img1 from '../image/desktopImg/code.jpg'
-import img6 from '../image/desktopImg/img 3.jpg'
-import img5 from '../image/desktopImg/img 4.jpg'
-import img4 from '../image/desktopImg/img 5.jpg'
-import img3 from '../image/desktopImg/img 6.jpg'
-import img2 from '../image/desktopImg/img 7.jpg'
-import img7 from '../image/desktopImg/img2.jpg'
-import img8 from '../image/desktopImg/img 9.jpg'
-import img9 from '../image/desktopImg/img 8.jpg'
-import { Button } from 'antd';
-import { GiWorld } from 'react-icons/gi';
-import { FcGlobe } from 'react-icons/fc';
-import {
-  FaIndianRupeeSign,
-  FaPeopleGroup,
-} from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
+import img1 from '../image/desktopImg/code.jpg';
+import img6 from '../image/desktopImg/img 3.jpg';
+import img5 from '../image/desktopImg/img 4.jpg';
+import img4 from '../image/desktopImg/img 5.jpg';
+import img2 from '../image/desktopImg/img 7.jpg';
+import img9 from '../image/desktopImg/img 8.jpg';
+import img8 from '../image/desktopImg/img 9.jpg';
+import img7 from '../image/desktopImg/img2.jpg';
 
 
 
@@ -132,7 +129,7 @@ function Home() {
       {/* <div className="page_2 footer">
         <div className="footer-wrapper">
           <div className="flex">
-          <h3 className="footer-title">CareerZuction</h3>
+          <h3 className="footer-title">CareerZunction</h3>
           <p className="footer-pera">
           CareerZunction is a dynamic platform connecting eager students with valuable internship opportunities.
           </p>
