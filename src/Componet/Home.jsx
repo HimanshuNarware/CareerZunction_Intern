@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import '../Style/Home.css';
 import '../Style/util.css';
 import code from '../image/code.jpg';
@@ -15,14 +15,14 @@ import img1 from '../image/desktopImg/code.jpg'
 import img6 from '../image/desktopImg/img 3.jpg'
 import img5 from '../image/desktopImg/img 4.jpg'
 import img4 from '../image/desktopImg/img 5.jpg'
-import img3 from '../image/desktopImg/img 6.jpg'
+// import img3 from '../image/desktopImg/img 6.jpg'
 import img2 from '../image/desktopImg/img 7.jpg'
 import img7 from '../image/desktopImg/img2.jpg'
 import img8 from '../image/desktopImg/img 9.jpg'
 import img9 from '../image/desktopImg/img 8.jpg'
 import { Button } from 'antd';
 import { GiWorld } from 'react-icons/gi';
-import { FcGlobe } from 'react-icons/fc';
+// import { FcGlobe } from 'react-icons/fc';
 import {
   FaIndianRupeeSign,
   FaPeopleGroup,

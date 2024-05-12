@@ -25,7 +25,7 @@ function Navbar() {
         <div className="left-sight" style={{ textAlign: 'center', fontSize: '2em', cursor: 'pointer' }}>
           CareerZunction
         </div>
-        <div className="right-sight">
+        <div className={`right-sight ${slidebarClick ? 'hidden' : ''}`}>
           {/* Existing items */}
           <div className="cart-item">
             <Link to="/" className='link'> <FaHome />Home</Link>
@@ -37,7 +37,7 @@ function Navbar() {
             <Link to="/docs" className='link'><BsFiletypeDoc />Documentation</Link>
           </div>
           <div className="cart-item">
-            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'><FaGithub />GitHub</Link>
+            <a href="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'><FaGithub />GitHub</a>
           </div>
           {/* New items */}
           <div className="cart-item">
@@ -58,46 +58,7 @@ function Navbar() {
         </div>
       </nav>
   
-      {/* Sidebar */}
-      <div className="sidebar">
-        {/* Existing sidebar options */}
-        <div className="sidebar-options">
-          <Link to="/">
-            <FaHome />
-          </Link>
-        </div>
-        <div className="sidebar-options">
-          <Link to="/intern">
-            <FaLaptop />
-          </Link>
-        </div>
-        <div className="sidebar-options">
-          <Link to="/docs">
-            <BsFiletypeDoc />
-          </Link>
-        </div>
-        <div className="sidebar-options">
-          <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" target="_blank">
-            <FaGithub />
-          </Link>
-        </div>
-        {/* New sidebar options */}
-        <div className="sidebar-options">
-          <Link to="/community">
-            <GiConversation />
-          </Link>
-        </div>
-        <div className="sidebar-options">
-          <Link to="/help">
-            <FaQuestionCircle />
-          </Link>
-        </div>
-        <div className="sidebar-options">
-          <Link to="/search">
-            <AiOutlineSearch />
-          </Link>
-        </div>
-      </div>
+   
     </>
   );
 }

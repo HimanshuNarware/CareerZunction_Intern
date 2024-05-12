@@ -36,17 +36,28 @@ body {
     gap: 10px;
     overflow-y: hidden;
     margin-block: 10px;
-    background:linear-gradient(to bottom,black,rgba(153, 0, 255, 0.279));
+    background:whitesmoke;
     border-radius: 13px;
     border: solid;
     /* border: 1px dotted gray; */
-    /* box-shadow:  2px 2px 28px rgba(219, 205, 205, 0.196),-2px -2px 60px rgb(15, 15, 15); */
-    box-shadow:  -1px 3px 8px rgba(216, 211, 211, 0.082);
+    box-shadow:  2px 2px 28px rgba(219, 205, 205, 0.196),-2px -2px 60px rgb(15, 15, 15);
+    transition: box-shadow 0.3s ease; /* Smooth transition */
 }
+.BoxContent {
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+    color: black; /* Default text color */
+    box-shadow: 0 12px 20px whitesmoke;
+}
+
 .BoxContent:hover {
-    background-color: rgb(44, 140, 218); /* Change to any color you prefer */
-    transform: translateZ(10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.25);
+    background-color: #3498db; /* Background color on hover */
+    color:  white; /* Text color on hover */
 }
+
+
+
 
 
 
@@ -109,7 +120,7 @@ object-fit:contain;
    left: 14%;
     font-weight: bold;
     font-size:  3em;
-    color: #C6BDD2;
+    color: black;
 }
 .company_name{
     position: relative;
@@ -117,7 +128,7 @@ object-fit:contain;
     left: -11.7em;
     font-size: 3em;
     font-weight: bold;
-    color: #403544;
+    color: black;
 }
 .desc{
     position: relative;
@@ -127,13 +138,13 @@ object-fit:contain;
     left: 19.2%;
     text-align: start;
     font-size: 1.3em;
-    color: #8C8888;
+    color: black;
     /* text-transform:; */
     
 }
 .internship_type{
 font-size: 1em;
-color: #817F7F;
+color: black;
 position: relative;
 top: -7em;
 left: -34em;
@@ -141,7 +152,7 @@ font-weight:500;
 }
 .Stipend{
     font-size: 1em;
-    color: #817F7F;
+    color: black;
     position: relative;
 left: -11em;
 top: -6em;
@@ -154,7 +165,7 @@ font-weight:500;
     }
     .duration{
         font-size: 1em;
-color: #817F7F;
+color: black;
 position: relative;
 top: 2.5em;
 left: -12em;
@@ -164,7 +175,7 @@ font-weight:500;
     .mode{
 position: relative;
 position: relative;
-color: #817F7F;
+color: black;
 top: 4em;
 left: -34.7em;
 font-weight:500;
