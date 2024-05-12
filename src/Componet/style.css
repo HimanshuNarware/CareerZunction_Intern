@@ -98,11 +98,7 @@ transition: 0.5s;
 text-shadow: 1px 0 0  white;
 
 }
-span .link{
-    background: rgb(148, 22, 233);
-    padding: 6px 15px;
-    border-radius: 20px;
-}
+
 .link:hover{
     text-decoration: none;
     color: white;

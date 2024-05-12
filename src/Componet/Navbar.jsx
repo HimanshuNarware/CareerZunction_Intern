@@ -36,9 +36,7 @@ function Navbar() {
           CareerZunction</div>
         <div className="right-sight">
           <div className="cart-item">
-            <span>
             <Link to="/" className='link'>Home</Link>
-            </span>
           </div>
           <div className="cart-item">
             <Link to="/intern" className='link'> Internships</Link>
