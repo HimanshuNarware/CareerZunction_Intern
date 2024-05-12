@@ -1,16 +1,18 @@
 /** @format */
 
-import React from "react";
-import "./Doc.css";
-import img1 from "../../image/Contribution/1.png";
-import img2 from "../../image/Contribution/2.png";
-import img3 from "../../image/Contribution/3.png";
-import img4 from "../../image/Contribution/45.png";
-import img5 from "../../image/Contribution/5.png";
-import img6 from "../../image/Contribution/6.png";
-import img7 from "../../image/Contribution/7.png";
-import img8 from "../../image/Contribution/8.png";
-import Detail from "./Detail";
+
+import React from 'react';
+import './Doc.css';
+import img1 from '../../image/Contribution/1.png';
+import img2 from '../../image/Contribution/2.png';
+import img3 from '../../image/Contribution/3.png';
+import img4 from '../../image/Contribution/45.png';
+import img5 from '../../image/Contribution/5.png';
+import img6 from '../../image/Contribution/6.png';
+import img7 from '../../image/Contribution/7.png';
+import img8 from '../../image/Contribution/8.png';
+import Detail from './Detail';
+
 function Doc() {
   return (
     <div
