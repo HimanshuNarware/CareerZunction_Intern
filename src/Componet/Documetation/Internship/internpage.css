@@ -36,7 +36,7 @@ body {
     gap: 10px;
     overflow-y: hidden;
     margin-block: 10px;
-    background:whitesmoke;
+    background:linear-gradient(to bottom,black,rgba(153, 0, 255, 0.279));;
     border-radius: 13px;
     border: solid;
     /* border: 1px dotted gray; */
@@ -45,14 +45,14 @@ body {
 }
 .BoxContent {
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
-    color: black; /* Default text color */
+    color: whitesmoke; /* Default text color */
     box-shadow: 0 12px 20px whitesmoke;
 }
 
 .BoxContent:hover {
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
     transform: scale(1.25);
-    background-color: #3498db; /* Background color on hover */
+    background-color: #6f19b2; /* Background color on hover */
     color:  white; /* Text color on hover */
 }
 
