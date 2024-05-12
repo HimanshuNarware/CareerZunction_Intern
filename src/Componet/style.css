@@ -98,15 +98,21 @@ transition: 0.5s;
 text-shadow: 1px 0 0  white;
 
 }
+.link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(148, 22, 233);
+    display: block;
+    margin:auto;
+    position: relative;
+}
 
-.link:hover{
-    text-decoration: none;
+.link:hover::after{
     color: white;
-    width: 100vh;
-    height: 100vh;
-  background:   rgb(148, 22, 233);
-   padding: 6px 15px;
-   border-radius: 20px;
+    width: 100%;
+margin-top: -8px;
+    transition: width 0.3s linear;
     text-shadow: 0 0 0 white;
 }
 
