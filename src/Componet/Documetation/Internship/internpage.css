@@ -82,12 +82,13 @@ object-fit:contain;
     font-weight: bold;
     border-radius: 7px;
     background-color: transparent;
-    transition: color 0.3, background-color 0.3s, border 0.3s;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
+
 .viewMore:hover{
     color: white;
     border: 2px solid white;
-    background-color: #1bc51bb8;
+    background-color: rgba(32, 225, 32, 0.596);
 }
 
 .viewMore:hover{
