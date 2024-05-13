@@ -43,6 +43,16 @@ body {
     box-shadow:  -1px 3px 8px rgba(216, 211, 211, 0.082);
 }
 
+
+.BoxContent:hover{
+
+    box-shadow:  1px 1px 10px rgba(219, 205, 205, 0.196),-2px -2px 40px rgb(15, 15, 15);
+    transition: 0.5s;
+
+
+}
+
+
 .ApiImg{
     border-radius: 5px;
     margin-block: 10px;
@@ -74,11 +84,19 @@ object-fit:contain;
     background-color: transparent;
     transition: color 0.3s, background-color 0.3s, border 0.3s;
 }
+
 .viewMore:hover{
-    color:white;
+    color: white;
     border: 2px solid white;
-    background-color: rgb(32, 225, 32);
+    background-color: rgba(32, 225, 32, 0.596);
 }
+
+.viewMore:hover{
+    background-color: rgb(32, 225, 32);
+    color: black;
+    transition: 0.5s;
+}
+
 .BoxContent{
     /* position: relative; */
 }
