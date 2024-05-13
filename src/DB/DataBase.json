@@ -2048,6 +2048,30 @@
     "description":" This initiative by HakinCodes provides you the best platform to improve your skills and abilities by contributing to vast variety of OPEN SOURCE Projects.",
     "mode":"Online"
 
+  },
+  {
+    "internship_name":"Develop for good ",
+    "company_name": "Develop for good",
+    "internship_type":"Opensource ",
+    "duration":" April",
+    "link":"https://www.developforgood.org/",
+    "image":"https://assets-global.website-files.com/62d7c8cb6f11a35f47072653/650a327aee4574b4afe11724_Develop%20for%20Good%20Logo.png",
+    "award":"Swags",
+    "description":" Develop for Good hopes to create a world where students, nonprofits, and corporations are dedicated to furthering technical education, advancing digital equity, and helping one another unlock their fullest potential.",
+    "mode":"Online"
+
+  },
+  {
+    "internship_name":"C4GT ",
+    "company_name": "C4GT",
+    "internship_type":"Opensource ",
+    "duration":" April",
+    "link":"https://www.codeforgovtech.in/",
+    "image":"https://www.codeforgovtech.in/wp-content/uploads/2024/01/logo.webp",
+    "award":"Stipend",
+    "description":"C4GT is a one-of-its-kind initiative that aims to build a community of communities around Tech for Good products. Through various efforts, it aims to encourage ongoing contributions and strengthen collaboration contributors ",
+    "mode":"Online"
+
   }
 
   

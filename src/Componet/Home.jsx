@@ -114,6 +114,7 @@ function Home() {
                 <p>This project is open source and you can contribute to it.</p>
               </div>
             </div>
+
             <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
               <i className="icon" style={{ color: "purple" }}>
                 <FaIndianRupeeSign />

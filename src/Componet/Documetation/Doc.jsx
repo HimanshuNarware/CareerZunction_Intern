@@ -14,6 +14,7 @@ import Detail from "./Detail";
 
 import { useSelector } from "react-redux";
 
+
 function Doc() {
   const theme = useSelector((state) => state.theme.theme);
 

@@ -27,9 +27,15 @@ function Footer() {
               with valuable internship opportunities.
             </p>
             <div className="footer-socail-icon">
+              <a href="https://github.com/HimanshuNarware" target="_blank">
               <FaGithub className="github" />
+              </a>
+              <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
               <FaLinkedin className="linkedin" />
+              </a>
+              <a href="https://twitter.com/N_Himanshu_" target="_blank">
               <FaTwitter className="twittor" />
+              </a>
             </div>
           </div>
           <div className="flex docGroup">
@@ -39,6 +45,7 @@ function Footer() {
             <p className="doc-pera doc-perag" onClick={() => { window.open('https://opensource.com/resources/what-open-source') }}>What is Open-Source.</p>
             <p className="doc-pera doc-perag" onClick={() => { window.open('https://opensource.guide/how-to-contribute/') }}>What is Git and GitHub.</p>
             <p className="doc-pera doc-perag" onClick={() => { window.open('https://docs.github.com/en/get-started/using-git/about-git') }}>
+
                 How to start contributing to Open-Source.
             </p>
             </div>
