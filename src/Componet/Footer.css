@@ -110,7 +110,7 @@ cursor: pointer;
 }
 .licenseGroup {
     /* margin-top: 22px; */
-    margin-left: 150px;
+    margin-left: 190px;
     /* padding-top: 5px; */
 }
 
@@ -273,12 +273,15 @@ cursor: pointer;
     .footer-wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        padding:40px 10px;
+        padding:40px 20px;
     }
 
     .footer-pera {
 
         width: 400px;
+    }
+    .licenseGroup{
+       margin-left: 150px;
     }
 
 }
