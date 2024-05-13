@@ -11,8 +11,9 @@
     /* font-size: 2em; */
     font-weight: 500;
     justify-content: space-between;
-    padding: 32px 15px;
+    padding: 2em 0.93em;
     z-index: 999;
+    width:50;
 }
  /* ::-moz-selection{
     ::-webkit-user-select:none;
@@ -35,6 +36,7 @@ user-select:none;
     /* margin-inline: 2%; */
     position: absolute;
     /* top: 5px; */
+    max-width:100%;
 
 }
 
@@ -46,7 +48,7 @@ user-select:none;
 .right-sight {
 
     display: flex;
-    gap: 20px;
+    gap: 1.25em; /*20px*/
 }
 
 /* Product file styling */
@@ -93,13 +95,33 @@ user-select:none;
     text-decoration: none;
     font-size: 1.2em;
     line-height: 2.6;
-color: rgb(148, 22, 233) ;
+    color: rgb(148, 22, 233) ;
+    position: relative;
+    transition: all 0.4s;
 
 }
 .link:hover{
-    text-decoration: underline;
-    color:  rgba(149, 22, 233, 0.87);
+    /* text-decoration: underline; */
+    color:  rgb(255, 255, 255);
+    
 }
+.link::after{
+    content:'';
+    height:2px;
+     width:100%;
+    background: rgb(255, 255, 255);
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    opacity: 0;
+    transition:all 0.2s;
+    pointer-events: none; 
+}
+.link:hover::after,
+.link:focus::after{
+    opacity: 1;
+}
+
 
 /* /SIDEBAR STYLING */
 /* .sidebar {
