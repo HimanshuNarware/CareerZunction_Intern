@@ -85,20 +85,35 @@ user-select:none;
     padding: 5px 12px;
 
 }
-.cart-item{
+.cart-item  .link{
     /* text-decoration:; */
-    
+  
 }
 .link{
     text-decoration: none;
     font-size: 1.2em;
     line-height: 2.6;
-color: rgb(148, 22, 233) ;
+color:rgb(211, 211, 211);
+transition: 0.5s;
+text-shadow: 1px 0 0  white;
 
 }
-.link:hover{
-    text-decoration: underline;
-    color:  rgba(149, 22, 233, 0.87);
+.link::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(148, 22, 233);
+    display: block;
+    margin:auto;
+    position: relative;
+}
+
+.link:hover::after{
+    color: white;
+    width: 100%;
+margin-top: -8px;
+    transition: width 0.3s linear;
+    text-shadow: 0 0 0 white;
 }
 
 /* /SIDEBAR STYLING */
