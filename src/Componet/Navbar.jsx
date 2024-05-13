@@ -6,20 +6,20 @@ import { GiCrossMark } from 'react-icons/gi';
 import { FaGithub, FaLaptop, FaHome, FaRegSun } from 'react-icons/fa';
 import { BsFiletypeDoc } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-
+import { useDispatch } from 'react-redux';
+import { setTheme } from '../Redux/Slice/ThemeSlice';
 function Navbar() {
-  let [slidebarClick, setSlidebarClick] = useState(false);
+  let [slidebarClick, setSlidebarClick] = useState(true);
+  const dispatch = useDispatch();
 
-  // function slidebarClicked(e){
-  // // slidebarClick=slidebarClick?false:true;
-  // // slidebarClick=slidebarClick?false:true;
-  // // if(slidebarClick==false).?
 
-  // console.log(slidebarClick)
-
-  // }
-
-  const toggleDarkMode = () => setSlidebarClick(!slidebarClick);
+  const toggleDarkMode = () =>{
+    setSlidebarClick(!slidebarClick);
+    dispatch(setTheme(
+      slidebarClick ? 'light' : 'dark'
+    ));
+  
+  };
 
   // </div>
   return (
