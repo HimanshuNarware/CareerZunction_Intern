@@ -1,10 +1,13 @@
 /** @format */
 
-import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaStar } from "react-icons/fa6";
-import "./Footer.css";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { FaGithub, FaLinkedin, FaTwitter, FaStar } from 'react-icons/fa6';
+import './Footer.css';
+import { Link } from 'react-router-dom';
 import { useSelector } from "react-redux";
+
+import img from "../image/footer/footer-qr.jpg";
+
 
 function Footer() {
   const theme = useSelector((state) => state.theme.theme);
@@ -26,17 +29,7 @@ function Footer() {
               CareerZunction is a dynamic platform connecting eager students
               with valuable internship opportunities.
             </p>
-            <div className="footer-socail-icon">
-              <a href="https://github.com/HimanshuNarware" target="_blank">
-              <FaGithub className="github" />
-              </a>
-              <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
-              <FaLinkedin className="linkedin" />
-              </a>
-              <a href="https://twitter.com/N_Himanshu_" target="_blank">
-              <FaTwitter className="twittor" />
-              </a>
-            </div>
+            
           </div>
           <div className="flex docGroup">
             <h4 className="doc">Documentation</h4>
@@ -54,14 +47,27 @@ function Footer() {
             <h3 className="lice ">License </h3>
             <h5 className="license underline" style={{ cursor: 'pointer' }}>MIT License</h5>
             <h5 className="coc underline" style={{ cursor: 'pointer' }}>Code of Conduct</h5>
+            <h3 className='links'>Get in touch</h3>
+            <div className="footer-socail-icon">
+              <a href="https://github.com/HimanshuNarware" target="_blank">
+              <FaGithub className="github" />
+              </a>
+              <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
+              <FaLinkedin className="linkedin" />
+              </a>
+              <a href="https://twitter.com/N_Himanshu_" target="_blank">
+              <FaTwitter className="twittor" />
+              </a>
+            </div>
           </div>
-
+       <div className='flex qrsec'>
+         <img src={img} id='qr'/>
           <button size="size" type="defautl" className="button-star">
             <Link
               to="https://github.com/HimanshuNarware/CareerZunction_Intern"
-              target="_blank"
-            >
-              {" "}
+
+              target='_blank' className='star-us'>
+              {' '}
               <FaStar
                 style={{ margin: "-2px 2px", lineHeight: "2px" }}
                 className="star"
@@ -69,6 +75,7 @@ function Footer() {
               Star us
             </Link>
           </button>
+          </div>
         </div>
       </div>
     </div>
