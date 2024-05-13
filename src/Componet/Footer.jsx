@@ -4,6 +4,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaStar } from 'react-icons/fa6';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import img from "../image/footer/footer-qr.jpg";
 
 function Footer() {
   return (
@@ -46,7 +47,8 @@ function Footer() {
               </a>
             </div>
           </div>
-       <div className='flex'>
+       <div className='flex qrsec'>
+         <img src={img} id='qr'/>
           <button size="size" type="defautl" className="button-star">
             <Link
               to="https://github.com/HimanshuNarware/CareerZunction_Intern"
