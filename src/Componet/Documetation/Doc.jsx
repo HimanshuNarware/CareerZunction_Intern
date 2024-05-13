@@ -11,7 +11,9 @@ import img6 from "../../image/Contribution/6.png";
 import img7 from "../../image/Contribution/7.png";
 import img8 from "../../image/Contribution/8.png";
 import Detail from "./Detail";
+
 import { useSelector } from "react-redux";
+
 function Doc() {
   const theme = useSelector((state) => state.theme.theme);
 
