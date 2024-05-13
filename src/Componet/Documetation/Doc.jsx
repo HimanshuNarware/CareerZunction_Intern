@@ -11,11 +11,19 @@ import img6 from "../../image/Contribution/6.png";
 import img7 from "../../image/Contribution/7.png";
 import img8 from "../../image/Contribution/8.png";
 import Detail from "./Detail";
+import { useSelector } from "react-redux";
 function Doc() {
+  const theme = useSelector((state) => state.theme.theme);
+
   return (
     <div
       className="document"
-      style={{ backgroundColor: "black", overflow: "hidden" }}
+      style={{
+        backgroundColor: theme === "light" ? "white" : "black",
+        color: theme === "light" ? "black" : "white",
+
+        overflow: "hidden",
+      }}
     >
       <div class="page_0">
         {/* <img src={background} alt="" className="docImg" /> */}
@@ -25,12 +33,23 @@ function Doc() {
           GitHub. || Git. || Open-Source. || Contribution.{" "}
         </h1>
       </div>
-      <div className="TitleDoc">Make Your First Contribution !</div>
-      <div className="ContributionImg">
+      <div
+        className="TitleDoc"
+        style={{ color: theme === "light" ? "black" : "white" }}
+      >
+        Make Your First Contribution !
+      </div>
+      <div
+        className="ContributionImg"
+        style={{
+          backgroundColor: theme === "light" ? "white" : "black",
+          // color: theme === "light" ? "black" : "white",
+        }}
+      >
         <div className="bx-1 conImg">
           <p
             style={{
-              color: "white",
+              // color: "white",
               fontSize: "1.2em",
               lineHeight: "-2px",
               margin: "10px",
@@ -46,7 +65,7 @@ function Doc() {
         <div className="bx-1 conImg">
           <p
             style={{
-              color: "white",
+              // color: "white",
               fontSize: "1.2em",
               lineHeight: "-2px",
               margin: "10px",
@@ -63,7 +82,7 @@ function Doc() {
         <div className="bx-1 conImg">
           <p
             style={{
-              color: "white",
+              // color: "white",
               fontSize: "1.2em",
               lineHeight: "-2px",
               margin: "10px",
@@ -76,7 +95,7 @@ function Doc() {
           </p>
           <p
             style={{
-              color: "white",
+              // color: "white",
               fontSize: "1.2em",
               lineHeight: "-2px",
               margin: "10px",
@@ -93,7 +112,7 @@ function Doc() {
         <div className="bx-1 conImg">
           <p
             style={{
-              color: "white",
+              // color: "white",
               fontSize: "1.2em",
               lineHeight: "-2px",
               margin: "10px",
@@ -110,7 +129,7 @@ function Doc() {
         <div className="bx-1 conImg">
           <p
             style={{
-              color: "white",
+              // color: "white",
               fontSize: "1.2em",
               lineHeight: "-2px",
               margin: "10px",
@@ -127,7 +146,7 @@ function Doc() {
         <div className="bx-1 conImg">
           <p
             style={{
-              color: "white",
+              // color: "white",
               fontSize: "1.2em",
               lineHeight: "-2px",
               margin: "10px",
@@ -144,7 +163,7 @@ function Doc() {
         <div className="bx-1 conImg">
           <p
             style={{
-              color: "white",
+              // color: "white",
               fontSize: "1.2em",
               lineHeight: "-2px",
               margin: "10px",
@@ -161,7 +180,7 @@ function Doc() {
         <div className="bx-1 conImg">
           <p
             style={{
-              color: "white",
+              // color: "white",
               fontSize: "1.2em",
               lineHeight: "-2px",
               margin: "10px",

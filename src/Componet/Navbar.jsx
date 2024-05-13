@@ -8,6 +8,7 @@ import { BsFiletypeDoc } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setTheme } from '../Redux/Slice/ThemeSlice';
+
 function Navbar() {
   let [slidebarClick, setSlidebarClick] = useState(true);
   const dispatch = useDispatch();
@@ -18,6 +19,9 @@ function Navbar() {
     dispatch(setTheme(
       slidebarClick ? 'light' : 'dark'
     ));
+    let navbar = document.querySelector(".Navbar");
+    navbar.classList.toggle("alternate");
+
   
   };
 

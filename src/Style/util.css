@@ -136,7 +136,7 @@
         }
         .page_0{
             /* background-image: url(../image/background/Picsart_24-01-02_17-26-03-618.jpg); */
-            background-color: black;
+            /* background-color: black; */
             /* background-size: 100%;
             background-repeat: no-repeat;
             background-position: 100%;
@@ -148,7 +148,7 @@
     
     @media screen and (min-width:951px) {
         .page_0{
-            background-color: black;
+            /* background-color: black; */
             /* background-image: url(../image/background/WhatsApp\ Image\ 2023-12-24\ at\ 22.54.50.jpeg);
             background-size: 1024px;
             background-repeat: no-repeat; */

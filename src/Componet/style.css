@@ -3,10 +3,22 @@
 
 .Navbar {
     display: flex;
-    background-color: black;
     position: sticky;
     top: 0px;
+    color: rgb(148, 22, 233);
+    /* font-size: 2em; */
+    font-weight: 500;
+    background-color: white;
+    justify-content: space-between;
+    padding: 32px 15px;
+    z-index: 999;
+}
+
+.Navbar.alternate{
     background-color: #020c0c;
+    display: flex;
+    position: sticky;
+    top: 0px;
     color: rgb(148, 22, 233);
     /* font-size: 2em; */
     font-weight: 500;
@@ -14,6 +26,7 @@
     padding: 32px 15px;
     z-index: 999;
 }
+
  /* ::-moz-selection{
     ::-webkit-user-select:none;
    -ms-user-select: none;
@@ -152,7 +165,7 @@ color: rgb(148, 22, 233) ;
     &:hover{
         outline-color: rgb(68, 0, 132);
     }
-}`
+}
 
 .link{
     text-decoration: none;
