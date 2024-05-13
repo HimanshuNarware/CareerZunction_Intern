@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import { GiCrossMark } from 'react-icons/gi';
-import { FaGithub, FaLaptop, FaHome, FaRegSun } from 'react-icons/fa';
+import { FaGithub, FaLaptop, FaHome, FaRegSun,FaHeart } from 'react-icons/fa';
 import { BsFiletypeDoc } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
@@ -35,9 +35,13 @@ function Navbar() {
         >
           CareerZunction</div>
         <div className="right-sight">
+         
+            
           <div className="cart-item">
             <Link to="/" className='link'>Home</Link>
           </div>
+          
+          
           <div className="cart-item">
             <Link to="/intern" className='link'> Internships</Link>
           </div>
@@ -47,7 +51,11 @@ function Navbar() {
           <div className="cart-item">
             <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'>GitHub</Link>
           </div>
+          <div className="cart-item">
+            <Link to="/wishlist" className='link'><FaHeart/></Link>
+          </div>
         </div>
+       
       </nav>
   
         <div className="sidebar ">
