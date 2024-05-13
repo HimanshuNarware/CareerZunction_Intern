@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Doc from "./Component/Documentation/Doc";
-import InternPage from "./Component/Documentation/Internship/InternPage";
-import Error from "./Component/Error";
-import Footer from "./Component/Footer";
-import Home from "./Component/Home";
-import Navbar from "./Component/Navbar";
+import Doc from "./Componet/Documetation/Doc";
+import InternPage from "./Componet/Documetation/Internship/InternPage";
+import Error from "./Componet/Error";
+import Footer from "./Componet/Footer";
+import Home from "./Componet/Home";
+import Navbar from "./Componet/Navbar";
 
 
 function App() {
