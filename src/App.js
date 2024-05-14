@@ -5,6 +5,7 @@ import Doc from "./Componet/Documetation/Doc";
 import Error from "./Componet/Error";
 import InternPage from "./Componet/Documetation/Internship/InternPage";
 import Footer from "./Componet/Footer";
+import Contact from "./Componet/Contact";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/intern" element={<InternPage/>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
+      <Contact></Contact>
       <Footer/> 
     </div>
   );
