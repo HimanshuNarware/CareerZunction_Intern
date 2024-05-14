@@ -68,7 +68,7 @@ function Home() {
           </div>
           <div className="wrapper-bx-2">
             <div className="wrapper-bx-2-0 wrapper-bx-2-1 outline">
-              <i className='icon' style={{color:'purple'}}>
+              <i className='icon' style={{color:'blueviolet'}}>
               <GiWorld /> 
               </i>
               <div className="wrapper-subbx">
@@ -78,7 +78,7 @@ function Home() {
             </div>
       {/* </div> */}
             <div className="wrapper-bx-2-0 wrapper-bx-2-2 outline">
-              <i className='icon'  style={{color:'purple'}}>
+              <i className='icon'  style={{color:'blueviolet'}}>
               <GiGlobe />  
               </i>
               <div className="wrapper-subbx">
@@ -90,7 +90,7 @@ function Home() {
               </div>
             </div>
             <div className="wrapper-bx-2-0 wrapper-bx-2-3 outline">
-              <i className='icon'  style={{color:'purple'}}>
+              <i className='icon'  style={{color:'blueviolet'}}>
                 <FaPeopleGroup />
               </i>
               <div className="wrapper-subbx">
@@ -99,7 +99,7 @@ function Home() {
               </div>
             </div>
             <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
-              <i className='icon' style={{color:'purple'}}>
+              <i className='icon' style={{color:'blueviolet'}}>
                 <FaIndianRupeeSign />
               </i>
               <div className="wrapper-subbx">

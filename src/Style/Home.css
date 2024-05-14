@@ -112,6 +112,7 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
+
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .wrapper-subbx {
   text-align: justify;
   display: grid;
@@ -119,17 +120,21 @@
 
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .icon {
   padding: 1rem;
-  font-size: 3em;
+  font-size: 4em;
   line-height: 2;
   margin: 1rem;
   text-align: center;
   display: inline-block;
 }
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .wrapper-subbx p {
-  color: rgba(190, 190, 190, 0.982);
+  color: rgba(226, 226, 226, 0.982);
   font-size: 1.0em;
   margin: 2px 50px 2px 0px;
   
+}
+
+.page_1 .wrapper_p1 .wrapper-bx-2 .wrapper-bx-2-0:hover{
+  color: blueviolet;
 }
 .sub_title {
   font-weight: 600;
