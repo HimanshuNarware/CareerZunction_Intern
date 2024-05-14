@@ -5,13 +5,17 @@ import './style.css';
 import { GiCrossMark } from 'react-icons/gi';
 import { FaGithub, FaLaptop, FaHome, FaRegSun } from 'react-icons/fa';
 import { BsFiletypeDoc } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setTheme } from '../Redux/Slice/ThemeSlice';
 
 function Navbar() {
   let [slidebarClick, setSlidebarClick] = useState(true);
   const dispatch = useDispatch();
+  const navigate=useNavigate();
+  function handleRedirect(){
+    navigate("/");
+  }
 
 
   const toggleDarkMode = () =>{
@@ -39,7 +43,7 @@ function Navbar() {
           onClick={toggleDarkMode}>
           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
         </div>
-        <div className="left-sight" style={{textAlign:'center',fontSize:'2em',cursor:'pointer'}} 
+        <div className="left-sight" onClick={handleRedirect} style={{textAlign:'center',fontSize:'2em',cursor:'pointer'}} 
         >
           CareerZunction</div>
         <div className="right-sight">
