@@ -1,12 +1,13 @@
 /** @format */
 
-import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaStar } from "react-icons/fa6";
-import "./Footer.css";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { FaGithub, FaLinkedin, FaStar, FaTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
+import favicon from "../image/footer/favicon.png";
 import img from "../image/footer/footer-qr.jpg";
+import './Footer.css';
+import { useSelector } from "react-redux";
 
 function Footer() {
   const theme = useSelector((state) => state.theme.theme);
@@ -25,7 +26,7 @@ function Footer() {
         
         >
           <div className="flex">
-            <h3 className="footer-title">CareerZunction</h3>
+            <h3 className="footer-title"><img src={favicon} alt="logo" className='footer-favicon'/>CareerZunction</h3>
             <p className="footer-pera">
               CareerZunction is a dynamic platform connecting eager students
               with valuable internship opportunities.
