@@ -58,7 +58,7 @@ function Footer() {
                 style={{ margin: '-2px 2px', lineHeight: '2px' }}
                 className="star"
               />
-              Star us
+              Rate us!
             </Link>
           </button>
           </div>
