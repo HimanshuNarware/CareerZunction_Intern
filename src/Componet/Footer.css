@@ -33,7 +33,7 @@
         padding: 6px 10px;
         font-size: 1.2em;
         font-weight: 400;
-        color: white;
+        /* color: white; */
 
     }
 
@@ -53,7 +53,7 @@
         /* padding-top: 10px; */
         /* // font-size: 1.2em; */
         font-weight: 400;
-        color: rgba(128, 128, 128, 0.489);
+        /* color: rgba(128, 128, 128, 0.489); */
 
 
     }
@@ -62,7 +62,6 @@
         &:hover {
             text-decoration: underline;
         }
-        color:white;
     }
 
     .button-star {

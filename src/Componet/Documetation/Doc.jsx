@@ -14,7 +14,6 @@ import Detail from "./Detail";
 
 import { useSelector } from "react-redux";
 
-
 function Doc() {
   const theme = useSelector((state) => state.theme.theme);
 
@@ -32,7 +31,15 @@ function Doc() {
         {/* <img src={background} alt="" className="docImg" /> */}
       </div>
       <div className="contribution">
-        <h1 className="headLine">
+        <h1
+          className="headLine"
+          style={{
+            textShadow:
+              theme === "light"
+                ? "0px 0px 0px rgba(0, 0, 0, 0.616)"
+                : "0px 0px 0px rgba(168, 162, 162, 0.516)",
+          }}
+        >
           GitHub. || Git. || Open-Source. || Contribution.{" "}
         </h1>
       </div>

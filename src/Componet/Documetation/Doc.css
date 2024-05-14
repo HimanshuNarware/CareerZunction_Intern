@@ -25,7 +25,9 @@
   font-weight: 800;
   color: transparent;
   /* border: 2px solid black; */
-  text-shadow: 0px 0px 0px rgba(168, 162, 162, 0.516);
+  /* text-shadow: 0px 0px 0px rgba(168, 162, 162, 0.516); */
+  /* // for light theme */
+  /* text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.616); */
 }
 .TitleDoc {
   width: 100vw;

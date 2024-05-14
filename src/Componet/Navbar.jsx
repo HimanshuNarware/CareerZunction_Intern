@@ -20,7 +20,11 @@ function Navbar() {
       slidebarClick ? 'light' : 'dark'
     ));
     let navbar = document.querySelector(".Navbar");
+    let link=document.querySelectorAll('.link');
     navbar.classList.toggle("alternate");
+    link.forEach((element)=>{
+      element.classList.toggle('alternate');
+    });
 
   
   };
