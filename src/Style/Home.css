@@ -97,13 +97,13 @@
 
 
 .page_1 .wrapper_p1 .wrapper-bx-2 {
-  margin: 12px 8px;
+  margin: 10px 8px;
   display: grid;
   padding: 8px 6px;
 }
 
 .page_1 .wrapper_p1 .wrapper-bx-2-0 {
-  margin: 12px 8px;
+  margin: 10px 8px;
   display: grid;
   padding: 8px 6px;
 }
@@ -121,7 +121,7 @@
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .icon {
   padding: 1rem;
   font-size: 4em;
-  line-height: 2;
+  line-height: 1.9;
   margin: 1rem;
   text-align: center;
   display: inline-block;
