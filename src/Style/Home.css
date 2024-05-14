@@ -112,7 +112,6 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
-
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .wrapper-subbx {
   text-align: justify;
   display: grid;
@@ -120,8 +119,8 @@
 
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .icon {
   padding: 1rem;
-  font-size: 4em;
-  line-height: 1.9;
+  font-size: 3em;
+  line-height: 2;
   margin: 1rem;
   text-align: center;
   display: inline-block;
