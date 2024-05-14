@@ -87,11 +87,9 @@
 		.star-us {
 			font-size: 1.2em;
 			color:white;
-			text-decoration: underline(0px);
 		}
 		&:hover .star-us{
 			color: rgb(252, 242, 104);
-			text-decoration: underline(1px);
 		}
 		
 	}
