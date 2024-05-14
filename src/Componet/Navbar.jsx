@@ -1,31 +1,18 @@
-/** @format */
-
 import React, { useState } from 'react';
 import './style.css';
 import { GiCrossMark } from 'react-icons/gi';
-import { FaGithub, FaLaptop, FaHome, FaRegSun } from 'react-icons/fa';
-import { BsFiletypeDoc } from 'react-icons/bs';
+import { FaRegSun } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   function handleRedirect(){
     navigate("/");
   }
   let [slidebarClick, setSlidebarClick] = useState(false);
 
-  // function slidebarClicked(e){
-  // // slidebarClick=slidebarClick?false:true;
-  // // slidebarClick=slidebarClick?false:true;
-  // // if(slidebarClick==false).?
-
-  // console.log(slidebarClick)
-
-  // }
-
   const toggleDarkMode = () => setSlidebarClick(!slidebarClick);
 
-  // </div>
   return (
     <>
       <nav className="Navbar">
@@ -51,6 +38,12 @@ function Navbar() {
           <div className="cart-item">
             <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'>GitHub</Link>
           </div>
+          <div className="cart-item">
+            <Link to="/community" className='link'>Community</Link>
+          </div>
+          <div className="cart-item">
+            <Link to="/help" className='link'>Help/FAQ</Link>
+          </div>
         </div>
       </nav>
   
@@ -58,35 +51,46 @@ function Navbar() {
           <div className="sidebar-options">
             {
               <Link to="/">
-                <FaHome />
+                Home
               </Link>
             }
           </div>
           <div className="sidebar-options">
             {
               <Link to="/intern">
-                <FaLaptop />
+                Internships
               </Link>
             }
           </div>
           <div className="sidebar-options">
             {
               <Link to="/docs">
-                <BsFiletypeDoc />
+                Documentation
               </Link>
             }
           </div>
           <div className="sidebar-options">
             {
               <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" target="_blank">
-                <FaGithub />
+                GitHub
+              </Link>
+            }
+          </div>
+          <div className="sidebar-options">
+            {
+              <Link to="/community">
+                Community
+              </Link>
+            }
+          </div>
+          <div className="sidebar-options">
+            {
+              <Link to="/help">
+                Help/FAQ
               </Link>
             }
           </div>
         </div>
-
-       
-    
     </>
   );
 }
