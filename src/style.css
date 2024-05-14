@@ -1,0 +1,30 @@
+.container{
+    position:relative;
+    max-width: 1350px;
+    width:100%;
+    padding:20px;
+    margin: 80px auto;
+}
+button{
+    padding:3px 10px;
+    font-size:15px;
+    border: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    color: rgb(255, 254, 254);
+}
+.filter_buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+button.active{
+    background-color: rgb(116, 59, 169);
+    
+}
+.card.hide{
+    display:none;
+}
+
