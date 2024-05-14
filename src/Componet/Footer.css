@@ -86,7 +86,12 @@
 		}
 		.star-us {
 			font-size: 1.2em;
+			color:white;
 		}
+		&:hover .star-us{
+			color: rgb(252, 242, 104);
+		}
+		
 	}
 
 	.footer-socail-icon {
