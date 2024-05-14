@@ -5,9 +5,13 @@ import './style.css';
 import { GiCrossMark } from 'react-icons/gi';
 import { FaGithub, FaLaptop, FaHome, FaRegSun,FaHeart } from 'react-icons/fa';
 import { BsFiletypeDoc } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
+  const navigate=useNavigate();
+  function handleRedirect(){
+    navigate("/");
+  }
   let [slidebarClick, setSlidebarClick] = useState(false);
 
   // function slidebarClicked(e){
@@ -31,7 +35,7 @@ function Navbar() {
           onClick={toggleDarkMode}>
           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
         </div>
-        <div className="left-sight" style={{textAlign:'center',fontSize:'2em',cursor:'pointer'}} 
+        <div className="left-sight" onClick={handleRedirect} style={{textAlign:'center',fontSize:'2em',cursor:'pointer'}} 
         >
           CareerZunction</div>
         <div className="right-sight">
