@@ -21,7 +21,7 @@ import img7 from '../image/desktopImg/img2.jpg'
 import img8 from '../image/desktopImg/img 9.jpg'
 import img9 from '../image/desktopImg/img 8.jpg'
 import { Button } from 'antd';
-import { GiWorld } from 'react-icons/gi';
+import { GiGlobe, GiWorld } from 'react-icons/gi';
 import { FcGlobe } from 'react-icons/fc';
 import {
   FaIndianRupeeSign,
@@ -66,26 +66,26 @@ function Home() {
             <div className="sub_title">About us</div>
             <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
           </div>
-          <div className="wrapper-bx-2 ">
+          <div className="wrapper-bx-2">
             <div className="wrapper-bx-2-0 wrapper-bx-2-1 outline">
               <i className='icon' style={{color:'purple'}}>
-                <GiWorld  />
+              <GiWorld /> 
               </i>
               <div className="wrapper-subbx">
                 <h3>World's Biggest</h3>
-                <p>The World's biggest collection of internships</p>
+                <p>The World's biggest collection of internships.</p>
               </div>
             </div>
       {/* </div> */}
             <div className="wrapper-bx-2-0 wrapper-bx-2-2 outline">
               <i className='icon'  style={{color:'purple'}}>
-                <GiWorld  />
+              <GiGlobe />  
               </i>
               <div className="wrapper-subbx">
                 <h3>Around the Globe</h3>
                 <p>
                   You can find more than 600+ internships, Open-source programs,
-                  and hackathons
+                  and hackathons.
                 </p>
               </div>
             </div>
@@ -98,23 +98,19 @@ function Home() {
                 <p>This project is open source and you can contribute to it.</p>
               </div>
             </div>
-
             <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
               <i className='icon' style={{color:'purple'}}>
                 <FaIndianRupeeSign />
               </i>
               <div className="wrapper-subbx">
                 <h3>Free to use</h3>
-                <p>
-                  This project is free to use.
-                </p>
+                <p>This project is free to use.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <section>
-          {/*  image section */}
           <div className="desktopImg">
 <img className='img img1' src={img1} alt="is" />
 <img className='img img2' src={img2} alt="is" />
@@ -124,7 +120,6 @@ function Home() {
 <img className='img img6' src={img5} alt="is" />
 <img className='img img7' src={img9} alt="is" />
 <img className='img img8' src={img4} alt="is" />
-{/* <img className='img img9' src={img3} alt="is" /> */}
           </div>
 
 
