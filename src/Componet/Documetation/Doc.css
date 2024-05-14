@@ -69,3 +69,27 @@ margin-top: -120px;
     }
     
    }
+
+   @media screen and (max-width: 1024px) {
+    .TitleDoc {
+      font-size: 4em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .TitleDoc {
+      font-size: 3em;
+    }
+    .contribution .headLine {
+        font-size: 3em;
+        padding:3px;
+      }
+  }
+  @media screen and (max-width: 400px) {
+    .TitleDoc {
+      font-size: 2em;
+    }
+    .contribution .headLine {
+        font-size: 2em;
+      }
+  }
