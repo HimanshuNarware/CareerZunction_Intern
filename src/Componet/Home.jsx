@@ -58,14 +58,14 @@ function Home() {
           </Button>
         </div>
         <div className="bx-2">
-          {/* <img className="home-img img-1" src={code} alt="img" />
+          <img className="home-img img-1" src={code} alt="img" />
           <img className="home-img img-2" src={code1} alt="img" />
           <img className="home-img img-3" src={code2} alt="img" />
           <img className="home-img img-4" src={code4} alt="img" />
           <img className="home-img img-5" src={code5} alt="img" />
           <img className="home-img img-6" src={code6} alt="img" />
           <img className="home-img img-7" src={code7} alt="img" />
-          <img className="home-img img-8" src={code8} alt="img" /> */}
+          <img className="home-img img-8" src={code8} alt="img" />
         </div>
       </div>
       <div className="page_1"
@@ -130,14 +130,14 @@ function Home() {
       <section>
         {/*  image section */}
         <div className="desktopImg">
-          {/* <img className="img img1" src={img1} alt="is" />
+          <img className="img img1" src={img1} alt="is" />
           <img className="img img2" src={img2} alt="is" />
           <img className="img img3" src={img7} alt="is" />
           <img className="img img4" src={img6} alt="is" />
           <img className="img img5" src={img8} alt="is" />
           <img className="img img6" src={img5} alt="is" />
           <img className="img img7" src={img9} alt="is" />
-          <img className="img img8" src={img4} alt="is" /> */}
+          <img className="img img8" src={img4} alt="is" />
           {/* <img className='img img9' src={img3} alt="is" /> */}
         </div>
       </section>
