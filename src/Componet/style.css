@@ -2,6 +2,14 @@
 
 
 .Navbar {
+    background: linear-gradient(135deg,rgba(255,255,255,0),rgba(124, 212, 247, 0.8));
+     backdrop-filter: blur(20px);
+     -webkit-backdrop-filter: blur(20px);
+     border-radius: 50px;
+     border: 1px solid rgba(255, 255, 255,0.18);
+     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+
     display: flex;
     background-color: black;
     position: sticky;
@@ -22,13 +30,13 @@
    color:black;
    
  } */
-::selection{
-::-khtml-user-select:none;
-::-moz-user-select:none;
-::-ms-user-select:none;
-::-o-user-select:none;
-user-select:none;
- }
+::selection
+::-khtml-user-select:none
+::-moz-user-select:none
+::-ms-user-select:none
+::-o-user-select:none
+user-select:none
+ 
 
 .nav-icons {
     line-height: 1.6;
@@ -167,7 +175,7 @@ margin-top: -8px;
     &:hover{
         outline-color: rgb(68, 0, 132);
     }
-}`
+}
 
 .link{
     text-decoration: none;
