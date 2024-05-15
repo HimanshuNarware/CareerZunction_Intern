@@ -242,7 +242,6 @@
     "award":"Unknown",
     "description":"Join us to reinvent how people create and brands succeed. At Adobe, you’ll help make software that shows the world what digital experiences can be.",
     "mode":"Offline"
-
   },
   {
     "internship_name":"Uber Intern",
@@ -1182,7 +1181,6 @@
     "award":"stipend upto $5000",
     "description":"Earn a stipend and learn to collaborate on real open source projects with peers and engineers from top companies.",
     "mode":"remote"
-
   },
   {
     "internship_name":"Season of Docs",
@@ -2072,6 +2070,18 @@
     "description":"C4GT is a one-of-its-kind initiative that aims to build a community of communities around Tech for Good products. Through various efforts, it aims to encourage ongoing contributions and strengthen collaboration contributors ",
     "mode":"Online"
 
+  },
+
+  {
+    "internship_name": "Elitmus Job Portal",
+    "company_name": "Elitmus",
+    "internship_type": "Internship | Open-source| Hackthone | Campus ambassador | ",
+    "duration": " Timeline",
+    "link": "https://www.elitmus.com/",
+    "image": "https://e7.pngegg.com/pngimages/291/160/png-clipart-elitmus-paper-bangalore-engineering-wipro-platform-blue-angle.png",
+    "award": "Stipend",
+    "description": "eLitmus is a first-of-its-kind service in the world. eLitmus has been redefining how fresher and entry-level recruitment is done in India. Our proprietary pH Test evaluates job seekers. These tools help recruiters to easily screen and select candidates.",
+    "mode": "Online"
   }
 
   
