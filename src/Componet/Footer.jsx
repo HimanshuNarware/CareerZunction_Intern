@@ -42,8 +42,7 @@ function Footer() {
               <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
               <FaLinkedin className="linkedin" />
               </a>
-              <a href="https://twitter.com/N_Himanshu_" target="_blank">
-              <FaTwitter className="twittor" />
+              <a href="https://twitter.com/N_Himanshu_" id='twittor' class="fa-brands fa-x-twitter" target="_blank">
               </a>
             </div>
           </div>
