@@ -111,11 +111,31 @@
     transition: all 0.4s;
 
 }
-.link:hover{
-    /* text-decoration: underline; */
-    color:  rgb(255, 255, 255);
+
+.link.alternate{
+  
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 2.6;
+  color: rgb(148, 22, 233) ;
+  position: relative;
+  transition: all 0.4s;
+
+}
+
+.link.alternate:hover{
+    color:white;
     
 }
+
+.link:hover{
+    /* text-decoration: underline; */
+    color:  black;
+    
+}
+
+
+
 .link::after{
     content:'';
     height:2px;
