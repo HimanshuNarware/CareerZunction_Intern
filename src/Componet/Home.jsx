@@ -38,10 +38,12 @@ function Home() {
     <div>
       <div className="page_0">
         <div className="bx-1">
-          <h2>Elevate. Your.
+          <h2>Elevate 
+            <br /> Your
            <br/>
-            Future.</h2>
-          <h4>Land your dream career.</h4>
+            Future</h2>
+          <h4>
+            <i>Land your dream career.....</i> </h4>
           <Button className='check-now'>
             <Link to="/intern" className='link1'>
 
