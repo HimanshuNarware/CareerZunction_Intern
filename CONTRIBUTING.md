@@ -28,19 +28,22 @@ in case you are stuck:
 
 1. Go to the project's issues.
 2. Give proper description for the issues.
-3. Don't spam to get the assignment of the issue 😀.
-4. Wait for till someone is looking into it !.
-5. Start working on issue only after you got assigned that issue 🚀.
+    Use the format of [issues template as shown here](https://github.com/HimanshuNarware/CareerZunction_Intern/tree/main/.github/ISSUE_TEMPLATE)
+4. Don't spam to get the assignment of the issue 😀.
+5. Wait for till someone is looking into it !.
+6. Start working on issue only after you got assigned that issue 🚀.
 
 <br>
 
 ## **Pull Request Process 🚀**
 
 1. Ensure that you have self reviewed your code 😀
-2. Make sure you have added the proper description for the functionality of the code
+2. Make sure you have added the proper description for the functionality of the code.
 3. I have commented my code, particularly in hard-to-understand areas.
-4. Add screenshot it help in review.
+4. Add video and screenshot it help in review.
 5. Submit your PR by giving the necesarry information in PR template and hang tight we will review it really soon 🚀
+6. Remember to include the corresponding issue using the format shown below.
+    Closes #issue_number
 
 <br>
 
