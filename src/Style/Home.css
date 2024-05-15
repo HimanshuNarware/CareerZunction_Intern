@@ -118,10 +118,10 @@
 }
 
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .icon {
-  padding: 1rem;
-  font-size: 3em;
-  line-height: 2;
-  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 4em;
+  line-height: 1.5;
+  margin: 0.5rem;
   text-align: center;
   display: inline-block;
 }
