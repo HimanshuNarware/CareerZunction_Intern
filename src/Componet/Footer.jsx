@@ -4,7 +4,7 @@ import "./Footer.css";
 import { IoStar } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-//footer has been modified completely
+// stylying of footer is modified
 const iconstyle = {
   height: "100%",
   width: "100%",
