@@ -3,6 +3,9 @@
 .page_2 {
     /* // height: 100vh !important; */
 }
+.footerWrapper{
+	height: fit-content;
+}
 .container{
 	max-width: 1170px;
 	margin:auto;
