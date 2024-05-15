@@ -3,12 +3,9 @@
 .page_2 {
     /* // height: 100vh !important; */
 }
-.footerWrapper{
-	height: fit-content;
-}
-.container{
-	max-width: 1170px;
-	margin:auto;
+.containerFooter{
+	max-width: 100%;
+	margin: 0 auto;
 }
 .row{
 	display: flex;
@@ -18,10 +15,11 @@
 ul{
 	list-style: none;
 }
-.footer{
+.footer {
 	background-color: black;
-    padding: 70px 0;
-}
+	padding: 70px 0;
+	width: 100vw;
+  }
 .footer-col{
    width: 25%;
    padding: 10px 15px;

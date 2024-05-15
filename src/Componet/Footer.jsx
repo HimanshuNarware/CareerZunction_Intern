@@ -15,9 +15,9 @@ const iconstyle = {
 };
 function Footer() {
   return (
-    <div className="footerWrapper">
+
       <footer className="footer">
-        <div className="container">
+        <div className="containerFooter">
           <div className="row" id="row">
             <div
               className="footer-col"
@@ -108,7 +108,6 @@ function Footer() {
           </div>
         </div>
       </footer>
-    </div>
   );
 }
 
