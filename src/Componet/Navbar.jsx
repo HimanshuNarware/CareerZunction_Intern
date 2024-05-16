@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './style.css';
-import { GiCrossMark } from 'react-icons/gi';
-import { FaRegSun } from 'react-icons/fa';
+// Removed duplicate import of GiCrossMark
+import { GiConversation } from 'react-icons/gi'; // For Community/Forum
+import { FaGithub, FaLaptop, FaHome, FaQuestionCircle } from 'react-icons/fa';
+import { BsFiletypeDoc } from 'react-icons/bs'; // For Documentation
 import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
@@ -20,29 +22,29 @@ function Navbar() {
           className="nav-icons"
           style={{ cursor: 'pointer',fontSize:'2em' }}
           onClick={toggleDarkMode}>
-          {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
+        
         </div>
         <div className="left-sight" onClick={handleRedirect} style={{textAlign:'center',fontSize:'2em',cursor:'pointer'}} 
         >
           CareerZunction</div>
         <div className="right-sight">
           <div className="cart-item">
-            <Link to="/" className='link'>Home</Link>
+            <Link to="/" className='link'><FaLaptop />Home</Link>
           </div>
           <div className="cart-item">
-            <Link to="/intern" className='link'> Internships</Link>
+            <Link to="/intern" className='link'><FaHome /> Internships</Link>
           </div>
           <div className="cart-item">
-            <Link to="/docs" className='link'>Documentation</Link>
+            <Link to="/docs" className='link'><BsFiletypeDoc />Documentation</Link>
           </div>
           <div className="cart-item">
-            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'>GitHub</Link>
+            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'><FaGithub />GitHub</Link>
           </div>
           <div className="cart-item">
-            <Link to="/community" className='link'>Community</Link>
+            <Link to="/community" className='link'><GiConversation />Community</Link>
           </div>
           <div className="cart-item">
-            <Link to="/help" className='link'>Help/FAQ</Link>
+            <Link to="/help" className='link'><FaQuestionCircle />Help/FAQ</Link>
           </div>
         </div>
       </nav>
