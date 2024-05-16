@@ -36,7 +36,7 @@
   font-size: 1.2em;
   background-color: transparent;
   color: white;
-  outline: thick double blueviolet;
+  /* outline: thick double blueviolet; */
 }
 .home1 {
   margin-top: 100px;
