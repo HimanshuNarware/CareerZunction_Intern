@@ -28,7 +28,8 @@ body.alternate {
 }
 
 .BoxContent {
-  background-color: #1f1f1f;
+  
+  background:linear-gradient(to bottom,black,rgba(153, 0, 255, 0.279));
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -45,6 +46,14 @@ body.alternate {
   text-align: center;
   overflow-y: hidden;
   gap: 10px;
+}
+
+.BoxContent:hover{
+
+  box-shadow:  1px 1px 10px rgba(219, 205, 205, 0.196),-2px -2px 10px rgb(15, 15, 15);
+  transition: 0.5s;
+
+
 }
 
 .ApiImg {
