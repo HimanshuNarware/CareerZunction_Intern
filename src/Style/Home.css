@@ -175,3 +175,25 @@
     margin-inline: 25vw;
   }
 } /*# sourceMappingURL=Home.css.map */
+
+/* Scroll bar css */
+/* Webkit (Safari/Chrome) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background:rgb(148, 22, 233);
+}
+/* Firefox */
+::-moz-scrollbar {
+  width: 10px;
+}
+::-moz-scrollbar-track {
+  background: black;
+}
+::-moz-scrollbar-thumb {
+  background:rgb(148, 22, 233);
+}

@@ -41,15 +41,18 @@ function Home() {
       }}
       >
         <div className="bx-1">
-          <h2>
-            Elevate. Your.
-            <br />
-            Future.
-          </h2>
-          <h4>Land your dream career.</h4>
+          
+          <h2>Elevate 
+            <br /> Your
+           <br/>
+            Future</h2>
+          <h4>
+            <i>Land your dream career.....</i> </h4>
+          
           <Button className="check-now" 
           style={{
         color: theme === "light" ? "black" : "white",
+
 
           }}
           >
