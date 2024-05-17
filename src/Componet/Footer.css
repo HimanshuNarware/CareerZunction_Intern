@@ -42,7 +42,7 @@
 .footer-title {
   font-size: 1.8em;
   margin: 0;
-  color: #ff7f50; /* Changed to a vibrant coral color */
+  color: blueviolet; /* Changed to a vibrant coral color */
   font-family: "Montserrat", sans-serif;
   transition: color 0.3s ease-in-out;
 }
@@ -56,7 +56,7 @@
 .footer-subtitle {
   font-size: 1.4em;
   font-weight: 500;
-  color: #ff7f50; /* Changed to match the title color */
+  color: blueviolet; /* Changed to match the title color */
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
   transition: color 0.3s ease-in-out;
@@ -77,7 +77,7 @@
 }
 
 .footer-link:hover {
-  color: #ff7f50;
+  color: blueviolet;
   text-decoration: underline;
   transform: scale(1.05);
 }
@@ -97,7 +97,7 @@
 
 .footer-icon:hover {
   transform: scale(1.3);
-  color: #ff7f50;
+  color: blueviolet;
 }
 
 .qr-section {
@@ -118,7 +118,7 @@
 }
 
 .button-star {
-  background: #ff7f50;
+  background: blueviolet;
   width: 150px;
   color: white;
   padding: 12px 10px;
@@ -130,7 +130,7 @@
 
 .button-star:hover {
   background: white;
-  color: #ff7f50;
+  color: blueviolet;
 }
 
 .star-us {
@@ -153,14 +153,14 @@
 }
 
 .footer-bottom a {
-  color: #ff7f50;
+  color: blueviolet;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .footer-bottom a:hover {
   text-decoration: underline;
-  color: #ff4500; /* Slightly darker shade for hover */
+  color: blueviolet; /* Slightly darker shade for hover */
 }
 
 /* Media Queries */
