@@ -144,6 +144,7 @@ user-select:none;
     font-size: 2em;
     position: sticky;
     top: 80vh;
+    z-index: 1000;
     background-color: #020c0c10;
     color: rgb(148, 22, 233);
     font-size: 2em;
@@ -151,7 +152,7 @@ user-select:none;
     justify-content: space-between;
     padding: 32px 15px;
     &:hover{
-        color:rgb(67, 3, 110) ;
+        color:rgb(135, 5, 222) ;
     }
     /* position:sticky;
     font-size: 2em;
@@ -166,14 +167,18 @@ user-select:none;
 .sidebar-options {
     /* filter: blur(1px); */
     /* position: fixed !important; */
-    backdrop-filter: blur(100px);
-    border: .5px solid gainsboro;
+    background-color: rgba(255, 255, 255, 0.619);
+    backdrop-filter: blur(0px);
+    border: .5px solid blueviolet;
     border-radius: 12px;
     padding: 5px 10px;
     outline: thick double blueviolet;
     &:hover{
-        outline-color: rgb(68, 0, 132);
+        outline-color: rgb(201, 5, 219);
+        transform: scale(1.1);
+        transition: 0.5s ease;
     }
+    
 }`
 
 .link{
