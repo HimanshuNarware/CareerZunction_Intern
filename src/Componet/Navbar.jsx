@@ -3,9 +3,15 @@
 import React, { useState } from 'react';
 import './style.css';
 import { GiCrossMark } from 'react-icons/gi';
-import { FaGithub, FaLaptop, FaHome, FaRegSun } from 'react-icons/fa';
+// import { FaRegSun } from 'react-icons/fa // Changed';
+import { HiLightBulb } from "react-icons/hi2";
+import { RiLightbulbFlashFill } from "react-icons/ri";
+import { FaGithub, FaLaptop, FaHome } from 'react-icons/fa';
 import { BsFiletypeDoc } from 'react-icons/bs';
 import { Link, useNavigate } from 'react-router-dom';
+import { IoHome } from "react-icons/io5";
+import { IoDocumentText } from "react-icons/io5";
+
 
 function Navbar() {
   const navigate=useNavigate();
@@ -33,23 +39,23 @@ function Navbar() {
           className="nav-icons"
           style={{ cursor: 'pointer',fontSize:'2em' }}
           onClick={toggleDarkMode}>
-          {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
+          {slidebarClick ? <RiLightbulbFlashFill /> : <HiLightBulb />}
         </div>
         <div className="left-sight" onClick={handleRedirect} style={{textAlign:'center',fontSize:'2em',cursor:'pointer'}} 
         >
-          CareerZunction</div>
+        CareerZunction</div>
         <div className="right-sight">
           <div className="cart-item">
-            <Link to="/" className='link'>Home</Link>
+            <Link to="/" className='link'><IoHome />&nbsp;Home&nbsp;</Link>
           </div>
           <div className="cart-item">
-            <Link to="/intern" className='link'> Internships</Link>
+            <Link to="/intern" className='link'> <FaLaptop/>&nbsp;Internships&nbsp;</Link>
           </div>
           <div className="cart-item">
-            <Link to="/docs" className='link'>Documentation</Link>
+            <Link to="/docs" className='link'><IoDocumentText/>&nbsp;Documentation&nbsp;</Link>
           </div>
           <div className="cart-item">
-            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'>GitHub</Link>
+            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'><FaGithub/>&nbsp;GitHub&nbsp;</Link>
           </div>
         </div>
       </nav>

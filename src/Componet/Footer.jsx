@@ -38,13 +38,13 @@ function Footer() {
             <div className="footer-socail-icon">
               <a href="https://github.com/HimanshuNarware" target="_blank">
               <FaGithub className="github" />
-              </a>
+              </a>&nbsp;
               <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
               <FaLinkedin className="linkedin" />
-              </a>
+              </a>&nbsp;
               <a href="https://twitter.com/N_Himanshu_" target="_blank">
               <FaTwitter className="twittor" />
-              </a>
+              </a>&nbsp;
             </div>
           </div>
        <div className='flex qrsec'>

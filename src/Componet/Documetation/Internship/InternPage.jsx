@@ -60,7 +60,7 @@ let InternPage = () => {
               <h5 className='internship_type'>{item.internship_type}</h5>
               <button className='ApplyButton'>Apply Now ✅</button>
             </div> */}
-
+            
             <button className='viewMore' id='btn' style={{cursor:'pointer'}} ref={ref} onClick={()=>{window.open(item.link)}} >Apply Now</button>
 
             </div>

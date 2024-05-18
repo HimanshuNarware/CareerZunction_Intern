@@ -54,10 +54,10 @@ body {
 
 
 .ApiImg{
-    border-radius: 5px;
+    border-radius: 15px;
     margin-block: 10px;
-width: 250px;
-height: 120px;
+width: 310px;
+height: 140px;
 /* background-image: url(../../../image/ErrorImg/not-found-image.webp); */
 background-size:100%;
 background-position:10%;
@@ -119,7 +119,8 @@ object-fit:contain;
     position: relative;
     left: -29%;
     top: 25%;
-    border-radius: 10px;
+    border-radius: 13px;
+    padding:2rem;
 }
 .InternTitle{
    position: relative;
@@ -182,10 +183,10 @@ font-weight:500;
     .mode{
 position: relative;
 position: relative;
-color: #817F7F;
+color: #9a9797;
 top: 4em;
 left: -34.7em;
-font-weight:500;
+font-weight:600;
 
     }
     .ApplyButton{
@@ -196,7 +197,7 @@ font-weight:500;
         border-radius: 8px;
         background-color: transparent;
         padding: 16px 32px;
-        color: #18B715;
+        color: #91b715;
         border: 2px solid #18B715;
     }
     .viewMore{

@@ -40,8 +40,20 @@ user-select:none;
 
 }
 
+
 .left-sight {
-    margin-left: 4%;
+    margin-left: 3.5%;
+    
+    outline-offset: 6px ;
+
+}
+.left-sight:hover{
+    outline: 0.3px solid rgb(244, 240, 215); 
+    outline-offset: 6px ;
+    transition: outline-offset 0.3s, outline-color 0.3s;
+    border-radius: 15px;
+    
+
 
 }
 
@@ -174,7 +186,7 @@ user-select:none;
     &:hover{
         outline-color: rgb(68, 0, 132);
     }
-}`
+}
 
 .link{
     text-decoration: none;

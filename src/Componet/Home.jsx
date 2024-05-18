@@ -43,11 +43,12 @@ function Home() {
            <br/>
             Future</h2>
           <h4>
-            <i>Land your dream career.....</i> </h4>
+            <br/>
+            <i>Boost Your Career, Achieve Your Job Aspirations.....</i> </h4>
           <Button className='check-now'>
             <Link to="/intern" className='link1'>
-
             Check Now
+            
             </Link>
             </Button>
         </div>
