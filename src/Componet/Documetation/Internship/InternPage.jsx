@@ -2,11 +2,20 @@
 
 import './internpage.css';
 import DataDB from '../../../DB/DataBase.json';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import PaginatedItems from '../../pagination';
 
-let InternPage = () => {
+const InternPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredData, setFilteredData] = useState(DataDB);
+  const [currentData, setCurrentData] = useState([]);
+  const [pageSummary, setPageSummary] = useState('');
+
+  const ref = useRef(null);
+
+  useEffect(() => {
+    setFilteredData(DataDB);
+  }, []);
 
   const handleSearch = (event) => {
     const query = event.target.value.toLowerCase();
@@ -35,18 +44,21 @@ let InternPage = () => {
         </div>
       </div>
 
+      <p className='page-summary'>{pageSummary}</p>
+
       <div className='internBox'>
-        {filteredData.map((item, index) => {
-          return (
+        {filteredData.length === 0 ? (
+          <div className="notFound">No internships found</div>
+        ) : (
+          currentData.map((item, index) => (
             <div className="BoxContent" key={index}>
               <img className='ApiImg' src={item.image} alt="" />
-              <h2 className='InternTitle'>{item.internship_name}</h2>
+              <h2 className='InternTitle' ref={ref}>{item.internship_name}</h2>
               <div className="time">
                 <div className="mode">{item.mode}</div>
                 <div className="duration">{item.duration}</div>
               </div>
               <p className='desc'>{item.description}</p>
-
               <button
                 className='viewMore'
                 style={{ cursor: 'pointer' }}
@@ -55,9 +67,15 @@ let InternPage = () => {
                 Apply Now
               </button>
             </div>
-          );
-        })}
+          ))
+        )}
       </div>
+
+      <PaginatedItems 
+        setCurrentData={setCurrentData} 
+        setPageSummary={setPageSummary} 
+        filteredData={filteredData}
+      />
     </div>
   );
 };

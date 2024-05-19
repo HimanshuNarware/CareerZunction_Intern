@@ -84,9 +84,9 @@ body {
 
 
 .BoxContent:hover{
-
-    box-shadow:  1px 1px 10px rgba(219, 205, 205, 0.196),-2px -2px 40px rgb(15, 15, 15);
+    box-shadow: 0.7px 0.7px 6px rgb(255, 255, 255),-0.7px -0.7px 6px rgb(255, 255, 255);
     transition: 0.5s;
+    transform: scale(1.03);
 
 
 }
@@ -244,6 +244,11 @@ font-weight:500;
         position: relative;
         top: -10em;
     }
+}
+
+.page-summary {
+    color: blueviolet;
+    padding: 15px 10%;
 }
 
 /* @mediaQwery */
