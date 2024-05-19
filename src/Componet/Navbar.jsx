@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 // Removed duplicate import of GiCrossMark
 import { GiConversation } from 'react-icons/gi'; // For Community/Forum
-import { FaGithub, FaLaptop, FaHome, FaQuestionCircle } from 'react-icons/fa';
+import { FaGithub, FaLaptop, FaHome, FaQuestionCircle, FaCode, FaBook, FaHandsHelping, FaQuestion, FaComments, FaPeopleArrows, FaChevronCircleUp, FaTasks } from 'react-icons/fa';
 import { BsFiletypeDoc } from 'react-icons/bs'; // For Documentation
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -29,22 +29,22 @@ function Navbar() {
           CareerZunction</div>
         <div className="right-sight">
           <div className="cart-item">
-            <Link to="/" className='link'><FaLaptop />Home</Link>
+            <Link to="/" className='link'><FaHome style={{ marginRight: '0.1em' }}/> Home</Link>
           </div>
           <div className="cart-item">
-            <Link to="/intern" className='link'><FaHome /> Internships</Link>
+            <Link to="/intern" className='link'><FaBook style={{ marginRight: '0.1em' }} /> Internships</Link>
           </div>
           <div className="cart-item">
-            <Link to="/docs" className='link'><BsFiletypeDoc />Documentation</Link>
+            <Link to="/docs" className='link'><BsFiletypeDoc style={{ marginRight: '0.2em' }} /> Documentation</Link>
           </div>
           <div className="cart-item">
-            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'><FaGithub />GitHub</Link>
+            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'><FaGithub /> GitHub</Link>
           </div>
           <div className="cart-item">
-            <Link to="/community" className='link'><GiConversation />Community</Link>
+            <Link to="/community" className='link'><FaPeopleArrows style={{ marginRight: '0.1em' }} /> Community</Link>
           </div>
           <div className="cart-item">
-            <Link to="/help" className='link'><FaQuestionCircle />Help/FAQ</Link>
+            <Link to="/help" className='link'><FaQuestionCircle style={{ marginRight: '0.1em' }} /> Help/FAQ</Link>
           </div>
         </div>
       </nav>
