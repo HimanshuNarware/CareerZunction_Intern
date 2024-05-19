@@ -56,11 +56,14 @@ const InternPage = () => {
       </div>
 
       {/* Displaying the page summary */}
-      <p className='page-summary'>{pageSummary}</p>
+      {filteredData.length > 0 && <p className='page-summary'>{pageSummary}</p>}
 
       {/* Rendering the list of internships */}
       <div className='internBox'>
-        {filteredData.map((item, index) => (
+      {filteredData.length === 0 ? (
+        <p className="no-results">Results Not Found</p>
+      ) : (
+        filteredData.map((item, index) => (
           <div className="BoxContent" key={index}>
             <img className='ApiImg' key={index} src={item.image} alt="" />
             <h2 className='InternTitle' ref={ref}>{item.internship_name}</h2>
@@ -79,8 +82,9 @@ const InternPage = () => {
               Apply Now
             </button>
           </div>
-        ))}
-      </div>
+        ))
+      )}
+    </div>
 
       {/* Rendering the PaginatedItems component */}
       <PaginatedItems setCurrentData={setFilteredData} setPageSummary={setPageSummary} />

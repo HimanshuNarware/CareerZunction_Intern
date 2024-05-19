@@ -18,7 +18,7 @@ body {
 }
 
 .search-bar {
-    padding: 10px;
+    padding: 10px 30px 10px 40px; /* Adjust padding to make space for the magnifying glass */
     font-size: 16px;
     width: 70%;
     max-width: 400px;
@@ -26,7 +26,13 @@ body {
     border-radius: 4px;
     background-color: #1a1a1a;
     color: white;
+    /* Add background image */
+    background-image: url('C:\Users\mitas\OneDrive\Desktop\CareerZunction_Intern\public\Search.png');
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Adjust position of the image */
+    background-size: 20px 20px; /* Adjust size of the image */
 }
+
 
 .search-bar::placeholder {
     color: #a0a0a0;
@@ -163,3 +169,13 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+.no-results {
+    font-size: 20px; /* Increase font size */
+    text-align: left; /* Center text horizontally */
+    position: absolute; /* Position absolutely */
+    top: 36%; /* Center vertically */
+    left: 20%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    z-index: 999; /* Ensure it appears above other content */
+  }
+  
