@@ -51,6 +51,9 @@ function Navbar() {
           <div className="cart-item">
             <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'>GitHub</Link>
           </div>
+          <div className="cart-item">
+            <Link to="/Contact" className='link'>Contact Us</Link>
+          </div>
         </div>
       </nav>
   
@@ -80,6 +83,12 @@ function Navbar() {
             {
               <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" target="_blank">
                 <FaGithub />
+              </Link>
+            }
+          </div>
+          <div className="sidebar-options">
+            {
+              <Link to="/Contact" target="_blank">
               </Link>
             }
           </div>
