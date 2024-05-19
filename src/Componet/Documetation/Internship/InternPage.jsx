@@ -1,15 +1,19 @@
 /** @format */
 
-import "./internpage.css";
-import DataDB from "../../../DB/DataBase.json";
-import { useEffect, useRef } from "react";
+import './internpage.css';
+import { useRef, useState,useEffect } from 'react';
+import PaginatedItems from '../../pagination';
 import { useSelector } from "react-redux";
+
+
 let InternPage = () => {
   // Dispatch and Subscribe
   const button = document.querySelectorAll("viewMore");
   const ref = useRef(null);
   const theme = useSelector((state) => state.theme.theme);
-
+  const [currentData, setCurrentData] = useState([])
+  const [pageSummary, setPageSummary] = useState("")
+  
 
   useEffect(() => {
     let body=document.querySelector('body');
@@ -39,23 +43,29 @@ let InternPage = () => {
   // }
 
   return (
-    <div style={{
+
+    <div 
+    style={{
       backgroundColor: theme === "light" ? "white" : "black",
       color: theme === "light" ? "black" : "white",
-     }}>
-      <div className="internBox">
-        {DataDB.map((item, index) => {
+     }}
+    >
+
+      <p className='page-summary'>{pageSummary}</p>
+
+      <div className='internBox'>
+
+        {currentData.map((item, index) => {
           return (
+
             <div className="BoxContent" key={index}>
-              <img className="ApiImg"  src={item.image} alt="" />
-              <h2 className="InternTitle" ref={ref}>
-                {item.internship_name}
-              </h2>
+              <img className='ApiImg' key={index} src={item.image} alt="" />
+              <h2 className='InternTitle' ref={ref}>{item.internship_name}</h2>
               <div className="time">
                 <div className="mode">{item.mode}</div>
                 <div className="duration">{item.duration}</div>
               </div>
-              <p className="desc">{item.description}</p>
+              <p className='desc'>{item.description}</p>
               {/* ----------write logic for this */}
               {/* <div className="fullBox">
               <h5 className='company_name'>{item.company_name}</h5>
@@ -78,9 +88,11 @@ let InternPage = () => {
             </div>
           );
         })}
+
       </div>
-      <hr style={{width:'90vw',marginInline:'auto'}} />
-      
+        
+      <PaginatedItems setCurrentData={setCurrentData} setPageSummary={setPageSummary}/>
+
     </div>
   );
 };
