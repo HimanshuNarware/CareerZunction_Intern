@@ -38,18 +38,18 @@ function Home() {
     <div>
       <div className="page_0">
         <div className="bx-1">
-          <h2>Elevate 
+          <h2>Elevate
             <br /> Your
-           <br/>
+            <br />
             Future</h2>
           <h4>
             <i>Land your dream career.....</i> </h4>
           <Button className='check-now'>
             <Link to="/intern" className='link1'>
 
-            Check Now
+              Check Now
             </Link>
-            </Button>
+          </Button>
         </div>
         <div className="bx-2">
           <img className="home-img img-1" src={code} alt="img" />
@@ -70,18 +70,18 @@ function Home() {
           </div>
           <div className="wrapper-bx-2">
             <div className="wrapper-bx-2-0 wrapper-bx-2-1 outline">
-              <i className='icon' style={{color:'blueviolet'}}>
-              <GiWorld /> 
+              <i className='icon' style={{ color: 'blueviolet' }}>
+                <GiWorld />
               </i>
               <div className="wrapper-subbx">
                 <h3>World's Biggest</h3>
                 <p>The World's biggest collection of internships.</p>
               </div>
             </div>
-      {/* </div> */}
+            {/* </div> */}
             <div className="wrapper-bx-2-0 wrapper-bx-2-2 outline">
-              <i className='icon'  style={{color:'blueviolet'}}>
-              <GiGlobe />  
+              <i className='icon' style={{ color: 'blueviolet' }}>
+                <GiGlobe />
               </i>
               <div className="wrapper-subbx">
                 <h3>Around the Globe</h3>
@@ -92,7 +92,7 @@ function Home() {
               </div>
             </div>
             <div className="wrapper-bx-2-0 wrapper-bx-2-3 outline">
-              <i className='icon'  style={{color:'blueviolet'}}>
+              <i className='icon' style={{ color: 'blueviolet' }}>
                 <FaPeopleGroup />
               </i>
               <div className="wrapper-subbx">
@@ -101,7 +101,7 @@ function Home() {
               </div>
             </div>
             <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
-              <i className='icon' style={{color:'blueviolet'}}>
+              <i className='icon' style={{ color: 'blueviolet' }}>
                 <FaIndianRupeeSign />
               </i>
               <div className="wrapper-subbx">
@@ -113,19 +113,19 @@ function Home() {
         </div>
       </div>
       <section>
-          <div className="desktopImg">
-<img className='img img1' src={img1} alt="is" />
-<img className='img img2' src={img2} alt="is" />
-<img className='img img3' src={img7} alt="is" />
-<img className='img img4' src={img6} alt="is" />
-<img className='img img5' src={img8} alt="is" />
-<img className='img img6' src={img5} alt="is" />
-<img className='img img7' src={img9} alt="is" />
-<img className='img img8' src={img4} alt="is" />
-          </div>
+        <div className="desktopImg">
+          <img className='img img1' src={img1} alt="is" />
+          <img className='img img2' src={img2} alt="is" />
+          <img className='img img3' src={img7} alt="is" />
+          <img className='img img4' src={img6} alt="is" />
+          <img className='img img5' src={img8} alt="is" />
+          <img className='img img6' src={img5} alt="is" />
+          <img className='img img7' src={img9} alt="is" />
+          <img className='img img8' src={img4} alt="is" />
+        </div>
 
 
-        </section>
+      </section>
       {/* <div className="page_2 footer">
         <div className="footer-wrapper">
           <div className="flex">
@@ -160,7 +160,7 @@ function Home() {
           </button>
         </div>
       </div> */}
-      </div>
+    </div>
   );
 }
 

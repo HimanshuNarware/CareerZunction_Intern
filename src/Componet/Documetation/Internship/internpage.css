@@ -205,6 +205,11 @@ font-weight:500;
     }
 }
 
+.page-summary {
+    color: blueviolet;
+    padding: 15px 10%;
+}
+
 /* @mediaQwery */
 
 
