@@ -64,7 +64,7 @@
 	.button-star {
 		background: #00a4da;
 		width: 150px;
-		color: aliceblue;
+		color: purple;
 		padding: 12px 10px;
 		margin: 8px 25px;
 		line-height: 1;
@@ -74,11 +74,11 @@
 		cursor: pointer;
 
 		/* transition: .5s; */
-		&:hover {
+		/* &:hover {
 			background-color: #025f7e;
-			color: rgb(235, 253, 255);
+			color: purple(235, 253, 255);
 			transition: 0.5s;
-		}
+		} */
 
 		&:hover .star {
 			color: rgb(252, 242, 104);
@@ -86,10 +86,10 @@
 		}
 		.star-us {
 			font-size: 1.2em;
-			color:white;
+			color:purple;
 		}
 		&:hover .star-us{
-			color: rgb(252, 242, 104);
+			color: purple;
 		}
 		
 	}
