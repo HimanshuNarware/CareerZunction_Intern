@@ -13,7 +13,12 @@ let InternPage = () => {
 
   useEffect(() => {
     let body=document.querySelector('body');
+    let box=document.querySelectorAll('.BoxContent');
     body.classList.toggle('alternate');
+    box.forEach((element)=>{
+      element.classList.toggle('alternate');
+    });
+    
 
     //eslint-disable-next-line
   }, [theme==='dark']); 
@@ -74,6 +79,8 @@ let InternPage = () => {
           );
         })}
       </div>
+      <hr style={{width:'90vw',marginInline:'auto'}} />
+      
     </div>
   );
 };

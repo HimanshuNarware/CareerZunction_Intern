@@ -1,4 +1,4 @@
-.Navbar {
+.Navbar.alternate {
   display: flex;
   position: sticky;
   top: 0px;
@@ -13,7 +13,7 @@
     padding: 2em 0.93em;
 }
 
-.Navbar.alternate {
+.Navbar{
   background-color: #020c0c;
   display: flex;
   position: sticky;
@@ -102,7 +102,7 @@
     /* text-decoration:; */
     
 }
-.link{
+.link.alternate{
     text-decoration: none;
     font-size: 1.2em;
     line-height: 2.6;
@@ -112,7 +112,7 @@
 
 }
 
-.link.alternate{
+.link{
   
   text-decoration: none;
   font-size: 1.2em;
@@ -123,12 +123,12 @@
 
 }
 
-.link.alternate:hover{
+.link:hover{
     color:white;
     
 }
 
-.link:hover{
+.link.alternate:hover{
     /* text-decoration: underline; */
     color:  #5f009b;
     

@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux';
 import { setTheme } from '../Redux/Slice/ThemeSlice';
 
 function Navbar() {
-  let [slidebarClick, setSlidebarClick] = useState(true);
+  let [slidebarClick, setSlidebarClick] = useState(false);
   const dispatch = useDispatch();
   const navigate=useNavigate();
   function handleRedirect(){
