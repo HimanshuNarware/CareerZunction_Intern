@@ -1,6 +1,8 @@
 # CareerZunction
 
 The platform is an open-source project facilitating student-internship connections. It offers user-friendly interface, comprehensive listings, and robust search options. Students create profiles, match with internships, and access resources. The platform encourages feedback, collaborates with institutions, and ensures regular updates. Overall, it provides valuable internship experiences for students.
+Testing Link->https://career-zunction-intern-testing.vercel.app/
+
 
 ##CareerZunction
 ![Website Look 1](https://github.com/Anusri2107/CareerZunction_Intern/assets/100567326/005e2982-21ef-46c4-a50e-dd0682446274)
