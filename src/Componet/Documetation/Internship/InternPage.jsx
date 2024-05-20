@@ -4,6 +4,7 @@ import './internpage.css';
 import { useRef, useState, useEffect } from 'react';
 import PaginatedItems from '../../pagination';
 import internshipsData from '../../../DB/DataBase.json'; // Importing the complete dataset
+import Fuse from 'fuse.js'; // Importing fuse.js for fuzzy search
 
 const InternPage = () => {
   const ref = useRef(null);
@@ -14,22 +15,36 @@ const InternPage = () => {
   const [pageSummary, setPageSummary] = useState("");
   const [filteredData, setFilteredData] = useState([]);
 
-  // Function to filter data based on search query and filter mode
-  const filterData = (data, query, mode) => {
-    const normalizedSearchQuery = query.toLowerCase().trim();
-    return data.filter((item) => {
-      const matchesSearchQuery = item.company_name.toLowerCase().startsWith(normalizedSearchQuery) ||
-                           item.internship_name.toLowerCase().startsWith(normalizedSearchQuery);
+  // Fuse.js options for fuzzy search
+  const options = {
+    keys: ['company_name', 'internship_name'],
+    threshold: 0.3, // Adjust threshold to control fuzziness
+  };
 
+  const fuse = new Fuse(internshipsData, options);
+
+  // Function to filter data based on search query and filter mode
+  const filterData = (query, mode) => {
+    const normalizedSearchQuery = query.trim();
+    let filteredItems = internshipsData;
+
+    if (normalizedSearchQuery) {
+      const searchResults = fuse.search(normalizedSearchQuery);
+      filteredItems = searchResults.map(result => result.item);
+    }
+
+    // Further filter by mode
+    return filteredItems.filter((item) => {
       const matchesFilterMode = mode === "" || item.mode.toLowerCase() === mode.toLowerCase();
-      return matchesSearchQuery && matchesFilterMode;
+      return matchesFilterMode;
     });
   };
 
   // useEffect hook to update filteredData when searchQuery or filterMode changes
   useEffect(() => {
-    const filtered = filterData(internshipsData, searchQuery, filterMode);
+    const filtered = filterData(searchQuery, filterMode);
     setFilteredData(filtered);
+    
   }, [searchQuery, filterMode]);
 
   return (
@@ -60,31 +75,31 @@ const InternPage = () => {
 
       {/* Rendering the list of internships */}
       <div className='internBox'>
-      {filteredData.length === 0 ? (
-        <p className="no-results">Results Not Found</p>
-      ) : (
-        filteredData.map((item, index) => (
-          <div className="BoxContent" key={index}>
-            <img className='ApiImg' key={index} src={item.image} alt="" />
-            <h2 className='InternTitle' ref={ref}>{item.internship_name}</h2>
-            <div className="time">
-              <div className="mode">{item.mode}</div>
-              <div className="duration">{item.duration}</div>
+        {filteredData.length === 0 ? (
+          <p className="no-results">Results Not Found</p>
+        ) : (
+          filteredData.map((item, index) => (
+            <div className="BoxContent" key={index}>
+              <img className='ApiImg' src={item.image} alt="" />
+              <h2 className='InternTitle' ref={ref}>{item.internship_name}</h2>
+              <div className="time">
+                <div className="mode">{item.mode}</div>
+                <div className="duration">{item.duration}</div>
+              </div>
+              <p className='desc'>{item.description}</p>
+              <button
+                className='viewMore'
+                id='btn'
+                style={{ cursor: 'pointer' }}
+                ref={ref}
+                onClick={() => { window.open(item.link) }}
+              >
+                Apply Now
+              </button>
             </div>
-            <p className='desc'>{item.description}</p>
-            <button
-              className='viewMore'
-              id='btn'
-              style={{ cursor: 'pointer' }}
-              ref={ref}
-              onClick={() => { window.open(item.link) }}
-            >
-              Apply Now
-            </button>
-          </div>
-        ))
-      )}
-    </div>
+          ))
+        )}
+      </div>
 
       {/* Rendering the PaginatedItems component */}
       <PaginatedItems setCurrentData={setFilteredData} setPageSummary={setPageSummary} />
