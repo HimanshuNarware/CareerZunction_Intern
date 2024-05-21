@@ -13,6 +13,13 @@ const iconstyle = {
   width: "25px",
   color: "#892BE2",
 };
+const rate = {
+  display: "flex",
+  alignItems: "center",
+  gap: "5px",
+};
+
+const qr = {};
 function Footer() {
   return (
     <footer className="footer">
@@ -83,26 +90,42 @@ function Footer() {
             </ul>
           </div>
           <div className="footer-col">
+            <a href="https://github.com/HimanshuNarware/CareerZunction_Intern">
+              <h4 style={rate}>
+                Rate us <IoStar className="socialIcons " style={iconstyle} />{" "}
+              </h4>
+            </a>
+            <ul>
+              <li>
+                <img
+                  className="footerImage"
+                  src="https://career-zunction.vercel.app/static/media/footer-qr.63a5029576223d03d94d.jpg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+          <div className="footer-col">
             <h4>follow us</h4>
             <div className="social-links">
               <a href="https://github.com/HimanshuNarware" target="_blank">
-                <FaGithub style={iconstyle} />
+                <FaGithub className="socialIcons " style={iconstyle} />
               </a>
 
               <a
                 href="https://www.linkedin.com/in/HimanshuNarware/"
                 target="_blank"
               >
-                <FaLinkedin style={iconstyle} />
+                <FaLinkedin className="socialIcons " style={iconstyle} />
               </a>
               <a href="https://twitter.com/N_Himanshu_" target="_blank">
-                <FaTwitter style={iconstyle} />
+                <FaTwitter className="socialIcons " style={iconstyle} />
               </a>
               <a
                 href="https://github.com/HimanshuNarware/CareerZunction_Intern"
                 target="_blank"
               >
-                <IoStar style={iconstyle} />
+                <IoStar className="socialIcons " style={iconstyle} />
               </a>
             </div>
           </div>

@@ -21,7 +21,7 @@ ul{
 	width: 100vw;
   }
 .footer-col{
-   width: 25%;
+   width: 20%;
    padding: 10px 15px;
 }
 .footer-col h4{
@@ -76,6 +76,16 @@ ul{
 }
 #logo{
     font-size:2rem;
+}
+.footerImage{
+	height: 70px;
+	width: 70px;
+	object-fit: cover;
+	transition: all 0.5s ease;
+}
+.footerImage:hover{
+	height: 75px;
+	width: 75px;
 }
 /*responsive*/
 @media(max-width: 1050px){
