@@ -14,6 +14,8 @@ const InternPage = () => {
   const [filterMode, setFilterMode] = useState("");
   const [pageSummary, setPageSummary] = useState("");
   const [filteredData, setFilteredData] = useState([]);
+  const [currentData, setCurrentData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
 
   // Fuse.js options for fuzzy search
   const options = {
@@ -44,8 +46,17 @@ const InternPage = () => {
   useEffect(() => {
     const filtered = filterData(searchQuery, filterMode);
     setFilteredData(filtered);
-    
   }, [searchQuery, filterMode]);
+
+  useEffect(() => {
+    // Update the current page data whenever filteredData changes
+    const itemsPerPage = 12;
+    const newOffset = (currentPage * itemsPerPage) % filteredData.length;
+    const endOffset = newOffset + itemsPerPage > filteredData.length ? filteredData.length : newOffset + itemsPerPage;
+
+    setCurrentData(filteredData.slice(newOffset, endOffset));
+    setPageSummary(`Showing ${newOffset + 1} to ${endOffset} results out of ${filteredData.length}`);
+  }, [filteredData, currentPage]);
 
   return (
     <div style={{ background: 'black', padding: '20px' }}>
@@ -71,14 +82,14 @@ const InternPage = () => {
       </div>
 
       {/* Displaying the page summary */}
-      {filteredData.length > 0 && <p className='page-summary'>{pageSummary}</p>}
+      {currentData.length > 0 && <p className='page-summary'>{pageSummary}</p>}
 
       {/* Rendering the list of internships */}
       <div className='internBox'>
-        {filteredData.length === 0 ? (
+        {currentData.length === 0 ? (
           <p className="no-results">Results Not Found</p>
         ) : (
-          filteredData.map((item, index) => (
+          currentData.map((item, index) => (
             <div className="BoxContent" key={index}>
               <img className='ApiImg' src={item.image} alt="" />
               <h2 className='InternTitle' ref={ref}>{item.internship_name}</h2>
@@ -103,8 +114,11 @@ const InternPage = () => {
 
       {/* Rendering the PaginatedItems component */}
       {filteredData.length > 0 && (
-          <PaginatedItems setCurrentData={setFilteredData} setPageSummary={setPageSummary} />
-        )}
+        <PaginatedItems
+          pageCount={Math.ceil(filteredData.length / 12)}
+          onPageChange={(selectedPage) => setCurrentPage(selectedPage)}
+        />
+      )}
     </div>
   );
 };
