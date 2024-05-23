@@ -2,10 +2,24 @@
 
 import './internpage.css';
 import { useRef, useState } from 'react';
+import { FaHeart } from 'react-icons/fa';
 import PaginatedItems from '../../pagination';
+import { useDispatch } from 'react-redux';
+import { addToWishlist } from '../../../Redux/Slice/WishlistSlice';
+import { Link } from 'react-router-dom';
 
 
 let InternPage = () => {
+
+
+  const dispatch = useDispatch();
+  
+    const handleAddToWishlist = (item) => {
+      dispatch(addToWishlist(item));
+      
+    };
+
+
   // Dispatch and Subscribe
   const button = document.querySelectorAll('viewMore');
   const ref = useRef(null);
@@ -26,6 +40,11 @@ let InternPage = () => {
           return (
 
             <div className="BoxContent" key={index}>
+              <div className='wishlist-icon' >
+                <Link to="/wishlist">
+                  <FaHeart onClick={() => handleAddToWishlist(item)}  />
+                </Link>
+              </div>
               <img className='ApiImg' key={index} src={item.image} alt="" />
               <h2 className='InternTitle' ref={ref}>{item.internship_name}</h2>
               <div className="time">

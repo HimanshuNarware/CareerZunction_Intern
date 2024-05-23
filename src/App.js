@@ -6,6 +6,7 @@ import Error from "./Component/Error";
 import InternPage from "./Component/Documetation/Internship/InternPage";
 import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
+import Wishlist from "./Component/Wishlist";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/docs" element={<Doc/>}/>
         <Route path="/intern" element={<InternPage/>}/>
         <Route path="/Contact" element={<Contact></Contact>}/>
+        <Route path="/wishlist" element={<Wishlist />} />
         <Route path="*" element={<Error/>}/>
       </Routes>
       <Footer/> 

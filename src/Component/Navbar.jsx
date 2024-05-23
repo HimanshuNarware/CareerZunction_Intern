@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import './style.css';
 import { GiCrossMark } from 'react-icons/gi';
-import { FaGithub, FaLaptop, FaHome, FaRegSun } from 'react-icons/fa';
+import { FaGithub, FaLaptop, FaHome, FaRegSun,FaHeart } from 'react-icons/fa';
 import { BsFiletypeDoc } from 'react-icons/bs';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -53,6 +53,9 @@ function Navbar() {
           </div>
           <div className="cart-item">
             <Link to="/Contact" className='link'>Contact Us</Link>
+          </div>
+          <div className="cart-item">
+            <Link to="/wishlist" className='link'><FaHeart/></Link>
           </div>
         </div>
       </nav>

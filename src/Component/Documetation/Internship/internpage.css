@@ -100,6 +100,13 @@ object-fit:contain;
 .BoxContent{
     /* position: relative; */
 }
+
+.wishlist-icon{
+    margin-left: 280px;
+    scale: 1.2;
+    z-index: 999;
+}
+
 .MoreDetails{
  position: absolute;
     border: 1px solid white;
