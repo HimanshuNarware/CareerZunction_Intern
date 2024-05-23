@@ -62,9 +62,9 @@
 	}
 
 	.button-star {
-		background: #00bfff;
+		background: #00a4da;
 		width: 150px;
-		color: aliceblue;
+		color: purple;
 		padding: 12px 10px;
 		margin: 8px 25px;
 		line-height: 1;
@@ -74,19 +74,24 @@
 		cursor: pointer;
 
 		/* transition: .5s; */
-		&:hover {
-			background-color: #00bfff;
-			color: black;
+		/* &:hover {
+			background-color: #025f7e;
+			color: purple(235, 253, 255);
 			transition: 0.5s;
-		}
+		} */
 
 		&:hover .star {
-			color: black;
+			color: rgb(252, 242, 104);
 			transition: 0.5s;
 		}
 		.star-us {
 			font-size: 1.2em;
+			color:purple;
 		}
+		&:hover .star-us{
+			color: purple;
+		}
+		
 	}
 
 	.footer-socail-icon {
