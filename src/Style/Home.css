@@ -95,7 +95,6 @@
   margin: 14px 8px;
 }
 
-
 .page_1 .wrapper_p1 .wrapper-bx-2 {
   margin: 10px 8px;
   display: grid;
@@ -127,12 +126,11 @@
 }
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .wrapper-subbx p {
   color: rgba(226, 226, 226, 0.982);
-  font-size: 1.0em;
+  font-size: 1em;
   margin: 2px 50px 2px 0px;
-  
 }
 
-.page_1 .wrapper_p1 .wrapper-bx-2 .wrapper-bx-2-0:hover{
+.page_1 .wrapper_p1 .wrapper-bx-2 .wrapper-bx-2-0:hover {
   color: blueviolet;
 }
 .sub_title {
@@ -185,7 +183,7 @@
   background: black;
 }
 ::-webkit-scrollbar-thumb {
-  background:rgb(148, 22, 233);
+  background: rgb(148, 22, 233);
 }
 /* Firefox */
 ::-moz-scrollbar {
@@ -195,5 +193,10 @@
   background: black;
 }
 ::-moz-scrollbar-thumb {
-  background:rgb(148, 22, 233);
+  background: rgb(148, 22, 233);
+}
+/* hover effect in about us */
+.hover-ele:hover {
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
 }
