@@ -52,7 +52,7 @@ Follow these steps to set up CareerZunction on your local machine:
 
 5. **Open CareerZunction in Your Browser:**
 
-    Visit http://localhost:3000 in your preferred web browser.
+    Visit https://career-zunction-intern-testing.vercel.app/ in your preferred web browser.
 
 ## Usage
 
