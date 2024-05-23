@@ -102,7 +102,9 @@ const InternPage = () => {
       </div>
 
       {/* Rendering the PaginatedItems component */}
-      <PaginatedItems setCurrentData={setFilteredData} setPageSummary={setPageSummary} />
+      {filteredData.length > 0 && (
+          <PaginatedItems setCurrentData={setFilteredData} setPageSummary={setPageSummary} />
+        )}
     </div>
   );
 };
