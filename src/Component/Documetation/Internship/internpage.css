@@ -14,17 +14,18 @@ body {
     display: grid;
       grid-template-columns: repeat(3,1fr);
     color: white;
-    column-gap: 10%;
+    column-gap: 7%;
     row-gap: 20px;
     /* justify-content:space-around; */
-    margin-inline: 10%;
+    margin-inline: 6%;
     justify-content: space-evenly;
 
     /* background-color: black; */
     
 }
 .BoxContent{  
-    
+    padding-left: 10px;
+    padding-right: 10px;
     color: rgba(255, 255, 255, 0.795);
     text-align: center;
     width: 330px;
