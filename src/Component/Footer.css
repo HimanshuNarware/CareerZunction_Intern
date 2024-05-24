@@ -310,3 +310,9 @@
 		margin-left: 150px;
 	}
 }
+.copy {
+	text-align: center;
+	padding: 10px 0px;
+	bottom: 0;
+	width: 100%;
+  }
