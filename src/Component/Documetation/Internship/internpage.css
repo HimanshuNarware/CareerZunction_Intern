@@ -69,11 +69,11 @@ object-fit:contain;
 .time{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 0rem 1rem;
     border: 1px solid black;
-    padding-inline: 10px;
     text-transform: capitalize;
     gap: 10%;
+    justify-content: center;
 }
 .viewMore{
     color:rgb(32, 225, 32);
