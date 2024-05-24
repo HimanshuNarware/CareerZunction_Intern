@@ -315,4 +315,10 @@
 	padding: 10px 0px;
 	bottom: 0;
 	width: 100%;
+	font-size: 16px;
+  }
+  @media only screen and (max-width: 600px) {
+	.copy {
+	  font-size: 12px; /* Smaller font size for mobile devices */
+	}
   }
