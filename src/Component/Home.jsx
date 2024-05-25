@@ -43,8 +43,8 @@ function Home() {
             <br />
             Future</h2>
           <h4>
-            <i>Launch your career. Find your perfect internship today.</i>
-            <i>Land the internship that gives you a head start. We connect students with exciting opportunities 
+            <i>Launch your career.<br>Find your perfect internship today.</i><br>
+            <i>Land the internship that gives you a head start.<br> We connect students with exciting opportunities
               and guide them through the application process.</i>
             <i>From searching to securing, we're your one-stop shop for landing the perfect internship. 
               Get matched with top companies, build a resume that shines, and learn application secrets from the pros.</i>
