@@ -1,0 +1,202 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+.testimonials{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #44a820;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.card{
+  border-radius: 25px;
+  background-color:  rgb(148, 22, 233);
+  height:300px;
+  color:black;
+}
+.image-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.image-content{
+  padding: 25px 0;
+}
+
+.card-image{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+.swiper-navBtn{
+  color: rgb(148, 22, 233);
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: rgb(148, 22, 233);
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: rgb(148, 22, 233);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color:rgb(148, 22, 233);
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+.card{
+  position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.cardshar{
+  position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    
+}
+.fronts {
+  backface-visibility: hidden;
+}
+
+.backs {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  border: 2px solid rgb(148, 22, 233);
+  background-color: white;
+  border-radius: 50px;
+  font-size: 1em;
+  height: 100%;
+  width:100%
+}
+
+.rating i {
+  color: #ffc107;
+}
+
+.backs {
+	position: relative;
+	padding: 10px 40px;
+	&::before {
+		content: "\201C";
+		position: absolute;
+		font-weight: bold;
+		font-size: 4em;
+		color: rgb(148, 22, 233);
+		top: 5px;
+		left: 7px;
+		font-family: Georgia, Times, serif;
+	}
+	&::after {
+		content: "\201D";
+		position: absolute;
+		font-weight: bold;
+		font-size: 4em;
+		color: rgb(148, 22, 233);
+		bottom: -20px;
+		right: 5px;
+		font-family: Georgia, Times, serif;
+	}
+}
+@media screen and (max-width: 700px)
+{
+     .backs{
+      font-size: 15px;
+     }
+}
+@media screen and (min-width: 520px) and (max-width: 550px) {
+  .backs {
+    font-size: 13px;
+  }
+}
+.testimonial-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.prev-button,
+.next-button {
+  font-size: 50px;
+  padding-bottom:60px;
+  border: none;
+  background-color: rgb(148, 22, 233);
+  height:50px;
+  width:50px;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+  .testimonial-buttons {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 45%; /* Display two cards per row */
+    margin: 0 2.5%; /* Add some space between cards */
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .card {
+    width: 90%; /* Display one card per row */
+    margin: 0 5%; /* Add some space between cards */
+  }
+}
