@@ -7,6 +7,7 @@ import favicon from "../image/footer/favicon.png";
 import img from "../image/footer/footer-qr.jpg";
 import './Footer.css';
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <div>
       {' '}
@@ -62,6 +63,9 @@ function Footer() {
             </Link>
           </button>
           </div>
+        </div>
+        <div className="copy">
+        &copy; {currentYear} All rights reserved. Made with 💜 by CareerZunction.
         </div>
       </div>
     </div>
