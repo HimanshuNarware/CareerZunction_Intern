@@ -74,6 +74,7 @@ object-fit:contain;
     text-transform: capitalize;
     gap: 10%;
     justify-content: center;
+    width: 70%;
 }
 .viewMore{
     color:rgb(32, 225, 32);

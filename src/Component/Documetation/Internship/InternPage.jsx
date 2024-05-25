@@ -14,6 +14,41 @@ let InternPage = () => {
   const [pageSummary, setPageSummary] = useState("")
   // console.log(currentData)
 
+  const monthAbbreviations = {
+    january: "Jan",
+    february: "Feb",
+    march: "Mar",
+    april: "Apr",
+    may: "May",
+    june: "Jun",
+    july: "Jul",
+    august: "Aug",
+    september: "Sep",
+    october: "Oct",
+    november: "Nov",
+    december: "Dec"
+};
+
+  function shortmonth(month) {
+    let montharr;
+    const dashRegex = /[\u2013\u2014\-]/;
+    if (month.match(dashRegex)) {
+      montharr = month.split(dashRegex).map(month => month.trim());
+      
+    }
+    if (month.includes("/")) {
+      montharr=month.split("/")
+    }
+    if (montharr) {
+      let shortedmonth=montharr.map(months=>monthAbbreviations[(months.toLowerCase().trim())])
+      if (shortedmonth[0] !== undefined) {
+        return shortedmonth.join("/")
+        
+      }
+    }
+    return month
+  }
+
   return (
 
     <div style={{ background: 'black' }}>
@@ -30,7 +65,7 @@ let InternPage = () => {
               <h2 className='InternTitle' ref={ref}>{item.internship_name}</h2>
               <div className="time">
                 <div className="mode">{item.mode}</div>
-                <div className="duration">{item.duration}</div>
+                <div className="duration">{shortmonth(item.duration)}</div>
               </div>
               <p className='desc'>{item.description}</p>
               {/* ----------write logic for this */}
