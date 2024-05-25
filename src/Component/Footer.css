@@ -103,11 +103,25 @@
 		color: white;
 	}
 }
+
 .github,
 .linkedin,
 .twittor {
-	color: white;
+	color: rgb(241, 240, 240); 
 }
+
+.github:hover {
+	color: black;
+}
+
+.linkedin:hover {
+	color: #0178ff; 
+}
+
+.twittor:hover {
+	color: rgb(14, 151, 219); 
+}
+
 .doc-perag {
 	cursor: pointer;
 }
