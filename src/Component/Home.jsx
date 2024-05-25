@@ -43,7 +43,6 @@ function Home() {
             <br />
             Future</h2>
           <h4>
-            <i>CareerZunction</i>
             <i>Launch your career. Find your perfect internship today.</i>
             <i>Land the internship that gives you a head start. We connect students with exciting opportunities 
               and guide them through the application process.</i>
