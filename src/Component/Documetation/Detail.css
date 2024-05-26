@@ -47,4 +47,33 @@ gap: 7%;
     background-color: rgba(128, 128, 128, 0.132);
 }
 
+.github1 {
+    color: rgb(250, 246, 246); /* Default light color */
+    text-decoration: none; /* Ensure no underline */
+    font-size: 1.5em; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    
+}
 
+.github1 svg {
+    color: rgb(253, 250, 250); /* Set icon color to black */
+    transition: color 0.4s ease-out; /* Smooth transition for icon color change */
+    
+}
+
+.github1:hover svg {
+    color: rgb(13, 13, 13);
+    background-color: rgb(249, 246, 246); /* Change icon color to white on hover */
+    border-radius: 50%;
+}
+
+.linkedin1 {
+    color: rgb(250, 246, 246); /* Default light color */
+    text-decoration: none; /* Ensure no underline */
+    font-size: 1.5em; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.linkedin1:hover {
+    color: #0178ff; /* LinkedIn deep blue on hover */
+}
