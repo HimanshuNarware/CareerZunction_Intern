@@ -5,6 +5,7 @@ import { IoStar } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 // stylying of footer is modified
+//currently i updated and increased the gap between the div in the row 
 const iconstyle = {
   height: "100%",
   width: "100%",

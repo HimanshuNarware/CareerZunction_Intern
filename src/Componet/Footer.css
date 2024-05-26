@@ -11,6 +11,7 @@
 	display: flex;
 	flex-wrap: wrap;
     justify-items: center;
+	gap:2.5rem
 }
 ul{
 	list-style: none;
@@ -21,8 +22,9 @@ ul{
 	width: 100vw;
   }
 .footer-col{
-   width: 20%;
+   width: 18%;
    padding: 10px 15px;
+  
 }
 .footer-col h4{
 	font-size: 18px;
