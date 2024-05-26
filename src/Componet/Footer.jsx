@@ -19,6 +19,9 @@ const rate = {
   alignItems: "center",
   gap: "5px",
 };
+const widthD={
+  width:"200px"
+}
 
 const qr = {};
 function Footer() {
@@ -79,7 +82,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="footer-col">
+          <div className="footer-col" style={widthD}>
             <h4>License</h4>
             <ul>
               <li>
@@ -90,7 +93,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="footer-col">
+          <div className="footer-col" style={widthD}>
             <a href="https://github.com/HimanshuNarware/CareerZunction_Intern">
               <h4 style={rate}>
                 Rate us <IoStar className="socialIcons " style={iconstyle} />{" "}
@@ -106,7 +109,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="footer-col">
+          <div className="footer-col" style={widthD}>
             <h4>follow us</h4>
             <div className="social-links">
               <a href="https://github.com/HimanshuNarware" target="_blank">
