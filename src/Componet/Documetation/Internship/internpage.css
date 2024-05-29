@@ -15,6 +15,7 @@ body {
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .search-bar {
@@ -119,56 +120,59 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 410px) {
-    .internBox {
-        margin-inline: 10% !important;
-    }
-    .BoxContent {
-        width: 80vw;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .internBox {
-        margin-inline: 10% !important;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    .internBox {
-        margin-inline: 12% !important;
-    }
-}
-
-@media screen and (max-width: 683px) {
-    .internBox {
-        margin-top: -120px;
-        padding-top: 50px;
-        display: flex;
-        flex-direction: column;
-        margin-inline: 20%;
-    }
-}
-
-@media screen and (min-width: 684px) {
-    .internBox {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (min-width: 1225px) {
-    .internBox {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 .no-results {
     font-size: 28px; 
     text-align: center; 
     position: absolute; 
-    top: 45%; 
+    top: 40%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .search-bar, .filter-select {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-bar, .filter-select {
+        width: 90%;
+        font-size: 14px;
+    }
+    .filter-select {
+        font-size: 14px;
+    }
+    .internBox {
+        grid-template-columns: repeat(2, 1fr);
+        margin-inline: 5%;
+        row-gap: 15px;
+    }
+    .BoxContent {
+        width: 45vw;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-bar, .filter-select {
+        width: 100%;
+        font-size: 12px;
+    }
+    .filter-select {
+        font-size: 12px;
+    }
+    .internBox {
+        grid-template-columns: 1fr;
+        margin-inline: 5%;
+    }
+    .BoxContent {
+        width: 90vw;
+        height: auto;
+    }
+    .no-results {
+        top: 30%; /* Adjust position to avoid collision with footer */
+        font-size: 20px;
+    }
 }
