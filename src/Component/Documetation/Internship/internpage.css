@@ -256,6 +256,7 @@ font-weight:500;
 @media screen and (min-width:1225px){
     .internBox{
         display:grid;
+        justify-content: center !important;;
         grid-template-columns: repeat(3,1fr);
     }
 }
