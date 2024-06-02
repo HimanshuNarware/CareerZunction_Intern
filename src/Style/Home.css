@@ -24,6 +24,7 @@
   font-size: 2.8em;
   line-height: 1.2;
   margin: 4px 10px;
+  text-align: justify;
 }
 .page_0 .bx-1 h4 {
   font-size: 1.05em;
@@ -37,6 +38,13 @@
   background-color: transparent;
   color: white;
   outline: thick double blueviolet;
+  text-align: center;
+  transition: background-color 0.3sec;
+  transition: text-decoration-color 0.3sec;
+}
+.page_0 .check-now:hover {
+ background-color: white;
+ text-decoration-color: black;
 }
 .home1 {
   margin-top: 100px;

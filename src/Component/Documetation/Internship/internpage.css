@@ -36,7 +36,9 @@ body {
     gap: 10px;
     overflow-y: hidden;
     margin-block: 10px;
-    background:linear-gradient(to bottom,black,rgba(153, 0, 255, 0.279));
+    border-color: aliceblue;
+    border-width: 20px;
+    background:linear-gradient(to bottom,rgb(199, 141, 243),rgba(153, 0, 255, 0.279));
     border-radius: 13px;
     /* border: 1px dotted gray; */
     /* box-shadow:  2px 2px 28px rgba(219, 205, 205, 0.196),-2px -2px 60px rgb(15, 15, 15); */
@@ -83,6 +85,8 @@ object-fit:contain;
     border-radius: 7px;
     background-color: transparent;
     transition: color 0.3s, background-color 0.3s, border 0.3s;
+    height:20px;
+    width:60px;
 }
 
 .viewMore:hover{
@@ -97,9 +101,7 @@ object-fit:contain;
     transition: 0.5s;
 }
 
-.BoxContent{
-    /* position: relative; */
-}
+
 .MoreDetails{
  position: absolute;
     border: 1px solid white;
