@@ -2,29 +2,54 @@
   
     display: flex;
     justify-content: space-evenly;
-     border: 2px dashed rgba(128, 128, 128, 0.744);
-    border-left: none;
-    border-right: none; 
     margin: 10vh;
-    
+    padding: 15px 12px 15px 15px;
+    margin-bottom: 25%;
+    background-color: #000;
+    box-shadow: 2px 4px 8px 8px rgba(157, 0, 255, 0.694), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
-
-
+    h1 {
+        font-size: 45px;
+        background: -webkit-linear-gradient(#9d00ffb1, #ba70e9dd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 .fimg {
-    width: 200px;
+    margin: 23% 25% 25% 5%;
+    padding: 5px 5px 5px 5px;
+    width: 100px;
     height: 195px;
-    border-radius: 110px;
     opacity: 70%;
-
+    box-shadow: 0 4px 8px 0 #9d00ffb1, 0 6px 20px 0 #ba70e9dd;
+} 
+span a .github{
+    padding: 5px;
+    background-color:#fff;
+    color: #000;
+    font-size: 40px;
+    cursor: pointer;
 }
-
+span a .linkedin{
+    padding: 5px;
+    background-color:#fff;
+    color: #0077b5;
+    font-size: 40px;
+    cursor: pointer;
+}
+span a svg:hover{
+    padding: 5px;
+    background-color:#000;
+    color:#fff;
+    font-size: 40px;
+    cursor: pointer;
+}
 .section_founder,
 .section_maintainer {
     display: flex;
     flex-direction: row;
-    padding: 5px 9px;
-    border: 2px solid rgb(40, 39, 41);
+    padding: 25px 24px 35px 14px;
+    background-color: #000;
+    box-shadow: 0 4px 8px 0 rgba(157, 0, 255, 0.694), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-block: 25px;
     gap: 2vh;
 
@@ -32,6 +57,7 @@
     p {
         color: rgba(157, 0, 255, 0.694);
         align-self: center;
+        font-weight: 900;
     }
 
     span {
@@ -39,6 +65,14 @@
         justify-content: center;
 gap: 7%;
     }
+}
+.section_founder:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.section_maintainer:hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }
 .line{
     height: .1px;
