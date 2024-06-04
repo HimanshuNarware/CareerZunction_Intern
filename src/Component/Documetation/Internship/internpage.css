@@ -85,7 +85,7 @@ object-fit:contain;
     border-radius: 7px;
     background-color: transparent;
     transition: color 0.3s, background-color 0.3s, border 0.3s;
-    
+}
 
 .viewMore:hover{
     color: white;
