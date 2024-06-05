@@ -1,5 +1,4 @@
 
-
 .Navbar {
     display: flex;
     position: sticky;
@@ -10,7 +9,7 @@
     justify-content: space-between;
     padding: 2em 0.93em;
     z-index: 999;
-    transition: background-color 0.3s ease, padding 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, padding 0.3s ease, transform 0.3s ease-in-out;
   }
   
   .NavbarScrolled {
