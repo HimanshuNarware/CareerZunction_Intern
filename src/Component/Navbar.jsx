@@ -46,6 +46,9 @@ function Navbar() {
             <Link to="/intern" className='link'> Internships</Link>
           </div>
           <div className="cart-item">
+            <Link to="/Blog" className='link'>Blog</Link>
+          </div>
+          <div className="cart-item">
             <Link to="/docs" className='link'>Documentation</Link>
           </div>
           <div className="cart-item">
@@ -70,6 +73,11 @@ function Navbar() {
               <Link to="/intern">
                 <FaLaptop />
               </Link>
+            }
+          </div>
+          <div className="sidebar-options">
+            {
+              <Link to="/Blog"></Link>
             }
           </div>
           <div className="sidebar-options">
