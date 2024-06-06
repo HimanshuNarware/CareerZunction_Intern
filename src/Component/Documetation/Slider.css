@@ -2,8 +2,9 @@
 
   
   .fimg {
-    width: 200px;
-    height: 195px;
+    width: 1px;
+    padding: 1px;
+    height: 5px;
     border-radius: 110px;
     opacity: 70%;
   }
@@ -13,11 +14,12 @@
     display: flex;
     flex-direction: column;
     padding: 5px 9px;
-    border: 2px solid rgb(40, 39, 41);
+    border: 1px solid rgba(0, 0, 0, 0.72);
     margin-block: 25px;
   
     p {
-      color: rgba(157, 0, 255, 0.694);
+      /* color: rgba(157, 0, 255, 0.694); */
+      color: white;
       align-self: center;
     }
   
