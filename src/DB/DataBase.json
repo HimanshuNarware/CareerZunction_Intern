@@ -35,8 +35,17 @@
     "award":"Unknown",
     "description":"Great work environment. Active support by all team members. Approachability. Openness to new ideas and ways.",
     "mode":"Offline"
-
-
+  },
+  { 
+    "internship_name":"Intel Student Intern", 
+    "company_name":"Intel ", 
+    "internship_type":"Internship  ", 
+    "duration":"FTE",
+    "link":"https://jobs.intel.com/en/job/hyderabad/student-intern/41147/64908294640", 
+    "image":"https://th.bing.com/th/id/OIP.X43U39p9N8XEn5BI0lXJUAAAAA?w=176&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+    "award":"Unknown", 
+    "description":" As a Graduate Intern Technical, you’ll be immersed in innovative projects, working alongside seasoned professionals, and honing your skills in a dynamic environment.",
+    "mode":"Offline"
   },
   {
     "internship_name":"Sprinklr Intern+FTE",
