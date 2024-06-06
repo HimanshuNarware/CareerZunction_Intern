@@ -6,6 +6,7 @@ import Error from "./Component/Error";
 import InternPage from "./Component/Documetation/Internship/InternPage";
 import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
+import { ScrollToTop } from "./Component/ScrollToTop";
 
 
 function App() {
