@@ -4,6 +4,49 @@
   box-sizing: border-box;
 }
 
+/* Scroll to top button */
+#scrollToTopBtn {
+  position:sticky;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  display: none; /* Initially hidden */
+  background-color:#8a2be2;/* Blue background */
+  color: white; /* White text */
+  border: none;
+  width: 35px;/* Set width */
+   height: 35px;  /* Set height  */
+  border-radius: 50%; /* Make it a circle */
+  cursor: pointer;
+  opacity: 1; /* Fully opaque */
+  transition: opacity 0.5s; /* Smooth transition for opacity */
+  margin-left: auto;
+
+}
+
+#scrollToTopBtn.show {
+  display: block; /* Show button when scrolled down */
+  opacity: 1;
+}
+#scrollToTopBtn:hover {
+  opacity: 0.8; /* Change opacity on hover */
+  transform: scale(1.05);
+  background-image: radial-gradient(circle at center, rgba(157, 150, 150, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+  background-color: #b60e59;
+
+}
+.noscript-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
 .page_0 {
   width: 100%;
   height: 100vh !important;
