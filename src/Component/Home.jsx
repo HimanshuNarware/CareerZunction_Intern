@@ -22,7 +22,7 @@ import img8 from '../image/desktopImg/img 9.jpg'
 import img9 from '../image/desktopImg/img 8.jpg'
 import { Button } from 'antd';
 import { GiGlobe, GiWorld } from 'react-icons/gi';
-import { FcGlobe } from 'react-icons/fc';
+// import { FcGlobe } from 'react-icons/fc';
 import {
   FaIndianRupeeSign,
   FaPeopleGroup,
@@ -41,7 +41,7 @@ function Home() {
           <h2>Elevate
             <br /> Your
             <br />
-            Future</h2>
+           <span>Future</span></h2>
           <h4>
             <i>Land your dream career.....</i> </h4>
           <Button className='check-now'>
@@ -66,6 +66,7 @@ function Home() {
         <div className="wrapper_p1">
           <div className="wrapper-bx-1 ">
             <div className="sub_title">About us</div>
+            
             <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
           </div>
           <div className="wrapper-bx-2">
