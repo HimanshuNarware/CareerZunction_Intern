@@ -15,7 +15,23 @@ let InternPage = () => {
 
   return (
     <div style={{ background: "black" }}>
-      <p className="page-summary">{pageSummary}</p>
+      <div class="filters">
+      <div className='page-summary'>{pageSummary}</div>
+      <select class="interest" value="CAREER INTEREST">
+        <option>Accounting</option>
+        <option>Consulting</option>
+        <option>Data</option>
+        <option>Design</option>
+        <option>Engineering</option>
+        <option>Human Resources</option>
+        <option>Law</option>
+        <option>Marketing</option>
+        <option>Project Management</option>
+        <option>Real Estate</option>
+        <option>Sales</option>
+        <option>Softeware and Tech</option>
+      </select>
+      </div>
 
       <div className="internBox">
         {currentData.map((item, index) => {
