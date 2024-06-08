@@ -100,14 +100,38 @@
 		gap: 10px;
 		margin: 4px 4px;
 		padding: 5px 0px;
-		color: white;
+		color: rgb(9, 9, 9);
 	}
 }
-.github,
-.linkedin,
-.twittor {
-	color: white;
+
+.github {
+	color: rgb(250, 246, 246); /* Default light color */
 }
+
+.linkedin {
+	color: rgb(250, 246, 246); /* Default light color */
+}
+
+.twittor {
+	color: rgb(250, 246, 246); /* Default light color */
+}
+
+/* Hover effects */
+.github:hover {
+	color: black; /* Change GitHub icon color to black on hover */
+	background-color: transparent; /* Ensure no background color change */
+}
+
+.linkedin:hover {
+	color: #200ae5; /* LinkedIn deep blue on hover */
+	background-color: transparent; /* Ensure no background color change */
+}
+
+.twittor:hover {
+	color: rgb(14, 151, 219); /* Twitter (X) light blue on hover */
+	background-color: transparent; /* Ensure no background color change */
+}
+
 .doc-perag {
 	cursor: pointer;
 }
@@ -310,3 +334,15 @@
 		margin-left: 150px;
 	}
 }
+.copy {
+	text-align: center;
+	padding: 10px 0px;
+	bottom: 0;
+	width: 100%;
+	font-size: 16px;
+  }
+  @media only screen and (max-width: 600px) {
+	.copy {
+	  font-size: 12px; /* Smaller font size for mobile devices */
+	}
+  }
