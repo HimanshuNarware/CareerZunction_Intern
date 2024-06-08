@@ -24,11 +24,49 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CareerZunction</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+ 
+<noscript>
+  <div class="noscript-message">
+    You need to enable JavaScript to run this app.
+  </div>
+</noscript>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("scrollToTopBtn");
+
+  // When the user scrolls down 20px from the top of the document, shows the button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.classList.add("show");
+    } else {
+      mybutton.classList.remove("show");
+    }
+
+    // Make button transparent after scrolling 1276.8px
+    if (document.body.scrollTop > 1276.8 || document.documentElement.scrollTop > 1276.8) {
+      mybutton.style.opacity = 0;
+    } else {
+      mybutton.style.opacity = 1;
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
