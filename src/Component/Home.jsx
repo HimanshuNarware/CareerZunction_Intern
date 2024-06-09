@@ -28,6 +28,7 @@ import {
   FaPeopleGroup,
 } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 
 
@@ -38,12 +39,34 @@ function Home() {
     <div>
       <div className="page_0">
         <div className="bx-1">
-          <h2>Elevate
+          <motion.h2
+                      initial={{ opacity: 0, x: -150 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.5,
+                      }}
+                    >
+          Elevate
             <br /> Your
             <br />
-            Future</h2>
-          <h4>
-            <i>Land your dream career.....</i> </h4>
+            Future
+            </motion.h2>
+            <motion.h4
+                      initial={{ opacity: 0, y: 150 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.8,
+                      }}
+                    >
+            <i>Land your dream career.....</i> </motion.h4>
           <Button className='check-now'>
             <Link to="/intern" className='link1'>
 
@@ -65,11 +88,45 @@ function Home() {
       <div className="page_1">
         <div className="wrapper_p1">
           <div className="wrapper-bx-1 ">
-            <div className="sub_title">About us</div>
-            <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
+          <motion.div
+                      initial={{ opacity: 0, y: -150 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.5,
+                      }}
+                      className="sub_title"
+                    >About us</motion.div>
+                    <motion.p
+                      initial={{ opacity: 0, y: -150 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.5,
+                      }}
+                      className="peragraph"
+                      style={{ textAlign: 'center' }}
+                    >Find your first internship</motion.p>
           </div>
           <div className="wrapper-bx-2">
-            <div className="wrapper-bx-2-0 wrapper-bx-2-1 outline">
+          <motion.div
+                      initial={{ opacity: 0, x: -150 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.5,
+                      }}
+                      className="wrapper-bx-2-0 wrapper-bx-2-1 outline"
+                    >
               <i className='icon' style={{ color: 'blueviolet' }}>
                 <GiWorld />
               </i>
@@ -77,9 +134,20 @@ function Home() {
                 <h3>World's Biggest</h3>
                 <p>The World's biggest collection of internships.</p>
               </div>
-            </div>
+            </motion.div>
             {/* </div> */}
-            <div className="wrapper-bx-2-0 wrapper-bx-2-2 outline">
+            <motion.div
+                      initial={{ opacity: 0, x: 150 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.5,
+                      }}
+                      className="wrapper-bx-2-0 wrapper-bx-2-2 outline"
+                    >
               <i className='icon' style={{ color: 'blueviolet' }}>
                 <GiGlobe />
               </i>
@@ -90,8 +158,19 @@ function Home() {
                   and hackathons.
                 </p>
               </div>
-            </div>
-            <div className="wrapper-bx-2-0 wrapper-bx-2-3 outline">
+              </motion.div>
+              <motion.div
+                      initial={{ opacity: 0, x: -150 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.5,
+                      }}
+                      className="wrapper-bx-2-0 wrapper-bx-2-3 outline"
+                    >
               <i className='icon' style={{ color: 'blueviolet' }}>
                 <FaPeopleGroup />
               </i>
@@ -99,8 +178,19 @@ function Home() {
                 <h3>Open Source</h3>
                 <p>This project is open source and you can contribute to it.</p>
               </div>
-            </div>
-            <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
+            </motion.div>
+            <motion.div
+                      initial={{ opacity: 0, x: 150 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.5,
+                      }}
+                      className="wrapper-bx-2-0 wrapper-bx-2-4 outline"
+                    >
               <i className='icon' style={{ color: 'blueviolet' }}>
                 <FaIndianRupeeSign />
               </i>
@@ -108,12 +198,23 @@ function Home() {
                 <h3>Free to use</h3>
                 <p>This project is free to use.</p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
       <section>
-        <div className="desktopImg">
+      <motion.div
+                      initial={{ opacity: 0, x: 150 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.8,
+                      }}
+                      className="desktopImg"
+                    >
           <img className='img img1' src={img1} alt="is" />
           <img className='img img2' src={img2} alt="is" />
           <img className='img img3' src={img7} alt="is" />
@@ -122,7 +223,7 @@ function Home() {
           <img className='img img6' src={img5} alt="is" />
           <img className='img img7' src={img9} alt="is" />
           <img className='img img8' src={img4} alt="is" />
-        </div>
+        </motion.div>
 
 
       </section>
