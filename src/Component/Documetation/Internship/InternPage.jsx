@@ -3,6 +3,7 @@
 import "./internpage.css";
 import { useRef, useState } from "react";
 import PaginatedItems from "../../pagination";
+import { motion } from "framer-motion";
 
 let InternPage = () => {
   // Dispatch and Subscribe
@@ -20,7 +21,19 @@ let InternPage = () => {
       <div className="internBox">
         {currentData.map((item, index) => {
           return (
-            <div className="BoxContent" key={index}>
+            <motion.div
+                      initial={{ opacity: 0, y: 150 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.5,
+                      }}
+                      className="BoxContent" 
+                      key={index}
+                    >
               <img className="ApiImg" key={index} src={item.image} alt="" />
               <h2 className="InternTitle" ref={ref}>
                 {item.internship_name}
@@ -48,7 +61,7 @@ let InternPage = () => {
                 }}>
                 Apply Now
               </button>
-            </div>
+              </motion.div>
           );
         })}
       </div>

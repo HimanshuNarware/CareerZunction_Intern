@@ -3,10 +3,23 @@ import { FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { motion } from "framer-motion";
 function Contact() {
   return (
     <div className="p" style={{display: 'flex'}}>
-    <div className="card" style={{maxWidth:"30%",margin:"30px"}}>
+    <motion.div
+                      initial={{ opacity: 0, x: -150 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.5,
+                      }}
+                      className="card" 
+                      style={{maxWidth:"30%",margin:"30px"}}
+                    >
       <img src="./support.jpg"></img>
       <div className="icons">
         <FaGithub id="ic"/>
@@ -14,8 +27,19 @@ function Contact() {
         <FaWhatsapp id="ic"/>
         <CiLinkedin id="ic"/>
       </div>
-    </div>
-    <div className="form">
+    </motion.div>
+    <motion.div
+                      initial={{ opacity: 0, y: 150 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{
+                        duration: 1,
+                        type: "spring",
+                        stiffness: 100,
+                        delay: 0.8,
+                      }}
+                      className="form" 
+                    >
       <h1 style={{color:"#9416e9"}}>Send us a message</h1>
       <div className="child1">
         <input type="text" placeholder='First Name'></input>
@@ -31,7 +55,7 @@ function Contact() {
       <div className="btn">
       <button type="submit">Send Message</button>
       </div>
-    </div>
+    </motion.div>
     </div>
   )
 }
