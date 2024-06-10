@@ -35,8 +35,8 @@ function Detail() {
                           <img className="fimg" src={Founder_img} alt="img" />
                           <p>Founder : Himanshu Narware</p>
                           <span>
-                              <a className="github" href='https://github.com/HimanshuNarware' target='_blank'><FaGithub /></a>
-                              <a className="linkedin" href='https://linkedin.com/himanshunarware ' target='_blank'><FaLinkedin /></a>
+                          <a className="github1" href="https://github.com/HimanshuNarware" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                              <a className="linkedin1" href='https://linkedin.com/himanshunarware ' target='_blank'><FaLinkedin /></a>
                           </span>
 
                       </div>
@@ -45,8 +45,8 @@ function Detail() {
                           <img className='fimg' src={Maintainer_img} alt="img" />
                           <p>Maintainer : Chaitali Sonare</p>
                           <span>
-                              <a className="github" href='#' target='_blank'>{<FaGithub />}</a>
-                              <a className="linkedin" href='# ' target='_blank'><FaLinkedin /></a>
+                              <a className="github1" href='#' target='_blank'>{<FaGithub />}</a>
+                              <a className="linkedin1" href='# ' target='_blank'><FaLinkedin /></a>
                           </span>
                       </div>
                   </div>) :
