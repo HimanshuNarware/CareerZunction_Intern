@@ -9,20 +9,22 @@ function Preloader() {
         setLoading(true);
         setTimeout(() =>{
             setLoading(false)
-        },3000)
+        },1700)
     },[])
 return (
     
      
             loading ?
-            <div className='pre'>
+            <div className='pre transition duration-150 ease-in'>
                 <Lottie className="preloader" animationData={pre}/>
             </div>
             
              :
             //Rest Code
                 <App/>
-        
+          
+               
+
   );
 }
 export default Preloader;
