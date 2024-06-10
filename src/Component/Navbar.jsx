@@ -46,6 +46,9 @@ function Navbar() {
             <Link to="/intern" className='link'> Internships</Link>
           </div>
           <div className="cart-item">
+            <Link to="/Blog" className='link'>Blog</Link>
+          </div>
+          <div className="cart-item">
             <Link to="/docs" className='link'>Documentation</Link>
           </div>
           <div className="cart-item">
@@ -72,6 +75,11 @@ function Navbar() {
               </Link>
             }
           </div>
+          <div className="sidebar-optionss">
+            {
+              <Link to="/Blog"></Link>
+            }
+          </div>
           <div className="sidebar-options">
             {
               <Link to="/docs">
@@ -86,7 +94,7 @@ function Navbar() {
               </Link>
             }
           </div>
-          <div className="sidebar-options">
+          <div className="sidebar-optionss">
             {
               <Link to="/Contact" target="_blank">
               </Link>
