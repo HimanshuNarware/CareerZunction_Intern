@@ -16,7 +16,7 @@ function Blog() {
   }, []);
 
   if (!isDesktop) {
-    return null;
+    return null; // Return null for mobile view to avoid rendering the blog section
   }
 
   return (
@@ -53,9 +53,8 @@ function Blog() {
           <div className="testimonial-user" data-aos="fade-up" key={index}>
             <img className="testi-img" src={testimonial.img} alt=""/>
             <div>
-              <p><sup><i></i></sup>{testimonial.text}<sup><i></i></sup></p>
+              <p>{testimonial.text}</p>
               <div className="user-info">
-                  <br/>
                 <h3>{testimonial.name}</h3>
               </div>
             </div>

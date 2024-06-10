@@ -1,3 +1,5 @@
+/* Existing CSS */
+
 .testimonials {
   background-color: var(--secondary-color);
   max-width: var(--max-width);
@@ -67,6 +69,10 @@
 /* Responsive design */
 @media only screen and (max-width: 1024px) {
   .testimonials {
-    display: none;
+    display: none; /* Hide the entire section on mobile view */
+  }
+
+  .sidebar-optionss {
+    display: none; /* Ensure these specific elements are hidden */
   }
 }

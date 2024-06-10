@@ -75,7 +75,7 @@ function Navbar() {
               </Link>
             }
           </div>
-          <div className="sidebar-options">
+          <div className="sidebar-optionss">
             {
               <Link to="/Blog"></Link>
             }
@@ -94,7 +94,7 @@ function Navbar() {
               </Link>
             }
           </div>
-          <div className="sidebar-options">
+          <div className="sidebar-optionss">
             {
               <Link to="/Contact" target="_blank">
               </Link>
