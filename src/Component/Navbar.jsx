@@ -1,15 +1,15 @@
 /** @format */
 
-import React, { useState } from 'react';
-import './style.css';
-import { GiCrossMark } from 'react-icons/gi';
-import { FaGithub, FaLaptop, FaHome, FaRegSun } from 'react-icons/fa';
-import { BsFiletypeDoc } from 'react-icons/bs';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import "./style.css";
+import { GiCrossMark } from "react-icons/gi";
+import { FaGithub, FaLaptop, FaHome, FaRegSun } from "react-icons/fa";
+import { BsFiletypeDoc } from "react-icons/bs";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
-  const navigate=useNavigate();
-  function handleRedirect(){
+  const navigate = useNavigate();
+  function handleRedirect() {
     navigate("/");
   }
   let [slidebarClick, setSlidebarClick] = useState(false);
@@ -29,36 +29,61 @@ function Navbar() {
   return (
     <>
       <nav className="Navbar">
-        <div 
+        <div
           className="nav-icons"
-          style={{ cursor: 'pointer',fontSize:'2em' }}
+          style={{ cursor: "pointer", fontSize: "2em" }}
           onClick={toggleDarkMode}>
           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
         </div>
-        <div className="left-sight" onClick={handleRedirect} style={{textAlign:'center',fontSize:'2em',cursor:'pointer'}} 
-        >
-          CareerZunction</div>
+        <div
+          className="left-sight"
+          onClick={handleRedirect}
+          style={{ textAlign: "center", fontSize: "2em", cursor: "pointer" }}>
+          CareerZunction
+        </div>
         <div className="right-sight">
           <div className="cart-item">
-            <Link to="/" className='link'>Home</Link>
+            <Link to="/" className="link">
+              {" "}
+              <i class="fa-solid fa-house"></i> Home
+            </Link>
           </div>
           <div className="cart-item">
-            <Link to="/intern" className='link'> Internships</Link>
+            <Link to="/intern" className="link">
+              {" "}
+              <i class="fa-solid fa-graduation-cap"></i> Internships
+            </Link>
           </div>
           <div className="cart-item">
+<<<<<<< Updated upstream
             <Link to="/Blog" className='link'>Blog</Link>
           </div>
           <div className="cart-item">
             <Link to="/docs" className='link'>Documentation</Link>
+=======
+            <Link to="/docs" className="link">
+              {" "}
+              <i class="fa-solid fa-book"></i> Documentation
+            </Link>
+>>>>>>> Stashed changes
           </div>
           <div className="cart-item">
-            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'>GitHub</Link>
+            <Link
+              to="https://github.com/HimanshuNarware/CareerZunction_Intern"
+              className="link">
+              {" "}
+              <i class="fa-brands fa-github"></i> GitHub
+            </Link>
           </div>
           <div className="cart-item">
-            <Link to="/Contact" className='link'>Contact Us</Link>
+            <Link to="/Contact" className="link">
+              {" "}
+              <i class="fa-solid fa-phone"></i> Contact Us
+            </Link>
           </div>
         </div>
       </nav>
+<<<<<<< Updated upstream
   
         <div className="sidebar ">
           <div className="sidebar-options">
@@ -101,9 +126,44 @@ function Navbar() {
             }
           </div>
         </div>
+=======
+>>>>>>> Stashed changes
 
-       
-    
+      <div className="sidebar ">
+        <div className="sidebar-options">
+          {
+            <Link to="/">
+              <FaHome />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {
+            <Link to="/intern">
+              <FaLaptop />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {
+            <Link to="/docs">
+              <BsFiletypeDoc />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {
+            <Link
+              to="https://github.com/HimanshuNarware/CareerZunction_Intern"
+              target="_blank">
+              <FaGithub />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {<Link to="/Contact" target="_blank"></Link>}
+        </div>
+      </div>
     </>
   );
 }
