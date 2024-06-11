@@ -31,16 +31,23 @@ function Navbar() {
       <nav className="Navbar">
         <div
           className="nav-icons"
-          style={{ cursor: "pointer", fontSize: "2em" }}
+          style={{ cursor: 'pointer',fontSize:'1.8em', marginLeft: "0.6rem" }}
           onClick={toggleDarkMode}>
           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
         </div>
-        <div
-          className="left-sight"
-          onClick={handleRedirect}
-          style={{ textAlign: "center", fontSize: "2em", cursor: "pointer" }}>
-          CareerZunction
-        </div>
+        <div className="left-sight" onClick={handleRedirect} style={{textAlign:'center',fontSize:'1.65rem',cursor:'pointer', fontWeight: "550"}} 
+        >
+          CareerZunction</div>
+//           style={{ cursor: "pointer", fontSize: "2em" }}
+//           onClick={toggleDarkMode}>
+//           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
+//         </div>
+//         <div
+//           className="left-sight"
+//           onClick={handleRedirect}
+//           style={{ textAlign: "center", fontSize: "2em", cursor: "pointer" }}>
+//           CareerZunction
+//         </div>
         <div className="right-sight">
           <div className="cart-item">
             <Link to="/" className="link">
