@@ -60,7 +60,7 @@
 }
 .page_0 .bx-2,
 .page_0 .bx-1 {
-  margin: 20px 10px;
+  margin: 130px 10px;
   padding: 12px 17px;
 }
 .page_0 .bx-1 h2 {
@@ -72,9 +72,9 @@
   font-size: 1.05em;
   margin-bottom: 5px;
 }
-.page_0 .bx-1 span{
+/* .page_0 .bx-1 span{
   color: blueviolet;
-}
+} */
 .page_0 .check-now {
   margin: 16px 10px;
   padding: 5px 20px;
