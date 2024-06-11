@@ -55,17 +55,15 @@ function Navbar() {
             </Link>
           </div>
           <div className="cart-item">
-<<<<<<< Updated upstream
-            <Link to="/Blog" className='link'>Blog</Link>
+            <Link to="/Blog" className="link">
+              Blog
+            </Link>
           </div>
           <div className="cart-item">
-            <Link to="/docs" className='link'>Documentation</Link>
-=======
             <Link to="/docs" className="link">
               {" "}
               <i class="fa-solid fa-book"></i> Documentation
             </Link>
->>>>>>> Stashed changes
           </div>
           <div className="cart-item">
             <Link
@@ -83,51 +81,43 @@ function Navbar() {
           </div>
         </div>
       </nav>
-<<<<<<< Updated upstream
-  
-        <div className="sidebar ">
-          <div className="sidebar-options">
-            {
-              <Link to="/">
-                <FaHome />
-              </Link>
-            }
-          </div>
-          <div className="sidebar-options">
-            {
-              <Link to="/intern">
-                <FaLaptop />
-              </Link>
-            }
-          </div>
-          <div className="sidebar-optionss">
-            {
-              <Link to="/Blog"></Link>
-            }
-          </div>
-          <div className="sidebar-options">
-            {
-              <Link to="/docs">
-                <BsFiletypeDoc />
-              </Link>
-            }
-          </div>
-          <div className="sidebar-options">
-            {
-              <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" target="_blank">
-                <FaGithub />
-              </Link>
-            }
-          </div>
-          <div className="sidebar-optionss">
-            {
-              <Link to="/Contact" target="_blank">
-              </Link>
-            }
-          </div>
+
+      <div className="sidebar ">
+        <div className="sidebar-options">
+          {
+            <Link to="/">
+              <FaHome />
+            </Link>
+          }
         </div>
-=======
->>>>>>> Stashed changes
+        <div className="sidebar-options">
+          {
+            <Link to="/intern">
+              <FaLaptop />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-optionss">{<Link to="/Blog"></Link>}</div>
+        <div className="sidebar-options">
+          {
+            <Link to="/docs">
+              <BsFiletypeDoc />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {
+            <Link
+              to="https://github.com/HimanshuNarware/CareerZunction_Intern"
+              target="_blank">
+              <FaGithub />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-optionss">
+          {<Link to="/Contact" target="_blank"></Link>}
+        </div>
+      </div>
 
       <div className="sidebar ">
         <div className="sidebar-options">
