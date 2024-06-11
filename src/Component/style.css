@@ -1,6 +1,3 @@
-
-
-
 .Navbar {
     display: flex;
     background-color: black;
@@ -9,20 +6,12 @@
     background-color: #020c0c;
     color: rgb(148, 22, 233);
     /* font-size: 2em; */
-    font-weight: 500;
+    /* font-weight: 400; */
     justify-content: space-between;
-    padding: 2em 0.93em;
+    padding: 0.6em 0.93em;
     z-index: 999;
     width:50;
 }
- /* ::-moz-selection{
-    ::-webkit-user-select:none;
-   -ms-user-select: none;
-   user-select: none;
-   background:#ffd70a;
-   color:black;
-   
- } */
 ::selection{
 ::-khtml-user-select:none;
 ::-moz-user-select:none;
@@ -33,22 +22,20 @@ user-select:none;
 
 .nav-icons {
     line-height: 1.6;
-    /* margin-inline: 2%; */
     position: absolute;
-    /* top: 5px; */
     max-width:100%;
 
 }
 
 .left-sight {
     margin-left: 4%;
-
+/* font-size: 3.4rem; */
 }
 
 .right-sight {
 
     display: flex;
-    gap: 1.25em; /*20px*/
+    gap: 1.25em;
 }
 
 /* Product file styling */
@@ -88,8 +75,8 @@ user-select:none;
 
 }
 .cart-item{
-    /* text-decoration:; */
-    
+    font-size: 0.95rem;
+    font-weight: 400;
 }
 .link{
     text-decoration: none;
@@ -97,47 +84,33 @@ user-select:none;
     line-height: 2.6;
     color: rgb(148, 22, 233) ;
     position: relative;
-    transition: all 0.4s;
-
+    /* transition: all 0.4s; */
+    transition: color 0.4s;
 }
 .link:hover{
-    /* text-decoration: underline; */
     color:  rgb(255, 255, 255);
     
 }
 .link::after{
     content:'';
     height:2px;
-     width:100%;
+    width:0;
     background:#A020F0;
     position:absolute;
     left:0;
     bottom:-8px;
-    opacity: 0;
-    transition:all 0.2s;
+    opacity: 1;
+    transition:width 0.4s ease;
     pointer-events: none; 
 }
 .link:hover::after,
 .link:focus::after{
-    opacity: 1;
+    /* opacity: 1; */
+    width: 100%;
 }
 
 
 /* /SIDEBAR STYLING */
-/* .sidebar {
-/*  */
-
-/* position: sticky !important; */
-/* position: fixed;
-    display: flex;
-
-
-    top: 92%;
-    left: 40%;
-    transform: translateX(-50%);
-
-} */
-
 .sidebar {
     display: flex;
     gap: 10%;
