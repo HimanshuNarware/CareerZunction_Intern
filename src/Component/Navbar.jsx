@@ -45,13 +45,13 @@ function Navbar() {
           <div className="cart-item">
             <Link to="/" className="link">
               {" "}
-              <i class="fa-solid fa-house"></i> Home
+              Home
             </Link>
           </div>
           <div className="cart-item">
             <Link to="/intern" className="link">
               {" "}
-              <i class="fa-solid fa-graduation-cap"></i> Internships
+              Internships
             </Link>
           </div>
           <div className="cart-item">
@@ -62,7 +62,7 @@ function Navbar() {
           <div className="cart-item">
             <Link to="/docs" className="link">
               {" "}
-              <i class="fa-solid fa-book"></i> Documentation
+              Documentation
             </Link>
           </div>
           <div className="cart-item">
@@ -70,13 +70,13 @@ function Navbar() {
               to="https://github.com/HimanshuNarware/CareerZunction_Intern"
               className="link">
               {" "}
-              <i class="fa-brands fa-github"></i> GitHub
+              GitHub
             </Link>
           </div>
           <div className="cart-item">
             <Link to="/Contact" className="link">
               {" "}
-              <i class="fa-solid fa-phone"></i> Contact Us
+              Contact Us
             </Link>
           </div>
         </div>
