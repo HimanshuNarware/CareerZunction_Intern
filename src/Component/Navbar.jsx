@@ -1,15 +1,15 @@
 /** @format */
 
-import React, { useState } from 'react';
-import './style.css';
-import { GiCrossMark } from 'react-icons/gi';
-import { FaGithub, FaLaptop, FaHome, FaRegSun } from 'react-icons/fa';
-import { BsFiletypeDoc } from 'react-icons/bs';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import "./style.css";
+import { GiCrossMark } from "react-icons/gi";
+import { FaGithub, FaLaptop, FaHome, FaRegSun } from "react-icons/fa";
+import { BsFiletypeDoc } from "react-icons/bs";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
-  const navigate=useNavigate();
-  function handleRedirect(){
+  const navigate = useNavigate();
+  function handleRedirect() {
     navigate("/");
   }
   let [slidebarClick, setSlidebarClick] = useState(false);
@@ -29,7 +29,7 @@ function Navbar() {
   return (
     <>
       <nav className="Navbar">
-        <div 
+        <div
           className="nav-icons"
           style={{ cursor: 'pointer',fontSize:'1.8em', marginLeft: "0.6rem" }}
           onClick={toggleDarkMode}>
@@ -38,64 +38,129 @@ function Navbar() {
         <div className="left-sight" onClick={handleRedirect} style={{textAlign:'center',fontSize:'1.65rem',cursor:'pointer', fontWeight: "550"}} 
         >
           CareerZunction</div>
+//           style={{ cursor: "pointer", fontSize: "2em" }}
+//           onClick={toggleDarkMode}>
+//           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
+//         </div>
+//         <div
+//           className="left-sight"
+//           onClick={handleRedirect}
+//           style={{ textAlign: "center", fontSize: "2em", cursor: "pointer" }}>
+//           CareerZunction
+//         </div>
         <div className="right-sight">
           <div className="cart-item">
-            <Link to="/" className='link'>Home</Link>
+            <Link to="/" className="link">
+              {" "}
+              Home
+            </Link>
           </div>
           <div className="cart-item">
-            <Link to="/intern" className='link'> Internships</Link>
+            <Link to="/intern" className="link">
+              {" "}
+              Internships
+            </Link>
           </div>
           <div className="cart-item">
-            <Link to="/docs" className='link'>Documentation</Link>
+            <Link to="/Blog" className="link">
+              Blog
+            </Link>
           </div>
           <div className="cart-item">
-            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'>GitHub</Link>
+            <Link to="/docs" className="link">
+              {" "}
+              Documentation
+            </Link>
           </div>
           <div className="cart-item">
-            <Link to="/Contact" className='link'>Contact Us</Link>
+            <Link
+              to="https://github.com/HimanshuNarware/CareerZunction_Intern"
+              className="link">
+              {" "}
+              GitHub
+            </Link>
+          </div>
+          <div className="cart-item">
+            <Link to="/Contact" className="link">
+              {" "}
+              Contact Us
+            </Link>
           </div>
         </div>
       </nav>
-  
-        <div className="sidebar ">
-          <div className="sidebar-options">
-            {
-              <Link to="/">
-                <FaHome />
-              </Link>
-            }
-          </div>
-          <div className="sidebar-options">
-            {
-              <Link to="/intern">
-                <FaLaptop />
-              </Link>
-            }
-          </div>
-          <div className="sidebar-options">
-            {
-              <Link to="/docs">
-                <BsFiletypeDoc />
-              </Link>
-            }
-          </div>
-          <div className="sidebar-options">
-            {
-              <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" target="_blank">
-                <FaGithub />
-              </Link>
-            }
-          </div>
-          <div className="sidebar-options">
-            {
-              <Link to="/Contact" target="_blank">
-              </Link>
-            }
-          </div>
-        </div>
 
-       
-    
+      <div className="sidebar ">
+        <div className="sidebar-options">
+          {
+            <Link to="/">
+              <FaHome />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {
+            <Link to="/intern">
+              <FaLaptop />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-optionss">{<Link to="/Blog"></Link>}</div>
+        <div className="sidebar-options">
+          {
+            <Link to="/docs">
+              <BsFiletypeDoc />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {
+            <Link
+              to="https://github.com/HimanshuNarware/CareerZunction_Intern"
+              target="_blank">
+              <FaGithub />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-optionss">
+          {<Link to="/Contact" target="_blank"></Link>}
+        </div>
+      </div>
+
+      <div className="sidebar ">
+        <div className="sidebar-options">
+          {
+            <Link to="/">
+              <FaHome />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {
+            <Link to="/intern">
+              <FaLaptop />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {
+            <Link to="/docs">
+              <BsFiletypeDoc />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {
+            <Link
+              to="https://github.com/HimanshuNarware/CareerZunction_Intern"
+              target="_blank">
+              <FaGithub />
+            </Link>
+          }
+        </div>
+        <div className="sidebar-options">
+          {<Link to="/Contact" target="_blank"></Link>}
+        </div>
+      </div>
     </>
   );
 }
