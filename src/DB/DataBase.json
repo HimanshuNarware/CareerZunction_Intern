@@ -629,17 +629,6 @@
     "mode": "Remote"
   },
   {
-    "internship_name": "Google Season of Docs",
-    "company_name": "Google",
-    "internship_type": "Opensource ",
-    "duration": " February-November",
-    "link": "https://developers.google.com/season-of-docs/docs/get-started",
-    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZQQ1SmJ8MrAwKQV9V4NUrbOIBXXOrcnyQXc7jkCpPZFVtOtJrJS0czDFW6uD4bvr-uCiukl1mvYE6FVbdqXEczmgKA1fvyZr4KzEz5U6hxpeIE5IEa-bNy-m_Z_G16YaBetievNjlNo86u3PT8cScpu6ymlP2UoF2J2-R3XFH05ycUDPgdJ6nRXiF/s1600/SeasonOfDocs_Logo_Stacked.png",
-    "award": "$5,000 - $15,000 USD.",
-    "description": "Google Season of Docs provides support for open source projects to improve their documentation and gives professional technical writers an opportunity.",
-    "mode": "Remote"
-  },
-  {
     "internship_name": "X.Org Endless Vacation of Code",
     "company_name": "X.Org",
     "internship_type": "Opensource ",
@@ -714,39 +703,6 @@
     "image": "https://wiki.hyperledger.org/download/attachments/2392261/Hyperledger_Mentorship_Program.png?version=1&modificationDate=1696600307000&api=v2",
     "award": "Stipend",
     "description": "The  Program is aimed at creating a structured learning opportunity for new contributors to enter into the Hyperledger open source development community.",
-    "mode": "Offline"
-  },
-  {
-    "internship_name": "Season of KDE 2021",
-    "company_name": "Google",
-    "internship_type": "Opensource ",
-    "duration": "December",
-    "link": "https://season.kde.org/",
-    "image": "https://mentorship.kde.org/images/sok.png",
-    "award": "CERTIFICATES",
-    "description": "SoK offers everyone an opportunity to participate in both code and non-code projects which benefit the KDE ecosystem. ",
-    "mode": "Offline"
-  },
-  {
-    "internship_name": "Intern at the FSF",
-    "company_name": "Free Software Foundation",
-    "internship_type": "Opensource ",
-    "duration": "Timeline",
-    "link": "https://www.fsf.org/volunteer/internships",
-    "image": "https://media.licdn.com/dms/image/D4D22AQH2VLbQsceGFQ/feedshare-shrink_800/0/1702407396709?e=2147483647&v=beta&t=VVk092JA0C4Fk8aWJNmJovaLbT8WXomki0zR2KwcGlo",
-    "award": "CERTIFICATES",
-    "description": "This is an educational opportunity to work with the organization that sponsors the GNU Project, publishes the GNU General Public License, and fights for software freedom.",
-    "mode": "Offline"
-  },
-  {
-    "internship_name": "Processing Foundation Fellowships",
-    "company_name": "Processing Foundation",
-    "internship_type": "Opensource ",
-    "duration": "Timeline",
-    "link": "https://processingfoundation.org/fellowships/",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSORRRPUkaru_2-4VOG8e02orRjiIJnnp1K7t7YAgzjvw&s",
-    "award": "$10,000 stipend",
-    "description": "The Processing Foundation Fellowships support artists, coders, and collectives in visionary projects that conceive a new direction. ",
     "mode": "Offline"
   },
   {
@@ -1059,17 +1015,6 @@
     "award": "Unknown",
     "description": "Intel is committed to building an open ecosystem that’s transparent, secure, and accessible to all.",
     "mode": "Offline"
-  },
-  {
-    "internship_name": "MLH Open Source Fellowship ",
-    "company_name": "MLH",
-    "internship_type": "Opensource ",
-    "duration": "May– Aug, 2024 Jun – Sep, 2024",
-    "link": "https://fellowship.mlh.io/programs/open-source",
-    "image": "https://fellowship.mlh.io/img/logo-light.svg",
-    "award": "stipend upto $5000",
-    "description": "Earn a stipend and learn to collaborate on real open source projects with peers and engineers from top companies.",
-    "mode": "remote"
   },
   {
     "internship_name": "Season of Docs",
@@ -1522,28 +1467,6 @@
     "image": "https://drivendata-prod-public.s3.amazonaws.com/images/drivendata-logo.58f94dd407ef.svg",
     "award": "Cash Prizes For Winners",
     "description": "our competitions have provided $4,686,000+ in prizes, and advanced solutions in climate change, health, education and more.",
-    "mode": "Remote | offline || online"
-  },
-  {
-    "internship_name": "Hacktoberfest",
-    "company_name": "DigitalOcean",
-    "internship_type": "Open Source Competitions",
-    "duration": "October",
-    "link": "https://hacktoberfest.com/",
-    "image": "https://hacktoberfest.com/_next/static/media/logo-hacktoberfest--horizontal.ebc5fdc8.svg",
-    "award": "Swag Rewards",
-    "description": "Hacktoberfest is DigitalOcean’s annual event that encourages people to contribute to open source throughout October.",
-    "mode": "Remote | offline || online"
-  },
-  {
-    "internship_name": "Hacktoberfest",
-    "company_name": "DigitalOcean",
-    "internship_type": "Open Source Competitions",
-    "duration": "October",
-    "link": "https://hacktoberfest.com/",
-    "image": "https://hacktoberfest.com/_next/static/media/logo-hacktoberfest--horizontal.ebc5fdc8.svg",
-    "award": "Swag Rewards",
-    "description": "Hacktoberfest is DigitalOcean’s annual event that encourages people to contribute to open source throughout October.",
     "mode": "Remote | offline || online"
   },
   {
