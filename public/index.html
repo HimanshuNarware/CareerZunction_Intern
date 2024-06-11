@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,50 +22,90 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>CareerZunction</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
- 
-<noscript>
-  <div class="noscript-message">
-    You need to enable JavaScript to run this app.
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>CareerZunction</title>
+  <style>
+    .loading {
+        -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+        animation: sk-scaleout 1s infinite ease-in-out;
+        background-color: rgb(148, 22, 233);
+        border-radius: 100%;
+        height: 6em;
+        width: 6em;
+        
+      }
+
+      .container {
+        align-items: center;
+        background-color: black;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 100vw;
+        
+      }
+
+      @keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        100% {
+          -webkit-transform: scale(1);
+          opacity: 0.5;
+          transform: scale(1);
+        }
+      }
+  </style>
+</head>
+
+<body>
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <div id="spinner" class="container">
+    <div class="loading"></div>
   </div>
-</noscript>
+  <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
 
-<script>
-  // Get the button
-  let mybutton = document.getElementById("scrollToTopBtn");
+  <noscript>
+    <div class="noscript-message">
+      You need to enable JavaScript to run this app.
+    </div>
+  </noscript>
 
-  // When the user scrolls down 20px from the top of the document, shows the button
-  window.onscroll = function() {
-    scrollFunction();
-  };
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.classList.add("show");
-    } else {
-      mybutton.classList.remove("show");
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("scrollToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, shows the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.classList.add("show");
+      } else {
+        mybutton.classList.remove("show");
+      }
+
+      // Make button transparent after scrolling 1276.8px
+      if (document.body.scrollTop > 1276.8 || document.documentElement.scrollTop > 1276.8) {
+        mybutton.style.opacity = 0;
+      } else {
+        mybutton.style.opacity = 1;
+      }
     }
 
-    // Make button transparent after scrolling 1276.8px
-    if (document.body.scrollTop > 1276.8 || document.documentElement.scrollTop > 1276.8) {
-      mybutton.style.opacity = 0;
-    } else {
-      mybutton.style.opacity = 1;
-    }
-  }
-
-  // When the user clicks on the button, scroll to the top of the document
-  mybutton.onclick = function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-</script>
-    <!--
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -77,5 +115,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
