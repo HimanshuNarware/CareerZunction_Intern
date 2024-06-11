@@ -16,7 +16,7 @@ function Contact() {
   return (
     <div className="p" style={{display: 'flex'}}>
       <div className="card" style={{maxWidth:"30%",margin:"30px"}}>
-        <img src="./support.jpg" alt="Support"></img>
+        <img src="https://pics.craiyon.com/2023-10-01/30f1f10a9a334ca48bf856685d9f2579.webp" alt="Support"></img>
         <div className="icons">
           <FaGithub id="ic"/>
           <BsTwitterX id="ic"/>
