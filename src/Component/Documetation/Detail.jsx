@@ -25,7 +25,7 @@ function Detail() {
     
   return (
     <div style={{marginTop:"150px"}}>
-        <h1 style={{color:"rgba(128, 128, 128, 0.44)",textAlign:'center'}}> Founder And Maintainers of CareerZunction</h1>
+        <h1 style={{color:"rgba(255, 255, 255)",textAlign:'center'}}> Founder And Maintainers of CareerZunction</h1>
           <div className='ProjectD'>
               
               {width >= breakpoint ?

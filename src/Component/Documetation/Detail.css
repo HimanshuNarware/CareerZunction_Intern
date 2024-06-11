@@ -2,7 +2,7 @@
   
     display: flex;
     justify-content: space-evenly;
-     border: 2px dashed rgba(128, 128, 128, 0.744);
+     border: 2px dashed rgba(173, 173, 173, 0.73);
     border-left: none;
     border-right: none; 
     margin: 10vh;
@@ -12,10 +12,12 @@
 
 
 .fimg {
-    width: 200px;
-    height: 195px;
+    width: 1px;
+    height: 5px;
+    padding: 1px;
     border-radius: 110px;
     opacity: 70%;
+    background-color: white;
 
 }
 
@@ -24,20 +26,23 @@
     display: flex;
     flex-direction: row;
     padding: 5px 9px;
-    border: 2px solid rgb(40, 39, 41);
+    border: 2px solid rgb(255, 255, 255);
     margin-block: 25px;
     gap: 2vh;
+    color: aqua;
 
     /* outline: double thin purple; */
     p {
-        color: rgba(157, 0, 255, 0.694);
+        /* color: rgb(255, 255, 255); */
+        /* bacolor: aqua; */
         align-self: center;
+        /* font-size: 50px; */
     }
 
     span {
         display: flex;
         justify-content: center;
-gap: 7%;
+        gap: 7%;
     }
 }
 .line{
