@@ -6,7 +6,8 @@ import Error from "./Component/Error";
 import InternPage from "./Component/Documetation/Internship/InternPage";
 import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
-import { ScrollToTop } from "./Component/ScrollToTop";
+import Blog from "./Component/Documetation/Blog";
+
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/docs" element={<Doc/>}/>
         <Route path="/intern" element={<InternPage/>}/>
+        <Route path="/blog" element={<Blog />} />
         <Route path="/Contact" element={<Contact></Contact>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
