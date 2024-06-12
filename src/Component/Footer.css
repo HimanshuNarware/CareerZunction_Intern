@@ -164,34 +164,31 @@
 }
 
 /* Hover States */
-.github:hover {
+/* .github:hover {
 	/* color: white; */
-	fill: rgb(0, 0, 0);
-	background-color: rgb(255, 251, 251);
-	border-radius: 100%;
-	cursor: pointer;
-	transform: scale(1.2);
-}
+	/* fill: rgb(0, 0, 0); */
+	/* background-color: rgb(255, 251, 251); */
+	/* cursor: pointer; */
+	/* transform: scale(1.2); */
+/* }  */
 
-.linkedin,
+/* .linkedin,
 .github,
 .twittor {
 	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
 	cursor: pointer;
 	/* background-color: white; */
-}
+/* } */ 
 
-.linkedin:hover {
+/* .linkedin:hover {
 	fill: rgb(3, 171, 238);
-	border-radius: 2px;
 	transform: scale(1.2);
-}
+} */
 
-.twittor:hover {
+/* .twittor:hover {
 	fill: rgb(3, 171, 238);
-	border-radius: 2px;
 	transform: scale(1.2) rotate(-8deg);
-}
+} */
 
 .underline {
 	font-weight: 400;
