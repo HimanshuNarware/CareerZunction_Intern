@@ -1822,4 +1822,16 @@
     "description": "eLitmus is a first-of-its-kind service in the world. eLitmus has been redefining how fresher and entry-level recruitment is done in India. Our proprietary pH Test evaluates job seekers. These tools help recruiters to easily screen and select candidates.",
     "mode": "Online"
   }
+
+  {
+    "internship_name": "SDE Internship",
+    "company_name": "Innovaccer",
+    "internship_type": "Internship | Open-source| Hackthone | Campus ambassador | ",
+    "duration": " Timeline",
+    "link": "https://boards.greenhouse.io/innovaccer/jobs/7492157002",
+    "image": "https://bugbaseprofilepics.s3.ap-south-1.amazonaws.com/temp/f75f5c30e42c81d5b35ce038a84cc18807a9be6e/Innovaccer.jpg-Mon%20Oct%2017%202022",
+    "award": "Stipend",
+    "description": "We at Innovaccer are looking for a Software Development - Intern to build the most amazing product experience. You’ll get to work with other engineers to build delightful feature experiences to understand and solve our customer’s pain points.",
+    "mode": "Offline"
+  }
 ]
