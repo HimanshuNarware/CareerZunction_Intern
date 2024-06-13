@@ -9,10 +9,10 @@ const CustomCursor = () => {
         const scrollLeft = window.pageXOffset;
         const scrollTop = window.pageYOffset;
         setCursorPosition({ x: event.clientX + scrollLeft, y: event.clientY + scrollTop });
-        createtrailing(event.clientX+40, event.clientY+40);
+        createTrailing(event.clientX+40, event.clientY+40);
     };
 
-    const createtrailing = (x, y) => {
+    const createTrailing = (x, y) => {
         const trailingContainer = document.createElement('div');
         let scrollLeft = window.pageXOffset;
         let scrollTop = window.pageYOffset;
@@ -47,7 +47,6 @@ const CustomCursor = () => {
     return (
         <div>
             <div className={Styles["cursor-container"]} style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px`, position: 'absolute' }}>
-                {/* <img src={<PiCursorFill />} alt="custom cursor" className={Styles["custom-cursor"]}/> */}
                 <PiCursorFill className={Styles["custom-cursor"]}/>
             </div>
         </div>
