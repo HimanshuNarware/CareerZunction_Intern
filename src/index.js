@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Store from './Redux/Store/Store';
 import { ScrollToTop } from './Component/ScrollToTop'
-import CustomCursor from './Component/TrailingCursor/CustomCursor';
+import CustomCursor from './Component/CustomCursor/CustomCursor';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
