@@ -16,9 +16,9 @@
   color: white; /* White text */
   border: none;
   width: 35px;/* Set width */
-   height: 35px;  /* Set height  */
+  height: 35px;  /* Set height  */
   border-radius: 50%; /* Make it a circle */
-  cursor: pointer;
+  cursor: none;
   opacity: 1; /* Fully opaque */
   transition: opacity 0.5s; /* Smooth transition for opacity */
   margin-left: auto;

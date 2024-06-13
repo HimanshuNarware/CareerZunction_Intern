@@ -1,0 +1,52 @@
+.cursor-container {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%,-50%); 
+}
+
+.custom-cursor {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  color: rgb(144, 10, 234) ;
+  transform: translate(50%,50%);
+}
+
+.trailing-container {
+  position: absolute;
+  pointer-events: none;
+  animation: trailing-animation 0.4s linear;
+}
+
+.trailing {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(45deg, #d294eb, #8900d3);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: trailing-effect 0.4s linear;
+  transition: transform 1.2s, opacity 1s;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes trailing-effect {
+  from {
+      transform: scale(1);
+      opacity: 1;
+  }
+  to {
+      transform: scale(3);
+      opacity: 0;
+  }
+}
+@keyframes trailing-animation {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
