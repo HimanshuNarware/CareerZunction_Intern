@@ -3,7 +3,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaStar, FaTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
-import favicon from "../image/footer/favicon.png";
+import logo from "../image/footer/logo.png";
 import img from "../image/footer/footer-qr.jpg";
 import './Footer.css';
 function Footer() {
@@ -14,7 +14,7 @@ function Footer() {
       <div className="page_2 footer">
         <div className="footer-wrapper">
           <div className="flex">
-            <h3 className="footer-title"><img src={favicon} alt="logo" className='footer-favicon'/>CareerZunction</h3>
+            <h3 className="footer-title"><img src={logo} alt="logo"/>CareerZunction</h3>
             <p className="footer-pera">
               CareerZunction is a dynamic platform connecting eager students
               with valuable internship opportunities.
