@@ -2,16 +2,16 @@
   position: absolute;
   pointer-events: none;
   z-index: 10000;
-  transform: translate(-50%,-50%); 
+  transform: translate(0,10%); 
 }
 
 .custom-cursor {
-  width: 45px;
-  height: 45px;
-  background: transparent;
-  color: rgb(144, 10, 234) ;
-  transform: translate(50%,50%);
+  width: 32px;
+  height: 32px;
+  color: rgb(165, 30, 255);
+  transform: translate(0,20%);
 }
+
 
 .trailing-container {
   position: absolute;
@@ -21,8 +21,8 @@
 
 .trailing {
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: linear-gradient(45deg, #d294eb, #8900d3);
   border-radius: 50%;
   transform: scale(0);
@@ -50,3 +50,4 @@
       opacity: 0;
   }
 }
+
