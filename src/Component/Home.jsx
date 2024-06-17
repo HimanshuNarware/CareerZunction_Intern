@@ -67,8 +67,12 @@ function Home() {
         <div className="wrapper_p1">
           <div className="wrapper-bx-1 ">
             <div className="sub_title">About us</div>
+ footerBugAndDesign
             
             <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
+
+            <p className="peragraph" style={{ textAlign: 'center' }}>Kickstart Your Career: Discover Your First Internship Today!</p>
+ main
           </div>
           <div className="wrapper-bx-2">
             <div className="wrapper-bx-2-0 wrapper-bx-2-1 outline">
@@ -77,7 +81,7 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>World's Biggest</h3>
-                <p>The World's biggest collection of internships.</p>
+                <p> CareerZunction prides itself on being the world's largest collection of internships. We have meticulously curated opportunities from a wide range of industries and locations, providing students with unparalleled access to internships that can shape their careers. Our vast database ensures that you can find internships that match your skills, interests, and career goals, making CareerZunction a one-stop destination for all your internship needs.</p>
               </div>
             </div>
             {/* </div> */}
@@ -87,9 +91,7 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>Around the Globe</h3>
-                <p>
-                  You can find more than 600+ internships, Open-source programs,
-                  and hackathons.
+                <p> Our platform is truly global, offering more than 600 internships, open-source programs, and hackathons from around the world. Whether you are looking to gain experience in your home country or explore opportunities abroad, CareerZunction connects you with organizations and initiatives on an international scale. This global reach helps you to gain diverse experiences and understand different work cultures, which is invaluable in today’s interconnected world.
                 </p>
               </div>
             </div>
@@ -99,7 +101,7 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>Open Source</h3>
-                <p>This project is open source and you can contribute to it.</p>
+                <p> CareerZunction is an open-source project, inviting contributions from developers, designers, and career experts who want to make a difference. By being open source, we ensure transparency, continuous improvement, and community involvement. This means you can not only benefit from our platform but also help shape its future by contributing your skills and knowledge. We believe in collaborative growth and welcome your participation in making CareerZunction the best it can be.</p>
               </div>
             </div>
             <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
@@ -108,7 +110,7 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>Free to use</h3>
-                <p>This project is free to use.</p>
+                <p> We believe that access to career-building opportunities should be available to everyone, regardless of their financial situation. That’s why CareerZunction is completely free to use. We are committed to providing equal opportunities for all students to advance their careers without any barriers. Our platform is designed to support you at every step of your journey, from finding internships to achieving your professional goals, all without any cost.</p>
               </div>
             </div>
           </div>
