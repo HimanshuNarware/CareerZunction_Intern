@@ -51,7 +51,6 @@
 		/* padding-top: 10px; */
 		/* // font-size: 1.2em; */
 		font-weight: 400;
-		color: rgba(128, 128, 128, 0.489);
 	}
 
 	.doc-perag {
@@ -71,7 +70,7 @@
 		border-radius: 12px;
 		border: none;
 		transition: 0.5s linear;
-		cursor: pointer;
+		cursor: none;
 
 		/* transition: .5s; */
 		/* &:hover {
@@ -133,7 +132,10 @@
 }
 
 .doc-perag {
-	cursor: pointer;
+	cursor: none;
+	text-decoration: none;
+	text-align: left;
+	display: block;
 }
 .licenseGroup {
 	/* margin-top: 22px; */
@@ -159,7 +161,7 @@
 	font-size: 1.4em;
 	font-weight: 500;
 	.underline {
-		cursor: pointer;
+		cursor: none;
 	}
 }
 
@@ -168,7 +170,7 @@
 	/* color: white; */
 	/* fill: rgb(0, 0, 0); */
 	/* background-color: rgb(255, 251, 251); */
-	/* cursor: pointer; */
+	/* cursor: none; */
 	/* transform: scale(1.2); */
 /* }  */
 
@@ -176,7 +178,7 @@
 .github,
 .twittor {
 	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
-	cursor: pointer;
+	cursor: none;
 	/* background-color: white; */
 /* } */ 
 

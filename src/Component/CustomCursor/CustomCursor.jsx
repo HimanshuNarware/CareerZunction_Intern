@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Styles from './CustomCursor.module.css';
 import { PiCursorFill } from "react-icons/pi";
 import { FaHandPointer } from "react-icons/fa";
+import { LuTextCursor } from "react-icons/lu";
 
 const CustomCursor = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-    const [isPointer, setIsPointer] = useState(false);
+    const [isPointer, setIsPointer] = useState('default');
 
     const handleMouseMove = (event) => {
         const scrollLeft = window.pageXOffset;
@@ -17,11 +18,16 @@ const CustomCursor = () => {
     const handleMouseOver = (event) => {
         console.log(event.target.tagName)
         if (event.target.tagName === 'A' || event.target.tagName === 'BUTTON') {
-            setIsPointer(true);
-        } else {
-            setIsPointer(false);
+            setIsPointer('pointer');
+        }
+        else if(event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') {
+            setIsPointer('text')
+        }
+        else {
+            setIsPointer('default');
         }
     };
+
 
     const createTrailing = (x, y) => {
         const trailingContainer = document.createElement('div');
@@ -51,6 +57,7 @@ const CustomCursor = () => {
         document.addEventListener('mousemove', handleMouseMove);
         document.addEventListener('mouseover', handleMouseOver);
 
+
         return () => {
             document.removeEventListener('mousemove', handleMouseMove);
             document.removeEventListener('mouseover', handleMouseOver);
@@ -59,13 +66,17 @@ const CustomCursor = () => {
 
     return (
         <div>
-            <div className={Styles["cursor-container"]} 
-                style={{ 
-                    left: `${cursorPosition.x}px`, 
-                    top: `${cursorPosition.y}px`, 
-                    position: 'absolute',  
+            <div className={Styles["cursor-container"]}
+                style={{
+                    left: `${cursorPosition.x}px`,
+                    top: `${cursorPosition.y}px`,
+                    position: 'absolute',
                 }}>
-                {isPointer ?<FaHandPointer className={Styles["custom-cursor"]}/> :<PiCursorFill className={Styles["custom-cursor"]} style={{transform: 'rotate(12deg)'}}/>}
+                {isPointer == 'pointer' ?
+                <FaHandPointer className={Styles["custom-cursor"]} /> :
+                (isPointer == 'default' ? <PiCursorFill className={Styles["custom-cursor"]} style={{ transform: 'rotate(13deg)' }} /> :
+                <LuTextCursor className={Styles["custom-cursor"]} />
+                )}
             </div>
         </div>
     );

@@ -27,35 +27,35 @@ span a .github{
     background-color:#fff;
     color: #000;
     font-size: 32px;
-    cursor: pointer;
+    cursor: none;
 }
 span a .linkedin{
     padding: 5px;
     background-color:#fff;
     color:#0077B5;
     font-size: 32px;
-    cursor: pointer;
+    cursor: none;
 }
 span a svg{
     padding: 5px;
     background-color:#fff;
     color:#000;
     font-size: 32px;
-    cursor: pointer;
+    cursor: none;
 }
 span a .linkedin:hover{
     padding: 5px;
     background-color:#0077B5;
     color:#fff;
     font-size: 32px;
-    cursor: pointer;
+    cursor: none;
 }
 span a svg:hover{
     padding: 5px;
     background-color:#000;
     color:#fff;
     font-size: 32px;
-    cursor: pointer;
+    cursor: none;
 }
 .section_founder,
 .section_maintainer {
@@ -93,12 +93,12 @@ gap: 7%;
 
 .section_founder:hover{
     transform: scale(1.02);
-    cursor: pointer;
+    cursor: none;
     box-shadow: 0 4px 8px 0 #9d00ffb1, 0 6px 20px 0 #fff;
 }
 .section_maintainer:hover{
     transform: scale(1.02);
-    cursor: pointer;
+    cursor: none;
     box-shadow: 0 4px 8px 0 #9d00ffb1, 0 6px 20px 0 #fff;
 }
 

@@ -51,7 +51,7 @@ button{
   background:#9416e9;
   color:white;
   border:none;
-  cursor: pointer;
+  cursor: none;
   transition: 0.4s ease-in-out;
 }
 
