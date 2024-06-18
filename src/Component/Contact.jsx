@@ -16,7 +16,7 @@ function Contact() {
   return (
     <div className="p" style={{display: 'flex'}}>
       <div className="card" style={{maxWidth:"30%",margin:"30px"}}>
-        <img src="./support.jpg" alt="Support"></img>
+        <img src="./support.png" alt="Support"></img>
         <div className="icons">
           <FaGithub id="ic"/>
           <BsTwitterX id="ic"/>
