@@ -67,12 +67,12 @@ function Home() {
         <div className="wrapper_p1">
           <div className="wrapper-bx-1 ">
             <div className="sub_title">About us</div>
- footerBugAndDesign
+
             
             <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
 
             <p className="peragraph" style={{ textAlign: 'center' }}>Kickstart Your Career: Discover Your First Internship Today!</p>
- main
+
           </div>
           <div className="wrapper-bx-2">
             <div className="wrapper-bx-2-0 wrapper-bx-2-1 outline">
