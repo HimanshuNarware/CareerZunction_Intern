@@ -18,7 +18,7 @@
   width: 35px;
    height: 35px; 
   border-radius: 50%; 
-  cursor: pointer;
+  cursor: none;
   opacity: 1;
   transition: opacity 0.5s;
   margin-left: auto;
