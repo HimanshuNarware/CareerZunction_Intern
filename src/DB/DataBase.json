@@ -1821,5 +1821,16 @@
     "award": "Stipend",
     "description": "eLitmus is a first-of-its-kind service in the world. eLitmus has been redefining how fresher and entry-level recruitment is done in India. Our proprietary pH Test evaluates job seekers. These tools help recruiters to easily screen and select candidates.",
     "mode": "Online"
+  },
+  {
+    "internship_name": "Amazon ML Summer School",
+    "company_name": "Amazon",
+    "internship_type": "Internship | Program",
+    "duration": "June/July",
+    "link": "https://xathon.mettl.com/event/amazonmlsummerschool?utm_source=Email&utm_medium=Amazon",
+    "image": "https://media.mettl.com/v2/file/1692714393805_amazon.jpg?key=ODkSoaM86g-rkWH5nsI2Vb6RI3SSiDqGOTtgciDSXy4&mediaContext=Ikx-sRbNn_ucNJM4X3Bbbw&mtimestamp=OmrUpFoD9VHwz2qYz357wg&signature=ODkSoaM86g-rkWH5nsI2VeLO_T-fvNpWO9fech3IiWct-acx0m3oH2oHjGxtnGb1r-fnb_dKFX2gv0HnFMTqTQ",
+    "award": "Internship/Job",
+    "description": "This immersive program aims to provide students with the opportunity to gain essential Machine Learning skills and knowledge from Amazon Scientists, making them industry-ready for a career in machine learning.",
+    "mode": "Online"
   }
 ]
