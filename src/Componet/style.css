@@ -35,6 +35,7 @@ user-select:none;
     /* margin-inline: 2%; */
     position: absolute;
     /* top: 5px; */
+    animation:rotation 2s infinite linear;
 
 }
 
@@ -204,5 +205,13 @@ margin-left: 1% !important;
     .desktopImg{
         display: none;
 
+    }
+}
+@keyframes rotation {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
     }
 }
