@@ -113,7 +113,9 @@ margin-block: 70px;
 display: flex;
 flex-direction: column;
 justify-content: center;
-margin-right:50 px;
+margin-right:auto;
+align-items:center;
+flex-wrap:wrap-reverse;
 }
 
 // icons css
