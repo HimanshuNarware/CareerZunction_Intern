@@ -108,12 +108,13 @@ margin-block: 70px;
     display: flex;
     align-items: center;
     padding: 8px 6px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 .wrapper-subbx{
 display: flex;
 flex-direction: column;
 justify-content: center;
-// align-items: center;
+align-items: start;
+margin:auto;
 }
 
 // icons css

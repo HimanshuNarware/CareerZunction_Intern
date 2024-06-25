@@ -3,11 +3,11 @@
 
 .Navbar {
     display: flex;
-    background-color: black;
+    background-color: #c0ded9;
     position: sticky;
     top: 0px;
-    background-color: #020c0c;
-    color: rgb(148, 22, 233);
+    background-color: #c0ded9;
+    color: #563f46;
     /* font-size: 2em; */
     font-weight: 500;
     justify-content: space-between;
@@ -87,7 +87,7 @@ user-select:none;
 
 }
 .cart-item{
-    /* text-decoration:; */
+    text-decoration:none; 
     
 }
 .link{
@@ -123,14 +123,14 @@ color: rgb(148, 22, 233) ;
     font-size: 2em;
     position: sticky;
     top: 80vh;
-    background-color: #020c0c10;
-    color: rgb(148, 22, 233);
+    background-color: #e0e2e4;
+    color: #667292;
     font-size: 2em;
     font-weight: 500;
     justify-content: space-between;
     padding: 32px 15px;
     &:hover{
-        color:rgb(67, 3, 110) ;
+        color:#667292 ;
     }
     /* position:sticky;
     font-size: 2em;
@@ -149,11 +149,11 @@ color: rgb(148, 22, 233) ;
     border: .5px solid gainsboro;
     border-radius: 12px;
     padding: 5px 10px;
-    outline: thick double blueviolet;
+    outline: thick double #667292;
     &:hover{
-        outline-color: rgb(68, 0, 132);
+        outline-color: #667292;
     }
-}`
+}
 
 .link{
     text-decoration: none;
