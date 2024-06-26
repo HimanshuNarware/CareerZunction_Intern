@@ -87,7 +87,64 @@ button:hover{
   transform: scale(1.2);
   color:#9416e9;
 }
-
+.p 
+{
+  display: flex;
+}
+.card 
+{
+  max-width: 30%;
+  margin: 30px;
+}
+.card img 
+{
+  width: 100%;
+  height: auto;
+}
+.icons 
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+#ic 
+{
+  font-size: 24px;
+  cursor: pointer;
+}
+.form 
+{
+  margin: 30px;
+}
+.child1 input,
+.child2 input,
+.child3 textarea 
+{
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  width: calc(100% - 20px); 
+}
+.btn 
+{
+  display: flex;
+  justify-content: center;
+}
+.btn button 
+{
+  padding: 10px 20px;
+  background-color: #9416e9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.thank-you-message 
+{
+  margin-top: 10px;
+  font-size: 25px;
+  color: green;
+}
 @media(max-width:675px){
 
   .child1,.child2{
