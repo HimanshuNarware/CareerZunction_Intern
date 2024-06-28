@@ -11,6 +11,7 @@ import img5 from '../../image/Contribution/5.png';
 import img6 from '../../image/Contribution/6.png';
 import img7 from '../../image/Contribution/7.png';
 import img8 from '../../image/Contribution/8.png';
+import video1 from '../../image/Contribution/CareerZunction_Docs.mp4';
 import Detail from './Detail';
 
 function Doc() {
@@ -28,6 +29,14 @@ function Doc() {
         </h1>
       </div>
       <div className="TitleDoc">Make Your First Contribution !</div>
+      <div className="video_Doc">
+        <h1 style={{ fontWeight: '500', }}>Video Tutorial</h1>
+        <video controls>
+          <source src={video1} type="video/mp4" />
+          your browser does not support this tag.
+        </video>
+      </div>
+
       <div className="ContributionImg">
         <div className="bx-1 conImg">
           <p

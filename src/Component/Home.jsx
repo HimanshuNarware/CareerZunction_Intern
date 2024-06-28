@@ -91,7 +91,8 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>Around the Globe</h3>
-                <p> Our platform is truly global, offering more than 600 internships, and open-source programs.
+                <p>Our platform is truly global, offering more than 600
+                  internships.
                 </p>
               </div>
             </div>
@@ -101,7 +102,8 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>Open Source</h3>
-                <p> CareerZunction is an open-source project, inviting contributions from developers, designers, and career experts who want to make a difference.</p>
+                <p>CZunction is an open-source project, inviting contributions
+                  who want to make a difference.</p>
               </div>
             </div>
             <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
@@ -110,7 +112,7 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>Free to use</h3>
-                <p> We believe that access to career-building opportunities should be available to everyone. That’s why CareerZunction is completely free to use.</p>
+                <p> CareerZunction is completely free to use..</p>
               </div>
             </div>
           </div>

@@ -11,9 +11,10 @@
   right: 20px;
   /* z-index: 99; */
   font-size: 20px;
-  display: none; 
-  background-color:#8a2be2;
-  color: white; 
+
+  display: none; /* Initially hidden */
+  background-color:#7917d4;/* Blue background */
+  color: white; /* White text */
   border: none;
   width: 35px;
    height: 35px; 
