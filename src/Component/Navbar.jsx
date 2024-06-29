@@ -119,41 +119,8 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="sidebar ">
-        <div className="sidebar-options">
-          {
-            <Link to="/">
-              <FaHome />
-            </Link>
-          }
-        </div>
-        <div className="sidebar-options">
-          {
-            <Link to="/intern">
-              <FaLaptop />
-            </Link>
-          }
-        </div>
-        <div className="sidebar-options">
-          {
-            <Link to="/docs">
-              <BsFiletypeDoc />
-            </Link>
-          }
-        </div>
-        <div className="sidebar-options">
-          {
-            <Link
-              to="https://github.com/HimanshuNarware/CareerZunction_Intern"
-              target="_blank">
-              <FaGithub />
-            </Link>
-          }
-        </div>
-        <div className="sidebar-options">
-          {<Link to="/Contact" target="_blank"></Link>}
-        </div>
-      </div>
+
+  
     </>
   );
 }
