@@ -135,12 +135,12 @@
     
         }
         .page_0{
-            /* background-image: url(../image/background/Picsart_24-01-02_17-26-03-618.jpg); */
+             background-image: url("C:\GSSOC'24\CareerZunction_Intern\src\image\Documentation.jpg"); 
             background-color: black;
-            /* background-size: 100%;
+            background-size: 100%;
             background-repeat: no-repeat;
             background-position: 100%;
-            background-position-y: 100%; */
+            background-position-y: 100%; 
         }
     
     
@@ -163,13 +163,21 @@
                 width: 400px;
                 /* font-size: 100px; */
                 font-size: 4.1em;
+                color: #354052; /* Classy color for the text */
+    animation: elevateAnimation 2s infinite; 
             }
+            
+
+
+
             .bx-1 h4{
                 margin-left: 100px;
                 text-align: start;
                 width: 400px;
                 padding-left: 10px;
                 font-size: 1.3em;
+                color: #354052; /* Classy color for the text */
+    animation: elevateAnimation 2s infinite; /* Adding elegant animation for the text */
             }
             .check-now{
                 align-self: flex-start;
@@ -188,3 +196,18 @@
     
         }
     }
+    
+    
+    @keyframes elevateAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5%);
+            color: #ff758c; /* Updated color for animation */
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
