@@ -22,12 +22,13 @@ import img8 from '../image/desktopImg/img 9.jpg'
 import img9 from '../image/desktopImg/img 8.jpg'
 import { Button } from 'antd';
 import { GiGlobe, GiWorld } from 'react-icons/gi';
-import { FcGlobe } from 'react-icons/fc';
+// import { FcGlobe } from 'react-icons/fc';
 import {
   FaIndianRupeeSign,
   FaPeopleGroup,
 } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
+import FAQ from './FAQ';
 
 
 
@@ -41,7 +42,7 @@ function Home() {
           <h2>Elevate
             <br /> Your
             <br />
-            Future</h2>
+           <span>Future</span></h2>
           <h4>
             <i>Land your dream career.....</i> </h4>
           <Button className='check-now'>
@@ -66,7 +67,12 @@ function Home() {
         <div className="wrapper_p1">
           <div className="wrapper-bx-1 ">
             <div className="sub_title">About us</div>
+
+            
             <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
+
+            <p className="peragraph" style={{ textAlign: 'center' }}>Kickstart Your Career: Discover Your First Internship Today!</p>
+
           </div>
           <div className="wrapper-bx-2">
             <div className="wrapper-bx-2-0 wrapper-bx-2-1 outline">
@@ -75,7 +81,7 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>World's Biggest</h3>
-                <p>The World's biggest collection of internships.</p>
+                <p> CareerZunction prides itself on being the world's largest collection of internships.</p>
               </div>
             </div>
             {/* </div> */}
@@ -85,9 +91,8 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>Around the Globe</h3>
-                <p>
-                  You can find more than 600+ internships, Open-source programs,
-                  and hackathons.
+                <p>Our platform is truly global, offering more than 600
+                  internships.
                 </p>
               </div>
             </div>
@@ -97,7 +102,8 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>Open Source</h3>
-                <p>This project is open source and you can contribute to it.</p>
+                <p>CZunction is an open-source project, inviting contributions
+                  who want to make a difference.</p>
               </div>
             </div>
             <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
@@ -106,7 +112,7 @@ function Home() {
               </i>
               <div className="wrapper-subbx">
                 <h3>Free to use</h3>
-                <p>This project is free to use.</p>
+                <p> CareerZunction is completely free to use..</p>
               </div>
             </div>
           </div>
@@ -160,6 +166,7 @@ function Home() {
           </button>
         </div>
       </div> */}
+      <FAQ />
     </div>
   );
 }
