@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: none;
     gap: 10px;
     box-shadow: 0 0 10px blueviolet;
     border: 2px solid blueviolet;

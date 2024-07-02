@@ -31,14 +31,14 @@ function Navbar() {
       <nav className="Navbar">
         <div
           className="nav-icons"
-          style={{ cursor: "pointer", fontSize: "2em" }}
+          style={{ cursor: "none", fontSize: "2em" }}
           onClick={toggleDarkMode}>
           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
         </div>
         <div
           className="left-sight"
           onClick={handleRedirect}
-          style={{ textAlign: "center", fontSize: "2em", cursor: "pointer" }}>
+          style={{ textAlign: "center", fontSize: "2em", cursor: "none" }}>
           CareerZunction
         </div>
         <div className="right-sight">

@@ -76,7 +76,7 @@ let InternPage = () => {
               <button
                 className="viewMore"
                 id="btn"
-                style={{ cursor: "pointer" }}
+                style={{ cursor: "none" }}
                 ref={ref}
                 onClick={() => {
                   window.open(item.link);
