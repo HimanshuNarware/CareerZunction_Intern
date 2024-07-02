@@ -12,12 +12,13 @@
   /* z-index: 99; */
   font-size: 20px;
 
-  display: none; /* Initially hidden */
-  background-color:#7917d4;/* Blue background */
-  color: white; /* White text */
+  display: none; 
+  background-color:#9f40f7;
+  color: white; 
+
   border: none;
-  width: 35px;
-   height: 35px; 
+  width: 40px;
+   height: 40px; 
   border-radius: 50%; 
   cursor: none;
   opacity: 1;
@@ -32,9 +33,9 @@
 }
 #scrollToTopBtn:hover {
   opacity: 0.8; 
-  transform: scale(1.05);
+  transform: scale(1.09);
   background-image: radial-gradient(circle at center, rgba(157, 150, 150, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
-  background-color: #b60e59;
+  background-color:#8400ff;
 
 }
 .noscript-message {
