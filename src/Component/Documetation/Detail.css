@@ -1,0 +1,142 @@
+.ProjectD {
+    /* background:linear-gradient(to bottom,black,rgba(153, 0, 255, 0.279)); */
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10vh;
+    padding: 15px 12px 15px 15px;
+    margin-bottom: 25%;
+    background-color: #000;
+    /* box-shadow: 2px 4px 8px 8px rgba(157, 0, 255, 0.694), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  }
+    h1 {
+        font-size: 45px;
+        background: -webkit-linear-gradient(#9d00ffb1, #ba70e9dd);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+.fimg {
+    margin:15% 15% 5% 5%;
+    padding: 5px 5px 5px 5px;
+    width: 100px;
+    height: 195px;
+    opacity: 70%;
+    box-shadow: 0 4px 8px 0 #9d00ffb1, 0 6px 20px 0 #fff;
+} 
+span a .github{
+    padding: 5px;
+    background-color:#fff;
+    color: #000;
+    font-size: 32px;
+    cursor: pointer;
+}
+span a .linkedin{
+    padding: 5px;
+    background-color:#fff;
+    color:#0077B5;
+    font-size: 32px;
+    cursor: pointer;
+}
+span a svg{
+    padding: 5px;
+    background-color:#fff;
+    color:#000;
+    font-size: 32px;
+    cursor: pointer;
+}
+span a .linkedin:hover{
+    padding: 5px;
+    background-color:#0077B5;
+    color:#fff;
+    font-size: 32px;
+    cursor: pointer;
+}
+span a svg:hover{
+    padding: 5px;
+    background-color:#000;
+    color:#fff;
+    font-size: 32px;
+    cursor: pointer;
+}
+.section_founder,
+.section_maintainer {
+    backdrop-filter: blur(4px) saturate(141%);
+    -webkit-backdrop-filter: blur(4px) saturate(141%);
+    background-color: rgba(157, 0, 255, 0.37);
+    border-radius: 12px;
+    /* border: 1px solid rgba(209, 213, 219, 0.3); */
+    display: flex;
+    
+    flex-direction: row;
+    padding: 25px 24px 35px 14px;
+    /* background-color: #000; */
+    margin-block: 25px;
+    gap: 2vh;
+
+    /* outline: double thin purple; */
+   .content p {
+        color: white;
+        margin-top: 5px;
+        margin-bottom: 8px;
+        align-self: center;
+        font-weight: 500;
+    }
+
+    span {
+        display: flex;
+        justify-content: center;
+gap: 7%;
+    }
+}
+.section_maintainer .fimg{
+        margin-left: 5px;
+}
+
+.section_founder:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #9d00ffb1, 0 6px 20px 0 #fff;
+}
+.section_maintainer:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #9d00ffb1, 0 6px 20px 0 #fff;
+}
+
+
+.line{
+    height: .1px;
+    width: 85vw;
+    margin-inline: auto;
+    background-color: rgba(128, 128, 128, 0.132);
+}
+
+.github1 {
+    color: rgb(250, 246, 246); /* Default light color */
+    text-decoration: none; /* Ensure no underline */
+    font-size: 1.5em; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    
+}
+
+.github1 svg {
+    color: rgb(253, 250, 250); /* Set icon color to black */
+    transition: color 0.4s ease-out; /* Smooth transition for icon color change */
+    
+}
+
+.github1:hover svg {
+    color:#fff;
+    background-color:#000; /* Change icon color to white on hover */
+    border-radius: 50%;
+}
+
+.linkedin1 {
+    color: rgb(250, 246, 246); /* Default light color */
+    text-decoration: none; /* Ensure no underline */
+    font-size: 1.5em; /* Adjust size as needed */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.linkedin1:hover {
+    color: #0178ff; /* LinkedIn deep blue on hover */
+}

@@ -2,7 +2,14 @@
 
 The platform is an open-source project facilitating student-internship connections. It offers user-friendly interface, comprehensive listings, and robust search options. Students create profiles, match with internships, and access resources. The platform encourages feedback, collaborates with institutions, and ensures regular updates. Overall, it provides valuable internship experiences for students.
 
+
 ## CareerZunction
+
+# Testing Link->https://career-zunction-intern-testing.vercel.app/
+
+
+##CareerZunction
+
 ![Website Look 1](https://github.com/Anusri2107/CareerZunction_Intern/assets/100567326/005e2982-21ef-46c4-a50e-dd0682446274)
 ![Website Look 2](https://github.com/Anusri2107/CareerZunction_Intern/assets/100567326/2d26f882-a2e5-4f70-ade3-95847231a6d2)
 
@@ -31,6 +38,47 @@ CareerZunction aims to bridge the gap between students and internship opportunit
 
 ## Installation
 
+### With Docker
+1. Clone the repository:
+```bash
+`git clone [repository URL]`
+```
+2. Navigate to the project directory:
+```bash
+`cd careerzunction`
+```
+3. Build docker Image (only needed during first installation)
+```bash
+docker build -t careerzunction_intern:latest .        
+```
+4. Run docker image
+```bash
+docker run -d -p 3000:3000 careerzunction_intern:latest
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+
+### With Docker Compose
+1. Clone the repository:
+```bash
+`git clone [repository URL]`
+```
+2. Navigate to the project directory:
+```bash
+`cd careerzunction`
+```
+3. Build docker-compose (only needed during first installation)
+```bash
+docker-compose up --build               
+```
+4. Run docker-compose
+```bash
+docker-compose up
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+
+### Without Docker
 To run CareerZunction locally, follow these steps:
 
 1. Clone the repository:

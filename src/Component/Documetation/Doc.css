@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .page_0{
+       overflow: hidden;
+    }
+    .docImg{
+border-radius: 0;
+width: 100vw;
+height: 250vh;
+z-index: 10;
+margin-top: -50px;
+    }
+    .contribution{
+        position: relative;
+        top: -80vh;
+        z-index: 10;
+    }
+    .headLine{
+        font-size: 5em;
+        margin-inline: auto;
+        text-align: center;
+        font-weight: 800;
+        color: transparent;
+        /* border: 2px solid black; */
+       text-shadow: 0px 0px 0px rgba(168, 162, 162, 0.516);
+    }
+    .TitleDoc{
+width: 100vw;
+overflow: hidden;
+background-color: rgb(0, 0, 0);
+/* margin-top: -15%; */
+top: -3em;
+z-index:9;
+position: relative;
+height: 50vh;
+color: white;
+text-align: center;
+font-weight: 700;
+/* border: 2px solid white; */
+font-size: 5em;
+
+padding-top: 10%;
+    }
+   
+   .ContributionImg{
+    background-color: black;
+    margin: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5em;
+    align-items: center;
+    margin-bottom: 50px;
+    
+   }
+   .conImg{
+    width: 70vw;
+border-radius: 0;
+
+   }
+
+   /* mediaQwery */
+   @media screen and (max-width:683px) {
+    .document{
+margin-top: -120px;
+    }
+    
+   }
+
+   @media screen and (max-width: 1024px) {
+    .TitleDoc {
+      font-size: 4em;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .TitleDoc {
+      font-size: 3em;
+    }
+    .contribution .headLine {
+        font-size: 3em;
+        padding:3px;
+      }
+  }
+  @media screen and (max-width: 400px) {
+    .TitleDoc {
+      font-size: 2em;
+    }
+    .contribution .headLine {
+        font-size: 2em;
+      }
+  }
+  .video_Doc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+  }
+  .video_Doc video{
+    width: 70vw;
+    margin-bottom: 30px;
+  }
+  .video_Doc h1{
+    margin-bottom: 20px;
+  }

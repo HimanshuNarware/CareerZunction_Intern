@@ -1,0 +1,9 @@
+.body{
+    background-image: url(./image/web_backgourd.jpg);
+
+}
+.header{
+    border: 2px solid rgb(237, 232, 232);
+    position: sticky;
+    top: 20%;
+}
