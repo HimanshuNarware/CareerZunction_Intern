@@ -1,7 +1,52 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} */
+
+/* Scroll to top button */
+#scrollToTopBtn {
+  position:sticky;
+  bottom: 20px;
+  right: 20px;
+  /* z-index: 99; */
+  font-size: 20px;
+
+  display: none; 
+  background-color:#9f40f7;
+  color: white; 
+
+  border: none;
+  width: 40px;
+   height: 40px; 
+  border-radius: 50%; 
+  cursor: none;
+  opacity: 1;
+  transition: opacity 0.5s;
+  margin-left: auto;
+
+}
+
+#scrollToTopBtn.show {
+  display: block; 
+  opacity: 1;
+}
+#scrollToTopBtn:hover {
+  opacity: 0.8; 
+  transform: scale(1.09);
+  background-image: radial-gradient(circle at center, rgba(157, 150, 150, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+  background-color:#8400ff;
+
+}
+.noscript-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 .page_0 {
@@ -17,7 +62,7 @@
 }
 .page_0 .bx-2,
 .page_0 .bx-1 {
-  margin: 20px 10px;
+  margin: 130px 10px;
   padding: 12px 17px;
 }
 .page_0 .bx-1 h2 {
@@ -29,6 +74,9 @@
   font-size: 1.05em;
   margin-bottom: 5px;
 }
+/* .page_0 .bx-1 span{
+  color: blueviolet;
+} */
 .page_0 .check-now {
   margin: 16px 10px;
   padding: 5px 20px;
@@ -91,26 +139,49 @@
   margin-block: 70px;
 }
 .page_1 .wrapper_p1 {
+  position: relative;
   display: grid;
   margin: 14px 8px;
+  overflow: hidden;
 }
 
+.page_1 .wrapper_p1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../image/web_backgourd.jpg);
+  background-size: cover;
+  background-position: center; 
+  filter: blur(10px); 
+  z-index: -1;
+
+}
 
 .page_1 .wrapper_p1 .wrapper-bx-2 {
-  margin: 10px 8px;
+
+  margin: 13px 8px;
   display: grid;
-  padding: 8px 6px;
+  gap: 10px;
+  padding: 38px 36px;
 }
 
 .page_1 .wrapper_p1 .wrapper-bx-2-0 {
-  margin: 10px 8px;
+  margin: 16px 14px;
   display: grid;
-  padding: 8px 6px;
+  padding: 8px 2px;
+  /* padding: 8px; */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added transition */
+  border-radius: 8px;
+  max-width: 500px; 
 }
 
 .page_1 .wrapper_p1 .wrapper-bx-2 .wrapper-bx-2-0 {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  /* grid-template-columns: 1fr 3fr; */
+  grid-template-columns: 1fr 3fr; 
 }
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .wrapper-subbx {
   text-align: justify;
@@ -119,36 +190,68 @@
 
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .icon {
   padding: 0.5rem;
-  font-size: 4em;
+  /* font-size: 4em; */
+  font-size: 2.5em;
   line-height: 1.5;
   margin: 0.5rem;
   text-align: center;
   display: inline-block;
 }
+.page_1 .wrapper_p1 .wrapper-bx-2-0 .wrapper-subbx h3{
+  margin-top: 1rem;
+}
 .page_1 .wrapper_p1 .wrapper-bx-2-0 .wrapper-subbx p {
   color: rgba(226, 226, 226, 0.982);
-  font-size: 1.0em;
-  margin: 2px 50px 2px 0px;
-  
+  /* font-size: 1.0em;
+  margin: 2px 50px 2px 0px; */
+  font-size: 0.9em; /* Reduced font size */
+  margin: 0.1px 20px 2px 0px;
 }
 
 .page_1 .wrapper_p1 .wrapper-bx-2 .wrapper-bx-2-0:hover{
   color: blueviolet;
+  transform: scale(1.05); /* Slightly scale up on hover */
+  background-color: rgba(0, 0, 0, 0.2); /* Change background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 .sub_title {
   font-weight: 600;
   letter-spacing: 1.2px;
   word-spacing: 1px;
   margin-block: 6px;
-  font-size: 4em;
+  font-size: 3.5em;
   text-shadow: 1px 1px 5px black;
   text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+  margin-top: 2rem;
 }
 .peragraph {
   color: rgb(147, 142, 142);
-  font-size: 1.2em;
+  font-size: 1.1em;
+  animation: fadeInUp 1s ease-in-out;
+}
+/* Keyframes for animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media screen and (min-width: 1024px) {
   .footer-wrapper {
     display: grid;
