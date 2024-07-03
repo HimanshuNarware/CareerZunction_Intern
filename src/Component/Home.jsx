@@ -142,7 +142,7 @@ function Home() {
           <div className="footer-socail-icon">
             <FaGithub />
             <FaLinkedin />
-            <FaTwitter />
+            <Fa />
           </div>
           </div>
           <div className="flex">

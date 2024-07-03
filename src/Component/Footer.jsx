@@ -51,7 +51,7 @@ function Footer() {
               <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
               <FaLinkedin className="linkedin" />
               </a>
-              <a href="https://twitter.com/N_Himanshu_" target="_blank">
+              <a href="https://.com/N_Himanshu_" target="_blank">
               <FaXTwitter className="twittor" />
               </a>
             </div>
@@ -96,7 +96,7 @@ function Footer() {
               <FaLinkedin />
             </a>
             <a href="https://twitter.com/N_Himanshu_" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
+              <FaXTwitter />
             </a>
 
           </div>

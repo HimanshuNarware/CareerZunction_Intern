@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Founder_img from'../../image/cz/h.png'
 import Maintainer_img from'../../image/cz/c.jpeg'
 import './Detail.css'
-import { FaGithub, FaLinkedin, FaStar, FaTwitter } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaStar, Fa } from 'react-icons/fa6';
 import Slider from './Slider';
 
 function Detail() {
