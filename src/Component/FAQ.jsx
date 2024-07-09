@@ -1,26 +1,34 @@
 import React from 'react';
 import './FAQ.css';
-
 function FAQ() {
     const toggleAnswer = (faqId, arrowId) => {
-        const answer = document.getElementById(faqId);
-        const arrow = document.getElementById(arrowId);
-
-        answer.classList.toggle('hidden');
-        if (answer.classList.contains('hidden')) {
-            arrow.style.transform = 'rotate(0deg)';
-        } else {
-            arrow.style.transform = 'rotate(180deg)';
-        }
+        const answers = document.querySelectorAll('.answer');
+        const arrows = document.querySelectorAll('.arrow-icon');
+        answers.forEach((answer) => {
+            if (answer.id === faqId) {
+                answer.classList.toggle('hidden');
+            } else {
+                answer.classList.add('hidden');
+            }
+        });
+        arrows.forEach((arrow) => {
+            if (arrow.id === arrowId) {
+                if (document.getElementById(faqId).classList.contains('hidden')) {
+                    arrow.style.transform = 'rotate(0deg)';
+                } else {
+                    arrow.style.transform = 'rotate(180deg)';
+                }
+            } else {
+                arrow.style.transform = 'rotate(0deg)';
+            }
+        });
     };
-
     return (
         <div className='container'>
             <section className="section">
                 <h2 className="heading">
                     Frequently Asked Questions
                 </h2>
-
                 <div className="flex-div">
                     {/* FAQ 1 */}
                     <div className="faq">
@@ -34,7 +42,6 @@ function FAQ() {
                             CareerZunction connects students with internship opportunities across industries through a user-friendly platform.
                         </div>
                     </div>
-
                     {/* FAQ 2 */}
                     <div className="faq">
                         <button onClick={() => toggleAnswer('faq2', 'arrow2')} className="faq-button">
@@ -47,7 +54,6 @@ function FAQ() {
                             Yes, it's completely free for students. No fees for internships, profiles, or career resources.
                         </div>
                     </div>
-
                     {/* FAQ 3 */}
                     <div className="faq">
                         <button onClick={() => toggleAnswer('faq3', 'arrow3')} className="faq-button">
@@ -78,5 +84,4 @@ function FAQ() {
         </div>
     );
 }
-
 export default FAQ;
