@@ -9,7 +9,27 @@
 body {
     background-color: black;
 }
-
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page-summary{
+    height: 20vh;
+    width: 90vw;
+    font-size: 20px;
+    color: #8a2be2;
+}
+.interest{
+    height: 4vw;
+    width: 27vh;
+    background-color: black;
+    color: #8a2be2;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-items: center;
+    padding: 2px;
+}
 .internBox {
     /* margin-top: 150px; */
     display: grid;
