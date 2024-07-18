@@ -24,21 +24,21 @@ function Footer() {
           <h4 className="footer-heading">Documentation</h4>
           <ul className="footer-links">
             <li onClick={() => window.open('https://opensource.com/resources/what-open-source')}>
-              What is Open-Source
+              <span>What is Open-Source</span>
             </li>
             <li onClick={() => window.open('https://opensource.guide/how-to-contribute/')}>
-              What is Git and GitHub
+              <span>What is Git and GitHub</span>
             </li>
             <li onClick={() => window.open('https://docs.github.com/en/get-started/using-git/about-git')}>
-              How to start contributing to Open-Source
+              <span>How to start contributing to Open-Source</span>
             </li>
           </ul>
         </div>
         <div className="footer-section">
           <h4 className="footer-heading">License</h4>
           <ul className="footer-links">
-            <li>MIT License</li>
-            <li>Code of Conduct</li>
+            <li><span>MIT License</span></li>
+            <li><span>Code of Conduct</span></li>
           </ul>
           <h4 className="footer-heading">Get in touch</h4>
           <div className="footer-social-icons">
