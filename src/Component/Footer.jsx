@@ -1,7 +1,8 @@
 /** @format */
 
 import React from 'react';
-import { FaGithub, FaLinkedin, FaStar, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaStar} from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import favicon from "../image/footer/favicon.png";
 import img from "../image/footer/footer-qr.jpg";
 import './Footer.css';
@@ -49,7 +50,7 @@ function Footer() {
               <FaLinkedin />
             </a>
             <a href="https://twitter.com/N_Himanshu_" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
+              <FaXTwitter />
             </a>
           </div>
         </div>
