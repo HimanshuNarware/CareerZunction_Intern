@@ -1,5 +1,3 @@
-/** @format */
-
 import React from 'react';
 import { FaGithub, FaLinkedin, FaStar, FaTwitter } from 'react-icons/fa';
 import favicon from "../image/footer/favicon.png";
@@ -35,10 +33,12 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-section">
-          <h4 className="footer-heading">License</h4>
+          <h4 className="footer-heading">Legal</h4>
           <ul className="footer-links">
-            <li><span>MIT License</span></li>
-            <li><span>Code of Conduct</span></li>
+            <li><span> <a href="#">Privacy Policy</a></span></li>
+            <li><span><a href="#">Terms and Conditions</a></span></li>
+            <li><span><a href="#">MIT License</a></span></li>
+            <li><span><a href="">Code of Conduct</a></span></li>
           </ul>
           <h4 className="footer-heading">Get in touch</h4>
           <div className="footer-social-icons">
@@ -71,4 +71,3 @@ function Footer() {
 }
 
 export default Footer;
-
