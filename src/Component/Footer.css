@@ -26,10 +26,6 @@
 	margin-bottom: 10px;
   }
   
-  /* .footer-favicon {
-	margin-right: 10px;
-	width: 30px;
-  } */
   .footer-favicon {
 	padding: 2px;
 	margin-right:5px;
@@ -50,24 +46,6 @@
 	color: #8a2be2;
 	margin-bottom: 10px;
   }
-  
-  /* .footer-links {
-	list-style: none;
-	padding: 0;
-	font-size: 1em;
-  }
-  
-  .footer-links li {
-	margin: 5px 0;
-	cursor: none;
-	color: #ccc;
-	transition: color 0.3s;
-  }
-  
-  .footer-links li:hover {
-	color: #8a2be2;
-	cursor: none;
-  } */
 
   .footer-links {
 	list-style-type: none;
