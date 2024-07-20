@@ -39,7 +39,7 @@ function Contact() {
             <textarea name="in_text" id="text" rows="8" placeholder="Write your message" required></textarea>
           </div>
           <div className="btn">
-            <button type="submit">Send Message</button>
+            <button type="submit" id='button'>Send Message</button>
           </div>
         </form>
         {messageVisible && (
