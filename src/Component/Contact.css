@@ -17,8 +17,8 @@ h1{
 input{
   height:60px;
   width: 100%;
-  padding-left: 50px;
-  border-radius: 60px;
+  padding-left:50px;
+  border-radius:60px;
   border:none;
   color: white;
   border: 1px solid white;
@@ -77,12 +77,10 @@ button{
   cursor: none;
   transition: 0.4s ease-in-out;
 }
-
 button:hover{
   background:#1663e9;
   color:white;
 }
-
 .child1,.child2{
   display: flex;
   gap:20px;
