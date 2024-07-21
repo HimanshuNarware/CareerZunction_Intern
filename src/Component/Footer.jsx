@@ -63,6 +63,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      
       <div className="copy">
         &copy; {currentYear} All rights reserved. Made with 💜 by CareerZunction.
       </div>
