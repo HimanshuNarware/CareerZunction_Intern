@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Style/feedback.css";
+import emailjs from "@emailjs/browser";
 
 const FeedbackModal = () => {
   useEffect(() => {
@@ -30,40 +31,31 @@ const FeedbackModal = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitted(true);
 
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      rating: rating,
+      feedback: feedback,
+      email_id: "himanshunarware77@gmail.com"
+    };
 
-    // Send the data to Formspree
-    fetch('https://formspree.io/f/xeojeqoa', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        rating: rating,
-        feedback: feedback,
-        _replyto: email
-      })
-    })
-    .then(response => {
-      if (response.ok) {
-        setIsSubmitted(true);
-        window.alert("Thank you for your feedback!");
+    emailjs.send("service_7lb51ka", "template_mu7qnok", templateParams, "-OBmWZjadmE1odXKm")
+      .then((response) => {
+        console.log("email sent", response);
+        alert("Thank you for your feedback!");
 
         // Reset form fields
         setRating(null);
         setName("");
         setEmail("");
         setFeedback("");
-      } else {
-        window.alert("There was an error submitting your feedback. Please try again.");
-      }
-    })
-    .catch(error => {
-      console.error("Error:", error);
-      window.alert("There was an error submitting your feedback. Please try again.");
-    });
+      })
+      .catch((err) => {
+        console.log("error", err);
+        alert("There was an error submitting your feedback. Please try again.");
+      });
   };
 
   return (
@@ -121,6 +113,11 @@ const FeedbackModal = () => {
             ></textarea>
             <button type="submit">Submit Feedback</button>
           </form>
+          {isSubmitted && (
+            <div className="thank-you-message">
+              Thank you for your feedback, we will connect soon.
+            </div>
+          )}
         </div>
       </div>
     </div>
