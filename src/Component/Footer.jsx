@@ -38,7 +38,7 @@ function Footer() {
           <h4 className="footer-heading">License</h4>
           <ul className="footer-links">
             <li><span>MIT License</span></li>
-            <li><span>Code of Conduct</span></li>
+            <li onClick={() => window.open('https://github.com/HimanshuNarware/CareerZunction_Intern/blob/e360e9bb3bb7a0fdc384506d0657fcd6a0fe7c30/CODE_OF_CONDUCT.md')}><span>Code of Conduct</span></li>
           </ul>
           <h4 className="footer-heading">Get in touch</h4>
           <div className="footer-social-icons">
