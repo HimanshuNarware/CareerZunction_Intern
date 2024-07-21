@@ -8,6 +8,7 @@ import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
 import Blog from "./Component/Documetation/Blog";
 import { useState } from "react";
+import Contributors from "./Component/Contributors"
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/docs" element={<Doc/>}/>
         <Route path="/intern" element={<InternPage/>}/>
         <Route path="/blog" element={<Blog />} />
+        <Route path="/contributors" element={<Contributors />} />
         <Route path="/Contact" element={<Contact></Contact>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
