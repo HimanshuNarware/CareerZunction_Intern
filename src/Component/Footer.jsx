@@ -44,13 +44,13 @@ function Footer() {
           <h4 className="footer-heading">Get in touch</h4>
           <div className="footer-social-icons">
             <a href="https://github.com/HimanshuNarware" target="_blank" rel="noopener noreferrer">
-              <FaGithub />
+              <FaGithub/>
             </a>
             <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin />
+              <FaLinkedin/>
             </a>
             <a href="https://twitter.com/N_Himanshu_" target="_blank" rel="noopener noreferrer">
-              <FaXTwitter />
+              <FaXTwitter/>
             </a>
           </div>
         </div>
