@@ -18,6 +18,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.22.0",
     "react-scripts": "^5.0.1",
+    "styled-components": "^6.1.12",
     "svgo": "^3.3.2",
     "web-vitals": "^2.1.4"
   },
