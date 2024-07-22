@@ -7,6 +7,7 @@ import InternPage from "./Component/Documetation/Internship/InternPage";
 import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
 import Blog from "./Component/Documetation/Blog";
+import Contributors from "./Component/Contributors"
 import { useState } from "react";
 
 
@@ -35,11 +36,8 @@ function App() {
         <Route path="/docs" element={<Doc/>}/>
         <Route path="/intern" element={<InternPage/>}/>
         <Route path="/blog" element={<Blog />} />
-
-
+        <Route path="/contributors" element={<Contributors />} />
         <Route path="/feedback" element={<FeedbackModal />} />
-
-
         <Route path="/Contact" element={<Contact></Contact>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
