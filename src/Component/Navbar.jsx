@@ -100,6 +100,12 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="cart-item">
+            <Link to="/Contributors" className="link">
+              {" "}
+              Contributors
+            </Link>
+          </div>
+          <div className="cart-item">
             <Link to="/Contact" className="link">
               {" "}
               Contact Us
