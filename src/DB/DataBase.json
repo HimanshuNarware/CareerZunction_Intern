@@ -1832,5 +1832,17 @@
     "award": "Internship/Job",
     "description": "This immersive program aims to provide students with the opportunity to gain essential Machine Learning skills and knowledge from Amazon Scientists, making them industry-ready for a career in machine learning.",
     "mode": "Online"
+  },
+  {
+    "internship_name": "Flipkart Grid 6.0",
+    "company_name": "Flipkart",
+    "internship_type": "Hackathon",
+    "duration": "July",
+    "link": "https://unstop.com/hackathons/flipkart-grid-60-software-development-track-flipkart-grid-60-flipkart-1024247",
+    "image": "https://assets.timelinedaily.com/w/1203x902/2024/07/flipkart.jpg.webp",
+    "award": "Internship/Job",
+    "description": "This is an online hackathon providing hands-on experience in software development and machine learning. Participants gain expert guidance and have the chance to secure an internship or job at Flipkart.",
+    "mode": "Online"
   }
+
 ]
