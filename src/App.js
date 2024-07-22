@@ -9,8 +9,10 @@ import Contact from "./Component/Contact";
 import Blog from "./Component/Documetation/Blog";
 import { useState } from "react";
 
+
 import FeedbackButton from "./Component/Feedbtn";
 import FeedbackModal from "./Component/Feedback";
+
 
 
 
@@ -34,7 +36,9 @@ function App() {
         <Route path="/intern" element={<InternPage/>}/>
         <Route path="/blog" element={<Blog />} />
 
+
         <Route path="/feedback" element={<FeedbackModal />} />
+
 
         <Route path="/Contact" element={<Contact></Contact>}/>
         <Route path="*" element={<Error/>}/>
