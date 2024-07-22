@@ -6,10 +6,10 @@
   flex-direction: column;
   gap:20px;
   justify-content:space-evenly;
-  color:white;
+  color: var(--text-primary);
 }
 h1{
-  color:white;
+  color: var(--text-primary);
 }
 
 input{
@@ -18,7 +18,7 @@ input{
   padding-left: 50px;
   border-radius: 60px;
   border:none;
-  color: white;
+  color: var(--text-primary);
   border: 1px solid white;
   background: transparent;
 }

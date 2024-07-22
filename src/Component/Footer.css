@@ -1,9 +1,9 @@
 .footer {
-	background-color: #000000;
+	background-color: var(--bg-primary);
 	color: #ffffff;
 	padding: 40px 20px;
   }
-  
+
   .footer-wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -11,13 +11,13 @@
 	max-width: 1200px;
 	margin: 0 auto;
   }
-  
+
   .footer-section {
 	text-align: left;
 	margin-left: 3rem;
 	margin-bottom: 3rem;
   }
-  
+
   .footer-title {
 	display: flex;
 	align-items: center;
@@ -25,7 +25,7 @@
 	color: #8a2be2;
 	margin-bottom: 10px;
   }
-  
+
   /* .footer-favicon {
 	margin-right: 10px;
 	width: 30px;
@@ -42,28 +42,28 @@
   .footer-pera {
 	font-size: 1.1em;
 	margin: 10px 0;
-	color: #ccc;
+	color: var(--bg-navbar1);
   }
-  
+
   .footer-heading {
 	font-size: 1.4em;
 	color: #8a2be2;
 	margin-bottom: 10px;
   }
-  
+
   /* .footer-links {
 	list-style: none;
 	padding: 0;
 	font-size: 1em;
   }
-  
+
   .footer-links li {
 	margin: 5px 0;
 	cursor: none;
 	color: #ccc;
 	transition: color 0.3s;
   }
-  
+
   .footer-links li:hover {
 	color: #8a2be2;
 	cursor: none;
@@ -73,18 +73,18 @@
 	list-style-type: none;
 	padding: 0;
   }
-  
+
   .footer-links li {
 	font-size: 18px;
 	cursor: pointer;
 	margin-bottom: 10px;
   }
-  
+
   .footer-links li span {
 	position: relative;
-	color: white;
+	color: var(--bg-navbar1);
   }
-  
+
   .footer-links li span::after {
 	content: '';
 	position: absolute;
@@ -95,35 +95,35 @@
 	background-color: white;
 	transition: all 0.3s ease-in-out;
   }
-  
+
   .footer-links li:hover span {
 	color: #8a2be2;
   }
-  
+
   .footer-links li:hover span::after {
 	width: 100%;
 	background-color: #8a2be2;
   }
-	
-  
+
+
   .footer-social-icons {
 
 	display: flex;
 	gap: 15px;
 	margin: 10px 0;
   }
-  
+
   .footer-social-icons a {
-	color: #ccc;
+	color: var(--bg-navbar1);
 	font-size: 1.5em;
 	transition: color 0.3s, transform 0.3s;
   }
-  
+
   .footer-social-icons a:hover  {
 	color: #8a2be2;
 	transform: scale(1.2);
   }
-  
+
   .footer-qr {
 	width: 110px;
 	margin: 14 auto 1.5px;
@@ -133,17 +133,18 @@
   }
   .rate-us{
 	margin-top: 0.2rem;
+	color: var(--bg-navbar1);
   }
   .copy {
 	text-align: center;
 	padding: 20px 0;
 	border-top: 1px solid #333;
 	font-size: 0.9em;
+	color: var(--bg-navbar1);
   }
-  
+
   @media screen and (max-width: 600px) {
 	.copy {
 	  font-size: 0.8em;
 	}
   }
-  
