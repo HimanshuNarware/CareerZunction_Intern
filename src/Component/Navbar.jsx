@@ -9,23 +9,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
-  function handleRedirect() {
-    navigate("/");
-  }
-  let [slidebarClick, setSlidebarClick] = useState(false);
-
-  // function slidebarClicked(e){
-  // // slidebarClick=slidebarClick?false:true;
-  // // slidebarClick=slidebarClick?false:true;
-  // // if(slidebarClick==false).?
-
-  // console.log(slidebarClick)
-
-  // }
+  const [slidebarClick, setSlidebarClick] = useState(false);
 
   const toggleDarkMode = () => setSlidebarClick(!slidebarClick);
 
-  // </div>
   return (
     <>
       <nav className="Navbar">
@@ -37,90 +24,58 @@ function Navbar() {
         </div>
         <div
           className="left-sight"
-          onClick={handleRedirect}
+          onClick={() => navigate("/")}
           style={{ textAlign: "center", fontSize: "2em", cursor: "none" }}>
           CareerZunction
         </div>
         <div className="right-sight">
           <div className="cart-item">
-            <Link to="/" className="link">
-              {" "}
-              Home
-            </Link>
+            <Link to="/" className="link">Home</Link>
           </div>
           <div className="cart-item">
-            <Link to="/intern" className="link">
-              {" "}
-              Internships
-            </Link>
+            <Link to="/intern" className="link">Internships</Link>
           </div>
           <div className="cart-item">
-            <Link to="/Blog" className="link">
-              Blog
-            </Link>
+            <Link to="/blog" className="link">Blog</Link>
           </div>
           <div className="cart-item">
-            <Link to="/docs" className="link">
-              {" "}
-              Documentation
-            </Link>
+            <Link to="/docs" className="link">Documentation</Link>
           </div>
           <div className="cart-item">
-            <Link
-              to="https://github.com/HimanshuNarware/CareerZunction_Intern"
-              className="link">
-              {" "}
-              GitHub
-            </Link>
+            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className="link">GitHub</Link>
           </div>
           <div className="cart-item">
-            <Link to="/Contact" className="link">
-              {" "}
-              Contact Us
-            </Link>
+            <Link to="/login" className="link">Login</Link>
+          </div>
+          <div className="cart-item">
+            <Link to="/register" className="link">Register</Link>
+          </div>
+          <div className="cart-item">
+            <Link to="/contact" className="link">Contact Us</Link>
           </div>
         </div>
       </nav>
 
-      <div className="sidebar ">
+      <div className="sidebar">
         <div className="sidebar-options">
-          {
-            <Link to="/">
-              <FaHome />
-            </Link>
-          }
+          <Link to="/"><FaHome /></Link>
         </div>
         <div className="sidebar-options">
-          {
-            <Link to="/intern">
-              <FaLaptop />
-            </Link>
-          }
-        </div>
-        <div className="sidebar-optionss">{<Link to="/Blog"></Link>}</div>
-        <div className="sidebar-options">
-          {
-            <Link to="/docs">
-              <BsFiletypeDoc />
-            </Link>
-          }
+          <Link to="/intern"><FaLaptop /></Link>
         </div>
         <div className="sidebar-options">
-          {
-            <Link
-              to="https://github.com/HimanshuNarware/CareerZunction_Intern"
-              target="_blank">
-              <FaGithub />
-            </Link>
-          }
+          <Link to="/blog"></Link>
         </div>
-        <div className="sidebar-optionss">
-          {<Link to="/Contact" target="_blank"></Link>}
+        <div className="sidebar-options">
+          <Link to="/docs"><BsFiletypeDoc /></Link>
+        </div>
+        <div className="sidebar-options">
+          <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" target="_blank"><FaGithub /></Link>
+        </div>
+        <div className="sidebar-options">
+          <Link to="/contact" target="_blank"></Link>
         </div>
       </div>
-
-
-  
     </>
   );
 }
