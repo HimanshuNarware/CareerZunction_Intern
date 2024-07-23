@@ -9,10 +9,9 @@ import Contact from "./Component/Contact";
 import Blog from "./Component/Documetation/Blog";
 import Contributors from "./Component/Contributors"
 import { useState } from "react";
-
-
 import FeedbackButton from "./Component/Feedbtn";
 import FeedbackModal from "./Component/Feedback";
+import PrivacyPolicy from "./Component/PrivacyPolicy";
 
 
 
@@ -39,6 +38,7 @@ function App() {
         <Route path="/contributors" element={<Contributors />} />
         <Route path="/feedback" element={<FeedbackModal />} />
         <Route path="/Contact" element={<Contact></Contact>}/>
+        <Route path="/privacypolicy" element={<PrivacyPolicy />}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
       <Footer/> 
