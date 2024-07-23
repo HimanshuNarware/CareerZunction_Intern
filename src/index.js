@@ -8,6 +8,7 @@ import Store from './Redux/Store/Store';
 import ScrollProgressBar from './Component/ProgressBar';
 import { ScrollToTop } from './Component/ScrollToTop'
 import { ThemeProvider } from './Theme';
+import FeedbackButton from './Component/Feedbtn';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
