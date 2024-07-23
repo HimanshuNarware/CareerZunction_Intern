@@ -1,6 +1,9 @@
+.p{
+  padding: 20px;
+}
 .form{
   width:100%;
-  padding:40px;
+  padding:90px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -11,7 +14,6 @@
 h1{
   color:white;
 }
-
 input{
   height:60px;
   width: 100%;
@@ -21,12 +23,27 @@ input{
   color: white;
   border: 1px solid white;
   background: transparent;
+  font-size: 18px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.child1{
+  margin-bottom: 20px;
+}
+.child2{
+  margin-bottom: 20px;
+}
+.btn{
+  margin-top: 10px;
+}
+#button{
+  font-size: 20px;
 }
 input::placeholder{
-  color:white;
+  color:rgba(255, 255, 255, 0.482);
 }
 input:focus{
-  outline:none;
+  border: 3px solid #1663e9;
+  outline: none;
 }
 textarea{
   width:100%;
@@ -37,9 +54,15 @@ textarea{
   background: transparent;
   outline:none;
   color:white;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 textarea::placeholder{
-  color:white;
+  color:rgba(255, 255, 255, 0.482);
+}
+textarea:focus{
+  border: 3px solid #1663e9;
+  outline: none;
 }
 .parent{
   text-align: center;
@@ -54,12 +77,10 @@ button{
   cursor: none;
   transition: 0.4s ease-in-out;
 }
-
 button:hover{
-  background:white;
-  color:#9416e9;
+  background:#1663e9;
+  color:white;
 }
-
 .child1,.child2{
   display: flex;
   gap:20px;
@@ -68,6 +89,9 @@ button:hover{
 .card{
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
   color:white;
   text-align:center;
 }
@@ -89,7 +113,6 @@ button:hover{
 }
 
 @media(max-width:675px){
-
   .child1,.child2{
     display: flex;
     flex-direction: column;
@@ -104,5 +127,4 @@ button:hover{
     width:80%;
     margin: 10px;
   }
-
 }
