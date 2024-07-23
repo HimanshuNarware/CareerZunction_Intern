@@ -73,7 +73,7 @@ function Contact() {
             onChange={(e)=>setMessage(e.target.value)} required></textarea>
           </div>
           <div className="btn">
-            <button type="submit">Send Message</button>
+            <button type="submit" id='button' >Send Message</button>
           </div>
         </form>
         {messageVisible && (
