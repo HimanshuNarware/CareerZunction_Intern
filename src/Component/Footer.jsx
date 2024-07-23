@@ -1,5 +1,3 @@
-/** @format */
-
 import React from 'react';
 import { FaGithub, FaLinkedin, FaStar, FaTwitter } from 'react-icons/fa';
 import favicon from "../image/footer/favicon.png";
@@ -35,10 +33,12 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-section">
-          <h4 className="footer-heading">License</h4>
+          <h4 className="footer-heading">Legal</h4>
           <ul className="footer-links">
+            <li><span> <a href="#">Privacy Policy</a></span></li>
+            <li><span><a href="#">Terms and Conditions</a></span></li>
             <li><span>MIT License</span></li>
-            <li onClick={() => window.open('https://github.com/HimanshuNarware/CareerZunction_Intern/blob/e360e9bb3bb7a0fdc384506d0657fcd6a0fe7c30/CODE_OF_CONDUCT.md')}><span>Code of Conduct</span></li>
+            <li onClick={() => window.open('https://github.com/HimanshuNarware/CareerZunction_Intern/blob/e360e9bb3bb7a0fdc384506d0657fcd6a0fe7c30/CODE_OF_CONDUCT.md')}><span>Code of Conduct</span></li>      
           </ul>
           <h4 className="footer-heading">Get in touch</h4>
           <div className="footer-social-icons">
@@ -63,6 +63,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      
       <div className="copy">
         &copy; {currentYear} All rights reserved. Made with 💜 by CareerZunction.
       </div>
@@ -71,4 +72,3 @@ function Footer() {
 }
 
 export default Footer;
-

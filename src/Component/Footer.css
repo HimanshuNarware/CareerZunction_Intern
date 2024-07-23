@@ -1,7 +1,7 @@
 .footer {
 	background-color: #000000;
 	color: #ffffff;
-	padding: 40px 20px;
+	padding: 0px 20px;
   }
   
   .footer-wrapper {
@@ -26,10 +26,6 @@
 	margin-bottom: 10px;
   }
   
-  /* .footer-favicon {
-	margin-right: 10px;
-	width: 30px;
-  } */
   .footer-favicon {
 	padding: 2px;
 	margin-right:5px;
@@ -50,24 +46,6 @@
 	color: #8a2be2;
 	margin-bottom: 10px;
   }
-  
-  /* .footer-links {
-	list-style: none;
-	padding: 0;
-	font-size: 1em;
-  }
-  
-  .footer-links li {
-	margin: 5px 0;
-	cursor: none;
-	color: #ccc;
-	transition: color 0.3s;
-  }
-  
-  .footer-links li:hover {
-	color: #8a2be2;
-	cursor: none;
-  } */
 
   .footer-links {
 	list-style-type: none;
@@ -80,12 +58,39 @@
 	margin-bottom: 10px;
   }
   
-  .footer-links li span {
+  .footer-links li span a {
 	position: relative;
 	color: white;
+	text-decoration: none;
   }
   
-  .footer-links li span::after {
+  .footer-links li span a::after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	background-color: white;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-links li:hover span a{
+	color: #8a2be2;
+  }
+  
+  .footer-links li:hover span a::after {
+	width: 100%;
+	background-color: #8a2be2;
+  }
+	
+  .footer-links li span  {
+	position: relative;
+	color: white;
+	text-decoration: none;
+  }
+  
+  .footer-links li span ::after {
 	content: '';
 	position: absolute;
 	width: 0%;
@@ -100,7 +105,7 @@
 	color: #8a2be2;
   }
   
-  .footer-links li:hover span::after {
+  .footer-links li:hover span ::after {
 	width: 100%;
 	background-color: #8a2be2;
   }
