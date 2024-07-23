@@ -1,10 +1,12 @@
+
 .Navbar {
     display: flex;
-    background-color: black;
+    background-color: var(--bg-navbar);
     position: sticky;
     top: 0px;
-    background-color: #020c0c;
-    color: rgb(148, 22, 233);
+    /* background-color: #020c0c; */
+    /* color: rgb(148, 22, 233); */
+    color: var(--text-secondary);
     /* font-size: 2em; */
     /* font-weight: 400; */
     justify-content: space-between;
@@ -44,7 +46,11 @@ user-select:none;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
     margin: 20px;
+    transition: 0.5s;
 
+}
+.container.dark{
+    background: #bd2020;
 }
 
 .wrapper img {
@@ -56,7 +62,7 @@ user-select:none;
 }
 
 .wrapper {
-    border: 2px solid rgba(0, 0, 0, 0.427);
+    border: 2px solid rgba(185, 58, 58, 0.427);
 }
 
 .button-box {
@@ -78,30 +84,40 @@ user-select:none;
     font-size: 0.95rem;
     font-weight: 400;
 }
+.toggle-icon{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 18px;
+    margin-top: 0px;
+    color: var(--bg-navbar1);
+    /* text-decoration: none; */
+}
 .link{
     text-decoration: none;
     font-size: 1.2em;
     line-height: 2.6;
-    color: rgb(148, 22, 233) ;
+    /* color: rgb(148, 22, 233) ; */
+    color: var(--text-secondary);
     position: relative;
     /* transition: all 0.4s; */
     transition: color 0.4s;
 }
 .link:hover{
     color:  rgb(255, 255, 255);
-    
+
 }
 .link::after{
     content:'';
     height:2px;
     width:0;
-    background:#A020F0;
+    /* background:#A020F0; */
+
     position:absolute;
     left:0;
     bottom:-8px;
     opacity: 1;
     transition:width 0.4s ease;
-    pointer-events: none; 
+    pointer-events: none;
 }
 .link:hover::after,
 .link:focus::after{
@@ -147,7 +163,7 @@ user-select:none;
     &:hover{
         outline-color: rgb(68, 0, 132);
     }
-}`
+}
 
 .link{
     text-decoration: none;
@@ -158,25 +174,25 @@ user-select:none;
 font-size:1.4em !important ;
 margin-left: 1%;
 /* text-align: start; */
-    }     
+    }
     .nav-icons{
         display: none;
-    } 
-    
+    }
+
 }
 @media screen and (max-width:320px) {
     .left-sight{
 font-size:80% ;
 margin-left: 1% !important;
 /* text-align: start; */
-    }     
+    }
     .nav-icons{
         display: none;
-    } 
+    }
     .sidebar{
         gap: 0%;
     font-size: 1em;
-    } 
+    }
 }
 @media screen and (max-width:682px) {
     .cart-item {

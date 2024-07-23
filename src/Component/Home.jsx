@@ -36,6 +36,7 @@ function Home() {
 
 
   return (
+
     <div>
       <div className="page_0">
         <div className="bx-1">
@@ -68,7 +69,7 @@ function Home() {
           <div className="wrapper-bx-1 ">
             <div className="sub_title">About us</div>
 
-            
+
             <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
 
             <p className="peragraph" style={{ textAlign: 'center' }}>Kickstart Your Career: Discover Your First Internship Today!</p>
@@ -158,8 +159,8 @@ function Home() {
           <h5 className='license'>MIT License</h5>
           <h4 className='pd '>Code of Conduct</h4>
           </div>
-         
-          
+
+
           <button size="size" type="defautl" className='button-star'>
             {' '}
            < FaStar style={{margin:"-2px 2px",lineHeight:"2px"}} />Star us

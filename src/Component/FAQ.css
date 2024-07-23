@@ -23,7 +23,8 @@
     margin-bottom: 2rem;
     font-weight: 700;
     text-align: center;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: var(--text-primary);
 }
 
 @media screen and (max-width:768px) {

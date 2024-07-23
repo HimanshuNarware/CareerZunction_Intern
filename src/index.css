@@ -1,8 +1,33 @@
+/* Root  */
+:root {
+  --primary-blue: rgb(70, 70, 138);
+  --secondary-blue: rgb(16, 215, 233);
+
+  --text-primary-light: rgb(52, 161, 224);
+  --text-primary-dark: rgb(255, 255, 255);
+
+  --text-secondary-light: rgb(28, 166, 157);
+  --text-secondary-dark: #9f40f7;
+
+  --bg-primary-light: rgb(59, 22, 101);
+  --bg-primary-dark: rgb(142, 125, 185);
+
+  --bg-secondary-light: rgb(154, 186, 66);
+  --bg-secondary-dark: rgb(255, 255, 255);
+
+  --bg-navbar-light: rgb(23, 23, 66);
+  --bg-navbar-dark: rgba(223, 212, 233, 0.797);
+  /*---------- */
+  --bg-navbar1-light: white;
+  --bg-navbar1-dark: black;
+}
+/* root ends here */
 *{
   cursor:none;
 }
 
 body {
+  background-color: var(--bg-navbar);
   /* margin: 0; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,7 +37,7 @@ body {
   /* background-image: url(./image/web_backgourd.jpg);
   backdrop-filter: blur(10px); */
   background-size: 100vw !important;
-  
+
   overflow-x: hidden;
   position: relative;
 }
@@ -30,11 +55,41 @@ code {
   top: 0;
   left: 0;
   width: 100%;
-  height: 5px; 
-  z-index: 9999; 
+  height: 5px;
+  z-index: 9999;
 }
 
 .scroll-progress-bar {
   height: 100%;
-  background-color: #9f40f7; 
+  background-color: #9f40f7;
+}
+
+
+/* new styles */
+
+
+.light-theme {
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  /*---------- ---------*/
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+  /*----------- ---------*/
+  --bg-navbar: var(--bg-navbar-light);
+  /*-------- ---------*/
+  --bg-navbar1: var(--bg-navbar1-light);
+}
+
+.dark-theme {
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+
+  /*---------- ---------*/
+
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+  /*----------- ---------*/
+  --bg-navbar: var(--bg-navbar-dark);
+  /*---------- ----------*/
+  --bg-navbar1: var(--bg-navbar1-dark);
 }

@@ -7,18 +7,25 @@ import InternPage from "./Component/Documetation/Internship/InternPage";
 import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
 import Blog from "./Component/Documetation/Blog";
+ 
+import { useState , useContext } from "react";
+import "./index.css"
+ 
 import Contributors from "./Component/Contributors"
-import { useState } from "react";
+// import { useState } from "react";
 
 
 import FeedbackButton from "./Component/Feedbtn";
 import FeedbackModal from "./Component/Feedback";
 
 
+ 
 
-
+import { ThemeContext } from "./Theme";
 
 function App() {
+  const { theme } = useContext(ThemeContext);
+  // const [theme, setTheme] = useState('light');
   const [loading, setLoading] = useState(true);
   const spinner = document.getElementById("spinner");
   if (spinner) {
@@ -29,8 +36,8 @@ function App() {
   }
   return(
     !loading && (
- <div>
-      <Navbar/>
+    <div className={`App ${theme}`}>
+      <Navbar className={`${theme}`}/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/docs" element={<Doc/>}/>
@@ -41,7 +48,7 @@ function App() {
         <Route path="/Contact" element={<Contact></Contact>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
-      <Footer/> 
+      <Footer/>
     </div>)
   );
 }

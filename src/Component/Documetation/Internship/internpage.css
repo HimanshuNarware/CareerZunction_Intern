@@ -8,6 +8,9 @@
 
 body {
     background-color: black;
+
+    /* new color added */
+    /* background-color: var(--bg-navbar); */
 }
 
 .internBox {

@@ -1,13 +1,34 @@
 /** @format */
-
-import React, { useState } from "react";
+import { FaMoon } from "react-icons/fa";
+import { LuSun } from "react-icons/lu";
+import React, { useContext, useState } from "react";
 import "./style.css";
+import "../../src/index.css"
 import { GiCrossMark } from "react-icons/gi";
 import { FaGithub, FaLaptop, FaHome, FaRegSun } from "react-icons/fa";
 import { BsFiletypeDoc } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 
-function Navbar() {
+
+import { ThemeContext } from "../Theme";
+
+
+const Navbar = () => {
+  // const toggle_mode = ()=>{
+  //   theme == 'light' ? setTheme('dark') : setTheme('light');
+
+  // }
+
+  // new
+  // const [isDarkTheme , setIsDarkTheme] = useState(false)
+  const { theme,isDarkTheme, toggleTheme } = useContext(ThemeContext);
+
+
+  // const [isDarkTheme , setIsDarkTheme] = useState(true);
+  // function handleClick() {
+  //   setIsDarkTheme(!isDarkTheme);
+  // }
+
   const navigate = useNavigate();
   function handleRedirect() {
     navigate("/");
@@ -23,18 +44,23 @@ function Navbar() {
 
   // }
 
-  const toggleDarkMode = () => setSlidebarClick(!slidebarClick);
+  var toggleDarkMode = () => setSlidebarClick(!slidebarClick);
 
   // </div>
   return (
     <>
       <nav className="Navbar">
+        {/* <div>
+        <img style={{width: "200px"}} src={theme == 'light' ? logo_light : logo_dark} alt="" className="'logo"/>
+        </div> */}
         <div
           className="nav-icons"
           style={{ cursor: "none", fontSize: "2em" }}
           onClick={toggleDarkMode}>
+
           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
         </div>
+
         <div
           className="left-sight"
           onClick={handleRedirect}
@@ -85,6 +111,17 @@ function Navbar() {
               Contact Us
             </Link>
           </div>
+          {/* <div className="toggle-icon">
+            <i class="fa-solid fa-delete"></i>
+            <Link className="link">
+              {" "}
+              <i class="fa-regular fa-moon"></i>
+
+            </Link>
+          </div> */}
+          <div className="toggle-icon">
+          <button onClick={() => toggleTheme()} >{isDarkTheme ? <LuSun /> : <FaMoon />}</button>
+          </div>
         </div>
       </nav>
 
@@ -123,10 +160,12 @@ function Navbar() {
         <div className="sidebar-optionss">
           {<Link to="/Contact" target="_blank"></Link>}
         </div>
+        {/* <img onClick={()=>{toggle_mode()}} src={theme == 'light' ? toogle_light : toogle_dark} alt=""
+         className="toggle-icon"/> */}
       </div>
 
 
-  
+
     </>
   );
 }
