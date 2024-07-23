@@ -37,8 +37,8 @@ function Footer() {
           <ul className="footer-links">
             <li><span> <a href="#">Privacy Policy</a></span></li>
             <li><span><a href="#">Terms and Conditions</a></span></li>
-            <li><span><a href="#">MIT License</a></span></li>
-            <li><span><a href="https://github.com/HimanshuNarware/CareerZunction_Intern?tab=coc-ov-file#readme">Code of Conduct</a></span></li>
+            <li><span>MIT License</span></li>
+            <li onClick={() => window.open('https://github.com/HimanshuNarware/CareerZunction_Intern/blob/e360e9bb3bb7a0fdc384506d0657fcd6a0fe7c30/CODE_OF_CONDUCT.md')}><span>Code of Conduct</span></li>      
           </ul>
           <h4 className="footer-heading">Get in touch</h4>
           <div className="footer-social-icons">
