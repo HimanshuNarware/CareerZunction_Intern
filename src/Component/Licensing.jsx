@@ -44,7 +44,7 @@ const Licensing = () => {
             <Title>Licensing</Title>
             <Paragraph>Welcome to CareerZunction! This website is licensed under the MIT License. This page outlines the terms of the license and provides details on how you can use, modify, and distribute our software.</Paragraph>
             <Subtitle>MIT License</Subtitle>
-            <Paragraph>Copyright (c) 2024 StartConnect-Hub</Paragraph>
+            <Paragraph>Copyright (c) 2024 CareerZunction</Paragraph>
             <Paragraph>
                 Permission is hereby granted, free of charge, to any person obtaining a copy
                 of this software and associated documentation files (the "Software"), to deal
