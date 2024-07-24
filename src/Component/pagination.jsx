@@ -3,16 +3,18 @@ import ReactPaginate from 'react-paginate';
 import './pagination.css'
 import DataDB from '../DB/DataBase.json'
 
-function PaginatedItems({ setCurrentData, setPageSummary }) {
+function PaginatedItems({ setCurrentData, setPageSummary, option }) {
     const itemsPerPage = 12;
     
     const pageCount = Math.ceil(DataDB.length / itemsPerPage);
+    const [filterData, setFilterData] = useState([])
+
 
     const handlePageClick = (event) => {
         const newOffset = (event.selected * itemsPerPage) % DataDB.length;
         const endOffset = newOffset + itemsPerPage > DataDB.length ? DataDB.length : newOffset + itemsPerPage;
 
-        setCurrentData(DataDB.slice(newOffset, endOffset))
+        setCurrentData(filterData.slice(newOffset, endOffset))
         setPageSummary(`Showing ${newOffset+1} to ${endOffset} results out of ${DataDB.length}`)
 
         window.scroll(0, 0);
@@ -22,8 +24,14 @@ function PaginatedItems({ setCurrentData, setPageSummary }) {
         const pageBtns = document.querySelectorAll(".page-btn");
         console.log(pageBtns[1])
         handlePageClick({selected: 0})
+        const filteredInternship = DataDB.filter((data)=> data.mode.toLowerCase().includes(option.toLowerCase()))
+        console.log(filteredInternship)
+        setFilterData(filteredInternship)
         pageBtns[1].classList.add("active");
-    }, [])
+    }, [option])
+
+    console.log(filterData)
+
 
     return (
         <>

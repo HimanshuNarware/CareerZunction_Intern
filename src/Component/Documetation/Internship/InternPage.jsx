@@ -3,6 +3,7 @@
 import "./internpage.css";
 import { useRef, useState } from "react";
 import PaginatedItems from "../../pagination";
+import {Filter} from "./filter";
 
 let InternPage = () => {
   // Dispatch and Subscribe
@@ -11,6 +12,9 @@ let InternPage = () => {
 
   const [currentData, setCurrentData] = useState([]);
   const [pageSummary, setPageSummary] = useState("");
+  const [mode, setMode] = useState("")
+
+  console.log(mode)
   // console.log(currentData)
 
   const monthAbbreviations = {
@@ -27,6 +31,8 @@ let InternPage = () => {
     november: "Nov",
     december: "Dec"
 };
+
+  const modes = ["online", "offline","remote"]
 
   function shortmonth(month) {
     let montharr;
@@ -50,7 +56,10 @@ let InternPage = () => {
 
   return (
     <div style={{ background: "black" }}>
-      <p className="page-summary">{pageSummary}</p>
+      <div style={{display:"flex", flexDirection : "row", justifyContent : "space-between"}}>
+        <p className="page-summary">{pageSummary}</p>
+        <div className="page-summary"><Filter setOption={setMode} options={modes}/></div>
+      </div>
 
       <div className="internBox">
         {currentData.map((item, index) => {
@@ -91,6 +100,7 @@ let InternPage = () => {
       <PaginatedItems
         setCurrentData={setCurrentData}
         setPageSummary={setPageSummary}
+        option={mode}
       />
     </div>
   );
