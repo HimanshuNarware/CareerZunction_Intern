@@ -9,6 +9,7 @@ import Contact from "./Component/Contact";
 import Blog from "./Component/Documetation/Blog";
 import Contributors from "./Component/Contributors"
 import { useState } from "react";
+import Licensing from "./Component/Licensing";
 
 
 import FeedbackButton from "./Component/Feedbtn";
@@ -40,6 +41,8 @@ function App() {
         <Route path="/feedback" element={<FeedbackModal />} />
         <Route path="/Contact" element={<Contact></Contact>}/>
         <Route path="*" element={<Error/>}/>
+        <Route path="/licensing" element={<Licensing/>}/>
+        
       </Routes>
       <Footer/> 
     </div>)
