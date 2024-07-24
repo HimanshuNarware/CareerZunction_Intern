@@ -202,3 +202,23 @@ margin-left: 1% !important;
     }
 }
 
+@media (max-width : 1000px) {
+        .sidebar {background: rgb(148, 22, 233);
+        z-index: 999;
+        position: sticky;
+        top: 91vh;
+        justify-content: space-between;
+        padding: 14px 15px;
+        color: black;
+        }
+        .sidebar-options{
+            border: 1.5px solid black;
+        }
+        .sidebar-options a svg{
+            color: black;
+        }
+        .hwKnra{
+            left: 2px !important;
+            bottom: 89px !important;
+        }
+}
