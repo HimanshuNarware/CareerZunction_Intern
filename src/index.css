@@ -21,3 +21,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* progress bar */
+
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; 
+  z-index: 9999; 
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background-color: #9f40f7; 
+}

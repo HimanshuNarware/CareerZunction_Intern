@@ -161,16 +161,20 @@
 }
 
 .page_1 .wrapper_p1 .wrapper-bx-2 {
-
+ padding: 20px;
   margin: 13px 8px;
-  display: grid;
-  gap: 10px;
-  padding: 38px 36px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
 }
-
+.inside{
+  display: flex;
+  flex-direction: column;
+}
 .page_1 .wrapper_p1 .wrapper-bx-2-0 {
   margin: 16px 14px;
-  display: grid;
+ 
   padding: 8px 2px;
   /* padding: 8px; */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added transition */
@@ -278,7 +282,12 @@
     margin-inline: 25vw;
   }
 } /*# sourceMappingURL=Home.css.map */
-
+@media screen and (max-width: 700px) {
+  .page_1 .wrapper_p1 .wrapper-bx-2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 /* Scroll bar css */
 /* Webkit (Safari/Chrome) */
 ::-webkit-scrollbar {

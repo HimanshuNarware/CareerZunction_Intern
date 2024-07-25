@@ -75,6 +75,7 @@ function Home() {
 
           </div>
           <div className="wrapper-bx-2">
+          <div className='inside'>
             <div className="wrapper-bx-2-0 wrapper-bx-2-1 outline">
               <i className='icon' style={{ color: 'blueviolet' }}>
                 <GiWorld />
@@ -96,6 +97,9 @@ function Home() {
                 </p>
               </div>
             </div>
+            </div>
+
+            <div className='inside'>
             <div className="wrapper-bx-2-0 wrapper-bx-2-3 outline">
               <i className='icon' style={{ color: 'blueviolet' }}>
                 <FaPeopleGroup />
@@ -114,6 +118,8 @@ function Home() {
                 <h3>Free to use</h3>
                 <p> CareerZunction is completely free to use..</p>
               </div>
+            </div>
+
             </div>
           </div>
         </div>
