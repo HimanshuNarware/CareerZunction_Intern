@@ -43,47 +43,49 @@ function Contact() {
   };
 
   return (
-    <div className="p" style={{display: 'flex'}}>
-      <div className="card" style={{maxWidth:"30%",margin:"30px"}}>
-        <img src="./support.jpg" alt="Support"></img>
-        <div className="icons">
-          <FaGithub id="ic"/>
-          <BsTwitterX id="ic"/>
-          <FaWhatsapp id="ic"/>
-          <CiLinkedin id="ic"/>
-        </div>
+    <div className="container">
+      <div className="contact-info">
+        <h2>Get in touch</h2>
+        <p>Email: himanshunarware77@gmail.com</p>
+        <p>Phone: +91 XXX XXX</p>
+        <p>We are here to assist you with any inquiries or support you may need. Whether you have questions about our services, need technical assistance, or want to provide feedback, feel free to reach out. Our team is dedicated to ensuring you have the best experience possible.</p>
       </div>
-      <div className="form">
-        <h1 style={{color:"#9416e9"}}>Send us a message</h1>
+      <div className="contact-form">
+        <h2>Contact Me</h2>
         <form onSubmit={handleSubmit}>
-          <div className="child1">
-            <input type="text" placeholder='First Name' onChange={(e)=>setFirstname(e.target.value)}
-              value={firstname} required></input>
-            <input type="text" placeholder="Last Name" onChange={(e)=>setLastname(e.target.value)}
-              value={lastname} required></input>
+          <div className="input-group">
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              value={firstname}
+              onChange={(e) => setFirstname(e.target.value)}
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </div>
-          <div className="child2">
-            <input type="email" placeholder="Mail" value={email}
-              onChange={(e)=>setEmail(e.target.value)} required></input>
-            <input type="text" placeholder="Phone Number" value={phone}
-              onChange={(e)=>setPhone(e.target.value)} required></input>
-          </div>
-          <div className="child3">
-            <textarea name="in_text" id="text" rows="8" placeholder="Write your message" value={message}
-            onChange={(e)=>setMessage(e.target.value)} required></textarea>
-          </div>
-          <div className="btn">
-            <button type="submit" id='button' >Send Message</button>
-          </div>
+          <textarea
+            placeholder="Message"
+            name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          />
+          <button type="submit">Send</button>
         </form>
-        {messageVisible && (
-          <div className="thank-you-message">
-            Thank you, we will connect soon.
-          </div>
-        )}
+        {messageVisible && <p className="thank-you-message">Thank you for your message. We'll get back to you soon.</p>}
       </div>
     </div>
   );
+
+
 }
 
 export default Contact;
