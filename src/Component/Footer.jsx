@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedin, FaStar} from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import favicon from "../image/footer/favicon.png";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
