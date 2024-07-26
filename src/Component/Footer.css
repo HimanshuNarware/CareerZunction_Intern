@@ -102,6 +102,7 @@
 	transition: all 0.3s ease-in-out;
   }
   
+
   .footer-links li:hover span {
 	color: #8a2be2;
   }
@@ -111,7 +112,6 @@
 	background-color: #8a2be2;
   }
 	
-  
   .footer-social-icons {
 
 	display: flex;

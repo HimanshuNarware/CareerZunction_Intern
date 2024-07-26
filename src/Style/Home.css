@@ -165,7 +165,8 @@
   margin: 13px 8px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+
+  gap: 60px;
   align-items: center;
 }
 .inside{
@@ -282,7 +283,12 @@
     margin-inline: 25vw;
   }
 } /*# sourceMappingURL=Home.css.map */
-
+@media screen and (max-width: 700px) {
+  .page_1 .wrapper_p1 .wrapper-bx-2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 /* Scroll bar css */
 /* Webkit (Safari/Chrome) */
 ::-webkit-scrollbar {
