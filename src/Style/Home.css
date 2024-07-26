@@ -77,15 +77,47 @@
 /* .page_0 .bx-1 span{
   color: blueviolet;
 } */
+.page_0 .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px; /* Container padding */
+}
+
 .page_0 .check-now {
   margin: 16px 10px;
-  padding: 5px 20px;
+  padding: 5px 2vw;
   line-height: 1;
   font-size: 1.2em;
   background-color: transparent;
   color: white;
   outline: thick double blueviolet;
+  min-width: 100px; 
+  max-width: 90vw; 
+  box-sizing: border-box;
 }
+/* media query for check now button */
+@media (max-width: 678px) {
+  .page_0 .check-now {
+    font-size: 1em; 
+    outline: medium double blueviolet; 
+  }
+}
+
+@media (max-width: 528px) {
+  .page_0 .check-now {
+    font-size: 0.9em; 
+    outline: thin double blueviolet; 
+  }
+}
+
+@media (max-width: 477px) {
+  .page_0 .check-now {
+    font-size: 0.8em; 
+  }
+}
+
+
 .home1 {
   margin-top: 100px;
   width: 100%;
