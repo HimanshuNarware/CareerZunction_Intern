@@ -137,6 +137,28 @@ gap: 7%;
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
+
 .linkedin1:hover {
     color: #0178ff; /* LinkedIn deep blue on hover */
 }
+.icons:nth-child(3) a::after {
+	background: linear-gradient(40deg, #001926, #00101a);
+  }
+  .icons:nth-child(2) a::after {
+	background: linear-gradient(
+	  40deg,
+	  rgb(0, 255, 255),
+	  rgb(0, 191, 255),
+	  rgb(0, 128, 255),
+	  rgb(0, 64, 255)
+	);
+  }
+  .icons:nth-child(1) a::after {
+	background: linear-gradient(
+	  40deg,
+	  rgb(95, 0, 140),
+	  rgb(95, 0, 140),
+	  rgb(27, 1, 39),
+	  rgb(27, 1, 39)
+	);
+  }
