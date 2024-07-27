@@ -52,20 +52,32 @@ const TermsWrapper = styled.div`
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-  color: white; /* Set text color to white */
+  color: white; 
 
   h1 {
     font-size: 2.5rem;
-    margin-top: 40px; /* Reduced space above h1 */
+    margin-top: 40px; 
   }
 
   h2 {
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin-top: 30px; /
   }
 
   p {
-    margin: 10px 0;
+    margin: 10px 0; 
+  }
+
+  p:not(:last-of-type) {
+    margin-bottom: 20px; 
+  }
+
+  section {
+    margin-bottom: 40px; 
+  }
+
+  section:last-of-type {
+    margin-bottom: 80px; 
   }
 
   a {
@@ -77,5 +89,6 @@ const TermsWrapper = styled.div`
     text-decoration: underline; 
   }
 `;
+
 
 export default TermsAndConditions;
