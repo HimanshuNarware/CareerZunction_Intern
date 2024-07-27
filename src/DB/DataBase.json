@@ -1854,6 +1854,17 @@
     "award": "Internship/Job",
     "description": "This is an online hackathon providing hands-on experience in software development and machine learning. Participants gain expert guidance and have the chance to secure an internship or job at Flipkart.",
     "mode": "Online"
-  }
+  },
+  {
+    "internship_name": "Sparkathon",
+    "company_name": "Walmart",
+    "internship_type": "Hackathon",
+    "duration": "July",
+    "link": "https://walmart.converge.tech/content/converge/en_in/sparkathon.html",
+    "image": "https://walmart.converge.tech/content/dam/gts-spark/home/me@/converge-2024/sparkathon-2024/Banner.svg",
+    "award": "Internship/Job",
+    "description": "This is an online hackathon providing hands-on experience in software development. Participants gain expert guidance and have the chance to secure an internship or job at Walmart.",
+    "mode": "Online"
+}
 
 ]
