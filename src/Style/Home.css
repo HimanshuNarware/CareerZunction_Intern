@@ -165,6 +165,7 @@
   margin: 13px 8px;
   display: flex;
   justify-content: center;
+
   gap: 60px;
   align-items: center;
 }
