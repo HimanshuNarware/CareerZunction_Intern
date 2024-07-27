@@ -221,4 +221,8 @@ margin-left: 1% !important;
             left: 2px !important;
             bottom: 89px !important;
         }
+        #scrollToTopBtn{
+            bottom: 80px !important;
+            z-index: 9999;
+        }
 }
