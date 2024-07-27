@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 import Home from "./Component/Home";
@@ -7,16 +8,10 @@ import InternPage from "./Component/Documetation/Internship/InternPage";
 import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
 import Blog from "./Component/Documetation/Blog";
-import Contributors from "./Component/Contributors"
-import { useState } from "react";
-
-
+import Contributors from "./Component/Contributors";
 import FeedbackButton from "./Component/Feedbtn";
 import FeedbackModal from "./Component/Feedback";
-
-
-
-
+import TermsAndConditions from "./Component/Terms";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,22 +22,24 @@ function App() {
       setLoading(false);
     }, 2000);
   }
-  return(
+  return (
     !loading && (
- <div>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/docs" element={<Doc/>}/>
-        <Route path="/intern" element={<InternPage/>}/>
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contributors" element={<Contributors />} />
-        <Route path="/feedback" element={<FeedbackModal />} />
-        <Route path="/Contact" element={<Contact></Contact>}/>
-        <Route path="*" element={<Error/>}/>
-      </Routes>
-      <Footer/> 
-    </div>)
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/docs" element={<Doc />} />
+          <Route path="/intern" element={<InternPage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contributors" element={<Contributors />} />
+          <Route path="/feedback" element={<FeedbackModal />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+        <Footer />
+      </div>
+    )
   );
 }
 
