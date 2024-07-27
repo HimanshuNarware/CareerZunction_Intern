@@ -1,5 +1,6 @@
 import React from 'react';
 import './FAQ.css';
+
 function FAQ() {
     const toggleAnswer = (faqId, arrowId) => {
         const answers = document.querySelectorAll('.answer');
@@ -23,6 +24,7 @@ function FAQ() {
             }
         });
     };
+
     return (
         <div className='container'>
             <section className="section">
@@ -66,7 +68,6 @@ function FAQ() {
                             Create a profile, find an internship, and follow the application instructions provided by employers.
                         </div>
                     </div>
-
                     {/* FAQ 4 */}
                     <div className="faq">
                         <button onClick={() => toggleAnswer('faq4', 'arrow4')} className="faq-button">
@@ -76,12 +77,50 @@ function FAQ() {
                             </svg>
                         </button>
                         <div id="faq4" className="answer hidden">
-                        Yes, we collaborate to expand internship offerings and connect students with opportunities.
+                            Yes, we collaborate to expand internship offerings and connect students with opportunities.
                         </div>
                     </div>
+                    {/* New FAQ 5 */}
+                    <div className="faq">
+                        <button onClick={() => toggleAnswer('faq5', 'arrow5')} className="faq-button">
+                            <span>How many internships does CareerZunction offer?</span>
+                            <svg id="arrow5" className="h-6 w-6 arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 12a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L10 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 12z"/>
+                            </svg>
+                        </button>
+                        <div id="faq5" className="answer hidden">
+                            CareerZunction offers over 200 internships across various industries, providing diverse opportunities for students.
+                        </div>
+                    </div>
+                    {/* New FAQ 6 */}
+                    <div className="faq">
+                        <button onClick={() => toggleAnswer('faq6', 'arrow6')} className="faq-button">
+                            <span>What types of career resources are available on CareerZunction?</span>
+                            <svg id="arrow6" className="h-6 w-6 arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 12a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L10 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 12z"/>
+                            </svg>
+                        </button>
+                        <div id="faq6" className="answer hidden">
+                            CareerZunction provides resources such as resume tips, interview guides, and skill-building workshops.
+                        </div>
+                    </div>
+                    {/* New FAQ 7 */}
+                    <div className="faq">
+                        <button onClick={() => toggleAnswer('faq7', 'arrow7')} className="faq-button">
+                            <span>How does CareerZunction support professional growth?</span>
+                            <svg id="arrow7" className="h-6 w-6 arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 12a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L10 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 12z"/>
+                            </svg>
+                        </button>
+                        <div id="faq7" className="answer hidden">
+                            CareerZunction empowers students by connecting them with internships and resources that enhance their skills and knowledge.
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
         </div>
     );
 }
+
 export default FAQ;
