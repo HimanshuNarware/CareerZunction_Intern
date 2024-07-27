@@ -4,6 +4,11 @@ import { FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { BsYoutube } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
@@ -46,11 +51,46 @@ function Contact() {
     <div className="p" style={{display: 'flex'}}>
       <div className="card" style={{maxWidth:"30%",margin:"30px"}}>
         <img src="./support.jpg" alt="Support"></img>
-        <div className="icons">
+        {/* <div className="icons">
           <FaGithub id="ic"/>
           <BsTwitterX id="ic"/>
           <FaWhatsapp id="ic"/>
           <CiLinkedin id="ic"/>
+        </div> */}
+        <div className='outerD  gap-4 md:gap-2'>
+        <span className='icons'>
+                <a
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                > <FaWhatsapp
+                color="white"
+                fontSize={25}
+                className="ico "
+              /></a></span>
+                <span  className='icons'><a
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaXTwitter color="white" fontSize={25} className="ico" />
+
+                </a></span>
+                <span  className='icons'><a
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub  className="ico" />
+                </a></span>
+                <span  className='icons'> <a
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn className="ico " />
+                </a></span>
+                
         </div>
       </div>
       <div className="form">
@@ -73,7 +113,7 @@ function Contact() {
             onChange={(e)=>setMessage(e.target.value)} required></textarea>
           </div>
           <div className="btn">
-            <button type="submit" id='button' >Send Message</button>
+            <button type="submit">Send Message</button>
           </div>
         </form>
         {messageVisible && (

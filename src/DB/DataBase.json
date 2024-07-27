@@ -66,6 +66,17 @@
     "mode": "Offline"
   },
   {
+    "internship_name": "Reliance Jio Internship",
+    "company_name": "Reliance Jio",
+    "internship_type": "Internship | Graduate Engineer Trainee",
+    "duration": "April",
+    "link": "https://careers.jio.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Reliance_Jio_Logo.svg/1200px-Reliance_Jio_Logo.svg.png",
+    "award": "Unknown",
+    "description": "Reliance Jio offers internships in various domains including technology, management, and business development. The internship aims to provide hands-on experience and exposure to real-world projects.",
+    "mode": "Offline"
+},
+  {
     "internship_name": "ServiceNow FTE",
     "company_name": "ServicenNow",
     "internship_type": "Internship | Open-source| Hackthone | Campus ambassador | ",
