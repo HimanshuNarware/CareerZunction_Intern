@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import Founder_img from'../../image/cz/h.png'
 import Maintainer_img from'../../image/cz/c.jpeg'
 import './Detail.css'
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub, FaLinkedin, FaStar, FaTwitter } from 'react-icons/fa6';
 import Slider from './Slider';
 
@@ -33,7 +35,7 @@ function Detail() {
                           <img className="fimg" src={Founder_img} alt="img" />
                           <div class='content'> 
                           <p>Founder : Himanshu Narware</p>
-                          <span>
+                          {/* <span>
 
                           <a  href="https://github.com/HimanshuNarware" target="_blank">
               <FaGithub className='github' />
@@ -47,7 +49,23 @@ function Detail() {
 </svg>
               </a>
 
-                          </span>
+                          </span> */}
+
+
+<div className='outerD  gap-4 md:gap-2'>
+        <span className='icons'>
+        <a  href="https://github.com/HimanshuNarware" target="_blank"> <FaGithub
+                color="white"
+                fontSize={25}
+                className="ico "
+              /></a></span>
+                <span  className='icons'> <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
+                  <FaLinkedin color="white" fontSize={25} className="ico" />
+
+                </a></span>
+                <span  className='icons'> <a href="https://twitter.com/N_Himanshu_" target="_blank">
+                  <FaXTwitter  className="ico" />
+                </a></span></div>
 </div>
                       </div>
               
@@ -55,7 +73,7 @@ function Detail() {
                           <img className='fimg' src={Maintainer_img} alt="img" />
                           <div class='content'>
                           <p>Maintainer : Chaitali Sonare</p>
-                          <span>
+                          {/* <span>
 
                           <a href="https://github.com/HimanshuNarware" target="_blank">
               <FaGithub className="github" />
@@ -69,7 +87,21 @@ function Detail() {
 </svg>
               </a>
                             
-                          </span>
+                          </span> */}
+                         <div className='outerD  gap-4 md:gap-2'>
+        <span className='icons'>
+        <a  href="https://github.com/HimanshuNarware" target="_blank"> <FaGithub
+                color="white"
+                fontSize={25}
+                className="ico "
+              /></a></span>
+                <span  className='icons'> <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
+                  <FaLinkedin color="white" fontSize={25} className="ico" />
+
+                </a></span>
+                <span  className='icons'> <a href="https://twitter.com/N_Himanshu_" target="_blank">
+                  <FaXTwitter  className="ico" />
+                </a></span></div>
                           </div>
                       </div>
                   </div>) :
