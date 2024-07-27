@@ -175,14 +175,14 @@
     padding: 1rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
     transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
-    background: linear-gradient(135deg, #5252d5, #9fdfff); /* Gradient for individual FAQ items */
+    background: linear-gradient(135deg, #9c38f9, #eac4f4); /* Gradient for individual FAQ items */
     width: 60vw;
     transition: transform 0.4s ease-in-out;
 }
 
 .faq:hover {
     transform: translateY(6px);
-    background: linear-gradient(135deg, #5353ff, #cfefff); /* Gradient for individual FAQ items */
+    background: linear-gradient(135deg, #9c38f9, #d285eb); /* Gradient for individual FAQ items */
 
 }
 
