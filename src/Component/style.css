@@ -217,12 +217,13 @@ margin-left: 1% !important;
         .sidebar-options a svg{
             color: black;
         }
-        .hwKnra{
-            left: 2px !important;
-            bottom: 89px !important;
+        .lbNnHk{
+            left: 9px !important;
+            bottom: 93px !important;
         }
         #scrollToTopBtn{
-            bottom: 80px !important;
+            margin-left: 10px !important;
+            bottom: 165px !important;
             z-index: 9999;
         }
 }
