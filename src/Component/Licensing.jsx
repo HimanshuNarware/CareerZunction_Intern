@@ -5,7 +5,6 @@ const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
   margin-top: 60px;
-  bottom: 20px
   padding: 20px;
   font-family: Arial, sans-serif;
   border-radius: 5px;
@@ -14,7 +13,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* Increased margin for more spacing */
   text-align: left;
   color: white;
 `;
@@ -22,16 +21,22 @@ const Title = styled.h1`
 const Paragraph = styled.p`
   font-size: 1em;
   line-height: 1.6;
-  margin-bottom: 8px;
+  margin-bottom: 20px; /* Increased margin for more spacing */
   color: white;
 `;
 
 const Subtitle = styled.h2`
   font-size: 1.5em;
-  margin-bottom: 8px;
+  margin-bottom: 20px; /* Increased margin for more spacing */
   justify-content: left;
   padding: 0;
   color: white;
+`;
+
+const Footer = styled.div`
+  margin-top: 40px; /* Added margin for spacing before the footer */
+  color: white;
+  text-align: center;
 `;
 
 const Licensing = () => {
@@ -67,7 +72,9 @@ const Licensing = () => {
                 SOFTWARE.
             </Paragraph>
             <Subtitle>Contact Information</Subtitle>
-            <p style={{ color: 'white' }}>If you have any questions or concerns about this licensing agreement, please contact us at Email: <a href="mailto:careerzunction@gmail.com" style={{ color: 'white' }}>careerzunction@gmail.com</a></p>
+            <Footer>
+                If you have any questions or concerns about this licensing agreement, please contact us at Email: <a href="mailto:careerzunction@gmail.com" style={{ color: 'white' }}>careerzunction@gmail.com</a>
+            </Footer>
         </Container>
     );
 };
