@@ -43,7 +43,8 @@ function Footer() {
           <ul className="footer-links">
             <li><span> <a href="/privacypolicy">Privacy Policy</a></span></li>
             <li><span><a href="/terms">Terms and Conditions</a></span></li>
-            <li><span><a href="#">MIT License</a></span></li>
+            <li><span><a href="/licensing">MIT License</a></span></li>
+
             <li><span><a href="https://github.com/HimanshuNarware/CareerZunction_Intern?tab=coc-ov-file#readme">Code of Conduct</a></span></li>
           </ul>
           <h4 className="footer-heading">Get in touch</h4>
