@@ -47,9 +47,10 @@ body {
 
 
 .BoxContent:hover {
-    box-shadow: 0.7px 0.7px 6px rgb(255, 255, 255), -0.7px -0.7px 6px rgb(255, 255, 255);
-    transition: 0.5s;
-    transform: scale(1.03);
+   box-shadow: 2px 2px 40px rgba(153, 0, 255, 0.769), -2px -2px 40px rgba(153, 0, 255, 0.756);
+    transition: 1s;
+    transform: scale(1.1);
+
 
 
 }
