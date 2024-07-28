@@ -234,7 +234,7 @@ body {
 
 .filterSelect {
     padding: 10px;
-    border: 2px solid rgb(32, 225, 32);
+    border: 2px solid rgb(190, 21, 228);
     border-radius: 5px;
     background-color: transparent;
     color: white;
@@ -255,7 +255,7 @@ body {
 
 .filterButton {
     padding: 10px 20px;
-    border: 2px solid rgb(32, 225, 32);
+    border: 2px solid rgb(190, 21, 228);
     border-radius: 5px;
     background-color: transparent;
     color: white;
@@ -266,7 +266,7 @@ body {
 }
 
 .filterButton:hover {
-    background-color: rgb(32, 225, 32);
+    background-color: rgb(230, 153, 244);
     color: black;
     border: 2px solid white;
 }

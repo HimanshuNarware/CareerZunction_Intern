@@ -116,6 +116,7 @@ const InternPage = () => {
           <option value="Java Developer">Java Developer</option>
           <option value="Software Developer">Software Developer</option>
           <option value="Sales">Sales</option>
+          <option value="Mentor">Mentor</option>
           <option value="Other">Other</option>
           {/* Add more options as needed */}
         </select>

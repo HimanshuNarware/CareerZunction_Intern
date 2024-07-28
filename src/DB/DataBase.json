@@ -1025,7 +1025,9 @@
     "image": "https://www.4icu.org/i/unirank.org-512x512.png",
     "award": "Unknown",
     "description": "Facebook University Ranking is to offer an approximate popularity index for each US university on the Facebook social media platform,",
-    "mode": "Offline"
+    "mode": "Offline",
+    "role":"Java Developer",
+    "industry": "Technology"
   },
   {
     "internship_name": "Twitter Internship Program ",
