@@ -1,3 +1,5 @@
+import "../Internship/internpage.css"
+
 export function Filter({options, setOption,defaultvalue, option}){
 
     function handleFilter(){
@@ -9,8 +11,8 @@ export function Filter({options, setOption,defaultvalue, option}){
     }
 
     return(
-        <div>
-            <select onClick={handleFilter} value={option} onChange={(e)=> setOption(e.target.value)}>
+        <div >
+            <select className="filter-box" onClick={handleFilter} value={option} onChange={(e)=> setOption(e.target.value)}>
                 {options.map((item)=>(
                     <option defaultValue={defaultvalue} value={item}>
                         {item}
