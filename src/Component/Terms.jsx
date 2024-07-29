@@ -74,6 +74,7 @@ const TermsWrapper = styled.div`
 
   section {
     margin-bottom: 40px; 
+    color:gray
   }
 
   section:last-of-type {
