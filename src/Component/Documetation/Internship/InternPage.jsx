@@ -13,8 +13,8 @@ let InternPage = () => {
   const [currentData, setCurrentData] = useState([]);
   const [pageSummary, setPageSummary] = useState("");
   const [mode, setMode] = useState("")
+  const [duration, setDuration] = useState("")
 
-  console.log(mode)
   // console.log(currentData)
 
   const monthAbbreviations = {
@@ -32,16 +32,17 @@ let InternPage = () => {
     december: "Dec"
 };
 
-  const modes = ["online", "offline","remote"]
+  const modes = ["All","Online", "Offline","Remote"]
+  const durations = ["All","january","february","march","april","may","june","july","august","september ","october","november","december"]
 
   function shortmonth(month) {
     let montharr;
     const dashRegex = /[\u2013\u2014\-]/;
-    if (month.match(dashRegex)) {
+    if (month?.match(dashRegex)) {
       montharr = month.split(dashRegex).map(month => month.trim());
       
     }
-    if (month.includes("/")) {
+    if (month?.includes("/")) {
       montharr=month.split("/")
     }
     if (montharr) {
@@ -58,7 +59,10 @@ let InternPage = () => {
     <div style={{ background: "black" }}>
       <div style={{display:"flex", flexDirection : "row", justifyContent : "space-between"}}>
         <p className="page-summary">{pageSummary}</p>
-        <div className="page-summary"><Filter setOption={setMode} options={modes}/></div>
+        <div className="page-summary" style={{display:"flex", flexDirection : "row", gap : "10%"}}>
+          <div  ><Filter defaultvalue='All' option={mode} setOption={setMode} options={modes}/></div>
+          <div ><Filter defaultvalue='All' option={duration} setOption={setDuration} options={durations}/></div>
+        </div>
       </div>
 
       <div className="internBox">
@@ -100,7 +104,8 @@ let InternPage = () => {
       <PaginatedItems
         setCurrentData={setCurrentData}
         setPageSummary={setPageSummary}
-        option={mode}
+        mode={mode}
+        duration = {duration}
       />
     </div>
   );

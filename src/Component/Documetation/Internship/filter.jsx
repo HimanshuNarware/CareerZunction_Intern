@@ -1,10 +1,18 @@
-export function Filter({options, setOption}){
+export function Filter({options, setOption,defaultvalue, option}){
+
+    function handleFilter(){
+        setOption(option)
+    }
+
+    function handleChange(){
+
+    }
+
     return(
         <div>
-            <select onChange={(e)=> setOption(e.target.value)}>
-                <option value="">All</option>
+            <select onClick={handleFilter} value={option} onChange={(e)=> setOption(e.target.value)}>
                 {options.map((item)=>(
-                    <option value={item}>
+                    <option defaultValue={defaultvalue} value={item}>
                         {item}
                     </option>
                 ))}

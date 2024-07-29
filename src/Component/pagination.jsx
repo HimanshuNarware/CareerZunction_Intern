@@ -3,34 +3,56 @@ import ReactPaginate from 'react-paginate';
 import './pagination.css'
 import DataDB from '../DB/DataBase.json'
 
-function PaginatedItems({ setCurrentData, setPageSummary, option }) {
+function PaginatedItems({ setCurrentData, setPageSummary, mode, duration }) {
     const itemsPerPage = 12;
     
-    const pageCount = Math.ceil(DataDB.length / itemsPerPage);
-    const [filterData, setFilterData] = useState([])
+    const [filterData, setFilterData] = useState(DataDB)
+    const pageCount = Math.ceil(filterData.length / itemsPerPage);
 
 
     const handlePageClick = (event) => {
-        const newOffset = (event.selected * itemsPerPage) % DataDB.length;
-        const endOffset = newOffset + itemsPerPage > DataDB.length ? DataDB.length : newOffset + itemsPerPage;
+        const newOffset = (event.selected * itemsPerPage) % filterData.length;
+        const endOffset = newOffset + itemsPerPage > filterData.length ? filterData.length : newOffset + itemsPerPage;
+        console.log(duration)
 
         setCurrentData(filterData.slice(newOffset, endOffset))
-        setPageSummary(`Showing ${newOffset+1} to ${endOffset} results out of ${DataDB.length}`)
-
+        setPageSummary(`Showing ${newOffset+1} to ${endOffset} results out of ${filterData.length}`)
+        console.log(filterData)
         window.scroll(0, 0);
     };
 
     useEffect(() => {
         const pageBtns = document.querySelectorAll(".page-btn");
         console.log(pageBtns[1])
-        handlePageClick({selected: 0})
-        const filteredInternship = DataDB.filter((data)=> data.mode.toLowerCase().includes(option.toLowerCase()))
-        console.log(filteredInternship)
+        let filteredInternship
+        if(mode==="All" || duration === "All"){
+            filteredInternship = DataDB
+        }
+        // else {
+        //     if(mode!== "All") filteredInternship = DataDB.filter((data)=> data.mode.toLowerCase().includes(mode.toLowerCase()))
+        //     if(duration!== "All") filteredInternship = DataDB.filter((data)=> data.duration.toLowerCase().includes(duration.toLowerCase()))
+        // }
+        else if (mode!== "All"){
+            filteredInternship = DataDB.filter((data)=> data.mode.toLowerCase().includes(mode.toLowerCase()))
+            if(duration!== "All"){
+                filteredInternship = filteredInternship.filter((data)=> data.duration.toLowerCase().includes(duration.toLowerCase()))
+            }
+        }else if (duration!== "All"){
+            filteredInternship = DataDB.filter((data)=> data.duration.toLowerCase().includes(duration.toLowerCase()))
+            if(mode!== "All"){
+                filteredInternship = filteredInternship.filter((data)=> data.mode.toLowerCase().includes(mode.toLowerCase()))
+            }
+        }
         setFilterData(filteredInternship)
-        pageBtns[1].classList.add("active");
-    }, [option])
+        setCurrentData(filteredInternship.slice(0,pageCount))
+        handlePageClick({selected: 0})
+        pageBtns[1]?.classList.add("active");
+        console.log(duration)
+
+    },[mode,pageCount,duration])
 
     console.log(filterData)
+
 
 
     return (
