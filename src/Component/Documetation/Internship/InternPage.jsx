@@ -60,8 +60,14 @@ let InternPage = () => {
       <div style={{display:"flex", flexDirection : "row", justifyContent : "space-between"}}>
         <p className="page-summary">{pageSummary}</p>
         <div className="page-summary" style={{display:"flex", flexDirection : "row", gap : "10%"}}>
-          <div  ><Filter defaultvalue='All' option={mode} setOption={setMode} options={modes}/></div>
-          <div ><Filter defaultvalue='All' option={duration} setOption={setDuration} options={durations}/></div>
+          <div  className="filter-container">
+            <h4>Mode</h4>
+            <Filter  defaultvalue='All' option={mode} setOption={setMode} options={modes}/>
+          </div>
+          <div className="filter-container ">
+            <h4>Duration</h4>
+            <Filter defaultvalue='All' option={duration} setOption={setDuration} options={durations}/>
+          </div>
         </div>
       </div>
 

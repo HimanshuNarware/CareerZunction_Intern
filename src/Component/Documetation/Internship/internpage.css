@@ -230,7 +230,7 @@ body {
     padding: 10%;
     width: auto;
     height: 50px;
-    margin-inline: 13px;
+    margin-top: 10px;
     border-radius: 13px;
     background: linear-gradient(to bottom, black, rgba(153, 0, 255, 0.279));
     color: rgba(255, 255, 255, 0.795);
@@ -240,6 +240,10 @@ body {
     background-color:rgba(153, 0, 255, 0.279);
     color: black;
     gap: 5px;
+}
+
+.filter-container{
+    margin-inline: 13px;
 }
 
 
