@@ -9,6 +9,7 @@ import Footer from "./Component/Footer";
 import Contact from "./Component/Contact";
 import Blog from "./Component/Documetation/Blog";
 import Licensing from "./Component/Licensing";
+import CodeOfConduct from "./Component/Codeofconduct";
 import Contributors from "./Component/Contributors";
 import FeedbackButton from "./Component/Feedbtn";
 import FeedbackModal from "./Component/Feedback";
@@ -41,6 +42,7 @@ function App() {
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="*" element={<Error />} />
           <Route path="/licensing" element={<Licensing/>}/>
+          <Route path="/codeofconduct" element={<CodeOfConduct/>}/>
         </Routes>
         <Footer />
       </div>
