@@ -1,46 +1,51 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './Contributors.css';
 
-const Contributors = () => {
+function Contributors() {
   const [contributors, setContributors] = useState([]);
 
   useEffect(() => {
     async function fetchContributors() {
       try {
-        const response = await fetch('https://api.github.com/repos/HimanshuNarware/CareerZunction_Intern/contributors');
-        const data = await response.json();
-        setContributors(data);
+        const response = await axios.get(
+          'https://api.github.com/repos/HimanshuNarware/CareerZunction_Intern/contributors'
+        );
+        setContributors(response.data);
       } catch (error) {
-        console.error('Error fetching contributors:', error);
+        console.error('Error in fetching contributors:', error);
       }
     }
-
     fetchContributors();
   }, []);
 
   return (
-      <div className="content">
-          <h1 className="title">Our Contributors</h1>
-        <div id="contributors" className="contributors">
-          {contributors.map(contributor => (
+    <div className="contributors-container">
+      <h1 className="contributors-title">Our Contributors</h1>
+      <div className="contributors-grid">
+        {contributors.map((contributor) => (
+          <div key={contributor.id} className="contributor-card">
             <a
-              key={contributor.id}
               href={contributor.html_url}
+              className="contributor-link"
               target="_blank"
               rel="noopener noreferrer"
-              className="contributor-card"
             >
-              <img src={contributor.avatar_url} alt={contributor.login} />
-              <h2 className="contributor-name">{contributor.login}</h2>
-              <p className="contributions">Contributions: {contributor.contributions}</p>
-              <p className="github-profile">
-                <i className="fab fa-github"></i> GitHub Profile
-              </p>
+              <img
+                src={contributor.avatar_url}
+                alt={contributor.login}
+                className="contributor-avatar"
+              />
             </a>
-          ))}
-        </div>
+            <h2 className="contributor-name">{contributor.login}</h2>
+            <p className="contributor-contributions">
+              Contributions: {contributor.contributions}
+            </p>
+          </div>
+        ))}
       </div>
+    </div>
   );
-};
+}
 
 export default Contributors;
