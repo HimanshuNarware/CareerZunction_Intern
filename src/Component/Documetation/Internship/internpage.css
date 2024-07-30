@@ -47,9 +47,10 @@ body {
 
 
 .BoxContent:hover {
-    box-shadow: 0.7px 0.7px 6px rgb(255, 255, 255), -0.7px -0.7px 6px rgb(255, 255, 255);
-    transition: 0.5s;
-    transform: scale(1.03);
+   box-shadow: 2px 2px 40px rgba(153, 0, 255, 0.769), -2px -2px 40px rgba(153, 0, 255, 0.756);
+    transition: 1s;
+    transform: scale(1.05);
+
 
 
 }
@@ -91,8 +92,9 @@ body {
     font-weight: bold;
     border-radius: 7px;
     background-color: transparent;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
+    width: max-content;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for base state */
-    transition: color 0.3s, background-color 0.3s, border 0.3s, box-shadow 0.3s;
     text-decoration: none; /* Ensure no underline for links */
     width: max-content;
 }
