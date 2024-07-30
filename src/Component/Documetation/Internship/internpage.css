@@ -84,9 +84,9 @@ body {
 .viewMore {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    color: rgb(128, 0, 128); /* Dark Purple */
-    border: 2px solid rgb(128, 0, 128);
+    justify-content: center;    
+    color: rgb(139, 254, 218); /* green */
+    border: 2px solid rgb(139, 254, 218);
     padding: 7px 20px; /* Increased padding for better spacing */
     font-weight: bold;
     border-radius: 7px;
@@ -99,17 +99,16 @@ body {
 
 .viewMore:hover {
     color: white;
-    background-color: rgba(128, 0, 128, 0.8); /* Semi-transparent purple */
-    box-shadow: 0 6px 12px rgba(128, 0, 128, 0.6); /* Enhanced glow effect on hover */
+    background-color: rgb(139, 254, 218, 0.8); /* Semi-transparent purple */
+    box-shadow: 0 6px 12px rgb(139, 254, 218, 0.6); /* Enhanced glow effect on hover */
 }
 
 .viewMore:active {
-    background-color: rgb(128, 0, 128); /* Solid Purple */
+    background-color: rgb(139, 254, 218); 
     color: white;
-    box-shadow: 0 8px 16px rgba(128, 0, 128, 0.8); /* Stronger glow effect */
+    box-shadow: 0 8px 16px rgb(139, 254, 218, 0.8);  /* Stronger glow effect */
     transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
-
 
 .BoxContent {
     /* position: relative; */
