@@ -11,7 +11,7 @@ function PrivacyPolicy() {
         <p>Welcome to CareerZunction. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our platform.</p>
       </section>
 
-      <section>
+      <section className="first">
         <h2>2. Information We Collect</h2>
         <p>We collect the following types of information:</p>
         <ul>
@@ -23,7 +23,7 @@ function PrivacyPolicy() {
         </ul>
       </section>
 
-      <section>
+      <section className="first">
         <h2>3. How We Use Your Information</h2>
         <p>We use your information to:</p>
         <ul>
@@ -35,7 +35,7 @@ function PrivacyPolicy() {
         </ul>
       </section>
 
-      <section>
+      <section className="first">
         <h2>4. Data Sharing and Disclosure</h2>
         <p>We may share your information with:</p>
         <ul>
@@ -46,12 +46,12 @@ function PrivacyPolicy() {
         </ul>
       </section>
 
-      <section>
+      <section className="first">
         <h2>5. Data Security</h2>
         <p>We implement robust security measures to protect your data from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
       </section>
 
-      <section>
+      <section className="first">
         <h2>6. Your Rights</h2>
         <p>You have the right to:</p>
         <ul>
@@ -62,12 +62,12 @@ function PrivacyPolicy() {
         </ul>
       </section>
 
-      <section>
+      <section className="first">
         <h2>7. Changes to This Policy</h2>
         <p>We may update this Privacy Policy periodically. We will notify you of any significant changes through our platform or via email.</p>
       </section>
 
-      <section>
+      <section className="first">
         <h2>8. Contact Us</h2>
         <p>If you have any questions or concerns about this Privacy Policy, please contact us at privacy@careerzunction.com</p>
       </section>
