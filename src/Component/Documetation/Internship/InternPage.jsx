@@ -3,6 +3,7 @@
 import "./internpage.css";
 import { useRef, useState } from "react";
 import PaginatedItems from "../../pagination";
+import {Filter} from "./filter";
 
 let InternPage = () => {
   // Dispatch and Subscribe
@@ -11,6 +12,9 @@ let InternPage = () => {
 
   const [currentData, setCurrentData] = useState([]);
   const [pageSummary, setPageSummary] = useState("");
+  const [mode, setMode] = useState("")
+  const [duration, setDuration] = useState("")
+
   // console.log(currentData)
 
   const monthAbbreviations = {
@@ -28,14 +32,17 @@ let InternPage = () => {
     december: "Dec"
 };
 
+  const modes = ["All","Online", "Offline","Remote"]
+  const durations = ["All","january","february","march","april","may","june","july","august","september ","october","november","december"]
+
   function shortmonth(month) {
     let montharr;
     const dashRegex = /[\u2013\u2014\-]/;
-    if (month.match(dashRegex)) {
+    if (month?.match(dashRegex)) {
       montharr = month.split(dashRegex).map(month => month.trim());
       
     }
-    if (month.includes("/")) {
+    if (month?.includes("/")) {
       montharr=month.split("/")
     }
     if (montharr) {
@@ -50,7 +57,19 @@ let InternPage = () => {
 
   return (
     <div style={{ background: "black" }}>
-      <p className="page-summary">{pageSummary}</p>
+      <div style={{display:"flex", flexDirection : "row", justifyContent : "space-between"}}>
+        <p className="page-summary">{pageSummary}</p>
+        <div className="page-summary" style={{display:"flex", flexDirection : "row", gap : "10%"}}>
+          <div  className="filter-container">
+            <h4>Mode</h4>
+            <Filter  defaultvalue='All' option={mode} setOption={setMode} options={modes}/>
+          </div>
+          <div className="filter-container ">
+            <h4>Duration</h4>
+            <Filter defaultvalue='All' option={duration} setOption={setDuration} options={durations}/>
+          </div>
+        </div>
+      </div>
 
       <div className="internBox">
         {currentData.map((item, index) => {
@@ -91,6 +110,8 @@ let InternPage = () => {
       <PaginatedItems
         setCurrentData={setCurrentData}
         setPageSummary={setPageSummary}
+        mode={mode}
+        duration = {duration}
       />
     </div>
   );
