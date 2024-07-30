@@ -11,22 +11,16 @@ body {
 }
 
 .internBox {
-    /* margin-top: 150px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: white;
     column-gap: 10%;
     row-gap: 20px;
-    /* justify-content:space-around; */
     margin-inline: 10%;
     justify-content: space-evenly;
-
-    /* background-color: black; */
-
 }
 
 .BoxContent {
-
     color: rgba(255, 255, 255, 0.795);
     text-align: center;
     width: 330px;
@@ -40,33 +34,21 @@ body {
     margin-block: 10px;
     background: linear-gradient(to bottom, black, rgba(153, 0, 255, 0.279));
     border-radius: 13px;
-    /* border: 1px dotted gray; */
-    /* box-shadow:  2px 2px 28px rgba(219, 205, 205, 0.196),-2px -2px 60px rgb(15, 15, 15); */
     box-shadow: -1px 3px 8px rgba(216, 211, 211, 0.082);
 }
-
 
 .BoxContent:hover {
     box-shadow: 0.7px 0.7px 6px rgb(255, 255, 255), -0.7px -0.7px 6px rgb(255, 255, 255);
     transition: 0.5s;
     transform: scale(1.03);
-
-
 }
-
 
 .ApiImg {
     border-radius: 5px;
     margin-block: 10px;
     width: 250px;
     height: 120px;
-    /* background-image: url(../../../image/ErrorImg/not-found-image.webp); */
-    background-size: 100%;
-    background-position: 10%;
-    background-repeat: no-repeat;
-    /* backdrop-filter: blue; */
     object-fit: contain;
-
 }
 
 .time {
@@ -102,8 +84,23 @@ body {
     transition: 0.5s;
 }
 
+.ApplyNow {
+    color: rgb(32, 225, 32);
+    border: 2px solid rgb(32, 225, 32);
+    padding: 7px 10px;
+    font-weight: bold;
+    border-radius: 7px;
+    background-color: transparent;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
+}
+
+.ApplyNow:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(32, 225, 32, 0.596);
+}
+
 .BoxContent {
-    /* position: relative; */
 }
 
 .MoreDetails {
@@ -117,119 +114,120 @@ body {
     background: linear-gradient(45deg, black, transparent);
     justify-content: space-evenly;
     padding: 12px 18px;
+}
 
-    .ApiImg {
-        width: 550px;
-        height: 450px;
-        opacity: 60%;
-        position: relative;
-        left: -29%;
-        top: 25%;
-        border-radius: 10px;
-    }
+.MoreDetails .ApiImg {
+    width: 550px;
+    height: 450px;
+    opacity: 60%;
+    position: relative;
+    left: -29%;
+    top: 25%;
+    border-radius: 10px;
+}
 
-    .InternTitle {
-        position: relative;
-        top: -4em;
-        left: 14%;
-        font-weight: bold;
-        font-size: 3em;
-        color: #C6BDD2;
-    }
+.MoreDetails .InternTitle {
+    position: relative;
+    top: -4em;
+    left: 14%;
+    font-weight: bold;
+    font-size: 3em;
+    color: #C6BDD2;
+}
 
-    .company_name {
-        position: relative;
-        top: -9.6em;
-        left: -11.7em;
-        font-size: 3em;
-        font-weight: bold;
-        color: #403544;
-    }
+.MoreDetails .company_name {
+    position: relative;
+    top: -9.6em;
+    left: -11.7em;
+    font-size: 3em;
+    font-weight: bold;
+    color: #403544;
+}
 
-    .desc {
-        position: relative;
-        width: 35%;
-        /* letter-spacing: .9px; */
-        top: -10.9em;
-        left: 19.2%;
-        text-align: start;
-        font-size: 1.3em;
-        color: #8C8888;
-        /* text-transform:; */
+.MoreDetails .desc {
+    position: relative;
+    width: 35%;
+    top: -10.9em;
+    left: 19.2%;
+    text-align: start;
+    font-size: 1.3em;
+    color: #8C8888;
+}
 
-    }
+.MoreDetails .internship_type {
+    font-size: 1em;
+    color: #817F7F;
+    position: relative;
+    top: -7em;
+    left: -34em;
+    font-weight: 500;
+}
 
-    .internship_type {
-        font-size: 1em;
-        color: #817F7F;
-        position: relative;
-        top: -7em;
-        left: -34em;
-        font-weight: 500;
-    }
+.MoreDetails .Stipend {
+    font-size: 1em;
+    color: #817F7F;
+    position: relative;
+    left: -11em;
+    top: -6em;
+    font-weight: 500;
+}
 
-    .Stipend {
-        font-size: 1em;
-        color: #817F7F;
-        position: relative;
-        left: -11em;
-        top: -6em;
-        font-weight: 500;
+.MoreDetails .time {
+    display: block;
+    border: none;
+}
 
-    }
+.MoreDetails .duration {
+    font-size: 1em;
+    color: #817F7F;
+    position: relative;
+    top: 2.5em;
+    left: -12em;
+    font-weight: 500;
+}
 
-    .time {
-        display: block;
-        border: none;
-    }
+.MoreDetails .mode {
+    position: relative;
+    color: #817F7F;
+    top: 4em;
+    left: -34.7em;
+    font-weight: 500;
+}
 
-    .duration {
-        font-size: 1em;
-        color: #817F7F;
-        position: relative;
-        top: 2.5em;
-        left: -12em;
-        font-weight: 500;
+.MoreDetails .ApplyButton {
+    position: absolute;
+    top: 30em;
+    left: 53%;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 16px 32px;
+    color: #18B715;
+    border: 2px solid #18B715;
+}
 
-    }
+.MoreDetails .ApplyButton:hover {
+    background-color: rgb(32, 225, 32);
+    color: black;
+    transition: 0.5s;
+}
 
-    .mode {
-        position: relative;
-        position: relative;
-        color: #817F7F;
-        top: 4em;
-        left: -34.7em;
-        font-weight: 500;
-
-    }
-
-    .ApplyButton {
-        position: absolute;
-        top: 30em;
-        left: 53%;
-        font-weight: bold;
-        border-radius: 8px;
-        background-color: transparent;
-        padding: 16px 32px;
-        color: #18B715;
-        border: 2px solid #18B715;
-    }
-
-    .viewMore {
-        position: relative;
-        top: -10em;
-    }
+.MoreDetails .viewMore {
+    position: relative;
+    top: -10em;
 }
 
 .page-summary {
     color: blueviolet;
     padding: 15px 10%;
 }
+
 .filterContainer {
     display: flex;
     justify-content: center;
     margin: 20px 0;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .filterSelect {
@@ -271,13 +269,9 @@ body {
     border: 2px solid white;
 }
 
-/* @mediaQwery */
-
-
 @media screen and (max-width:410px) {
     .internBox {
         margin-inline: 10% !important;
-        /* margin-left: -50px; */
     }
 
     .BoxContent {
@@ -288,26 +282,21 @@ body {
 @media screen and (max-width:420px) {
     .internBox {
         margin-inline: 10% !important;
-        /* margin-left: -50px; */
     }
 }
 
 @media screen and (max-width:479px) {
     .internBox {
         margin-inline: 12% !important;
-        /* margin-left: -50px; */
     }
 }
-
 
 @media screen and (max-width:683px) {
     .internBox {
         margin-top: -120px;
         padding-top: 50px;
-
         display: flex;
         flex-direction: column;
-        /* justify-content:center !important; */
         margin-inline: 20%;
     }
 }

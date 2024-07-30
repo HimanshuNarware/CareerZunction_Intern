@@ -13,6 +13,12 @@ const InternPage = () => {
   const [pageSummary, setPageSummary] = useState("");
   const [roleFilter, setRoleFilter] = useState("");
   const [industryFilter, setIndustryFilter] = useState("");
+  useEffect(()=>{
+    if (currentData.length === 0 || !roleFilter && !industryFilter) {
+      setCurrentData( internshipsData.slice(0, 12));  // Adjust the number as needed
+      console.log("Default internships shown due to no matches:", currentData);
+    }
+  },[currentData])
 
   const monthAbbreviations = {
     january: "Jan",
@@ -50,17 +56,19 @@ const InternPage = () => {
   }
 
   useEffect(() => {
-    // Set data from JSON
-    setInternships(internshipsData);
-    // Show some default internships initially
-    const defaultData = internshipsData.slice(0, 5);
-    setFilteredData(defaultData);
-    setCurrentData(defaultData);
-    setPageSummary(
-      `Showing 1 to ${Math.min(12, defaultData.length)} results out of ${
-        defaultData.length
-      }`
-    );
+    console.log("Initial internships data:", internshipsData);
+    if (internshipsData && internshipsData.length > 0) {
+      setInternships(internshipsData);
+      const defaultData = internshipsData.slice(0, 12); // Show 12 items initially
+      console.log("Default Data:", defaultData);
+      setFilteredData(defaultData);
+      setCurrentData(defaultData);
+      setPageSummary(
+        `Showing 1 to ${Math.min(12, defaultData.length)} results out of ${internshipsData.length}`
+      );
+    } else {
+      console.error("Internships data is empty or not loaded correctly");
+    }
   }, []);
 
   useEffect(() => {
@@ -76,31 +84,36 @@ const InternPage = () => {
 
     if (roleFilter) {
       filtered = filtered.filter(
-        (internship) => internship.role && internship.role.toLowerCase() === roleFilter.toLowerCase()
+        (internship) =>
+          internship.role && internship.role.toLowerCase() === roleFilter.toLowerCase()
       );
       console.log("After role filter:", filtered);
     }
 
     if (industryFilter) {
       filtered = filtered.filter(
-        (internship) => internship.industry && internship.industry.toLowerCase() === industryFilter.toLowerCase()
+        (internship) =>
+          internship.industry && internship.industry.toLowerCase() === industryFilter.toLowerCase()
       );
       console.log("After industry filter:", filtered);
     }
 
-    // Show some default internships even when filters are applied
-    if (filtered.length === 0) {
-      filtered = internships.slice(0, 5); // Adjust the number as needed
+    /*if (filtered.length === 0) {
+      filtered = internships.slice(0, 12); // Adjust the number as needed
       console.log("Default internships shown due to no matches:", filtered);
-    }
+    }*/
 
     setFilteredData(filtered);
-    setCurrentData(filtered.slice(0, 12)); // Initially show first 12 items of filtered data
+    setCurrentData(filtered.slice(0, 5)); // Initially show first 12 items of filtered data
     setPageSummary(
       `Showing 1 to ${Math.min(12, filtered.length)} results out of ${filtered.length}`
     );
   }
 
+  function handleApplyNow(link) {
+    window.open(link, "_blank");
+  }
+ 
   return (
     <div style={{ backgroundColor: "black", paddingBlock: "50px" }}>
       <h1 style={{ color: "rgb(220, 227, 238)" }}>My Internship Journey</h1>
@@ -134,24 +147,30 @@ const InternPage = () => {
           <option value="Others">Others</option>
           {/* Add more options as needed */}
         </select>
-
-        <button onClick={handleFilter} className="filterButton">
-          Filter
-        </button>
       </div>
 
       <div className="internBox" ref={ref}>
-        {currentData.map((item) => (
-          <div className="BoxContent" key={item.id}>
-            <img src={item.image} alt="Internship" className="ApiImg" />
-            <h2>{item.internship_name}</h2>
-            <p>{item.company_name}</p>
-            <div className="time">
-              <span>{shortMonth(item.duration)}</span>
+        {currentData.length > 0 ? (
+          currentData.map((item) => (
+            <div className="BoxContent" key={item.id}>
+              <img src={item.image} alt="Internship" className="ApiImg" />
+              <h2>{item.internship_name}</h2>
+              <div className="time">
+                <span>{item.mode}</span>
+                <span>{shortMonth(item.duration)}</span>
+              </div>
+              <p>{item.description}</p>
+              <button
+                className="ApplyNow"
+                onClick={() => handleApplyNow(item.link)}
+              >
+                Apply Now
+              </button>
             </div>
-            <button className="viewMore">View More</button>
-          </div>
-        ))}
+          ))
+        ) : (
+          <p style={{ color: "white" }}>No internships available.</p>
+        )}
       </div>
 
       <PaginatedItems
