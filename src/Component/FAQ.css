@@ -14,19 +14,16 @@
     padding: 1rem 2rem;
     padding-top: 0;
     width: 100%;
-
     transition: color 500ms, background-color 500ms, border-color 500ms, text-decoration-color 500ms, fill 500ms, stroke 500ms, opacity 500ms, box-shadow 500ms, transform 500ms, filter 500ms, backdrop-filter 500ms;
 }
 
 .heading {
-    font-size: 2.7rem !important;
+    font-size: 2rem;
     line-height: 2.5rem;
     margin-bottom: 2rem;
     font-weight: 700;
     text-align: center;
     color: #ffffff;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue !important; 
-    text-decoration: underline;
 }
 
 @media screen and (max-width:768px) {
@@ -62,9 +59,11 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
     transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: rgba(18, 1, 26, 0.7); /* Violet background color with transparency */
-
-    width: 60vw;
-
+    width: 70vw;
+    position: relative;
+  padding: 1rem;
+  border-radius: 3px;
+  z-index: 1; 
 }
 
 .faq::before {
@@ -175,137 +174,3 @@
         font-size: 0.75rem;
     }
 }
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    padding-top: 0;
-    border-radius: 8px;
-    display: flex;
-
-}
-
-.section {
-    padding: 1rem 2rem;
-    padding-top: 0;
-    width: 100%;
-    transition: color 500ms, background-color 500ms, border-color 500ms, text-decoration-color 500ms, fill 500ms, stroke 500ms, opacity 500ms, box-shadow 500ms, transform 500ms, filter 500ms, backdrop-filter 500ms;
-}
-
-.heading {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    margin-bottom: 2rem;
-    font-weight: 700;
-    text-align: center;
-    color: #ffffff;
-}
-
-@media screen and (max-width: 768px) {
-    .heading {
-        font-size: 1.5rem;
-    }
-}
-
-.flex-div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-}
-
-@media (min-width: 768px) {
-    .flex-div {
-        margin: 0 5rem;
-    }
-}
-
-.faq {
-    border: 1px solid rgba(255, 255, 255, 0.5); /* White border with transparency */
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -4px rgba(0, 0, 0, 0.2);
-    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
-    background: linear-gradient(135deg, #9c38f9, #eac4f4); /* Gradient for individual FAQ items */
-    width: 60vw;
-    transition: transform 0.4s ease-in-out;
-}
-
-.faq:hover {
-    transform: translateY(6px);
-    background: linear-gradient(135deg, #9c38f9, #d285eb); /* Gradient for individual FAQ items */
-
-}
-
-@media screen and (max-width: 768px) {
-    .faq {
-        width: 85vw;
-    }
-}
-
-.faq-button {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    font-weight: 500;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    color: #ffffff;
-    text-align: left;
-}
-
-@media screen and (max-width: 768px) {
-    .faq-button {
-        font-size: 0.8rem;
-    }
-}
-
-.faq-button:hover {
-    color: #ffd700;
-    text-shadow: rgb(255, 0, 230) 1px 0 10px;
-    background: none;
-}
-
-
-.answer {
-    display: block; /* Ensures the answer div takes up full width */
-    margin-top: 0.5rem;
-    color: #eeeeee;
-    line-height: 1.25rem;
-    background-color: rgba(255, 255, 255, 0.2); /* Lighter effect for answers */
-    padding: 0.5rem;
-    border-radius: 5px;
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-}
-
-@media screen and (max-width: 768px) {
-    .answer {
-        font-size: 0.8rem;
-    }
-}
-
-.hidden {
-    display: none;
-}
-
-.arrow-icon {
-    transition: transform 0.2s ease-in-out;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
-@media screen and (max-width: 768px) {
-    .small {
-        font-size: 0.75rem;
-    }
-}
-
