@@ -81,27 +81,36 @@ body {
     width: 70%;
 }
 
+
 .viewMore {
-    color: rgb(32, 225, 32);
-    border: 2px solid rgb(32, 225, 32);
-    padding: 7px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;    
+    color: rgb(139, 254, 218); /* green */
+    border: 2px solid rgb(139, 254, 218);
+    padding: 7px 20px; /* Increased padding for better spacing */
     font-weight: bold;
     border-radius: 7px;
     background-color: transparent;
     transition: color 0.3s, background-color 0.3s, border 0.3s;
     width: max-content
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for base state */
+    transition: color 0.3s, background-color 0.3s, border 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Ensure no underline for links */
+    width: max-content;
 }
 
 .viewMore:hover {
     color: white;
-    border: 2px solid white;
-    background-color: rgba(32, 225, 32, 0.596);
+    background-color: rgb(139, 254, 218, 0.8); /* Semi-transparent purple */
+    box-shadow: 0 6px 12px rgb(139, 254, 218, 0.6); /* Enhanced glow effect on hover */
 }
 
-.viewMore:hover {
-    background-color: rgb(32, 225, 32);
-    color: black;
-    transition: 0.5s;
+.viewMore:active {
+    background-color: rgb(139, 254, 218); 
+    color: white;
+    box-shadow: 0 8px 16px rgb(139, 254, 218, 0.8);  /* Stronger glow effect */
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .BoxContent {

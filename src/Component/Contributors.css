@@ -1,111 +1,89 @@
-/* Contributors.css */
-.content {
-    color: black;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.title {
+.contributors-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 0rem;
+    overflow: hidden;
+    margin-bottom: 90px;
+    margin-top: -37px;
+  }
+  
+  .contributors-title {
+    margin-top: 4rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 2rem; 
-}
-
-.contributors {
+    color: #FFA500; 
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .contributors-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 25px; 
-}
-
-.contributor-card {
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contributor-card {
+    width: 100%;
+    max-width: 25%; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #201226; 
+    border: 1px solid #9416e9;
+    ; 
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
     padding: 1rem;
-    width: 100%; 
-    max-width: 220px; 
-    transition: transform 0.3s;
-    box-sizing: border-box;
-}
-
-.contributor-card:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contributor-card:hover {
     transform: scale(1.05);
-}
-
-.contributor-card img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .contributor-link {
+    display: block;
+  }
+  
+  .contributor-avatar {
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
     object-fit: cover;
     margin-bottom: 1rem;
-}
-
-.contributor-name {
-    font-size: 1.25rem;
+    border: 2px solid #9416e9; 
+  }
+  
+  .contributor-name {
+    font-size: 1rem;
     font-weight: 500;
-    color: #333;
+    color: #f3f4f6; 
     margin-bottom: 0.5rem;
-}
-
-.contributions {
-    color: #555;
-    margin-bottom: 0.5rem;
-}
-
-.github-profile {
-    color: #333;
-    display: flex;
-    align-items: center;
-}
-
-.github-profile i {
-    margin-right: 0.5rem;
-}
-
-/* Responsive Design */
-
-@media (max-width: 1024px) {
-    .contributors {
-        justify-content: center; 
-    }
-}
-
-@media (max-width: 768px) {
+  }
+  
+  .contributor-contributions {
+    color: #d1d5db; 
+  }
+  
+  @media (max-width: 1200px) {
     .contributor-card {
-        max-width: 200px; 
+      max-width: 33.333%; 
     }
-    
-    .title {
-        font-size: 2rem; 
-        margin-bottom: 1rem;
-    }
-
-    .content {
-        padding: 20px;
-    }
-
-    .contributors {
-        gap: 20px; 
-    }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 992px) {
     .contributor-card {
-        max-width: 80%; 
+      max-width: 50%; 
     }
-
-    .title {
-        font-size: 2rem; 
-        margin-bottom: 1rem; 
+  }
+  
+  @media (max-width: 768px) {
+    .contributor-card {
+      max-width: 83%; 
     }
-
-    .contributors {
-        gap: 20px; 
-    }
-}
+  }
+  
