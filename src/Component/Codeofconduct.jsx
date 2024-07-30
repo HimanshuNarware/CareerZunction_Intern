@@ -16,6 +16,7 @@ const Title = styled.h1`
   margin-bottom: 30px;
   text-align: left;
   color: white;
+  text-decoration: underline;
 `;
 
 const Paragraph = styled.p`
@@ -30,6 +31,7 @@ const Subtitle = styled.h2`
   margin-bottom: 20px;
   padding: 0;
   color: white;
+  text-decoration: underline;
 `;
 
 const Footer = styled.div`
