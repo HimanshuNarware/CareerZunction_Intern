@@ -236,38 +236,6 @@ body {
     padding: 15px 10%;
 }
 
-.filter-box{
-    padding: 10%;
-    width: auto;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 13px;
-    background: linear-gradient(to bottom, black, rgba(153, 0, 255, 0.279));
-    color: rgba(255, 255, 255, 0.795);
-}
-
-.filter-box>option{
-    background-color:rgba(153, 0, 255, 0.279);
-    color: black;
-    gap: 5px;
-}
-
-.filter-container{
-    margin-inline: 13px;
-}
-
-
-
-.filter-box:hover {
-    box-shadow: 0.7px 0.7px 6px rgb(255, 255, 255), -0.7px -0.7px 6px rgb(255, 255, 255);
-    transition: 0.5s;
-}
-
-.filter-option{
-    background: linear-gradient(to bottom, black, rgba(153, 0, 255, 0.279));
-    color: rgba(255, 255, 255, 0.795);
-}
-
 /* @mediaQwery */
 
 
