@@ -104,7 +104,7 @@ const CodeOfConduct = () => {
             <Paragraph>For answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations.</Paragraph>
 
             <Footer>
-                If you have any questions or concerns about this code of conduct, please contact us at <a href="mailto:suchitrasahoo874@gmail.com" style={{ color: 'white' }}>suchitrasahoo874@gmail.com</a>
+                If you have any questions or concerns about this code of conduct, please contact us at <a href="mailto:himanshunarware77@gmail.com" style={{ color: 'white' }}>suchitrasahoo874@gmail.com</a>
             </Footer>
         </Container>
     );
