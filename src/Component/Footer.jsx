@@ -41,8 +41,7 @@ function Footer() {
         <div className="footer-section">
           <h4 className="footer-heading">Legal</h4>
           <ul className="footer-links">
-            <li><span> <a href="#">Privacy Policy</a></span></li>
-
+            <li><span> <a href="/privacypolicy">Privacy Policy</a></span></li>
             <li><span><a href="/terms">Terms and Conditions</a></span></li>
             <li><span><a href="/licensing">MIT License</a></span></li>
 
