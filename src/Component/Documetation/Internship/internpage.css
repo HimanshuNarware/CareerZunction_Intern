@@ -112,9 +112,6 @@ body {
     transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.BoxContent {
-    /* position: relative; */
-}
 
 .MoreDetails {
     position: absolute;
@@ -234,6 +231,52 @@ body {
 .page-summary {
     color: blueviolet;
     padding: 15px 10%;
+}
+.filterContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filterSelect {
+    padding: 10px;
+    border: 2px solid rgb(190, 21, 228);
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: border 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.filterSelect:focus {
+    outline: none;
+    border-color: white;
+}
+
+.filterSelect option {
+    background-color: black;
+    color: white;
+}
+
+.filterButton {
+    padding: 10px 20px;
+    border: 2px solid rgb(190, 21, 228);
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
+}
+
+.filterButton:hover {
+    background-color: rgb(230, 153, 244);
+    color: black;
+    border: 2px solid white;
 }
 
 /* @mediaQwery */
