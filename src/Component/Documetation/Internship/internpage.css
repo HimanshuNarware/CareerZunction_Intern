@@ -99,12 +99,6 @@ body {
     border: 2px solid white;
     background-color: rgba(32, 225, 32, 0.596);
 }
-
-.BoxContent {
-    /* position: relative; */
-    
-}
-
 .MoreDetails {
     position: absolute;
     border: 1px solid white;
