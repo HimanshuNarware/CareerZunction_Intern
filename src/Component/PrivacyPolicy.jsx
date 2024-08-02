@@ -1,17 +1,17 @@
 import React from 'react';
-import './PrivacyPolicy.css';
+import styled from 'styled-components';
 
-function PrivacyPolicy() {
+const PrivacyPolicy = () => {
   return (
-    <div className="privacy-policy-container">
+    <PrivacyWrapper>
       <h1>CareerZunction Privacy Policy</h1>
 
-      <section className="first">
+      <Section>
         <h2>1. Introduction</h2>
         <p>Welcome to CareerZunction. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you use our platform.</p>
-      </section>
+      </Section>
 
-      <section className="first">
+      <Section>
         <h2>2. Information We Collect</h2>
         <p>We collect the following types of information:</p>
         <ul>
@@ -21,9 +21,9 @@ function PrivacyPolicy() {
           <li>Usage data (how you interact with our platform)</li>
           <li>Device information</li>
         </ul>
-      </section>
+      </Section>
 
-      <section className="first">
+      <Section>
         <h2>3. How We Use Your Information</h2>
         <p>We use your information to:</p>
         <ul>
@@ -33,9 +33,9 @@ function PrivacyPolicy() {
           <li>Provide career resources and support</li>
           <li>Analyze usage patterns to enhance our services</li>
         </ul>
-      </section>
+      </Section>
 
-      <section className="first">
+      <Section>
         <h2>4. Data Sharing and Disclosure</h2>
         <p>We may share your information with:</p>
         <ul>
@@ -44,14 +44,14 @@ function PrivacyPolicy() {
           <li>Service providers who assist in our operations</li>
           <li>Legal authorities when required by law</li>
         </ul>
-      </section>
+      </Section>
 
-      <section className="first">
+      <Section>
         <h2>5. Data Security</h2>
         <p>We implement robust security measures to protect your data from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
-      </section>
+      </Section>
 
-      <section className="first">
+      <Section>
         <h2>6. Your Rights</h2>
         <p>You have the right to:</p>
         <ul>
@@ -60,19 +60,68 @@ function PrivacyPolicy() {
           <li>Opt-out of certain data collection and use</li>
           <li>Receive a copy of your data in a portable format</li>
         </ul>
-      </section>
+      </Section>
 
-      <section className="first">
+      <Section>
         <h2>7. Changes to This Policy</h2>
         <p>We may update this Privacy Policy periodically. We will notify you of any significant changes through our platform or via email.</p>
-      </section>
+      </Section>
 
-      <section className="first">
+      <Section>
         <h2>8. Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us at privacy@careerzunction.com</p>
-      </section>
-    </div>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:privacy@careerzunction.com">privacy@careerzunction.com</a></p>
+      </Section>
+    </PrivacyWrapper>
   );
 }
+
+const PrivacyWrapper = styled.div`
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: white;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #8a2be2;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  p:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  ul > li {
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+`;
+
+const Section = styled.section`
+  margin-bottom: 40px;
+`;
 
 export default PrivacyPolicy;
