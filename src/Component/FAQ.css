@@ -1,3 +1,4 @@
+/* Container styles */
 .container {
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
@@ -10,13 +11,17 @@
     display: flex;
 }
 
+/* Section styles */
 .section {
     padding: 1rem 2rem;
     padding-top: 0;
     width: 100%;
+    margin-bottom: 197px;
+    margin-top: 193px;
     transition: color 500ms, background-color 500ms, border-color 500ms, text-decoration-color 500ms, fill 500ms, stroke 500ms, opacity 500ms, box-shadow 500ms, transform 500ms, filter 500ms, backdrop-filter 500ms;
 }
 
+/* Heading styles */
 .heading {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -26,12 +31,13 @@
     color: #ffffff;
 }
 
-@media screen and (max-width:768px) {
-    .heading{
+@media screen and (max-width: 768px) {
+    .heading {
         font-size: 1.5rem;
     }
 }
 
+/* Flex container styles */
 .flex-div {
     display: flex;
     flex-direction: column;
@@ -45,13 +51,15 @@
         margin: 0 5rem;
     }
 }
+
+/* Custom property for gradient angle */
 @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
-  }
-  
+}
 
+/* FAQ item styles */
 .faq {
     border: 1px solid rgba(255, 255, 255, 0.5); 
     border-radius: 8px;
@@ -61,9 +69,9 @@
     background-color: rgba(18, 1, 26, 0.7); /* Violet background color with transparency */
     width: 70vw;
     position: relative;
-  padding: 1rem;
-  border-radius: 3px;
-  z-index: 1; 
+    padding: 1rem;
+    border-radius: 3px;
+    z-index: 1; 
 }
 
 .faq::before {
@@ -75,48 +83,42 @@
     left: 0;
     z-index: -1;
     background: conic-gradient(
-      from var(--gradient-angle),
-      #8126f0,
-      #b179f0,
-      #b395ef,
-      #b179f0,
-      #8126f0
+        from var(--gradient-angle),
+        #8126f0,
+        #b179f0,
+        #b395ef,
+        #b179f0,
+        #8126f0
     );
     border-radius: inherit;
     padding: 0.3rem; /* Adjust as needed for border thickness */
     -webkit-mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
     mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     animation: moving 1s linear infinite;
-  }
+}
 
-  @keyframes moving {
+@keyframes moving {
     0% {
-      --gradient-angle: 0deg;
+        --gradient-angle: 0deg;
     }
     100% {
-      --gradient-angle: 360deg;
+        --gradient-angle: 360deg;
     }
-  }
-    
+}
 
-  
-  
-  
-
-
-
-@media screen and (max-width:768px) {
-    .faq{
+@media screen and (max-width: 768px) {
+    .faq {
         width: 85vw;
     }
 }
 
+/* FAQ button styles */
 .faq-button {
     width: 100%;
     display: flex;
@@ -135,8 +137,8 @@
     text-align: left;
 }
 
-@media screen and (max-width:768px) {
-    .faq-button{
+@media screen and (max-width: 768px) {
+    .faq-button {
         font-size: 0.8rem;
     }
 }
@@ -146,6 +148,7 @@
     background: none;
 }
 
+/* FAQ answer styles */
 .answer {
     display: block; /* Ensures the answer div takes up full width */
     margin-top: 0.5rem;
@@ -153,8 +156,8 @@
     line-height: 1.25rem;
 }
 
-@media screen and (max-width:768px) {
-    .answer{
+@media screen and (max-width: 768px) {
+    .answer {
         font-size: 0.8rem;
     }
 }
@@ -163,14 +166,15 @@
     display: none;
 }
 
+/* Arrow icon styles */
 .arrow-icon {
     transition: transform 0.2s ease-in-out;
     height: 1.5rem;
     width: 1.5rem;
 }
 
-@media screen and (max-width:768px) {
-    .small{
+@media screen and (max-width: 768px) {
+    .small {
         font-size: 0.75rem;
     }
 }
