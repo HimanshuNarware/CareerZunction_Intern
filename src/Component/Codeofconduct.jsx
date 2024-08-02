@@ -30,7 +30,7 @@ const Subtitle = styled.h2`
   font-size: 1.5em;
   margin-bottom: 20px;
   padding: 0;
-  color: white;
+  color: #8a2be2;
   text-decoration: underline;
 `;
 
