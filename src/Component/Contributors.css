@@ -1,89 +1,146 @@
 .contributors-container {
-    width: 100%;
-    height: 100%;
-    padding-top: 0rem;
-    overflow: hidden;
-    margin-bottom: 90px;
-    margin-top: -37px;
-  }
-  
-  .contributors-title {
-    margin-top: 4rem;
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #FFA500; 
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-  }
-  
-  .contributors-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-  }
-  
+  width: 100%;
+  height: 100%;
+  padding-top: 0rem;
+  overflow: hidden;
+  margin-bottom: 90px;
+  margin-top: -37px;
+}
+
+.contributors-title {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #FFA500;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.contributors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.contributor-card {
+  position: relative;
+  width: 100%;
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #201226;
+  border: 1px solid #9416e9;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+
+.contributor-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(53, 127, 255, 0.459);
+}
+
+
+.contributor-card:hover p {
+  text-shadow: 1px 1px 2px rgb(0, 136, 255), 0 0 0.2em rgb(255, 73, 249), 0 0 0.8em rgb(250, 134, 246);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.contributor-card:hover h2 {
+  text-shadow: 1px 1px 2px rgb(0, 136, 255),
+   0 0 0.2em rgb(255, 73, 249), 
+   0 0 0.8em rgb(250, 134, 246);
+  color: white;
+  font-size: 1.02rem;
+  font-weight: 600;
+  text-decoration: wavy;
+}
+
+.contributor-card:hover .contributor-avatar {
+  border: 3.5px solid #ffffff;
+  width: 5.2rem;
+  box-shadow: -2px 4px 11px 1px rgba(218, 211, 1, 0.75);
+  height: 5.2rem;
+}
+
+.contributor-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(154deg, #ae43fa 50%, #570194 50%);
+  transition: transform 0.3s ease-in-out, 
+  opacity 0.3s ease-in-out;
+  transform: translate(-100%, -100%);
+  opacity: 0;
+  z-index: -1;
+}
+
+.contributor-card:hover::before {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
+.contributor-link {
+  display: block;
+}
+
+.contributor-avatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #9416e9;
+  transition: border 0.4s ease-in-out, 
+                    height 0.4s ease-in-out, 
+                    width 0.4s ease-in-out, 
+                    box-shadow 0.3s ease-in-out;
+}
+
+.contributor-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin-bottom: 0.5rem;
+  transition: text-shadow 0.4s ease-in-out, 
+  font-size 0.5s ease-in-out,
+   text-decoration 0.4s ease-in-out;
+
+}
+
+.contributor-contributions {
+  color: #d1d5db;
+  transition: text-shadow 0.4s ease-in-out;
+}
+
+@media (max-width: 1200px) {
   .contributor-card {
-    width: 100%;
-    max-width: 25%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #201226; 
-    border: 1px solid #9416e9;
-    ; 
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
-    padding: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 33.333%;
   }
-  
-  .contributor-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+@media (max-width: 992px) {
+  .contributor-card {
+    max-width: 50%;
   }
-  
-  .contributor-link {
-    display: block;
+}
+
+@media (max-width: 768px) {
+  .contributor-card {
+    max-width: 83%;
   }
-  
-  .contributor-avatar {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 2px solid #9416e9; 
-  }
-  
-  .contributor-name {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #f3f4f6; 
-    margin-bottom: 0.5rem;
-  }
-  
-  .contributor-contributions {
-    color: #d1d5db; 
-  }
-  
-  @media (max-width: 1200px) {
-    .contributor-card {
-      max-width: 33.333%; 
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .contributor-card {
-      max-width: 50%; 
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .contributor-card {
-      max-width: 83%; 
-    }
-  }
-  
+}
