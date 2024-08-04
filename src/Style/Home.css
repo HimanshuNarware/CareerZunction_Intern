@@ -293,13 +293,20 @@
 /* Scroll bar css */
 /* Webkit (Safari/Chrome) */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: black;
 }
 ::-webkit-scrollbar-thumb {
   background:rgb(148, 22, 233);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(174, 53, 255);
+  border-radius: 8px;
 }
 /* Firefox */
 ::-moz-scrollbar {
@@ -310,4 +317,29 @@
 }
 ::-moz-scrollbar-thumb {
   background:rgb(148, 22, 233);
+  border-radius: 8px;
+}
+
+.detailed-info {
+  margin: 15px auto;
+  padding: 24px 0px;
+  max-width: 865px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: -29px;
+}
+
+@media (max-width: 768px) {
+  .detailed-info {
+    font-size: 14px; 
+    padding: 0 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .detailed-info {
+    font-size: 12px; 
+    padding: 0 5px; 
+  }
 }
