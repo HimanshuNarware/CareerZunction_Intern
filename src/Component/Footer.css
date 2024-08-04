@@ -2,7 +2,7 @@
 .footer {
     background-color: #000000;
     color: #ffffff;
-    padding: 0px 20px;
+    padding: 0px 12px;
     margin-top: 22px;
 }
 
@@ -17,7 +17,7 @@
 .footer-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
+    gap: 10px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -36,6 +36,7 @@
     font-size: 1.8em;
     color: #8a2be2;
     margin-bottom: 10px;
+    margin-left: -52px;
 }
 
 /* Footer favicon */
@@ -104,8 +105,8 @@
 /* Social icons */
 .footer-social-icons {
     display: flex;
-    gap: 15px;
-    margin: 10px 0;
+    gap: 14px;
+    margin: 14px 22px;
 }
 
 .footer-social-icons a {
@@ -122,14 +123,15 @@
 .footer-qr {
     width: 110px;
     margin: 14 auto 1.5px;
-    margin-left: -0.4rem;
+    margin-left: 1.6rem;
     display: block;
-    margin-top: 0.8rem;
+    margin-top: 2.8rem;
 }
 
 /* Rate us section */
 .rate-us {
     margin-top: 0.2rem;
+    font-size: 20px;
 }
 
 /* Copy section */
@@ -138,6 +140,7 @@
     padding: 20px 0;
     border-top: 1px solid #333;
     font-size: 0.9em;
+    background: linear-gradient(to right, rgba(204, 204, 204, 0), #8a2be2, rgba(204, 204, 204, 0)); /* Gradient effect */
 }
 
 /* Icons styling */
@@ -196,21 +199,21 @@
 
 .icons:nth-child(5) a::after {
     background: linear-gradient(
-        40deg,
-        rgb(0, 255, 255),
-        rgb(0, 191, 255),
-        rgb(0, 128, 255),
-        rgb(0, 64, 255)
+         40deg,
+         rgb(0, 255, 255),
+         rgb(0, 191, 255),
+         rgb(0, 128, 255),
+         rgb(0, 64, 255)
     );
 }
 
 .icons:nth-child(3) a::after {
     background: linear-gradient(
-        40deg,
-        rgb(95, 0, 140),
-        rgb(95, 0, 140),
-        rgb(27, 1, 39),
-        rgb(27, 1, 39)
+         40deg,
+         rgb(95, 0, 140),
+         rgb(95, 0, 140),
+         rgb(27, 1, 39),
+         rgb(27, 1, 39)
     );
 }
 
@@ -239,4 +242,43 @@
 /* Heading adjustment for extra small screens */
 .head {
     @apply xs:text-[12px];
+}
+
+/* Newsletter section */
+.footer-newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+body .footer-newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 170px;
+    height: 40px;
+    background-color: white; /* Background color set to white */
+    color: black; /* Font color set to black */
+    border: 2px solid white; /* Optional: border color for better visibility */
+}
+body .footer-newsletter input[type="email"]::placeholder {
+    color: grey; /* Placeholder font color set to black */
+}
+.footer-newsletter button {
+    width: 170px; /* Width same as input */
+    height: 40px; /* Height same as input */
+    font-size: 16px; /* Font size set */
+    color: #ffffff; /* Font color set to white */
+    background-color: #8a2be2; /* Background color set */
+    border: 2px solid white; /* Border color set */
+    border-radius: 4px; /* Border radius set */
+    cursor: pointer; /* Pointer cursor for hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    display: inline-block; /* Ensures the button fits its content */
+    line-height: normal; /* Ensures proper line height */
+    padding: 0; /* Removes additional padding */
+}
+
+.footer-newsletter button:hover {
+    background-color: #5d1783; /* Background color change on hover */
 }

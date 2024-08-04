@@ -12,6 +12,7 @@ import './Footer.css';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-wrapper">
@@ -41,10 +42,9 @@ function Footer() {
         <div className="footer-section">
           <h4 className="footer-heading">Legal</h4>
           <ul className="footer-links">
-            <li><span> <a href="/privacypolicy">Privacy Policy</a></span></li>
+            <li><span><a href="/privacypolicy">Privacy Policy</a></span></li>
             <li><span><a href="/terms">Terms and Conditions</a></span></li>
             <li><span><a href="/licensing">MIT License</a></span></li>
-
             <li><span><a href="/codeofconduct">Code of Conduct</a></span></li>
           </ul>
           <h4 className="footer-heading">Get in touch</h4>
@@ -68,6 +68,14 @@ function Footer() {
             </a>
             <div className="rate-us">Rate us!</div>
           </div>
+        </div>
+        <div className="footer-section footer-newsletter">
+          <h4 className="footer-heading">Newsletter</h4>
+          <input
+            type="email"
+            placeholder="Enter your email"
+          />
+          <button>Subscribe</button>
         </div>
       </div>
       
