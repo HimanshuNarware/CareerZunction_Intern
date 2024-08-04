@@ -61,7 +61,8 @@ const TermsWrapper = styled.div`
 
   h2 {
     font-size: 1.5rem;
-    margin-top: 30px; /
+    margin-top: 30px; 
+    color: #8a2be2;
   }
 
   p {

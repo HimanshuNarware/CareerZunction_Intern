@@ -1,5 +1,5 @@
 import './Contact.css';
-import  { useState } from 'react';
+import { useState } from 'react';
 import { FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
@@ -10,6 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
+import Tilt from "react-parallax-tilt";
 
 function Contact() {
   const [messageVisible, setMessageVisible] = useState(false);
@@ -50,7 +51,9 @@ function Contact() {
   return (
     <div className="p" style={{display: 'flex'}}>
       <div className="card" style={{maxWidth:"30%",margin:"30px"}}>
+      <Tilt>
         <img src="./support.jpg" alt="Support"></img>
+      </Tilt>
         {/* <div className="icons">
           <FaGithub id="ic"/>
           <BsTwitterX id="ic"/>

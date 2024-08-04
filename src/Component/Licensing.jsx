@@ -30,7 +30,9 @@ const Subtitle = styled.h2`
   margin-bottom: 20px; /* Increased margin for more spacing */
   justify-content: left;
   padding: 0;
+
   color: gray;
+
 `;
 
 const Footer = styled.div`

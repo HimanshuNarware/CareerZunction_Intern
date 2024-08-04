@@ -47,9 +47,10 @@ body {
 
 
 .BoxContent:hover {
-    box-shadow: 0.7px 0.7px 6px rgb(255, 255, 255), -0.7px -0.7px 6px rgb(255, 255, 255);
-    transition: 0.5s;
-    transform: scale(1.03);
+   box-shadow: 2px 2px 40px rgba(153, 0, 255, 0.769), -2px -2px 40px rgba(153, 0, 255, 0.756);
+    transition: 1s;
+    transform: scale(1.05);
+
 
 
 }
@@ -80,31 +81,37 @@ body {
     width: 70%;
 }
 
+
 .viewMore {
-    color: rgb(32, 225, 32);
-    border: 2px solid rgb(32, 225, 32);
-    padding: 7px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;    
+    color: rgb(139, 254, 218); /* green */
+    border: 2px solid rgb(139, 254, 218);
+    padding: 7px 20px; /* Increased padding for better spacing */
     font-weight: bold;
     border-radius: 7px;
     background-color: transparent;
     transition: color 0.3s, background-color 0.3s, border 0.3s;
+    width: max-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for base state */
+    text-decoration: none; /* Ensure no underline for links */
+    width: max-content;
 }
 
 .viewMore:hover {
     color: white;
-    border: 2px solid white;
-    background-color: rgba(32, 225, 32, 0.596);
+    background-color: rgb(139, 254, 218, 0.8); /* Semi-transparent purple */
+    box-shadow: 0 6px 12px rgb(139, 254, 218, 0.6); /* Enhanced glow effect on hover */
 }
 
-.viewMore:hover {
-    background-color: rgb(32, 225, 32);
-    color: black;
-    transition: 0.5s;
+.viewMore:active {
+    background-color: rgb(139, 254, 218); 
+    color: white;
+    box-shadow: 0 8px 16px rgb(139, 254, 218, 0.8);  /* Stronger glow effect */
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-.BoxContent {
-    /* position: relative; */
-}
 
 .MoreDetails {
     position: absolute;
@@ -225,6 +232,63 @@ body {
     color: blueviolet;
     padding: 15px 10%;
 }
+.filterContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filterSelect {
+    padding: 10px;
+    border: 2px solid rgb(190, 21, 228);
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: border 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.filterSelect:focus {
+    outline: none;
+    border-color: rgb(230, 153, 244); /* Bright purple on focus */
+    background-color: rgba(190, 21, 228, 0.2);
+}
+
+.filterSelect option {
+   
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.filterSelect option:hover,
+.filterSelect option:checked {
+    background-color: rgba(190, 21, 228, 0.8);
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filterButton {
+    padding: 10px 20px;
+    border: 2px solid rgb(190, 21, 228);
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, border 0.3s;
+}
+
+.filterButton:hover {
+    background-color: rgb(230, 153, 244);
+    color: black;
+    border: 2px solid white;
+}
 
 /* @mediaQwery */
 
@@ -277,5 +341,11 @@ body {
     .internBox {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+    .filterSelect {
+        width: 100%;
+        padding: 10px;
     }
 }
