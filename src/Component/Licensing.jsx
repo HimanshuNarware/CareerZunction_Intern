@@ -39,9 +39,52 @@ const Footer = styled.div`
   text-align: center;
 `;
 
+const LastUpdate = styled.div`
+  margin-bottom: 14px;
+  font-size: 17px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 0px;
+`;
+
+const LastUpdatedDate = styled.span`
+  font-size: 17px;
+  color: white;
+
+  
+`;
+
 const Licensing = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
+
+        const updateLastUpdatedDate = () => {
+          const dateElement = document.getElementById("last-updated-date");
+          if (!dateElement) {
+            console.error("Element with ID 'last-updated-date' not found.");
+            return;
+          }
+          const now = new Date();
+          const day = now.getDate();
+          const monthNames = [
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+          ];
+          const month = monthNames[now.getMonth()]; // Get the full month name
+          const year = now.getFullYear();
+          dateElement.textContent = `${month} ${day}, ${year}`;
+        };
+    
+        const updateWeekly = () => {
+          const now = new Date();
+          const dayOfWeek = now.getDay(); // 0 (Sunday) to 6 (Saturday)
+          const timeUntilNextUpdate = (7 - dayOfWeek) * 24 * 60 * 60 * 1000; // Time until next Sunday
+          updateLastUpdatedDate();
+          setTimeout(updateWeekly, timeUntilNextUpdate);
+        };
+    
+        updateWeekly();
+
     }, []);
 
     return (
@@ -74,7 +117,14 @@ const Licensing = () => {
             <Subtitle>Contact Information</Subtitle>
             <Footer>
                 If you have any questions or concerns about this licensing agreement, please contact us at Email: <a href="mailto:careerzunction@gmail.com" style={{ color: 'white' }}>careerzunction@gmail.com</a>
+                
             </Footer>
+            <Paragraph>
+            <div className="Lastupdate">
+                    Last updated: <span id="last-updated-date"></span>
+                </div>
+            </Paragraph>
+            
         </Container>
     );
 };
