@@ -29,6 +29,7 @@ import {
 } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import FAQ from './FAQ';
+import Testimonials from './Testimonials';
 
 
 
@@ -173,6 +174,7 @@ function Home() {
         </div>
       </div> */}
       <FAQ />
+      <Testimonials/>
     </div>
   );
 }
