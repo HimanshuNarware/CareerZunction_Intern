@@ -180,8 +180,7 @@
         align-items: center;
     }
     .footer-title{
-        margin: 0 auto;
-        margin-left: 33%;
+     justify-content: center;
     }
 
     .footer-pera{
