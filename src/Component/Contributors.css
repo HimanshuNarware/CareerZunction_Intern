@@ -52,7 +52,7 @@
 
 .contributor-card:hover p {
   text-shadow: 1px 1px 2px rgb(0, 136, 255), 0 0 0.2em rgb(255, 73, 249), 0 0 0.8em rgb(250, 134, 246);
-  color: rgb(0, 0, 0);
+  color: white;
   font-weight: 500;
 }
 
