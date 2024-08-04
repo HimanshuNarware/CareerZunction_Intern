@@ -332,8 +332,8 @@
 
 @media (max-width: 768px) {
   .detailed-info {
-    font-size: 14px; 
-    padding: 0 10px; 
+    font-size: 14px;
+    padding: 6px 20px;
   }
 }
 
