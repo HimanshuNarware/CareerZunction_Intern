@@ -253,12 +253,23 @@ body {
 
 .filterSelect:focus {
     outline: none;
-    border-color: white;
+    border-color: rgb(230, 153, 244); /* Bright purple on focus */
+    background-color: rgba(190, 21, 228, 0.2);
 }
 
 .filterSelect option {
+   
     background-color: black;
     color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.filterSelect option:hover,
+.filterSelect option:checked {
+    background-color: rgba(190, 21, 228, 0.8);
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 .filterButton {
@@ -330,5 +341,11 @@ body {
     .internBox {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+    .filterSelect {
+        width: 100%;
+        padding: 10px;
     }
 }
