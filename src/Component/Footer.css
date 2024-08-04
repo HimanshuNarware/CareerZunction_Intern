@@ -179,6 +179,17 @@
         flex-direction: column;
         align-items: center;
     }
+    .footer-title{
+        margin: 0 auto;
+        margin-left: 33%;
+    }
+
+    .footer-pera{
+        max-width: 450px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 3px;
+    }
 
     .footer-subsection {
         margin-left: 0;
