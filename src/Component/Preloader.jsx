@@ -5,11 +5,11 @@ const Preloader = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setFadeOut(true); 
-      setTimeout(() => setIsVisible(false), 500); 
-    }, 2500);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setFadeOut(true); 
+  //     setTimeout(() => setIsVisible(false), 500); 
+  //   }, 2500);
 
     return () => clearTimeout(timer); 
   }, []);
