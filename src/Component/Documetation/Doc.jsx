@@ -1,6 +1,6 @@
 /** @format */
 
-
+import Preloader from '../Preloader';
 import React from 'react';
 import './Doc.css';
 import img1 from '../../image/Contribution/1.png';
@@ -16,6 +16,8 @@ import Detail from './Detail';
 
 function Doc() {
   return (
+    <>
+    <Preloader />
     <div
       className="document"
       style={{ backgroundColor: "black", overflow: "hidden" }}
@@ -195,6 +197,7 @@ function Doc() {
       <p className="line"></p>
       <Detail />
     </div>
+    </>
   );
 }
 
