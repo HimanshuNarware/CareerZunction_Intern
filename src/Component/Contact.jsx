@@ -11,6 +11,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 import Tilt from "react-parallax-tilt";
+import Preloader from './Preloader';
 
 function Contact() {
   const [messageVisible, setMessageVisible] = useState(false);
@@ -49,6 +50,8 @@ function Contact() {
   };
 
   return (
+    <>
+    <Preloader />
     <div className="p" style={{display: 'flex'}}>
       <div className="card" style={{maxWidth:"30%",margin:"30px"}}>
       <Tilt>
@@ -126,6 +129,7 @@ function Contact() {
         )}
       </div>
     </div>
+    </>
   );
 }
 
