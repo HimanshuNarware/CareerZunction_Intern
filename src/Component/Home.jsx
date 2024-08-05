@@ -76,7 +76,7 @@ function Home() {
                 <p className="peragraph">Kickstart Your Career: Discover Your First Internship Today!</p>
                 <div className="detailed-info-wrapper">
                   <p className="detailed-info">
-                    CareerZunction is a revolutionary open-source platform dedicated to bridging the gap between students and internship opportunities. Our mission is to provide a comprehensive, user-friendly interface where students can easily create profiles, search through extensive listings, and connect with internships that align with their career goals. With over 200 internships available, CareerZunction offers a vast array of options tailored to various fields and interests. We are committed to continuous improvement and collaboration with educational institutions to ensure that our platform evolves with the needs of our users. By fostering a community-driven approach, CareerZunction not only empowers students but also encourages contributions from developers and professionals passionate about shaping the future of career development. Our platform is designed to be inclusive and accessible, ensuring that every student has the tools and resources they need to succeed in their professional journey.
+                    CareerZunction is a revolutionary open-source platform dedicated to bridging the gap between students and internship opportunities. Our mission is to provide a comprehensive, user-friendly interface where students can easily create profiles, search through extensive listings, and connect with internships that align with their career goals.
                   </p>
                   <div className="bg-gif-container">
                     <img src={bg} alt="Background" className="bg-gif" />
