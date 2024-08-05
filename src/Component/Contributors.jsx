@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Contributors.css';
+import Preloader from './Preloader';
 
 function Contributors() {
   const [contributors, setContributors] = useState([]);
@@ -20,6 +21,8 @@ function Contributors() {
   }, []);
 
   return (
+    <>
+    <Preloader />
     <div className="contributors-container">
       <h1 className="contributors-title">Our Contributors</h1>
       <div className="contributors-grid">
@@ -45,6 +48,7 @@ function Contributors() {
         ))}
       </div>
     </div>
+    </>
   );
 }
 
