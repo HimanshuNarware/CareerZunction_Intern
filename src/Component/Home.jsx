@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import '../Style/Home.css';
 import '../Style/util.css';
+import Preloader from './Preloader';
 import bg from '../image/bg.gif';
 import code from '../image/code.jpg';
 import code1 from '../image/code1.jpg';
@@ -39,6 +40,8 @@ function Home() {
 
 
   return (
+    <>
+    <Preloader />
     <div>
       <div className="page_0">
         <div className="bx-1">
@@ -207,6 +210,7 @@ function Home() {
       <FAQ />
       <Testimonials />
     </div>
+    </>
   );
 }
 
