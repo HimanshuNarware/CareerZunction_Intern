@@ -11,8 +11,8 @@ const Preloader = () => {
   //     setTimeout(() => setIsVisible(false), 500); 
   //   }, 2500);
 
-    return () => clearTimeout(timer); 
-  }, []);
+  //   return () => clearTimeout(timer); 
+  // }, []);
 
   return (
     isVisible && (
