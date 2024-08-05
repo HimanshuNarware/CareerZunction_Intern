@@ -18,7 +18,7 @@ const Preloader = () => {
     isVisible && (
       <div className={`preloader ${fadeOut ? 'fade-out' : ''}`}>
         <video autoPlay muted loop className="preloader-video">
-          <source src="/preloader.mp4" type="video/mp4" />
+          <source src="/Preloader.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
