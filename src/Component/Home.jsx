@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import '../Style/Home.css';
 import '../Style/util.css';
+import bg from '../image/bg.gif';
 import code from '../image/code.jpg';
 import code1 from '../image/code1.jpg';
 import code2 from '../image/code2.jpg';
@@ -21,9 +22,10 @@ import img7 from '../image/desktopImg/img2.jpg'
 import img8 from '../image/desktopImg/img 9.jpg'
 import img9 from '../image/desktopImg/img 8.jpg'
 import { Button } from 'antd';
-import { GiGlobe, GiWorld } from 'react-icons/gi';
+import { GiGlobe, GiTrophy, GiWorld } from 'react-icons/gi';
 // import { FcGlobe } from 'react-icons/fc';
 import {
+  FaHandshake,
   FaIndianRupeeSign,
   FaPeopleGroup,
 } from 'react-icons/fa6';
@@ -67,14 +69,24 @@ function Home() {
       <div className="page_1">
         <div className="wrapper_p1">
           <div className="wrapper-bx-1">
-            <div className="sub_title">About us</div>
-            <p className="peragraph" style={{ textAlign: 'center' }}>Find your first internship</p>
-            <p className="peragraph" style={{ textAlign: 'center' }}>Kickstart Your Career: Discover Your First Internship Today!</p>
-            <p className="detailed-info">
-              CareerZunction is a revolutionary open-source platform dedicated to bridging the gap between students and internship opportunities. Our mission is to provide a comprehensive, user-friendly interface where students can easily create profiles, search through extensive listings, and connect with internships that align with their career goals. With over 200 internships available, CareerZunction offers a vast array of options tailored to various fields and interests. We are committed to continuous improvement and collaboration with educational institutions to ensure that our platform evolves with the needs of our users. By fostering a community-driven approach, CareerZunction not only empowers students but also encourages contributions from developers and professionals passionate about shaping the future of career development. Our platform is designed to be inclusive and accessible, ensuring that every student has the tools and resources they need to succeed in their professional journey.
-            </p>
+            <div className="about-us-content">
+              <div className="text-content">
+                <div className="sub_title">About us</div>
+                <p className="peragraph">Find your first internship</p>
+                <p className="peragraph">Kickstart Your Career: Discover Your First Internship Today!</p>
+                <div className="detailed-info-wrapper">
+                  <p className="detailed-info">
+                    CareerZunction is a revolutionary open-source platform dedicated to bridging the gap between students and internship opportunities. Our mission is to provide a comprehensive, user-friendly interface where students can easily create profiles, search through extensive listings, and connect with internships that align with their career goals. With over 200 internships available, CareerZunction offers a vast array of options tailored to various fields and interests. We are committed to continuous improvement and collaboration with educational institutions to ensure that our platform evolves with the needs of our users. By fostering a community-driven approach, CareerZunction not only empowers students but also encourages contributions from developers and professionals passionate about shaping the future of career development. Our platform is designed to be inclusive and accessible, ensuring that every student has the tools and resources they need to succeed in their professional journey.
+                  </p>
+                  <div className="bg-gif-container">
+                    <img src={bg} alt="Background" className="bg-gif" />
+                    <div className="bg-overlay"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
+          <h2 className="why-choose-us">Why Choose Us?</h2>
           <div className="wrapper-bx-2">
             <div className='inside'>
               <div className="wrapper-bx-2-0 wrapper-bx-2-1 outline">
@@ -87,6 +99,16 @@ function Home() {
                 </div>
               </div>
               {/* </div> */}
+              <div className="wrapper-bx-2-0 wrapper-bx-2-2 outline">
+                <i className='icon' style={{ color: 'blueviolet' }}>
+                  <GiTrophy />
+                </i>
+                <div className="wrapper-subbx">
+                  <h3>Award-Winning Platform</h3>
+                  <p>Our platform has been recognized for excellence in career development and user experience.
+                  </p>
+                </div>
+              </div>
               <div className="wrapper-bx-2-0 wrapper-bx-2-2 outline">
                 <i className='icon' style={{ color: 'blueviolet' }}>
                   <GiGlobe />
@@ -109,6 +131,15 @@ function Home() {
                   <h3>Open Source</h3>
                   <p>CZunction is an open-source project, inviting contributions
                     who want to make a difference.</p>
+                </div>
+              </div>
+              <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
+                <i className='icon' style={{ color: 'blueviolet' }}>
+                  <FaHandshake />
+                </i>
+                <div className="wrapper-subbx">
+                  <h3>Partnered with Top Companies</h3>
+                  <p>We collaborate with leading companies to offer the best internship opportunities.</p>
                 </div>
               </div>
               <div className=" wrapper-bx-2-0 wrapper-bx-2-4 outline">
