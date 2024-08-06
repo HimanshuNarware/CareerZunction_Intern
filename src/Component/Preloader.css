@@ -18,7 +18,8 @@
     top: 50%;
     left: 50%;
     width: 100vw; 
-    height: 100vh; 
+    height: 100vh;
+    z-index: 9999;  
     object-fit: cover; 
     transform: translate(-50%, -50%);
     filter: hue-rotate(200deg) saturate(2) brightness(1) contrast(1.2); 
