@@ -1,0 +1,49 @@
+form, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  form{
+    display: grid;
+    row-gap: 20px;
+    
+  }
+  h1{
+    font-size: 40px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 40px;
+  }
+  
+  button[type="submit"] {
+    width: 100px;
+    background-color: #0069ca;
+    border: 1px solid #ccc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .success {
+    color: green;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+  }
+  .submitButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

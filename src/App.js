@@ -15,6 +15,7 @@ import FeedbackButton from "./Component/Feedbtn";
 import FeedbackModal from "./Component/Feedback";
 import PrivacyPolicy from "./Component/PrivacyPolicy";
 import TermsAndConditions from "./Component/Terms";
+import Newsletter from "./Component/Newsletter";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/licensing" element={<Licensing/>}/>
           <Route path="/codeofconduct" element={<CodeOfConduct/>}/>
         </Routes>
+        <Newsletter/>
         <Footer />
       </div>
 
