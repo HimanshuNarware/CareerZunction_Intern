@@ -1,11 +1,14 @@
 /** @format */
 
-import React, { useState } from "react";
-import "./style.css";
-import { GiCrossMark } from "react-icons/gi";
-import { FaGithub, FaLaptop, FaHome, FaRegSun } from "react-icons/fa";
-import { BsFiletypeDoc } from "react-icons/bs";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import './style.css';
+import { GiCrossMark } from 'react-icons/gi';
+import { FaGithub, FaLaptop, FaHome, FaRegSun } from 'react-icons/fa';
+import { BiHome, BiEdit } from "react-icons/bi";
+import { RiContactsLine } from "react-icons/ri";
+import { BsFiletypeDoc } from 'react-icons/bs';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 function Navbar() {
   const navigate = useNavigate();
@@ -43,6 +46,21 @@ function Navbar() {
         </div>
         <div className="right-sight">
           <div className="cart-item">
+
+            <Link to="/" className='link'><span className='icon'><BiHome /> </span>Home</Link>
+          </div>
+          <div className="cart-item">
+            <Link to="/intern" className='link'> <span className='icon'><FaLaptop /></span> Internships</Link>
+          </div>
+          <div className="cart-item">
+            <Link to="/docs" className='link'><span className='icon'><BiEdit /> </span>Documentation</Link>
+          </div>
+          <div className="cart-item">
+            <Link to="https://github.com/HimanshuNarware/CareerZunction_Intern" className='link'><span className='icon'><FaGithub /></span> GitHub</Link>
+          </div>
+          <div className="cart-item">
+            <Link to="/Contact" className='link'><span className='icon'><RiContactsLine /></span> Contact Us</Link>
+
             <Link to="/" className="link">
               {" "}
               Home
@@ -84,6 +102,7 @@ function Navbar() {
               {" "}
               Contact Us
             </Link>
+
           </div>
         </div>
       </nav>
