@@ -57,46 +57,11 @@ function Contact() {
       <Tilt>
         <img src="./support.jpg" alt="Support"></img>
       </Tilt>
-        {/* <div className="icons">
+        <div className="icons">
           <FaGithub id="ic"/>
           <BsTwitterX id="ic"/>
           <FaWhatsapp id="ic"/>
           <CiLinkedin id="ic"/>
-        </div> */}
-        <div className='outerD  gap-4 md:gap-2'>
-        <span className='icons'>
-                <a
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                > <FaWhatsapp
-                color="white"
-                fontSize={25}
-                className="ico "
-              /></a></span>
-                <span  className='icons'><a
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaXTwitter color="white" fontSize={25} className="ico" />
-
-                </a></span>
-                <span  className='icons'><a
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub  className="ico" />
-                </a></span>
-                <span  className='icons'> <a
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedinIn className="ico " />
-                </a></span>
-                
         </div>
       </div>
       <div className="form">
