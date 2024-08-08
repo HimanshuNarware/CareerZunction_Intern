@@ -1,9 +1,10 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaStar } from 'react-icons/fa';
-import { FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaStar, FaTwitter, FaFacebook, FaInstagram, FaFileAlt, FaLock, FaGavel, FaCode } from 'react-icons/fa';
 import favicon from "../image/footer/favicon.png";
 import img from "../image/footer/footer-qr.jpg";
 import './Footer.css';
+import { FaXTwitter } from "react-icons/fa6";
+
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -21,26 +22,33 @@ function Footer() {
         </div>
         <div className="footer-section footer-section-links">
           <div className="footer-subsection">
-            <h4 className="footer-heading">Documentation</h4>
+            <h4 className="footer-heading">
+              Documentation
+            </h4>
             <ul className="footer-links">
               <li onClick={() => window.open('https://opensource.com/resources/what-open-source')}>
+                <FaCode className="footer-link-icon" />
                 <span>What is Open-Source</span>
               </li>
               <li onClick={() => window.open('https://opensource.guide/how-to-contribute/')}>
+                <FaGithub className="footer-link-icon" />
                 <span>What is Git and GitHub</span>
               </li>
               <li onClick={() => window.open('https://docs.github.com/en/get-started/using-git/about-git')}>
+                <FaCode className="footer-link-icon" />
                 <span>How to start contributing to Open-Source</span>
               </li>
             </ul>
           </div>
           <div className="footer-subsection">
-            <h4 className="footer-heading">Legal</h4>
+            <h4 className="footer-heading">
+               Legal
+            </h4>
             <ul className="footer-links">
-              <li><span><a href="/privacypolicy">Privacy Policy</a></span></li>
-              <li><span><a href="/terms">Terms and Conditions</a></span></li>
-              <li><span><a href="/licensing">MIT License</a></span></li>
-              <li><span><a href="/codeofconduct">Code of Conduct</a></span></li>
+              <li><span><a href="/privacypolicy"><FaLock className="footer-link-icon" /> Privacy Policy</a></span></li>
+              <li><span><a href="/terms"><FaGavel className="footer-link-icon" /> Terms and Conditions</a></span></li>
+              <li><span><a href="/licensing"><FaCode className="footer-link-icon" /> MIT License</a></span></li>
+              <li><span><a href="/codeofconduct"><FaFileAlt className="footer-link-icon" /> Code of Conduct</a></span></li>
             </ul>
           </div>
           <div className="footer-subsection">
