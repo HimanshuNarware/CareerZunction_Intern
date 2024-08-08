@@ -86,30 +86,43 @@ button:hover{
   gap:20px;
   flex-direction: row;
 }
-.card{
+.card {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   padding-left: 50px;
   padding-right: 50px;
-  color:white;
-  text-align:center;
+  color: white;
+  text-align: center;
 }
-.icons{
-  padding:20px;
+.icons {
+  padding: 20px;
   display: flex;
-  justify-content:center;
-  align-items:center;
-  gap:20px;
-  font-size:30px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
 }
-#ic{
-  cursor: none;
-  transition: 0.3s ease;
+#ic {
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px; 
+  color: #333;
+  background-color: #f0f0f0;
+  border-radius: 50%; 
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
-#ic:hover{
+#ic:hover {
   transform: scale(1.2);
-  color:#9416e9;
+  color: #9416e9;
+}
+.card img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media(max-width:675px){
