@@ -11,6 +11,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsYoutube } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 import Tilt from "react-parallax-tilt";
+import Preloader from './Preloader';
 
 function Contact() {
   const [messageVisible, setMessageVisible] = useState(false);
@@ -49,51 +50,18 @@ function Contact() {
   };
 
   return (
+    <>
+    <Preloader />
     <div className="p" style={{display: 'flex'}}>
       <div className="card" style={{maxWidth:"30%",margin:"30px"}}>
       <Tilt>
         <img src="./support.jpg" alt="Support"></img>
       </Tilt>
-        {/* <div className="icons">
+        <div className="icons">
           <FaGithub id="ic"/>
           <BsTwitterX id="ic"/>
           <FaWhatsapp id="ic"/>
           <CiLinkedin id="ic"/>
-        </div> */}
-        <div className='outerD  gap-4 md:gap-2'>
-        <span className='icons'>
-                <a
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                > <FaWhatsapp
-                color="white"
-                fontSize={25}
-                className="ico "
-              /></a></span>
-                <span  className='icons'><a
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaXTwitter color="white" fontSize={25} className="ico" />
-
-                </a></span>
-                <span  className='icons'><a
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub  className="ico" />
-                </a></span>
-                <span  className='icons'> <a
-                  href="/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedinIn className="ico " />
-                </a></span>
-                
         </div>
       </div>
       <div className="form">
@@ -126,6 +94,7 @@ function Contact() {
         )}
       </div>
     </div>
+    </>
   );
 }
 

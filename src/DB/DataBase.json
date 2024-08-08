@@ -2187,6 +2187,33 @@
     "mode": "Online",
     "role":"Software Developer",
     "industry": "Technology"
+  },
+  {
+    "internship_name": "Microsoft Learn Student Ambassadors",
+    "company_name": "Microsoft",
+    "internship_type": "Internship | Program",
+    "duration": "July/October",
+    "link": "https://techcommunity.microsoft.com/t5/educator-developer-blog/microsoft-learn-student-ambassadors-program-interview-series/ba-p/4166594",
+    "image": "https://techcommunity.microsoft.com/html/@583B3F561C4171F565A5431E573FCDA4/assets/Content/Images/GlobalHeader/MicrosoftLogo.png",
+    "award": "Internship",
+    "description": "The Microsoft Learn Student Ambassadors program offers online training in software development and machine learning with mentorship and career opportunities.",
+    "mode": "Online",
+    "role":"Software Developer",
+    "industry": "Technology"
+
+  },
+  {
+    "internship_name": "Infosys Springboard Internship 5.0",
+    "company_name": "Infosys",
+    "internship_type": "Internship",
+    "duration": "August ",
+    "link": "https://www.coursejoiner.com/internship/infosys-springboard-internship-50/",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjOHxSh5fkoLJ00NUE65UVwmYj3fTDUke9yw&s",
+    "award": "Internship",
+    "description": "The Infosys Springboard Internship 5.0 provides online training in software development with career advancement opportunities.",
+    "mode": "Online",
+    "role":"Software Developer",
+    "industry": "Technology"
 }
 
 ]

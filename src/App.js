@@ -15,18 +15,10 @@ import FeedbackButton from "./Component/Feedbtn";
 import FeedbackModal from "./Component/Feedback";
 import PrivacyPolicy from "./Component/PrivacyPolicy";
 import TermsAndConditions from "./Component/Terms";
+import Newsletter from "./Component/Newsletter";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const spinner = document.getElementById("spinner");
-  if (spinner) {
-    setTimeout(() => {
-      spinner.style.display = "none";
-      setLoading(false);
-    }, 2000);
-  }
   return (
-    !loading && (
 
       <div>
         <Navbar />
@@ -44,9 +36,9 @@ function App() {
           <Route path="/licensing" element={<Licensing/>}/>
           <Route path="/codeofconduct" element={<CodeOfConduct/>}/>
         </Routes>
+        <Newsletter/>
         <Footer />
       </div>
-    )
 
   );
 }

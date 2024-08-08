@@ -4,6 +4,33 @@ import styled from 'styled-components';
 const TermsAndConditions = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+
+    const updateLastUpdatedDate = () => {
+      const dateElement = document.getElementById("last-updated-date");
+      if (!dateElement) {
+        console.error("Element with ID 'last-updated-date' not found.");
+        return;
+      }
+      const now = new Date();
+      const day = now.getDate();
+      const monthNames = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ];
+      const month = monthNames[now.getMonth()]; // Get the full month name
+      const year = now.getFullYear();
+      dateElement.textContent = `${month} ${day}, ${year}`;
+    };
+
+    const updateWeekly = () => {
+      const now = new Date();
+      const dayOfWeek = now.getDay(); // 0 (Sunday) to 6 (Saturday)
+      const timeUntilNextUpdate = (7 - dayOfWeek) * 24 * 60 * 60 * 1000; // Time until next Sunday
+      updateLastUpdatedDate();
+      setTimeout(updateWeekly, timeUntilNextUpdate);
+    };
+
+    updateWeekly();
   }, []);
 
   return (
@@ -11,7 +38,9 @@ const TermsAndConditions = () => {
       <div>
         <h1>Terms and Conditions</h1>
         <section>
-          <p>Last updated: July 24, 2024</p>
+        <div className="Lastupdate">
+            Last updated: <span id="last-updated-date"></span>
+          </div>
           <p>Welcome to CareerZunction! By using our platform, you agree to comply with and be bound by the following terms and conditions. Please review these terms carefully. If you do not agree to these terms, you should not use our platform.</p>
         </section>
         <section>
@@ -90,6 +119,16 @@ const TermsWrapper = styled.div`
   a:hover {
     text-decoration: underline; 
   }
+    
+  .Lastupdate {
+          margin-bottom: 14px;
+          font-size: 17px;         
+          margin-top: 3px;
+        }
+
+  #last-updated-date {
+          font-size: 17px;
+        }
 `;
 
 

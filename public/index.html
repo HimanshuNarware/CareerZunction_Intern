@@ -15,6 +15,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>CareerZunction</title>
 
+
   <style>
     /* Default Theme (Dark Mode) */
     
@@ -54,7 +55,10 @@
       }
     }
 
+
+  
     .circle {
+
       position: absolute;
       width: 20px;
       height: 20px;
@@ -171,10 +175,13 @@
     body.light-theme #theme-toggle-btn i {
       color: #fff;
     }
+
+
   </style>
 </head>
 
 <body>
+
 
   <button id="theme-toggle-btn">
     <i class="fa-solid fa-sun dark-theme"></i>
@@ -186,6 +193,7 @@
     <div class="loading"></div>
   </div>
   
+
   <div id="root"></div>
 
   <div class="circle-container">
@@ -229,6 +237,7 @@
       const nextCircle = circles[index + 1] || circles[0];
       circle.x = x;
       circle.y = y;
+
 
       x += (nextCircle.x - x) * 0.3;
       y += (nextCircle.y - y) * 0.3;
