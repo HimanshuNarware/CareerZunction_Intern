@@ -5,24 +5,46 @@ import Preloader from './Preloader';
 
 function Contributors() {
   const [contributors, setContributors] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchContributors() {
+      let allContributors = [];
+      let page = 1;
+
       try {
-        const response = await axios.get(
-          'https://api.github.com/repos/HimanshuNarware/CareerZunction_Intern/contributors'
-        );
-        setContributors(response.data);
+        while (true) {
+          const response = await axios.get(
+            `https://api.github.com/repos/HimanshuNarware/CareerZunction_Intern/contributors`,
+            {
+              params: {
+                per_page: 100,
+                page,
+              },
+            }
+          );
+          const data = response.data;
+          if (data.length === 0) {
+            break;
+          }
+          allContributors = [...allContributors, ...data];
+          page++;
+        }
+        setContributors(allContributors);
       } catch (error) {
         console.error('Error in fetching contributors:', error);
+      } finally {
+        setLoading(false);
       }
     }
     fetchContributors();
   }, []);
 
+  if (loading) {
+    return <Preloader />;
+  }
+
   return (
-    <>
-    <Preloader />
     <div className="contributors-container">
       <h1 className="contributors-title">Our Contributors</h1>
       <div className="contributors-grid">
@@ -48,7 +70,6 @@ function Contributors() {
         ))}
       </div>
     </div>
-    </>
   );
 }
 
