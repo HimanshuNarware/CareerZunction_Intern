@@ -27,16 +27,13 @@ function Footer() {
             </h4>
             <ul className="footer-links">
               <li onClick={() => window.open('https://opensource.com/resources/what-open-source')}>
-                <FaCode className="footer-link-icon" />
-                <span>What is Open-Source</span>
+                <span> 📄 What is Open-Source</span>
               </li>
               <li onClick={() => window.open('https://opensource.guide/how-to-contribute/')}>
-                <FaGithub className="footer-link-icon" />
-                <span>What is Git and GitHub</span>
+                <span> 📄 What is Git and GitHub</span>
               </li>
               <li onClick={() => window.open('https://docs.github.com/en/get-started/using-git/about-git')}>
-                <FaCode className="footer-link-icon" />
-                <span>How to start contributing to Open-Source</span>
+                <span> 📄 How to start contributing to Open-Source</span>
               </li>
             </ul>
           </div>
