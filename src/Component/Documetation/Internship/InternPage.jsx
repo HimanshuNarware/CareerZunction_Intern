@@ -4,6 +4,7 @@ import "./internpage.css";
 import { useRef, useState, useEffect } from "react";
 import PaginatedItems from "../../pagination";
 import internshipsData from "../../../DB/DataBase.json";
+import Preloader from "../../Preloader";
 
 let InternPage = () => {
   // Dispatch and Subscribe
@@ -121,6 +122,9 @@ let InternPage = () => {
   }
 
   return (
+
+    <>
+    <Preloader />
     <div style={{ background: "black" }}>
       <p className="page-summary">{pageSummary}</p>
       <div className="filterContainer">
@@ -191,6 +195,7 @@ let InternPage = () => {
         setPageSummary={setPageSummary}
       />
     </div>
+    </>
   );
 };
 

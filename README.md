@@ -5,7 +5,7 @@ The platform is an open-source project facilitating student-internship connectio
 
 ## CareerZunction
 
-# Testing Link->https://career-zunction-intern-testing.vercel.app/
+# Main Link -> https://career-zunction.vercel.app/
 
 
 ##CareerZunction

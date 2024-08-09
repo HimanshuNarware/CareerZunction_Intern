@@ -34,7 +34,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         position: absolute;
-        top: 8%;
+        top: 4%;
         gap: 10px;
         float: right;
         justify-content: right;
