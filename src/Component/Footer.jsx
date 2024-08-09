@@ -8,6 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-wrapper">
@@ -20,6 +21,41 @@ function Footer() {
             CareerZunction is a dynamic platform connecting eager students with valuable internship opportunities.
           </p>
         </div>
+
+        <div className="footer-section">
+          <h4 className="footer-heading">Documentation</h4>
+          <ul className="footer-links">
+            <li onClick={() => window.open('https://opensource.com/resources/what-open-source')}>
+              <span>What is Open-Source</span>
+            </li>
+            <li onClick={() => window.open('https://opensource.guide/how-to-contribute/')}>
+              <span>What is Git and GitHub</span>
+            </li>
+            <li onClick={() => window.open('https://docs.github.com/en/get-started/using-git/about-git')}>
+              <span>How to start contributing to Open-Source</span>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-section">
+          <h4 className="footer-heading">Legal</h4>
+          <ul className="footer-links">
+            <li><span><a href="/privacypolicy">Privacy Policy</a></span></li>
+            <li><span><a href="/terms">Terms and Conditions</a></span></li>
+            <li><span><a href="/licensing">MIT License</a></span></li>
+            <li><span><a href="/codeofconduct">Code of Conduct</a></span></li>
+          </ul>
+          <h4 className="footer-heading">Get in touch</h4>
+          <div className="footer-social-icons">
+            <a href="https://github.com/HimanshuNarware" target="_blank" rel="noopener noreferrer">
+              <FaGithub/>
+            </a>
+            <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin/>
+            </a>
+            <a href="https://twitter.com/N_Himanshu_" target="_blank" rel="noopener noreferrer">
+              <FaXTwitter/>
+            </a>
+=======
         <div className="footer-section footer-section-links">
           <div className="footer-subsection">
             <h4 className="footer-heading">
@@ -70,6 +106,14 @@ function Footer() {
               </a>
             </div>
           </div>
+        </div>
+        <div className="footer-section footer-newsletter">
+          <h4 className="footer-heading">Newsletter</h4>
+          <input
+            type="email"
+            placeholder="Enter your email"
+          />
+          <button>Subscribe</button>
         </div>
       </div>
       <div className="copy">
