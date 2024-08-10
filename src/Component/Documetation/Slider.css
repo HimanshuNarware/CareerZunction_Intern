@@ -79,4 +79,15 @@
 
 }
 
-  
+
+@media (max-width: 768px) {
+.section_founder, .section_maintainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 9px;
+  border: 2px solid rgb(40, 39, 41);
+  margin-block: 25px;
+  width: 319px;
+  height: 350px;
+}
+}
