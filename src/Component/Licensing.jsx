@@ -22,7 +22,7 @@ const Paragraph = styled.p`
   font-size: 1em;
   line-height: 1.6;
   margin-bottom: 20px; /* Increased margin for more spacing */
-  color: gray;
+  color: white;
 `;
 
 const Subtitle = styled.h2`
@@ -30,9 +30,7 @@ const Subtitle = styled.h2`
   margin-bottom: 20px; /* Increased margin for more spacing */
   justify-content: left;
   padding: 0;
-
-  color: gray;
-
+  color: #8a2be2;
 `;
 
 const Footer = styled.div`
