@@ -1,109 +1,306 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-    .page_0{
-       overflow: hidden;
-    }
-    .docImg{
-border-radius: 0;
-width: 100vw;
-height: 250vh;
-z-index: 10;
-margin-top: -50px;
-    }
-    .contribution{
-        position: relative;
-        top: -80vh;
-        z-index: 10;
-    }
-    .headLine{
-        font-size: 5em;
-        margin-inline: auto;
-        text-align: center;
-        font-weight: 800;
-        color: transparent;
-        /* border: 2px solid black; */
-       text-shadow: 0px 0px 0px rgba(168, 162, 162, 0.516);
-    }
-    .TitleDoc{
-width: 100vw;
-overflow: hidden;
-background-color: rgb(0, 0, 0);
-/* margin-top: -15%; */
-top: -3em;
-z-index:9;
-position: relative;
-height: 50vh;
-color: white;
-text-align: center;
-font-weight: 700;
-/* border: 2px solid white; */
-font-size: 5em;
 
-padding-top: 10%;
-    }
-   
-   .ContributionImg{
-    background-color: black;
-    margin: 12px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5em;
-    align-items: center;
-    margin-bottom: 50px;
-    
-   }
-   .conImg{
-    width: 70vw;
-border-radius: 0;
+.page_0 {
+  overflow: hidden;
+}
 
-   }
+.docImg {
+  border-radius: 0;
+  width: 100vw;
+  height: 250vh;
+  z-index: 10;
+  margin-top: -50px;
+}
 
-   /* mediaQwery */
-   @media screen and (max-width:683px) {
-    .document{
-margin-top: -120px;
-    }
-    
-   }
+.contribution {
+  position: relative;
+  top: -80vh;
+  z-index: 10;
+}
 
-   @media screen and (max-width: 1024px) {
-    .TitleDoc {
+.headLine {
+  font-size: 5em;
+  margin-inline: auto;
+  text-align: center;
+  font-weight: 800;
+  color: transparent;
+  text-shadow: 0px 0px 0px rgba(168, 162, 162, 0.516);
+}
+
+.TitleDoc {
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  top: -3em;
+  z-index: 9;
+  position: relative;
+  height: 50vh;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 5em;
+  padding-top: 10%;
+}
+
+.ContributionImg {
+  background-color: black;
+  margin: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5em;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.conImg {
+  width: 70vw;
+  border-radius: 0;
+}
+
+.video_Doc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+
+.video_Doc video {
+  width: 70vw;
+  margin-bottom: 30px;
+}
+
+.video_Doc h1 {
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .TitleDoc {
+      font-size: 4.5em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .TitleDoc {
       font-size: 4em;
-    }
   }
-  
-  @media screen and (max-width: 768px) {
-    .TitleDoc {
+}
+
+@media screen and (max-width: 768px) {
+  .TitleDoc {
       font-size: 3em;
-    }
-    .contribution .headLine {
-        font-size: 3em;
-        padding:3px;
-      }
   }
-  @media screen and (max-width: 400px) {
-    .TitleDoc {
+  .contribution .headLine {
+      font-size: 3em;
+      padding: 3px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .TitleDoc {
+      font-size: 2.5em;
+  }
+  .contribution .headLine {
+      font-size: 2.5em;
+      margin-top: 50px;
+  }
+  .docImg {
+      height: 200vh;
+      margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .TitleDoc {
       font-size: 2em;
-    }
-    .contribution .headLine {
-        font-size: 2em;
-      }
   }
-  .video_Doc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80vw;
-    margin: auto;
+  .contribution .headLine {
+      font-size: 2em;
+      margin-top: 77px;
   }
-  .video_Doc video{
-    width: 70vw;
-    margin-bottom: 30px;
+  .conImg {
+      width: 90vw;
   }
-  .video_Doc h1{
-    margin-bottom: 20px;
+  .video_Doc {
+      width: 90vw;
   }
+  .video_Doc video {
+      width: 90vw;
+  }
+}
+
+
+/* ProjectD Section */
+.ProjectD {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ProjectD .project-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; /* Set a max-width for larger screens */
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+}
+
+.ProjectD .project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.ProjectD .project-card h3 {
+  font-size: 1.8em;
+  margin: 15px 0;
+}
+
+.ProjectD .project-card p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .ProjectD .project-card {
+      max-width: 300px; /* Adjust max-width for medium screens */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ProjectD .project-card {
+      max-width: 250px; /* Adjust max-width for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ProjectD .project-card {
+      max-width: 100%; /* Full width on small screens */
+  }
+  .ProjectD .project-card h3 {
+      font-size: 1.5em;
+  }
+  .ProjectD .project-card p {
+      font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ProjectD {
+      padding: 10px; /* Reduce padding on smaller screens */
+  }
+  .ProjectD .project-card h3 {
+      font-size: 1.3em; /* Smaller font size for titles */
+  }
+  .ProjectD .project-card p {
+      font-size: 0.8em; /* Adjust font size for paragraphs */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ProjectD .project-card h3 {
+      font-size: 1.2em; /* Further reduce font size */
+  }
+  .ProjectD .project-card p {
+      font-size: 0.7em; /* Adjust font size for paragraphs */
+  }
+}
+
+/* Section Maintainer */
+.section_maintainer {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background color for visibility */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adds spacing between elements */
+}
+
+/* Maintainer Card Styles */
+.maintainer-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; /* Adjusts the max-width for larger screens */
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+}
+
+.maintainer-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Circular images */
+}
+
+.maintainer-card h3 {
+  font-size: 1.8em;
+  margin: 15px 0;
+}
+
+.maintainer-card p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .maintainer-card {
+      max-width: 300px; /* Adjust max-width for medium screens */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .maintainer-card {
+      max-width: 250px; /* Adjust max-width for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .maintainer-card {
+      max-width: 100%; /* Full width on small screens */
+  }
+  .maintainer-card h3 {
+      font-size: 1.5em; /* Smaller font size for headings */
+  }
+  .maintainer-card p {
+      font-size: 0.9em; /* Adjust font size for paragraphs */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section_maintainer {
+      padding: 10px; /* Reduce padding on smaller screens */
+  }
+  .maintainer-card h3 {
+      font-size: 1.3em; /* Smaller font size for headings */
+  }
+  .maintainer-card p {
+      font-size: 0.8em; /* Adjust font size for paragraphs */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .maintainer-card h3 {
+      font-size: 1.2em; /* Further reduce font size */
+  }
+  .maintainer-card p {
+      font-size: 0.7em; /* Adjust font size for paragraphs */
+  }
+}
