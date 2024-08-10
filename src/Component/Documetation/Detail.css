@@ -38,9 +38,9 @@ span a .linkedin{
 }
 span a svg{
     padding: 5px;
-    background-color:#fff;
     color:#000;
     font-size: 32px;
+    fill: #ffffff;
     cursor: pointer;
 }
 span a .linkedin:hover{
