@@ -62,7 +62,7 @@
 }
 .page_0 .bx-2,
 .page_0 .bx-1 {
-  margin: 130px 10px;
+  margin: 90px 10px;
   padding: 12px 17px;
 }
 .page_0 .bx-1 h2 {
@@ -107,7 +107,7 @@
   width: 95vw;
   height: 40vh;
   gap: 5%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .home-img {
@@ -444,4 +444,5 @@
       max-width: 350px;
       margin: 13px 12px;
   }
+ 
 }

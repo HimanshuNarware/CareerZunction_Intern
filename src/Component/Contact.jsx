@@ -58,10 +58,10 @@ function Contact() {
         <img src="./support.jpg" alt="Support"></img>
       </Tilt>
         <div className="icons">
-          <FaGithub id="ic"/>
-          <BsTwitterX id="ic"/>
-          <FaWhatsapp id="ic"/>
-          <CiLinkedin id="ic"/>
+          <FaGithub   className="contactus-icons"id="ic"/>
+          <BsTwitterX className="contactus-icons" id="ic"/>
+          <FaWhatsapp className="contactus-icons" id="ic"/>
+          <CiLinkedin className="contactus-icons" id="ic"/>
         </div>
       </div>
       <div className="form">
@@ -84,7 +84,7 @@ function Contact() {
             onChange={(e)=>setMessage(e.target.value)} required></textarea>
           </div>
           <div className="btn">
-            <button type="submit">Send Message</button>
+            <button type="submit" className='submitMsg'>Send Message</button>
           </div>
         </form>
         {messageVisible && (

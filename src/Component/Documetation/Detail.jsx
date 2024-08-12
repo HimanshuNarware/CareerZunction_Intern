@@ -55,12 +55,11 @@ function Detail() {
 <div className='outerD  gap-4 md:gap-2'>
         <span className='icons'>
         <a  href="https://github.com/HimanshuNarware" target="_blank"> <FaGithub
-                color="white"
                 fontSize={25}
                 className="ico "
               /></a></span>
-                <span  className='icons'> <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
-                  <FaLinkedin color="white" fontSize={25} className="ico" />
+                <span  className='icons '> <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
+                  <FaLinkedin fontSize={25} className="ico" />
 
                 </a></span>
                 <span  className='icons'> <a href="https://twitter.com/N_Himanshu_" target="_blank">
@@ -91,12 +90,12 @@ function Detail() {
                          <div className='outerD  gap-4 md:gap-2'>
         <span className='icons'>
         <a  href="https://github.com/HimanshuNarware" target="_blank"> <FaGithub
-                color="white"
+               
                 fontSize={25}
                 className="ico "
               /></a></span>
                 <span  className='icons'> <a href="https://www.linkedin.com/in/HimanshuNarware/" target="_blank">
-                  <FaLinkedin color="white" fontSize={25} className="ico" />
+                  <FaLinkedin fontSize={25} className="ico" />
 
                 </a></span>
                 <span  className='icons'> <a href="https://twitter.com/N_Himanshu_" target="_blank">

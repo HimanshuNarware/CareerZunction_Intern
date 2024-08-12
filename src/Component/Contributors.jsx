@@ -63,9 +63,9 @@ function Contributors() {
               />
             </a>
             <h2 className="contributor-name">{contributor.login}</h2>
-            <p className="contributor-contributions">
+            {/* <p className="contributor-contributions">
               Contributions: {contributor.contributions}
-            </p>
+            </p> */}
           </div>
         ))}
       </div>

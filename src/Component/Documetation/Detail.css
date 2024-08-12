@@ -162,3 +162,24 @@ gap: 7%;
 	  rgb(27, 1, 39)
 	);
   }
+/* .ProjectD{
+
+}
+.innerinner-container{
+
+} */
+.outerD
+{
+    /* display: none; */
+}
+.icons-fm{
+    background-color: #000;
+}
+@media screen  and (min-width:548px){
+    .outerD
+    {
+        /* display: none; */
+        display: flex;
+        background-color: transparent;
+    }
+}

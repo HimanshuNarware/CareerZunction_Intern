@@ -47,3 +47,6 @@ form, input, button {
     align-items: center;
     justify-content: center;
   }
+  .captcha{
+    color: white;
+  }

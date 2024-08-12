@@ -17,11 +17,12 @@ h1{
 input{
   height:60px;
   width: 100%;
-  padding-left: 50px;
-  border-radius: 60px;
+  /* padding-left: 50px; */
+
+  border-radius: 5px;
   border:none;
   color: white;
-  border: 1px solid white;
+  border: 1px solid rgb(76, 23, 192) !important;
   background: transparent;
   font-size: 18px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -49,8 +50,8 @@ textarea{
   width:100%;
   padding-left: 50px;
   padding-top: 10px;
-  border-radius: 20px;
-  border: 1px solid white;
+  border-radius: 8px;
+  border: 1px solid  rgb(76, 23, 192) ;
   background: transparent;
   outline:none;
   color:white;
@@ -143,4 +144,17 @@ button:hover{
 }
 .outerD{
   padding-top: 20px;
+}
+
+.submitMsg{
+  /* margin-inline:3px; */
+  font-size: small;
+}
+.contactus-icons{
+  color: #9416e9 !important;
+  /* font-size: 50% ; */
+  background-color: transparent !important;
+  padding: 12px 8px !important;
+  border: .5px solid #9416e9;
+
 }

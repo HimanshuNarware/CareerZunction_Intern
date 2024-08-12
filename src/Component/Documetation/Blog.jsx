@@ -26,7 +26,7 @@ function Blog() {
     <Preloader />
     <section className="testimonials" id="testimonials">
       <h2 className="testimonial-heading section__title" data-aos="fade-in">Testimonials</h2>
-      <div className="testimonial-container">
+      {/* <div className="testimonial-container">
         {[
           {
             img: "blog1.jpg",
@@ -64,7 +64,7 @@ function Blog() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
     </>
   );
