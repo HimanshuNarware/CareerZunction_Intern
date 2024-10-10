@@ -320,7 +320,7 @@ body {
 
 @media screen and (max-width:683px) {
     .internBox {
-        margin-top: -120px;
+        margin-top: -20px;
         padding-top: 50px;
 
         display: flex;
