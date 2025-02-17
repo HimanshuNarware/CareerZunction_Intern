@@ -9,8 +9,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url(./image/web_backgourd.jpg);
-  backdrop-filter: blur(10px); */
   background-size: 100vw !important;
   
   overflow-x: hidden;

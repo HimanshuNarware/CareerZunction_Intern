@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 import './Contributors.css';
-import Preloader from './Preloader';
 import data from '../DB/Contributor.json'
 
 function Contributors() {
