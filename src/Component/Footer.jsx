@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaStar, FaTwitter, FaFacebook, FaInstagram, FaFileAlt, FaLock, FaGavel, FaCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaStar, FaFileAlt, FaLock, FaGavel, FaCode } from 'react-icons/fa';
 import favicon from "../image/footer/favicon.png";
 import img from "../image/footer/footer-qr.jpg";
 import './Footer.css';

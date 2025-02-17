@@ -1,6 +1,4 @@
 /** @format */
-
-import React, { useState } from 'react';
 import '../Style/Home.css';
 import '../Style/util.css';
 import Preloader from './Preloader';
@@ -17,7 +15,6 @@ import img1 from '../image/desktopImg/code.jpg'
 import img6 from '../image/desktopImg/img 3.jpg'
 import img5 from '../image/desktopImg/img 4.jpg'
 import img4 from '../image/desktopImg/img 5.jpg'
-import img3 from '../image/desktopImg/img 6.jpg'
 import img2 from '../image/desktopImg/img 7.jpg'
 import img7 from '../image/desktopImg/img2.jpg'
 import img8 from '../image/desktopImg/img 9.jpg'
@@ -50,7 +47,7 @@ function Home() {
             <br />
             <span>Future</span></h2>
           <h4>
-            <i>Land your dream career.....</i> </h4>
+            <i>Land your dream career...</i> </h4>
           <Button className='check-now'>
             <Link to="/intern" className='link1'>
 

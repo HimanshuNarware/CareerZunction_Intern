@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { GiCrossMark } from "react-icons/gi";
-import { FaGithub, FaLaptop, FaHome, FaRegSun, FaBars } from "react-icons/fa";
-import { BsFiletypeDoc } from "react-icons/bs";
+import {FaRegSun, FaBars } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {

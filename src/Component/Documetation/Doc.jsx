@@ -11,7 +11,7 @@ import img5 from '../../image/Contribution/5.png';
 import img6 from '../../image/Contribution/6.png';
 import img7 from '../../image/Contribution/7.png';
 import img8 from '../../image/Contribution/8.png';
-import video1 from '../../image/Contribution/CareerZunction_Docs.mp4';
+// import video1 from '../../image/Contribution/CareerZunction_Docs.mp4';
 import Detail from './Detail';
 
 function Doc() {
@@ -22,7 +22,7 @@ function Doc() {
       className="document"
       style={{ backgroundColor: "black", overflow: "hidden" }}
     >
-      <div class="page_0">
+      <div className="page_0">
         {/* <img src={background} alt="" className="docImg" /> */}
       </div>
       <div className="contribution">
@@ -33,10 +33,14 @@ function Doc() {
       <div className="TitleDoc">Make Your First Contribution !</div>
       <div className="video_Doc">
         <h1 style={{ fontWeight: '500', }}>Video Tutorial</h1>
-        <video controls>
+        {/* <video controls>
           <source src={video1} type="video/mp4" />
           your browser does not support this tag.
-        </video>
+        </video> */}
+      
+
+        <iframe width="560" height="315"  loading="lazy"
+         src="https://www.youtube.com/embed/l__QFVYM8ko" title="CareerZunction Docs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
       <div className="ContributionImg">

@@ -17,12 +17,17 @@ let InternPage = () => {
   const [roleFilter, setRoleFilter] = useState("");
   const [industryFilter, setIndustryFilter] = useState("");
 
+if(currentData.length==0){
+ // prevent from empty result
+  setCurrentData(internshipsData.slice(0, 12));
+}
   useEffect(() => {
     if (currentData.length === 0 || (!roleFilter && !industryFilter)) {
       setCurrentData(internshipsData.slice(0, 12)); // Adjust the number as needed
-      console.log("Default internships shown due to no matches:", currentData);
+      // console.log("Default internships shown due to no matches:", currentData);
+    } else {
     }
-  }, [currentData]);
+  }, [internshipsData, roleFilter, industryFilter]);
 
   const monthAbbreviations = {
     january: "Jan",
@@ -60,11 +65,11 @@ let InternPage = () => {
   }
 
   useEffect(() => {
-    console.log("Initial internships data:", internshipsData);
+    console.log("Initial internships data:");
     if (internshipsData && internshipsData.length > 0) {
       setInternships(internshipsData);
       const defaultData = internshipsData.slice(0, 12); // Show 12 items initially
-      console.log("Default Data:", defaultData);
+      console.log("Default Data:");
       setFilteredData(defaultData);
       setCurrentData(defaultData);
       setPageSummary(
@@ -83,8 +88,8 @@ let InternPage = () => {
 
   function handleFilter() {
     console.log("Applying filters...");
-    console.log("Role Filter:", roleFilter);
-    console.log("Industry Filter:", industryFilter);
+    console.log("Role Filter:");
+    console.log("Industry Filter:");
 
     let filtered = internships;
 
@@ -94,7 +99,7 @@ let InternPage = () => {
           internship.role &&
           internship.role.toLowerCase() === roleFilter.toLowerCase()
       );
-      console.log("After role filter:", filtered);
+      console.log("After role filter:");
     }
 
     if (industryFilter) {
@@ -103,7 +108,7 @@ let InternPage = () => {
           internship.industry &&
           internship.industry.toLowerCase() === industryFilter.toLowerCase()
       );
-      console.log("After industry filter:", filtered);
+      console.log("After industry filter:");
     }
 
     // Check if filtered data is empty
