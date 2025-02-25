@@ -30,15 +30,18 @@
     .desktopImg {
         height: 85vh;
         overflow: hidden;
-        width: 50vw;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        width: 42vw;
+        /* display: grid; */
+        /* grid-template-columns: repeat(3, 1fr); */
         position: absolute;
-        top: 4%;
+        top: 2.35%;
         gap: 10px;
         float: right;
         justify-content: right;
-        left: 45%;
+        left: 57%;
+        /* transform: rotate3d(120deg); */
+        /* transform: rotate(-90deg); */
+        /* transform: rotate(-90deg); */
     }
     
     img {
