@@ -10,8 +10,6 @@ The platform is an open-source project facilitating student-internship connectio
 
 ##CareerZunction
 ![image](https://github.com/user-attachments/assets/9eabcb6b-5242-4c4b-a7f5-7558f67fdf3c)
-
-![Website Look 1](https://github.com/Anusri2107/CareerZunction_Intern/assets/100567326/005e2982-21ef-46c4-a50e-dd0682446274)
 ![Website Look 2](https://github.com/Anusri2107/CareerZunction_Intern/assets/100567326/2d26f882-a2e5-4f70-ade3-95847231a6d2)
 
 CareerZunction is an open-source platform designed to connect students with internship opportunities.
