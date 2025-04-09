@@ -116,6 +116,19 @@
     "industry": "Technology"
   },
   {
+    "internship_name": "SWE Intern",
+    "company_name": "VISA",
+    "internship_type": "Internship ",
+    "duration": "May",
+    "link": "https://careers.db.com/",
+    "image": https://google.com/imgres?q=deutsche%20bank%20careers&imgurl=http%3A%2F%2Fmaster.dwebcms.db.com%2Fapplication%2Fversion%2Flatest%2Ffiles%2FDB-Share-Logo_1200x627.jpg&imgrefurl=https%3A%2F%2Fcareers.db.com%2F&docid=baKw8o9BjoLdkM&tbnid=OdOzj26NG3n-qM&vet=12ahUKEwjip-6Kj-eHAxXqyTgGHbOHABwQM3oECBsQAA..i&w=1200&h=627&hcb=2&ved=2ahUKEwjip-6Kj-eHAxXqyTgGHbOHABwQM3oECBsQAA",
+    "award": "Unknown",
+    "description": "Key Responsibilities as VISA Intern: Creating multiple models for their new market initiatives."
+    "mode": "Offline",
+    "role":"SWE Intern",
+    "industry": "Technology"
+  },
+  {
     "internship_name": "TCS FTE",
     "company_name": "TCS",
     "internship_type": "Internship | Open-source| Hackthone | Campus ambassador | ",
