@@ -22,7 +22,7 @@ function Navbar() {
       <nav className="Navbar">
         <div
           className="nav-icons"
-          style={{ cursor: "pointer", fontSize: "2em" , marginRight:"10em"}}
+          style={{ cursor: "pointer", fontSize: "3em" , marginRight:"12em"}}
           onClick={toggleDarkMode}
         >
           {slidebarClick ? <GiCrossMark /> : <FaRegSun />}
@@ -39,10 +39,10 @@ function Navbar() {
             <Link to="/" className="link">Home</Link>
           </div>
           <div className="cart-item">
-            <Link to="/intern" className="link">Internships</Link>
+            <Link to="/intern" className="link">internships</Link>
           </div>
           <div className="cart-item">
-            <Link to="/Blog" className="link">Blog</Link>
+            <Link to="/Blog" className="link">Blogs</Link>
           </div>
           <div className="cart-item">
             <Link to="/docs" className="link">Documentation</Link>
@@ -59,7 +59,7 @@ function Navbar() {
             <Link to="/Contributors" className="link">Contributors</Link>
           </div>
           <div className="cart-item">
-            <Link to="/Contact" className="link">Contact Us</Link>
+            <Link to="/Contact" className="link">Contact us</Link>
           </div>
         </div>
         <div className="hamburger" onClick={toggleMobileMenu}>
@@ -75,10 +75,10 @@ function Navbar() {
           <Link to="/" className="link">Home</Link>
         </div>
         <div className="sidebar-item">
-          <Link to="/intern" className="link">Internships</Link>
+          <Link to="/intern" className="link">internships</Link>
         </div>
         <div className="sidebar-item">
-          <Link to="/Blog" className="link">Blog</Link>
+          <Link to="/Blog" className="link">Blogs</Link>
         </div>
         <div className="sidebar-item">
           <Link to="/docs" className="link">Documentation</Link>
@@ -95,7 +95,7 @@ function Navbar() {
           <Link to="/Contributors" className="link">Contributors</Link>
         </div>
         <div className="sidebar-item">
-          <Link to="/Contact" className="link">Contact Us</Link>
+          <Link to="/Contact" className="link">Contact us</Link>
         </div>
       </div>
     </>

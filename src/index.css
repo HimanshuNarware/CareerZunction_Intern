@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-size: 100vw !important;
+  background-size: 110vw !important;
   
   overflow-x: hidden;
   position: relative;
@@ -34,5 +34,5 @@ code {
 
 .scroll-progress-bar {
   height: 100%;
-  background-color: #9f40f7; 
+  background-color: #a951fb; 
 }
