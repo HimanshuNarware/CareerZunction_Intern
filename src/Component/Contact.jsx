@@ -1,10 +1,12 @@
 import './Contact.css';
-import  { useState } from 'react';
+import { useState } from 'react';
 import { FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import emailjs from "@emailjs/browser";
+import Tilt from "react-parallax-tilt";
+import Preloader from './Preloader';
 
 function Contact() {
   const [messageVisible, setMessageVisible] = useState(false);
@@ -43,14 +45,18 @@ function Contact() {
   };
 
   return (
+    <>
+    <Preloader />
     <div className="p" style={{display: 'flex'}}>
       <div className="card" style={{maxWidth:"30%",margin:"30px"}}>
+      <Tilt>
         <img src="./support.jpg" alt="Support"></img>
+      </Tilt>
         <div className="icons">
-          <FaGithub id="ic"/>
-          <BsTwitterX id="ic"/>
-          <FaWhatsapp id="ic"/>
-          <CiLinkedin id="ic"/>
+          <FaGithub   className="contactus-icons"id="ic"/>
+          <BsTwitterX className="contactus-icons" id="ic"/>
+          <FaWhatsapp className="contactus-icons" id="ic"/>
+          <CiLinkedin className="contactus-icons" id="ic"/>
         </div>
       </div>
       <div className="form">
@@ -73,7 +79,7 @@ function Contact() {
             onChange={(e)=>setMessage(e.target.value)} required></textarea>
           </div>
           <div className="btn">
-            <button type="submit" id='button' >Send Message</button>
+            <button type="submit" className='submitMsg'>Send Message</button>
           </div>
         </form>
         {messageVisible && (
@@ -83,6 +89,7 @@ function Contact() {
         )}
       </div>
     </div>
+    </>
   );
 }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Style/feedback.css";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-router-dom";
 
 const FeedbackModal = () => {
   useEffect(() => {
@@ -64,7 +65,10 @@ const FeedbackModal = () => {
         <div>
           <h2>We'd Love Your Thoughts!</h2>
           <p className="para">
-            Your feedback is important. Let us know your thoughts and how <strong>CareerZunction</strong> can do better.
+            Your feedback is important. Let us know your thoughts and how <Link to="/" className="link">
+              {" "}
+              <strong>CareerZunction</strong>
+            </Link> can do better.
           </p>
           <div>
             <p className="rate-para">

@@ -9,13 +9,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: none;
-    gap: 10px;
-    box-shadow: 0 0 10px blueviolet;
+    cursor: pointer;
+    gap: 12px;
+    background: rgba(17, 1, 27, 0.2);
     border: 2px solid blueviolet;
-    padding: 10px 20px;
-    border-radius: 30px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4), 0 6px 12px rgba(138, 43, 226, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
+
+.pagination-container:hover {
+    transform: scale(1.05); /* Slightly enlarges the container */
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.6), 0 8px 16px rgba(138, 43, 226, 0.7); /* Enhanced shadow on hover */
+}
+
 .page-btn {
     list-style-type: none;
 }
@@ -35,7 +44,7 @@
     background-color: rgb(222, 186, 255);
 }
 .active {
-    background-color: blueviolet;
+    background-color: rgba(145, 139, 252, 0.932);
     color: white;
     font-weight: 600;
     border-radius: 50%;

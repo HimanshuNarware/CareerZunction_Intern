@@ -1,46 +1,76 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Contributors.css';
+import data from '../DB/Contributor.json'
 
-const Contributors = () => {
+function Contributors() {
   const [contributors, setContributors] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    async function fetchContributors() {
-      try {
-        const response = await fetch('https://api.github.com/repos/HimanshuNarware/CareerZunction_Intern/contributors');
-        const data = await response.json();
-        setContributors(data);
-      } catch (error) {
-        console.error('Error fetching contributors:', error);
-      }
-    }
+  // to improve the fetching speed
+  // useEffect(() => {
+  //   async function fetchContributors() {
+  //     let allContributors = [];
+  //     let page = 1;
 
-    fetchContributors();
-  }, []);
+  //     try {
+  //       while (true) {
+  //         const response = await axios.get(
+  //           `https://api.github.com/repos/HimanshuNarware/CareerZunction_Intern/contributors`,
+  //           {
+  //             params: {
+  //               per_page: 100,
+  //               page,
+  //             },
+  //           }
+  //         );
+  //         const data = response.data;
+  //         if (data.length === 0) {
+  //           break;
+  //         }
+  //         allContributors = [...allContributors, ...data];
+  //         page++;
+  //       }
+  //       setContributors(allContributors);
+  //     } catch (error) {
+  //       console.error('Error in fetching contributors:', error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   }
+  //   fetchContributors();
+  // }, []);
+
+  // if (loading) {
+  //   return <Preloader />;
+  // }
 
   return (
-      <div className="content">
-          <h1 className="title">Our Contributors</h1>
-        <div id="contributors" className="contributors">
-          {contributors.map(contributor => (
+    <div className="contributors-container">
+      <h1 className="contributors-title">Our Contributors</h1>
+      <div className="contributors-grid">
+        {data.map((contributor) => (
+          <div key={contributor.id} className="contributor-card">
             <a
-              key={contributor.id}
               href={contributor.html_url}
+              className="contributor-link"
               target="_blank"
               rel="noopener noreferrer"
-              className="contributor-card"
             >
-              <img src={contributor.avatar_url} alt={contributor.login} />
-              <h2 className="contributor-name">{contributor.login}</h2>
-              <p className="contributions">Contributions: {contributor.contributions}</p>
-              <p className="github-profile">
-                <i className="fab fa-github"></i> GitHub Profile
-              </p>
+              <img
+                src={contributor.avatar_url}
+                alt={contributor.login}
+                className="contributor-avatar"
+              />
             </a>
-          ))}
-        </div>
+            <h2 className="contributor-name">{contributor.login}</h2>
+            {/* <p className="contributor-contributions">
+              Contributions: {contributor.contributions}
+            </p> */}
+          </div>
+        ))}
       </div>
+    </div>
   );
-};
+}
 
 export default Contributors;

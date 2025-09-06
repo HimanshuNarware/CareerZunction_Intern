@@ -6,15 +6,17 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Store from './Redux/Store/Store';
 import ScrollProgressBar from './Component/ProgressBar';
-import { ScrollToTop } from './Component/ScrollToTop'
+import Preloader from './Component/Preloader';
+import GoToTop from './Component/ScrollToTopButton';
 import FeedbackButton from './Component/Feedbtn';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <ScrollToTop/>
     <ScrollProgressBar/>
     <FeedbackButton/>
+    <Preloader />
+    <GoToTop />
     <App />
     </BrowserRouter>
   </React.StrictMode>

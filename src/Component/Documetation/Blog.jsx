@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './blog.css';
+import Preloader from '../Preloader';
 
 function Blog() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
@@ -20,9 +21,12 @@ function Blog() {
   }
 
   return (
+
+    <>
+    <Preloader />
     <section className="testimonials" id="testimonials">
       <h2 className="testimonial-heading section__title" data-aos="fade-in">Testimonials</h2>
-      <div className="testimonial-container">
+      {/* <div className="testimonial-container">
         {[
           {
             img: "blog1.jpg",
@@ -60,8 +64,9 @@ function Blog() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
+    </>
   );
 }
 
